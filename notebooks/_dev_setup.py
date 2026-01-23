@@ -27,9 +27,9 @@ except NameError:
     print("ℹ️ Not running inside IPython — autoreload disabled.")
 
 # --- Confirm import path ---
-spec = importlib.util.find_spec("llm_wc_labor")
+spec = importlib.util.find_spec("llm_wc")
 if spec and getattr(spec, "submodule_search_locations", None):
     pkg_dir = list(spec.submodule_search_locations)[0]
-    print(f"✅ Using llm_wc_labor from: {pkg_dir}")
+    print(f"✅ Using llm_wc from: {pkg_dir}")
 else:
-    print("❌ Could not import llm_wc_labor. Ensure src/llm_wc_labor exists or install with 'pip install -e .'")
+    print("❌ Could not import llm_wc. Ensure src/llm_wc exists or install with 'pip install -e .'")
