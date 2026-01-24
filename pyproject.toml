@@ -33,11 +33,13 @@ dev = [
 ]
 
 [tool.uv.sources]
-mini-swe-agent = { workspace = true, editable = true }
-swebench = { workspace = true, editable = true }
+# Temporarily commented out until git submodules are initialized
+# mini-swe-agent = { workspace = true, editable = true }
+# swebench = { workspace = true, editable = true }
 
 [tool.uv.workspace]
-members = [
-    "external/mini-swe-agent",
-    "external/swe-bench",
-]
+# Temporarily commented out until git submodules are initialized
+# members = [
+#     "external/mini-swe-agent",
+#     "external/swe-bench",
+# ]
