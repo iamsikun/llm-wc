@@ -1,0 +1,17 @@
+{
+  "accuracy": 0.7,
+  "correct": 49,
+  "incorrect": 21,
+  "total": 70,
+  "model": "gpt-oss:latest",
+  "api_base": "http://localhost:11434/v1",
+  "request_params": {
+    "temperature": 0.0,
+    "top_p": 0.95,
+    "max_tokens": 32768,
+    "frequency_penalty": 0.0,
+    "presence_penalty": 0.0,
+    "seed": 12345
+  },
+  "seed": 12345
+}

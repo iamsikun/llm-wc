@@ -1,0 +1,30 @@
+benchmark:
+  name: gpqa
+  output_dir: results/gpqa
+  seed: 12345
+  limit_subjects: null
+  limit_per_subject: null
+  dataset_path: idavidrein/gpqa
+  subset: main
+  split: train
+  prompt_type: zero_shot
+  cot_examples_path: resources/gpqa/chain_of_thought_examples.json
+  hf_token_env: HF_TOKEN
+
+models:
+  - name: gpt-oss:latest
+    api_base: http://localhost:11434/v1
+    api_key: ollama
+    request_overrides: {}
+  - name: qwen3:30b
+    api_base: http://localhost:11434/v1
+    api_key: ollama
+    request_overrides: {}
+  - name: qwen3-coder:30b
+    api_base: http://localhost:11434/v1
+    api_key: ollama
+    request_overrides: {}
+  - name: gemma3:27b
+    api_base: http://localhost:11434/v1
+    api_key: ollama
+    request_overrides: {}

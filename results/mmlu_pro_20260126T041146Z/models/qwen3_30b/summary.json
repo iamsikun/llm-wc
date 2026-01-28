@@ -1,0 +1,17 @@
+{
+  "accuracy": 0.7571428571428571,
+  "correct": 53,
+  "incorrect": 17,
+  "total": 70,
+  "model": "qwen3:30b",
+  "api_base": "http://localhost:11434/v1",
+  "request_params": {
+    "temperature": 0.0,
+    "top_p": 0.95,
+    "max_tokens": 32768,
+    "frequency_penalty": 0.0,
+    "presence_penalty": 0.0,
+    "seed": null
+  },
+  "seed": 12345
+}

@@ -1,0 +1,27 @@
+benchmark:
+  name: aime_2025
+  output_dir: results/aime_2025
+  seed: 12345
+  limit_subjects: null
+  limit_per_subject: null
+  dataset_path: MathArena/aime_2025
+  instruction: "Please reason step by step, and put your final answer within \\boxed{}.\nThe answer is an integer between 0 and 999 inclusive."
+  strict_parsing: false
+
+models:
+  - name: gpt-oss:latest
+    api_base: http://localhost:11434/v1
+    api_key: ollama
+    request_overrides: {}
+  - name: qwen3:30b
+    api_base: http://localhost:11434/v1
+    api_key: ollama
+    request_overrides: {}
+  - name: qwen3-coder:30b
+    api_base: http://localhost:11434/v1
+    api_key: ollama
+    request_overrides: {}
+  - name: gemma3:27b
+    api_base: http://localhost:11434/v1
+    api_key: ollama
+    request_overrides: {}
