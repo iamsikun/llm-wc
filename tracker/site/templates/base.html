@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{{ site.title }}{% endblock %}</title>
+  <meta name="description" content="{% block description %}Leaderboard scores come from a limited set of tasks, so part of every score is luck. See how much the top scores are inflated and how uncertain the order is, for public LLM leaderboards.{% endblock %}">
+  {% set og = og_path or "og/home.png" %}
+  <meta property="og:title" content="{{ self.title() | trim }}">
+  <meta property="og:description" content="{{ self.description() | trim }}">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="{{ site.base_url }}{{ og }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="{{ site.base_url }}{{ og }}">
+  <link rel="icon" href="{{ root }}static/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="{{ root }}static/style.css?v={{ v }}">
+  <script>
+    (function () {
+      try { var t = localStorage.getItem("theme"); if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="sr-only" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="{{ root }}index.html">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="var(--text)"/><rect x="7" y="17" width="4" height="8" rx="1.5" fill="var(--bg)"/><rect x="14" y="11" width="4" height="14" rx="1.5" fill="var(--bg)"/><rect x="21" y="7" width="4" height="18" rx="1.5" fill="var(--accent)"/><path d="M21 9.5h4" stroke="var(--bg)" stroke-width="1.5" stroke-dasharray="1.5 1.5"/></svg>
+        <span class="brand-name">{{ site.title }}</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav">
+        <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M2 4.5h14M2 9h14M2 13.5h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </button>
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="{{ root }}index.html"{% if nav == "home" %} aria-current="page"{% endif %}>Home</a>
+        <a href="{{ root }}benchmarks.html"{% if nav == "benchmarks" %} aria-current="page"{% endif %}>Leaderboards</a>
+        <a href="{{ root }}methods.html"{% if nav == "methods" %} aria-current="page"{% endif %}>How it works</a>
+        <a href="{{ root }}design.html"{% if nav == "design" %} aria-current="page"{% endif %}>For designers</a>
+        <a href="{{ root }}coverage.html"{% if nav == "coverage" %} aria-current="page"{% endif %}>Coverage</a>
+        <a href="{{ root }}about.html"{% if nav == "about" %} aria-current="page"{% endif %}>About</a>
+        <button class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13Zm0 1.5v10a5 5 0 0 1 0-10Z" fill="currentColor"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+{% block content %}{% endblock %}
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>
+        <strong>{{ site.title }}</strong> · {{ site.tagline }}<br>
+        Data refreshed {{ site.update_cadence }} from public leaderboards · Site built {{ build_date | date }}
+      </div>
+      <div class="footer-links">
+        {% if site.paper_url %}<a href="{{ site.paper_url }}">Paper</a>{% endif %}
+        <a href="{{ site.repo_url }}">Code &amp; data</a>
+        <a href="{{ root }}methods.html">How it works</a>
+        <a href="{{ root }}about.html#cite">Cite</a>
+      </div>
+    </div>
+  </footer>
+  <div class="tooltip" role="status" aria-live="polite"></div>
+  <script src="{{ root }}static/common.js?v={{ v }}"></script>
+{% block scripts %}{% endblock %}
+</body>
+</html>

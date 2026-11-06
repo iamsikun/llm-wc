@@ -1,0 +1,790 @@
+{
+  "counts": {
+    "entries": 84,
+    "failures": 0,
+    "parsed_models": 84
+  },
+  "failures": [],
+  "leaderboard": "lite",
+  "models": [
+    {
+      "counts": {
+        "resolved": 181,
+        "total": 181
+      },
+      "model": "ExpeRepair-v1.0 + Claude 4 Sonnet",
+      "model_id": "experepair-v1-0-claude-4-sonnet",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20250625_ExpeRepair-v1_claude-4-sonnet-20250514/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 180,
+        "total": 180
+      },
+      "model": "Refact.ai Agent",
+      "model_id": "refact-ai-agent",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20250425_Refact_Agent/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 175,
+        "total": 175
+      },
+      "model": "KGCompass + Claude 4 Sonnet (20250514)",
+      "model_id": "kgcompass-claude-4-sonnet-20250514",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20250906_KGCompass_claude-4-sonnet-20250514/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 170,
+        "total": 170
+      },
+      "model": "SWE-agent + Claude 4 Sonnet",
+      "model_id": "swe-agent-claude-4-sonnet",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20250526_sweagent_claude-4-sonnet-20250514/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 165,
+        "total": 165
+      },
+      "model": "Isoform",
+      "model_id": "isoform",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20250114_Isoform/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 155,
+        "total": 155
+      },
+      "model": "SemAgent_Multi-v1.0",
+      "model_id": "semagent-multi-v1-0",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20250625_SemAgent_Multi-v1_Claude3.7Sonnet_Gemini2.5Pro/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 154,
+        "total": 154
+      },
+      "model": "Isea",
+      "model_id": "isea",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20250911_isea_claude-3.5-sonnet-20241022/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 149,
+        "total": 149
+      },
+      "model": "EntroPO + R2E + Qwen3-Coder-30B-A3B-Instruct",
+      "model_id": "entropo-r2e-qwen3-coder-30b-a3b-instruct",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20250901_entroPO_R2E_QwenCoder30BA3B_tts/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 147,
+        "total": 147
+      },
+      "model": "Blackbox AI Agent",
+      "model_id": "blackbox-ai-agent",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20241220_blackboxai_agent_v1/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 147,
+        "total": 147
+      },
+      "model": "Codev",
+      "model_id": "codev",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20250528_Codev/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 146,
+        "total": 146
+      },
+      "model": "Gru(2024-12-08)",
+      "model_id": "gru-2024-12-08",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20241208_gru/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 145,
+        "total": 145
+      },
+      "model": "ExpeRepair-v1.0",
+      "model_id": "experepair-v1-0",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20250613_ExpeRepair-v1.0/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 145,
+        "total": 145
+      },
+      "model": "Globant Code Fixer Agent",
+      "model_id": "globant-code-fixer-agent",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20241127_globant_codefixer_agent/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 144,
+        "total": 144
+      },
+      "model": "SWE-agent + Claude 3.7 Sonnet",
+      "model_id": "swe-agent-claude-3-7-sonnet",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20250226_sweagent_claude-3-7-sonnet-20250219/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 142,
+        "total": 142
+      },
+      "model": "devlo",
+      "model_id": "devlo",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20241122_devlo/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 141,
+        "total": 141
+      },
+      "model": "DARS Agent",
+      "model_id": "dars-agent",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20250205_dars_agent_claude_3.5_sonnet_deepseek_r1/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 138,
+        "total": 138
+      },
+      "model": "KGCompass + Claude 3.5 Sonnet (20241022)",
+      "model_id": "kgcompass-claude-3-5-sonnet-20241022",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20250619_KGCompass_claude-3.5-sonnet-20241022/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 135,
+        "total": 135
+      },
+      "model": "EntroPO + R2E + Qwen3-Coder-30B-A3B-Instruct",
+      "model_id": "entropo-r2e-qwen3-coder-30b-a3b-instruct-2",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20250901_entroPO_R2E_QwenCoder30BA3B/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 134,
+        "total": 134
+      },
+      "model": "Kodu-v1 + Claude-3.5 Sonnet (20241022)",
+      "model_id": "kodu-v1-claude-3-5-sonnet-20241022",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20241207_kodu_sonnet_v1/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 132,
+        "total": 132
+      },
+      "model": "CodeFuse-CGM",
+      "model_id": "codefuse-cgm",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20250310_codefuse-cgm/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 129,
+        "total": 129
+      },
+      "model": "CodeStory Aide + Mixed Models",
+      "model_id": "codestory-aide-mixed-models",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20240702_codestory_aide_mixed/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 128,
+        "total": 128
+      },
+      "model": "Lingxi",
+      "model_id": "lingxi",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20250509_Lingxi_claude-3-5-sonnet-20241022/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 125,
+        "total": 125
+      },
+      "model": "OpenHands + CodeAct v2.1 (claude-3-5-sonnet-20241022)",
+      "model_id": "openhands-codeact-v2-1-claude-3-5-sonnet-20241022",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20241025_OpenHands-CodeAct-2.1-sonnet-20241022/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 125,
+        "total": 125
+      },
+      "model": "Codart AI",
+      "model_id": "codart-ai",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20250515_codartai/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 124,
+        "total": 124
+      },
+      "model": "PatchKitty-0.9 + Claude-3.5 Sonnet (20241022)",
+      "model_id": "patchkitty-0-9-claude-3-5-sonnet-20241022",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20241220_PatchKitty-0.9_claude-3.5-sonnet-20241022/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 123,
+        "total": 123
+      },
+      "model": "OrcaLoca + Agentless-1.5 + Claude-3.5 Sonnet (20241022)",
+      "model_id": "orcaloca-agentless-1-5-claude-3-5-sonnet-20241022",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20250113_OrcaLoca/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 123,
+        "total": 123
+      },
+      "model": "Composio SWE-Kit (2024-10-30)",
+      "model_id": "composio-swe-kit-2024-10-30",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20241030_composio_swekit/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 122,
+        "total": 122
+      },
+      "model": "Agentless-1.5 + Claude-3.5 Sonnet (20241022)",
+      "model_id": "agentless-1-5-claude-3-5-sonnet-20241022",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20241202_agentless-1.5_claude-3.5-sonnet-20241022/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 119,
+        "total": 119
+      },
+      "model": "OpenCSG Starship Agentic Coder + GPT 4 (0806)",
+      "model_id": "opencsg-starship-agentic-coder-gpt-4-0806",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20250113_OpenCSG-Starship-Agentic-Coder_gpt4o/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 118,
+        "total": 118
+      },
+      "model": "Bytedance MarsCode Agent",
+      "model_id": "bytedance-marscode-agent",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20240912_marscode-agent-dev/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 117,
+        "total": 117
+      },
+      "model": "Moatless Tools + Claude 3.5 Sonnet (20241022)",
+      "model_id": "moatless-tools-claude-3-5-sonnet-20241022",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20250114_moatless_claude-3.5-sonnet-20241022/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 115,
+        "total": 115
+      },
+      "model": "Moatless Tools + Claude 3.5 Sonnet (20241022)",
+      "model_id": "moatless-tools-claude-3-5-sonnet-20241022-2",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20241117_moatless_claude-3.5-sonnet-20241022/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 115,
+        "total": 115
+      },
+      "model": "Honeycomb",
+      "model_id": "honeycomb",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20240820_honeycomb/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 114,
+        "total": 114
+      },
+      "model": "AbanteAI MentatBot + GPT 4o (2024-05-13)",
+      "model_id": "abanteai-mentatbot-gpt-4o-2024-05-13",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20240627_abanteai_mentatbot_gpt4o/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 111,
+        "total": 111
+      },
+      "model": "Patched.Codes Patchwork",
+      "model_id": "patched-codes-patchwork",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20250104_patched_codes_claude-3.5-sonnet-20241022/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 110,
+        "total": 110
+      },
+      "model": "KGCompass + DeepSeek V3",
+      "model_id": "kgcompass-deepseek-v3",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20250609_KGCompass_deepseek-v3/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 108,
+        "total": 108
+      },
+      "model": "AppMap Navie v2",
+      "model_id": "appmap-navie-v2",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20241113_navie-2-gpt4o-sonnet/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 107,
+        "total": 107
+      },
+      "model": "CodeFuse-AAIS",
+      "model_id": "codefuse-aais",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20250104_codefuse-aais/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 107,
+        "total": 107
+      },
+      "model": "Gru(2024-08-11)",
+      "model_id": "gru-2024-08-11",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20240811_gru/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 105,
+        "total": 105
+      },
+      "model": "Isoform",
+      "model_id": "isoform-2",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20240829_Isoform/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 102,
+        "total": 102
+      },
+      "model": "SuperCoder2.0",
+      "model_id": "supercoder2-0",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20240806_SuperCoder2.0/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 102,
+        "total": 102
+      },
+      "model": "Bytedance MarsCode Agent + GPT 4o (2024-05-13)",
+      "model_id": "bytedance-marscode-agent-gpt-4o-2024-05-13",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20240723_marscode-agent-dev/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 99,
+        "total": 99
+      },
+      "model": "Alibaba Lingma Agent",
+      "model_id": "alibaba-lingma-agent",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20240622_Lingma_Agent/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 97,
+        "total": 97
+      },
+      "model": "Agentless Lite + O3 Mini (20250214)",
+      "model_id": "agentless-lite-o3-mini-20250214",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20250214_agentless_lite_o3_mini/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 96,
+        "total": 96
+      },
+      "model": "Agentless-1.5 + GPT 4o (2024-05-13)",
+      "model_id": "agentless-1-5-gpt-4o-2024-05-13",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20241028_agentless-1.5_gpt4o/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 94,
+        "total": 94
+      },
+      "model": "Factory Code Droid",
+      "model_id": "factory-code-droid",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20240617_factory_code_droid/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 94,
+        "total": 94
+      },
+      "model": "CodeShellTester + GPT 4o (2024-05-13)",
+      "model_id": "codeshelltester-gpt-4o-2024-05-13",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20241111_codeshelltester_gpt4o/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 92,
+        "total": 92
+      },
+      "model": "Moatless Tools + Deepseek V3",
+      "model_id": "moatless-tools-deepseek-v3",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20250111_moatless_deepseek_v3/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 92,
+        "total": 92
+      },
+      "model": "AutoCodeRover (v20240620) + GPT 4o (2024-05-13)",
+      "model_id": "autocoderover-v20240620-gpt-4o-2024-05-13",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20240621_autocoderover-v20240620/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 91,
+        "total": 91
+      },
+      "model": "Aegis - o3-mini_1.0",
+      "model_id": "aegis-o3-mini-1-0",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20250207_aegis_o3mini/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 90,
+        "total": 90
+      },
+      "model": "AIGCode Infant-Coder(2024-08-30)",
+      "model_id": "aigcode-infant-coder-2024-08-30",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20240908_infant_gpt4o/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 90,
+        "total": 90
+      },
+      "model": "Kortix AI (claude-3-5-sonnet-20241022)",
+      "model_id": "kortix-ai-claude-3-5-sonnet-20241022",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20241203_KortixAI-AgentPress-sonnet-20241022/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 89,
+        "total": 89
+      },
+      "model": "Amazon Q Developer Agent (v20240719-dev)",
+      "model_id": "amazon-q-developer-agent-v20240719-dev",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20240721_amazon-q-developer-agent-20240719-dev/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 89,
+        "total": 89
+      },
+      "model": "Agentless + RepoGraph + GPT-4o",
+      "model_id": "agentless-repograph-gpt-4o",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20240808_RepoGraph_gpt4o/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 85,
+        "total": 85
+      },
+      "model": "CodeR + GPT 4 (1106)",
+      "model_id": "coder-gpt-4-1106",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20240604_CodeR/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 84,
+        "total": 84
+      },
+      "model": "reproducedRG",
+      "model_id": "reproducedrg",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20241117_reproducedRG_gpt4o/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 83,
+        "total": 83
+      },
+      "model": "SIMA + GPT 4o (2024-05-13)",
+      "model_id": "sima-gpt-4o-2024-05-13",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20240706_sima_gpt4o/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 82,
+        "total": 82
+      },
+      "model": "MASAI + GPT 4o (2024-05-13)",
+      "model_id": "masai-gpt-4o-2024-05-13",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20240612_MASAI_gpt4o/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 82,
+        "total": 82
+      },
+      "model": "Agentless + GPT 4o (2024-05-13)",
+      "model_id": "agentless-gpt-4o-2024-05-13",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20240630_agentless_gpt4o/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 80,
+        "total": 80
+      },
+      "model": "Moatless Tools + Claude 3.5 Sonnet",
+      "model_id": "moatless-tools-claude-3-5-sonnet",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20240623_moatless_claude35sonnet/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 80,
+        "total": 80
+      },
+      "model": "OpenHands + CodeAct v1.8",
+      "model_id": "openhands-codeact-v1-8",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20240725_opendevin_codeact_v1.8_claude35sonnet/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 80,
+        "total": 80
+      },
+      "model": "IBM Research Agent-101",
+      "model_id": "ibm-research-agent-101",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20240612_IBM_Research_Agent101/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 79,
+        "total": 79
+      },
+      "model": "Aider + GPT 4o & Claude 3 Opus",
+      "model_id": "aider-gpt-4o-claude-3-opus",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20240523_aider/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 76,
+        "total": 76
+      },
+      "model": "HyperAgent",
+      "model_id": "hyperagent",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20240925_hyperagent_lite1/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 74,
+        "total": 74
+      },
+      "model": "SWE-Fixer (Qwen2.5-7b retriever + Qwen2.5-72b editor)",
+      "model_id": "swe-fixer-qwen2-5-7b-retriever-qwen2-5-72b-editor",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20250306_SWE-Fixer_Qwen2.5-7b-retriever_Qwen2.5-72b-editor/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 74,
+        "total": 74
+      },
+      "model": "Moatless Tools + GPT 4o (2024-05-13)",
+      "model_id": "moatless-tools-gpt-4o-2024-05-13",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20240617_moatless_gpt4o/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 71,
+        "total": 71
+      },
+      "model": "IBM AI Agent SWE-1.0 (with open LLMs)",
+      "model_id": "ibm-ai-agent-swe-1-0-with-open-llms",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20241016_IBM-SWE-1.0/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 71,
+        "total": 71
+      },
+      "model": "OpenCSG StarShip CodeGenAgent + GPT 4 (0613)",
+      "model_id": "opencsg-starship-codegenagent-gpt-4-0613",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20240524_opencsg_starship_gpt4/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 70,
+        "total": 70
+      },
+      "model": "SWE-Fixer (Qwen2.5-7b retriever + Qwen2.5-72b editor) 20241128",
+      "model_id": "swe-fixer-qwen2-5-7b-retriever-qwen2-5-72b-editor-20241128",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20241128_SWE-Fixer_Qwen2.5-7b-retriever_Qwen2.5-72b-editor_20241128/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 69,
+        "total": 69
+      },
+      "model": "SWE-agent + Claude 3.5 Sonnet",
+      "model_id": "swe-agent-claude-3-5-sonnet",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20240620_sweagent_claude3.5sonnet/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 65,
+        "total": 65
+      },
+      "model": "AppMap Navie + GPT 4o (2024-05-13)",
+      "model_id": "appmap-navie-gpt-4o-2024-05-13",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20240615_appmap-navie_gpt4o/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 65,
+        "total": 65
+      },
+      "model": "Bytedance AutoSE (based on SWE-Agent) + GPT4/GPT4o Mixed (20240828)",
+      "model_id": "bytedance-autose-based-on-swe-agent-gpt4-gpt4o-mixed-20240828",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20240828_autose_mixed/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 61,
+        "total": 61
+      },
+      "model": "Amazon Q Developer Agent (v20240430-dev)",
+      "model_id": "amazon-q-developer-agent-v20240430-dev",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20240509_amazon-q-developer-agent-20240430-dev/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 57,
+        "total": 57
+      },
+      "model": "AutoCodeRover (v20240408) + GPT 4 (0125)",
+      "model_id": "autocoderover-v20240408-gpt-4-0125",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20240530_autocoderover-v20240408/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 55,
+        "total": 55
+      },
+      "model": "SWE-agent + GPT 4o (2024-05-13)",
+      "model_id": "swe-agent-gpt-4o-2024-05-13",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20240728_sweagent_gpt4o/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 54,
+        "total": 54
+      },
+      "model": "SWE-agent + GPT 4 (1106)",
+      "model_id": "swe-agent-gpt-4-1106",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20240402_sweagent_gpt4/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 49,
+        "total": 49
+      },
+      "model": "MCTS-Refine-7B",
+      "model_id": "mcts-refine-7b",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20250627_agentless_MCTS-Refine-7B/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 35,
+        "total": 35
+      },
+      "model": "SWE-agent + Claude 3 Opus",
+      "model_id": "swe-agent-claude-3-opus",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20240402_sweagent_claude3opus/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 13,
+        "total": 13
+      },
+      "model": "RAG + Claude 3 Opus",
+      "model_id": "rag-claude-3-opus",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20240402_rag_claude3opus/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 9,
+        "total": 9
+      },
+      "model": "RAG + Claude 2",
+      "model_id": "rag-claude-2",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20231010_rag_claude2/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 8,
+        "total": 8
+      },
+      "model": "RAG + GPT 4 (1106)",
+      "model_id": "rag-gpt-4-1106",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20240402_rag_gpt4/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 4,
+        "total": 4
+      },
+      "model": "RAG + SWE-Llama 7B",
+      "model_id": "rag-swe-llama-7b",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20231010_rag_swellama7b/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 3,
+        "total": 3
+      },
+      "model": "RAG + SWE-Llama 13B",
+      "model_id": "rag-swe-llama-13b",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20231010_rag_swellama13b/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 1,
+        "total": 1
+      },
+      "model": "RAG + ChatGPT 3.5",
+      "model_id": "rag-chatgpt-3-5",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite/20231010_rag_gpt35/results/results.json"
+    }
+  ],
+  "snapshot_id": "20260216T063705Z_09eb2d3",
+  "source": {
+    "experiments_base": "https://raw.githubusercontent.com/SWE-bench/experiments/6c148fe5011566a441940dfd13b72792a3e8c012/evaluation/lite",
+    "experiments_commit": {
+      "date": "2026-01-06T06:52:12+00:00",
+      "html_url": "https://github.com/SWE-bench/experiments/commit/6c148fe5011566a441940dfd13b72792a3e8c012",
+      "message": "Change swe-bench-experiments -> swe-bench-submissions",
+      "sha": "6c148fe5011566a441940dfd13b72792a3e8c012"
+    },
+    "experiments_fallback": false,
+    "experiments_repo": "SWE-bench/experiments",
+    "leaderboard_commit": {
+      "date": "2026-02-16T06:37:05+00:00",
+      "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/09eb2d36d2c5a991aece88f2b7245c1077df9b4a",
+      "message": "feat: Add trajs_docent links for multilingual leaderboard entries\n\n- Added Docent dashboard links for all 11 multilingual model entries\n- Enables visualization of model trajectories and reasoning patterns\n- Models updated: Gemini 3 Flash/Pro, Claude 4.6 Opus, Claude 4.5\n  Opus/Sonnet/Haiku, GLM-5, Kimi K2.5, GPT-5.2 High, GPT-5 Mini,\n  DeepSeek 3.2",
+      "raw_url": "https://raw.githubusercontent.com/SWE-bench/swe-bench.github.io/09eb2d36d2c5a991aece88f2b7245c1077df9b4a/data/leaderboards.json",
+      "sha": "09eb2d36d2c5a991aece88f2b7245c1077df9b4a"
+    },
+    "leaderboard_path": "data/leaderboards.json",
+    "leaderboard_repo": "SWE-bench/swe-bench.github.io"
+  },
+  "status": "ok",
+  "status_message": null
+}

@@ -1,0 +1,9 @@
+rank_mass,start_position,end_position,common_rank_low,common_rank_high,tier,size,observed_rank_start,observed_rank_end
+80,1,5,4,4,1,5,1,5
+80,6,7,6,7,2,2,6,7
+90,1,6,4,4,1,6,1,6
+90,7,7,6,7,2,1,7,7
+95,1,6,4,4,1,6,1,6
+95,7,7,6,7,2,1,7,7
+99,1,6,3,5,1,6,1,6
+99,7,7,6,7,2,1,7,7

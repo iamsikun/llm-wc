@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% block title %}For benchmark designers · {{ site.title }}{% endblock %}
+{% block content %}
+<section class="bench-head">
+  <div class="wrap">
+    <p class="eyebrow">For benchmark designers</p>
+    <h1 style="font-size:clamp(1.9rem,4vw,2.6rem)">How many tasks does a leaderboard need?</h1>
+    <p class="lede">A benchmark's tasks set how finely it can rank models. Plan enough tasks for the precision you need,
+      and publish the uncertainty that remains.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0.5rem">
+  <div class="wrap grid two" style="align-items:start">
+    <div class="panel" style="margin:0" id="sizing">
+      <p class="eyebrow">Task-pool sizing</p>
+      <h2>Tasks needed for a target inflation</h2>
+      <p class="muted">Under the exact-tier approximation, the top score's expected inflation is about {% filter tex %}\delta/\sqrt{N}{% endfilter %}, so
+        halving it takes about four times as many tasks. To reach a target inflation {% filter tex %}\varepsilon{% endfilter %}, plan</p>
+      {% filter tex(true) %}N \gtrsim (\delta/\varepsilon)^2.{% endfilter %}
+      <p class="muted">Here {% filter tex %}\delta{% endfilter %} is the winning gap within the top tier. The calculator estimates it from the
+        leaderboard's current inflation at #1, {% filter tex %}\hat{b}_N(1){% endfilter %}, as {% filter tex %}\hat\delta = \sqrt{N}\,\hat{b}_N(1){% endfilter %}.</p>
+      <div class="controls" style="margin-top:1rem">
+        <label class="field" style="flex:1 1 220px">Leaderboard<select id="size-bench"></select></label>
+        <label class="field" style="flex:1 1 160px"><span>Target inflation at #1, {% filter tex %}\varepsilon{% endfilter %} (pp)</span><input type="number" id="size-eps" min="0.01" max="10" step="0.05" value="0.5"></label>
+      </div>
+      <div class="stats" style="grid-template-columns:repeat(auto-fit,minmax(150px,1fr))">
+        <div class="stat"><div class="label">Tasks needed</div><div class="value" id="size-n">—</div><div class="note" id="size-n-note"></div></div>
+        <div class="stat"><div class="label">Inflation at #1 today</div><div class="value" id="size-now">—</div><div class="note" id="size-now-note"></div></div>
+      </div>
+      <div class="table-wrap" style="margin-top:1rem">
+        <table><thead><tr><th class="num">Target {% filter tex %}\varepsilon{% endfilter %} (pp)</th><th class="num">Tasks needed</th><th class="num">× today's tasks</th></tr></thead>
+          <tbody id="size-table"></tbody></table>
+      </div>
+      <p class="small muted" style="margin-top:0.8rem">These are planning sizes. They hold the models, the task
+        distribution, and the correlations between models fixed. Close gaps or a changing model pool change the
+        extrapolation.</p>
+    </div>
+
+    <div class="panel" style="margin:0">
+      <p class="eyebrow">Reporting checklist</p>
+      <h2>What to publish with a ranking</h2>
+      <ul class="checklist">
+        <li><span class="tick">✓</span><div><strong>Per-task scores for every model</strong><span class="d">The task-by-model
+          matrix makes uncertainty analysis possible, including this one. Give tasks stable IDs.</span></div></li>
+        <li><span class="tick">✓</span><div><strong>The same task pool for every entry</strong><span class="d">If some
+          models ran on a subset, state which.</span></div></li>
+        <li><span class="tick">✓</span><div><strong>Adjusted scores next to raw scores</strong><span class="d">The raw
+          leader's score tends to overstate its expected score on fresh tasks. Show the adjustment at each position.</span></div></li>
+        <li><span class="tick">✓</span><div><strong>Rank ranges and tiers</strong><span class="d">Say which models the
+          tasks cannot order, at a stated level such as 80%.</span></div></li>
+        <li><span class="tick">✓</span><div><strong>The rank probability matrix</strong><span class="d">Show how ranking
+          uncertainty spreads beyond the leaders.</span></div></li>
+        <li><span class="tick">✓</span><div><strong>Score definition and target population</strong><span class="d">What
+          a task is, how it is scored, and what population the tasks stand for, including judge and version
+          details.</span></div></li>
+        <li><span class="tick">✓</span><div><strong>Dependence structure</strong><span class="d">Clusters such as
+          repositories or domains, so others can resample at the right level.</span></div></li>
+        <li><span class="tick">✓</span><div><strong>Versioned snapshots</strong><span class="d">Date every release of the
+          leaderboard so results can be reproduced as entries are added.</span></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap prose">
+    <h2>Share your leaderboard's data</h2>
+    <p>Any table with one row per (task, model) pair and a score in [0, 1] works, in CSV, JSON Lines, or Parquet:</p>
+    <pre><code>task_id,model_id,score
+django__django-11099,model-a,1
+django__django-11099,model-b,0
+astropy__astropy-12907,model-a,0.5</code></pre>
+    <p>Check it with the feasibility probe, then propose it on the <a href="coverage.html">coverage page</a>:</p>
+    <pre><code>uv run python -m llm_wc.tracker probe scores.csv
+uv run python -m llm_wc.tracker probe hf:your-org/your-leaderboard-results</code></pre>
+  </div>
+</section>
+{% endblock %}
+{% block scripts %}
+<script>window.SUMMARY = {{ summary | tojson_compact }};</script>
+<script src="static/design.js?v={{ v }}"></script>
+{% endblock %}

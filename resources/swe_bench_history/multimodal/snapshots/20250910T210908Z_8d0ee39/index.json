@@ -1,0 +1,397 @@
+{
+  "counts": {
+    "entries": 21,
+    "failures": 10,
+    "parsed_models": 11
+  },
+  "failures": [
+    {
+      "entry": {
+        "checked": true,
+        "date": "2024-10-06",
+        "folder": "20241006_SWE-agent_M_gpt4o",
+        "logo": [
+          "https://avatars.githubusercontent.com/u/166046056?s=200&v=4"
+        ],
+        "logs": null,
+        "name": "SWE-agent Multimodal + GPT 4o (2024-08-06)",
+        "os_model": false,
+        "os_system": true,
+        "resolved": 12.19,
+        "site": "https://github.com/SWE-agent/SWE-agent",
+        "tags": [
+          "Org: SWE-agent",
+          "System: Attempts - 1"
+        ],
+        "trajs": null,
+        "warning": null
+      },
+      "error": "candidate_scan_failed: Unsupported trajectory payload structure: could not identify instance results",
+      "model": "SWE-agent Multimodal + GPT 4o (2024-08-06)",
+      "model_id": "swe-agent-multimodal-gpt-4o-2024-08-06",
+      "trajectory_url": null
+    },
+    {
+      "entry": {
+        "checked": true,
+        "date": "2024-10-06",
+        "folder": "20241006_SWE-agent_claude3.5",
+        "logo": [
+          "https://avatars.githubusercontent.com/u/166046056?s=200&v=4"
+        ],
+        "logs": null,
+        "name": "SWE-agent + Claude Sonnet 3.5",
+        "os_model": false,
+        "os_system": true,
+        "resolved": 12.19,
+        "site": "https://github.com/SWE-agent/SWE-agent",
+        "tags": [
+          "Org: SWE-agent",
+          "System: Attempts - 1"
+        ],
+        "trajs": null,
+        "warning": null
+      },
+      "error": "candidate_scan_failed: Unsupported trajectory payload structure: could not identify instance results",
+      "model": "SWE-agent + Claude Sonnet 3.5",
+      "model_id": "swe-agent-claude-sonnet-3-5",
+      "trajectory_url": null
+    },
+    {
+      "entry": {
+        "checked": true,
+        "date": "2024-10-06",
+        "folder": "20241006_SWE-agent_JS_claude3.5",
+        "logo": [
+          "https://avatars.githubusercontent.com/u/166046056?s=200&v=4"
+        ],
+        "logs": null,
+        "name": "SWE-agent JavaScript + Claude Sonnet 3.5",
+        "os_model": false,
+        "os_system": true,
+        "resolved": 11.99,
+        "site": "https://github.com/SWE-agent/SWE-agent",
+        "tags": [
+          "Org: SWE-agent",
+          "System: Attempts - 1"
+        ],
+        "trajs": null,
+        "warning": null
+      },
+      "error": "candidate_scan_failed: Unsupported trajectory payload structure: could not identify instance results",
+      "model": "SWE-agent JavaScript + Claude Sonnet 3.5",
+      "model_id": "swe-agent-javascript-claude-sonnet-3-5",
+      "trajectory_url": null
+    },
+    {
+      "entry": {
+        "checked": true,
+        "date": "2024-10-06",
+        "folder": "20241006_SWE-agent_gpt4o",
+        "logo": [
+          "https://avatars.githubusercontent.com/u/166046056?s=200&v=4"
+        ],
+        "logs": null,
+        "name": "SWE-agent + GPT 4o (2024-08-06)",
+        "os_model": false,
+        "os_system": true,
+        "resolved": 11.99,
+        "site": "https://github.com/SWE-agent/SWE-agent",
+        "tags": [
+          "Org: SWE-agent",
+          "System: Attempts - 1"
+        ],
+        "trajs": null,
+        "warning": null
+      },
+      "error": "candidate_scan_failed: Unsupported trajectory payload structure: could not identify instance results",
+      "model": "SWE-agent + GPT 4o (2024-08-06)",
+      "model_id": "swe-agent-gpt-4o-2024-08-06",
+      "trajectory_url": null
+    },
+    {
+      "entry": {
+        "checked": true,
+        "date": "2024-10-06",
+        "folder": "20241006_SWE-agent_M_claude3.5",
+        "logo": [
+          "https://avatars.githubusercontent.com/u/166046056?s=200&v=4"
+        ],
+        "logs": null,
+        "name": "SWE-agent Multimodal + Claude 3.5 Sonnet",
+        "os_model": false,
+        "os_system": true,
+        "resolved": 11.41,
+        "site": "https://github.com/SWE-agent/SWE-agent",
+        "tags": [
+          "Model: claude-3-5-sonnet-20241022",
+          "Org: SWE-agent",
+          "System: Attempts - 1"
+        ],
+        "trajs": null,
+        "warning": null
+      },
+      "error": "candidate_scan_failed: Unsupported trajectory payload structure: could not identify instance results",
+      "model": "SWE-agent Multimodal + Claude 3.5 Sonnet",
+      "model_id": "swe-agent-multimodal-claude-3-5-sonnet",
+      "trajectory_url": null
+    },
+    {
+      "entry": {
+        "checked": true,
+        "date": "2024-10-06",
+        "folder": "20241006_SWE-agent_JS_gpt4o",
+        "logo": [
+          "https://avatars.githubusercontent.com/u/166046056?s=200&v=4"
+        ],
+        "logs": null,
+        "name": "SWE-agent JavaScript + GPT 4o (2024-08-06)",
+        "os_model": false,
+        "os_system": true,
+        "resolved": 9.28,
+        "site": "https://github.com/SWE-agent/SWE-agent",
+        "tags": [
+          "Org: SWE-agent",
+          "System: Attempts - 1"
+        ],
+        "trajs": null,
+        "warning": null
+      },
+      "error": "candidate_scan_failed: Unsupported trajectory payload structure: could not identify instance results",
+      "model": "SWE-agent JavaScript + GPT 4o (2024-08-06)",
+      "model_id": "swe-agent-javascript-gpt-4o-2024-08-06",
+      "trajectory_url": null
+    },
+    {
+      "entry": {
+        "checked": true,
+        "date": "2024-10-06",
+        "folder": "20241006_Agentless_claude3.5",
+        "logo": [
+          "https://brand.illinois.edu/wp-content/uploads/2024/02/Color-Variation-Orange-Block-I-White-Background.png"
+        ],
+        "logs": null,
+        "name": "Agentless + Claude 3.5 Sonnet",
+        "os_model": false,
+        "os_system": true,
+        "resolved": 6.19,
+        "site": "https://github.com/OpenAutoCoder/Agentless",
+        "tags": [
+          "Model: claude-3-5-sonnet-20241022",
+          "Org: Agentless",
+          "System: Attempts - 1"
+        ],
+        "trajs": null,
+        "warning": null
+      },
+      "error": "candidate_scan_failed: Unsupported trajectory payload structure: could not identify instance results",
+      "model": "Agentless + Claude 3.5 Sonnet",
+      "model_id": "agentless-claude-3-5-sonnet",
+      "trajectory_url": null
+    },
+    {
+      "entry": {
+        "checked": true,
+        "date": "2024-10-06",
+        "folder": "20241006_RAG_gpt4o",
+        "logo": [
+          "https://avatars.githubusercontent.com/u/139597579?s=200&v=4"
+        ],
+        "logs": null,
+        "name": "RAG + GPT 4o (2024-08-06)",
+        "os_model": false,
+        "os_system": true,
+        "resolved": 6.0,
+        "site": "https://github.com/SWE-bench/SWE-bench",
+        "tags": [
+          "Model: gpt-4o-2024-08-06",
+          "System: Attempts - 1"
+        ],
+        "trajs": null,
+        "warning": null
+      },
+      "error": "candidate_scan_failed: Unsupported trajectory payload structure: could not identify instance results",
+      "model": "RAG + GPT 4o (2024-08-06)",
+      "model_id": "rag-gpt-4o-2024-08-06",
+      "trajectory_url": null
+    },
+    {
+      "entry": {
+        "checked": true,
+        "date": "2024-10-06",
+        "folder": "20241006_RAG_claude3.5",
+        "logo": [
+          "https://avatars.githubusercontent.com/u/139597579?s=200&v=4"
+        ],
+        "logs": null,
+        "name": "RAG + Claude 3.5 Sonnet",
+        "os_model": false,
+        "os_system": true,
+        "resolved": 5.03,
+        "site": "https://github.com/SWE-bench/SWE-bench",
+        "tags": [
+          "Model: claude-3-5-sonnet-20241022",
+          "System: Attempts - 1"
+        ],
+        "trajs": null,
+        "warning": null
+      },
+      "error": "candidate_scan_failed: Unsupported trajectory payload structure: could not identify instance results",
+      "model": "RAG + Claude 3.5 Sonnet",
+      "model_id": "rag-claude-3-5-sonnet",
+      "trajectory_url": null
+    },
+    {
+      "entry": {
+        "checked": true,
+        "date": "2024-10-06",
+        "folder": "20241006_Agentless_gpt4o",
+        "logo": [
+          "https://brand.illinois.edu/wp-content/uploads/2024/02/Color-Variation-Orange-Block-I-White-Background.png"
+        ],
+        "logs": null,
+        "name": "Agentless + GPT 4o (2024-08-06)",
+        "os_model": false,
+        "os_system": true,
+        "resolved": 3.09,
+        "site": "https://github.com/OpenAutoCoder/Agentless",
+        "tags": [
+          "Model: gpt-4o-2024-08-06",
+          "Org: Agentless",
+          "System: Attempts - 1"
+        ],
+        "trajs": null,
+        "warning": null
+      },
+      "error": "candidate_scan_failed: Unsupported trajectory payload structure: could not identify instance results",
+      "model": "Agentless + GPT 4o (2024-08-06)",
+      "model_id": "agentless-gpt-4o-2024-08-06",
+      "trajectory_url": null
+    }
+  ],
+  "leaderboard": "multimodal",
+  "models": [
+    {
+      "counts": {
+        "resolved": 186,
+        "total": 186
+      },
+      "model": "GUIRepair + o3 (2025-04-16)",
+      "model_id": "guirepair-o3-2025-04-16",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/76db58ea4c5b8d335dd68ab45c5ab27008ea176a/evaluation/multimodal/20250701_GUIRepair_o3/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 184,
+        "total": 184
+      },
+      "model": "Refact.ai Agent",
+      "model_id": "refact-ai-agent",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/76db58ea4c5b8d335dd68ab45c5ab27008ea176a/evaluation/multimodal/20250611_Refact_Agent_claude-4-sonnet/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 178,
+        "total": 178
+      },
+      "model": "OpenHands-Versa (Claude-Sonnet 4)",
+      "model_id": "openhands-versa-claude-sonnet-4",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/76db58ea4c5b8d335dd68ab45c5ab27008ea176a/evaluation/multimodal/20250528_OpenHands-Versa-claude4/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 175,
+        "total": 175
+      },
+      "model": "GUIRepair + o4-mini (2025-04-16)",
+      "model_id": "guirepair-o4-mini-2025-04-16",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/76db58ea4c5b8d335dd68ab45c5ab27008ea176a/evaluation/multimodal/20250531_GUIRepair_o4mini/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 162,
+        "total": 162
+      },
+      "model": "OpenHands-Versa (Claude-3.7 Sonnet)",
+      "model_id": "openhands-versa-claude-3-7-sonnet",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/76db58ea4c5b8d335dd68ab45c5ab27008ea176a/evaluation/multimodal/20250509_OpenHands-Versa_claude3.7/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 161,
+        "total": 161
+      },
+      "model": "GUIRepair + GPT 4.1 (2025-04-14)",
+      "model_id": "guirepair-gpt-4-1-2025-04-14",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/76db58ea4c5b8d335dd68ab45c5ab27008ea176a/evaluation/multimodal/20250531_GUIRepair_gpt41/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 158,
+        "total": 158
+      },
+      "model": "Zencoder (2025-04-01)",
+      "model_id": "zencoder-2025-04-01",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/76db58ea4c5b8d335dd68ab45c5ab27008ea176a/evaluation/multimodal/20250401_zencoder/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 157,
+        "total": 157
+      },
+      "model": "GUIRepair + GPT 4o (2024-08-06)",
+      "model_id": "guirepair-gpt-4o-2024-08-06",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/76db58ea4c5b8d335dd68ab45c5ab27008ea176a/evaluation/multimodal/20250531_GUIRepair_gpt4o/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 153,
+        "total": 153
+      },
+      "model": "Globant Code Fixer Agent",
+      "model_id": "globant-code-fixer-agent",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/76db58ea4c5b8d335dd68ab45c5ab27008ea176a/evaluation/multimodal/20250325_globant_codefixer_agent/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 140,
+        "total": 140
+      },
+      "model": "Zencoder (2025-03-10)",
+      "model_id": "zencoder-2025-03-10",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/76db58ea4c5b8d335dd68ab45c5ab27008ea176a/evaluation/multimodal/20250311_zencoder/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 131,
+        "total": 131
+      },
+      "model": "Agentless Lite + Claude-3.5 Sonnet",
+      "model_id": "agentless-lite-claude-3-5-sonnet",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/76db58ea4c5b8d335dd68ab45c5ab27008ea176a/evaluation/multimodal/20250226_agentless_lite_claude3.5/results/results.json"
+    }
+  ],
+  "snapshot_id": "20250910T210908Z_8d0ee39",
+  "source": {
+    "experiments_base": "https://raw.githubusercontent.com/SWE-bench/experiments/76db58ea4c5b8d335dd68ab45c5ab27008ea176a/evaluation/multimodal",
+    "experiments_commit": {
+      "date": "2025-07-03T22:08:08+00:00",
+      "html_url": "https://github.com/SWE-bench/experiments/commit/76db58ea4c5b8d335dd68ab45c5ab27008ea176a",
+      "message": "Add GUIRepair (o3) for SWE-bench M (#288)\n\n* GUIRepair for SWE-bench M\n\n* GUIRepair for SWE-bench M\n\n* GUIRepair for SWE-bench M\n\n* GUIRepair for SWE-bench M: replace local image paths with URLs\n\n* Add results\n\n* Add results\n\n* Add results\n\n* Add GUIRepair (o3) to SWE-bench M\n\n* Add results\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+      "sha": "76db58ea4c5b8d335dd68ab45c5ab27008ea176a"
+    },
+    "experiments_fallback": false,
+    "experiments_repo": "SWE-bench/experiments",
+    "leaderboard_commit": {
+      "date": "2025-09-10T21:09:08+00:00",
+      "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/8d0ee39d611d2c758f1d0578c25c65cb24592591",
+      "message": "Add glm 4.5",
+      "raw_url": "https://raw.githubusercontent.com/SWE-bench/swe-bench.github.io/8d0ee39d611d2c758f1d0578c25c65cb24592591/data/leaderboards.json",
+      "sha": "8d0ee39d611d2c758f1d0578c25c65cb24592591"
+    },
+    "leaderboard_path": "data/leaderboards.json",
+    "leaderboard_repo": "SWE-bench/swe-bench.github.io"
+  },
+  "status": "ok",
+  "status_message": null
+}

@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}About · {{ site.title }}{% endblock %}
+{% block content %}
+<section class="bench-head">
+  <div class="wrap">
+    <p class="eyebrow">About</p>
+    <h1 style="font-size:clamp(1.9rem,4vw,2.6rem)">{{ site.paper_title }}</h1>
+    <p class="lede">{{ site.authors | join(", ") }}</p>
+    <div class="actions">
+      {% if site.paper_url %}<a class="btn primary" href="{{ site.paper_url }}">Read the paper</a>
+      {% else %}<span class="btn" aria-disabled="true">Paper · coming soon</span>{% endif %}
+      <a class="btn" href="{{ site.repo_url }}">Code and data</a>
+    </div>
+  </div>
+</section>
+<section class="section" style="padding-top:0.5rem">
+  <div class="wrap prose">
+    <h2>The paper</h2>
+    <p>Ranking noisy benchmark scores tends to inflate the scores of top-ranked models and deflate those near the bottom.
+      The paper develops an {% filter tex %}m{% endfilter %}-out-of-{% filter tex %}N{% endfilter %} bootstrap that estimates and corrects for this rank-induced bias at every
+      leaderboard position, reducing it to lower order under exact population tiers, and
+      reports the rank uncertainty that remains as RULER: a rank probability matrix, rank-mass intervals, and tiers. It
+      audits {{ headline.n_settings }} settings from {{ headline.families }} benchmark families and validates the
+      correction with sample splitting and a calibrated simulation.</p>
+
+    <h2>This site</h2>
+    <p>The tracker checks each leaderboard's source {{ site.update_cadence }} and runs the same analysis on every new
+      snapshot. Each leaderboard page lists its snapshots by source date and links each one to its upstream revision.
+      For the snapshots analyzed in the paper, every build checks the numbers against the paper's committed results.</p>
+    <p>Everything is reproducible from the repository: the paper's experiments, the tracker's snapshots (with SHA-256
+      checksums and upstream revisions), and the code that builds these pages.</p>
+
+    <h2>Data and licenses</h2>
+    <p>The tracker stores only task IDs, model IDs, and scores. Each
+      source keeps its own license:</p>
+    <ul>
+      {% for key, src in registry_sources %}<li><a href="{{ src.homepage }}">{{ src.label }}</a> · {{ src.upstream }} · {{ src.license }}</li>{% endfor %}
+    </ul>
+
+    <h2 id="cite">Cite</h2>
+    {% if site.bibtex %}<pre><code>{{ site.bibtex }}</code></pre>
+    {% else %}<p>A citation entry will be posted here with the paper.</p>{% endif %}
+
+    <h2>Contact</h2>
+    <p>Questions, corrections, and new leaderboards are welcome as <a href="{{ site.repo_url }}/issues">GitHub issues</a>.</p>
+  </div>
+</section>
+{% endblock %}

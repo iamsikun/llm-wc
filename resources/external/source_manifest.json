@@ -1,0 +1,71 @@
+{
+  "files": {
+    "alpaca_eval_2_annotations.csv.gz": {
+      "bytes": 8572766,
+      "rows": 177892,
+      "sha256": "5369f4da6adfb388716cee826e0bffab261b55019f8aed5973358d1994292017"
+    },
+    "livebench_model_judgment.csv.gz": {
+      "bytes": 825690,
+      "rows": 60372,
+      "sha256": "dd15862c609f567595691bb5e0ea6d65197d953e40fc0698adc511862fd24887"
+    },
+    "wildbench_v2_scores.csv.gz": {
+      "bytes": 876339,
+      "rows": 64449,
+      "sha256": "f408862211fb2cde50ead3c0d1bedce1f16c22b1c951c7ba16ccdbb77050762d"
+    }
+  },
+  "format_version": 1,
+  "scope": "Analysis-complete task-level fields. Prompt text, model responses, and judge explanations are intentionally omitted because the statistical analysis never consumes them.",
+  "sources": {
+    "alpaca_eval_2": {
+      "annotation_config": "weighted_alpaca_eval_gpt4_turbo",
+      "columns": {
+        "annotation_index": "Row position in the upstream annotations JSON.",
+        "dataset": "AlpacaEval source-dataset label.",
+        "model": "Upstream result directory/model identifier.",
+        "preference": "Raw weighted preference; analysis score is preference - 1.",
+        "task_id": "SHA-256 of the exact upstream instruction text."
+      },
+      "license": "Apache-2.0",
+      "revision": "cd543a149df89434d8a54582c0151c0b945c3d20",
+      "upstream_annotation_files": 221,
+      "upstream_models": 221,
+      "upstream_rows": 177892,
+      "url": "https://github.com/tatsu-lab/alpaca_eval.git"
+    },
+    "livebench": {
+      "columns": {
+        "category": "str",
+        "model": "str",
+        "question_id": "str",
+        "score": "float64",
+        "task": "str",
+        "tstamp": "float64",
+        "turn": "int64"
+      },
+      "revision": "9704e5da7bfbefe75ac1482a13de827127295993",
+      "upstream_models": 195,
+      "upstream_rows": 60372,
+      "upstream_tasks": 494,
+      "url": "https://huggingface.co/datasets/livebench/model_judgment"
+    },
+    "wildbench_v2": {
+      "columns": {
+        "model": "Upstream score filename/model identifier.",
+        "record_index": "Row position in the upstream score JSON.",
+        "score": "Raw checklist-guided score on the 1--10 scale.",
+        "session_id": "WildBench task/session identifier."
+      },
+      "judge": "gpt-4o-2024-05-13",
+      "license": "Apache-2.0",
+      "release": "v2.0625",
+      "revision": "d6b8dcaf377d173d031980f97c16e1a82618c03d",
+      "upstream_models": 63,
+      "upstream_rows": 64449,
+      "upstream_score_files": 63,
+      "url": "https://github.com/allenai/WildBench.git"
+    }
+  }
+}

@@ -1,0 +1,2 @@
+snapshot_id,date,edition,n_tasks,n_models,m,leader_model,leader_raw_score_pct,leader_adjustment_pp,position_1_adjustment_pp,leader_p_rank_1,tiers_80,tier_1_size_80
+20241227_cd543a1,2024-12-27,reference,805,208,412,gemma-2-9b-it-WPO-HB,77.82503168985104,0.5320944416714183,0.5320944416714183,0.5342,21,3

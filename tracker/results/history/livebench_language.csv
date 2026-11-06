@@ -1,0 +1,2 @@
+snapshot_id,date,edition,n_tasks,n_models,m,leader_model,leader_raw_score_pct,leader_adjustment_pp,position_1_adjustment_pp,leader_p_rank_1,tiers_80,tier_1_size_80
+20250407_9704e5d,2025-04-07,reference,140,81,85,o1-preview-2024-09-12,69.80514645967902,1.8971315805652762,1.8971315805652762,0.5742,7,4

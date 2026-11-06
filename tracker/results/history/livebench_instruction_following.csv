@@ -1,0 +1,2 @@
+snapshot_id,date,edition,n_tasks,n_models,m,leader_model,leader_raw_score_pct,leader_adjustment_pp,position_1_adjustment_pp,leader_p_rank_1,tiers_80,tier_1_size_80
+20250407_9704e5d,2025-04-07,reference,50,81,33,deepseek-v3-0324,86.78333333333335,3.8575658770211776,3.8575658770211776,0.23722690476190483,5,19

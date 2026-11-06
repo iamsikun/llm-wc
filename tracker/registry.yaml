@@ -1,0 +1,416 @@
+# Leaderboard tracker registry: site metadata, analysis parameters, sources, and settings.
+#
+# A *source* is one upstream leaderboard (an adapter in src/llm_wc/tracker/sources).
+# A *setting* is one task-by-model matrix built from a source snapshot:
+#   pool:   task filter used to choose models ({column: value}; default all tasks)
+#   models: complete | intersection | max_cells (see llm_wc.tracker.matrix)
+#   tasks:  task filter applied after model selection
+#   strata / clusters: task columns used for stratified and cluster resampling
+# Settings with in_reference: true also have a frozen reference edition (results/ruler_audit).
+
+site:
+  title: SOTA or Luck?
+  tagline: The winner's curse and rank uncertainty in LLM leaderboards
+  headline: Is the top model better, or just luckier?
+  base_url: https://iamsikun.github.io/llm-wc/
+  repo_url: https://github.com/iamsikun/llm-wc
+  paper_url: null          # set to the arXiv URL at launch
+  paper_title: "SOTA or Luck? The Winner's Curse in LLM Leaderboards"
+  authors: [Xu, Thomadsen, Zhang, Zhang]
+  update_cadence: monthly
+  featured: swebench_verified   # the leaderboard in the home page's key figure
+
+analysis:                  # the reference RULER parameters
+  gamma: 0.9               # m = floor(N^gamma)
+  n_bootstraps: 5000
+  seed: 42
+  alphas: [0.2, 0.1, 0.05, 0.01]
+  primary_alpha: 0.2
+
+sources:
+  swebench_bash_only: &swe
+    label: SWE-bench Bash-only
+    homepage: https://www.swebench.com/
+    upstream: SWE-bench/swe-bench.github.io (leaderboard) and SWE-bench/experiments (per-instance results)
+    license: MIT
+  swebench_verified: {<<: *swe, label: SWE-bench Verified}
+  swebench_multimodal: {<<: *swe, label: SWE-bench Multimodal}
+  swebench_multilingual: {<<: *swe, label: SWE-bench Multilingual}
+  swebench_lite: {<<: *swe, label: SWE-bench Lite}
+  swebench_test: {<<: *swe, label: SWE-bench Full}
+  swebench_pro:
+    label: SWE-bench Pro
+    homepage: https://scale.com/leaderboard/swe_bench_pro_public
+    upstream: Docent re-evaluation of the SWE-bench Pro public set (docent.transluce.org)
+    license: see upstream
+    secret: DOCENT_API_KEY
+  tau2:
+    label: Tau2-Bench
+    homepage: https://github.com/sierra-research/tau2-bench
+    upstream: sierra-research/tau2-bench leaderboard submissions
+    license: MIT
+  alpaca_eval_2:
+    label: AlpacaEval 2
+    homepage: https://github.com/tatsu-lab/alpaca_eval
+    upstream: tatsu-lab/alpaca_eval results/*/weighted_alpaca_eval_gpt4_turbo annotations
+    license: Apache-2.0
+  wildbench_v2:
+    label: WildBench v2
+    homepage: https://github.com/allenai/WildBench
+    upstream: allenai/WildBench eval_results/v2.0625 (GPT-4o judge)
+    license: Apache-2.0
+  livebench:
+    label: LiveBench
+    homepage: https://livebench.ai/
+    upstream: Hugging Face dataset livebench/model_judgment
+    license: see upstream
+
+settings:
+  swebench_bash_only:
+    label: SWE-bench Bash-only
+    short_label: SWE Bash-only
+    family: SWE-bench
+    in_reference: true
+    source: swebench_bash_only
+    models: complete
+    strata: repository
+    stratum_type: repository
+    clusters: repository
+    summary: Real-world GitHub issue resolution with every model using the same minimal bash-only agent scaffold.
+    description: Models receive a real GitHub issue and repository and must produce a patch that passes the issue-specific
+      and regression tests. This Bash-only view holds the agent loop fixed to mini-SWE-agent with a minimal bash
+      interface, making it primarily a comparison of language models under the same scaffold.
+    metric: Resolved issues (%)
+    task_population: Issues in the SWE-bench Bash-only leaderboard
+    resampling_unit: Tasks, with every model's result on a task resampled together
+    overview_url: https://www.swebench.com/verified.html
+    limitations:
+    - Issues are treated as independent draws. Issues from the same repository can be correlated, which can change
+      the uncertainty.
+    - The analysis quantifies finite-task ranking uncertainty and does not establish construct validity or deployment
+      representativeness.
+  swebench_verified:
+    label: SWE-bench Verified
+    short_label: SWE Verified
+    family: SWE-bench
+    in_reference: true
+    source: swebench_verified
+    models: complete
+    strata: repository
+    stratum_type: repository
+    clusters: repository
+    summary: Agent systems solving 500 human-validated, real-world GitHub issues.
+    description: SWE-bench Verified is a human-filtered set of real GitHub issues reviewed for clear problem statements,
+      correct tests, and resolvability. This full-system leaderboard accepts different agent scaffolds, so a result
+      reflects both the model and the software engineering system around it.
+    metric: Resolved issues (%)
+    task_population: Issues in SWE-bench Verified
+    resampling_unit: Tasks, with every model's result on a task resampled together
+    overview_url: https://www.swebench.com/verified.html
+    limitations:
+    - Issues are treated as independent draws. Issues from the same repository can be correlated, which can change
+      the uncertainty.
+    - The analysis quantifies finite-task ranking uncertainty and does not establish construct validity or deployment
+      representativeness.
+  swebench_multimodal:
+    label: SWE-bench Multimodal
+    short_label: SWE Multimodal
+    family: SWE-bench
+    in_reference: true
+    source: swebench_multimodal
+    models: complete
+    strata: repository
+    stratum_type: repository
+    clusters: repository
+    summary: Software issue resolution when screenshots and other visual UI evidence are part of the task.
+    description: SWE-bench Multimodal extends repository-level issue resolution to problems whose descriptions include
+      screenshots and visual user-interface elements. Agents must combine that visual evidence with the codebase
+      and tests to generate a resolving patch.
+    metric: Resolved issues (%)
+    task_population: Issues in SWE-bench Multimodal
+    resampling_unit: Tasks, with every model's result on a task resampled together
+    overview_url: https://www.swebench.com/SWE-bench/guides/datasets/
+    limitations:
+    - Issues are treated as independent draws. Issues from the same repository can be correlated, which can change
+      the uncertainty.
+    - The analysis quantifies finite-task ranking uncertainty and does not establish construct validity or deployment
+      representativeness.
+  swebench_multilingual:
+    label: SWE-bench Multilingual
+    short_label: SWE Multilingual
+    family: SWE-bench
+    in_reference: true
+    source: swebench_multilingual
+    models: complete
+    strata: repository
+    stratum_type: repository
+    clusters: repository
+    summary: Repository issue resolution across nine programming languages and 42 repositories.
+    description: SWE-bench Multilingual applies the same issue-to-patch evaluation protocol beyond Python, spanning
+      C, C++, Go, Java, JavaScript/TypeScript, PHP, Ruby, and Rust repositories. It measures whether models and
+      agent tooling generalize across programming ecosystems.
+    metric: Resolved issues (%)
+    task_population: Issues in SWE-bench Multilingual
+    resampling_unit: Tasks, with every model's result on a task resampled together
+    overview_url: https://www.swebench.com/multilingual.html
+    limitations:
+    - Issues are treated as independent draws. Issues from the same repository can be correlated, which can change
+      the uncertainty.
+    - The analysis quantifies finite-task ranking uncertainty and does not establish construct validity or deployment
+      representativeness.
+  swebench_pro:
+    label: SWE-bench Pro
+    short_label: SWE Pro
+    family: SWE-bench
+    in_reference: true
+    source: swebench_pro
+    models: complete
+    strata: repository
+    stratum_type: repository
+    clusters: repository
+    summary: Long-horizon, enterprise-style software engineering tasks designed to require substantial repository
+      work.
+    description: SWE-bench Pro targets difficult professional software engineering work such as complex bug fixes
+      and feature implementation in large repositories. Tasks are designed to be contamination-resistant and often
+      require coordinated, multi-file changes over a longer horizon.
+    metric: Resolved issues (%)
+    task_population: Issues in the SWE-bench Pro public set scored by every model
+    resampling_unit: Tasks, with every model's result on a task resampled together
+    overview_url: https://labs.scale.com/papers/swe_bench_pro
+    limitations:
+    - Issues are treated as independent draws. Issues from the same repository can be correlated, which can change
+      the uncertainty.
+    - The analysis quantifies finite-task ranking uncertainty and does not establish construct validity or deployment
+      representativeness.
+  swebench_lite:
+    label: SWE-bench Lite
+    short_label: SWE Lite
+    in_reference: false
+    source: swebench_lite
+    family: SWE-bench
+    models: complete
+    strata: repository
+    stratum_type: repository
+    clusters: repository
+    metric: Resolved issues (%)
+    resampling_unit: Tasks, with every model's result on a task resampled together
+    limitations:
+    - Issues are treated as independent draws. Issues from the same repository can be correlated, which can change
+      the uncertainty.
+    - The analysis quantifies finite-task ranking uncertainty and does not establish construct validity or deployment
+      representativeness.
+    summary: A 300-issue subset of SWE-bench chosen to be cheaper to evaluate.
+    description: SWE-bench Lite is a subset of the full SWE-bench test set selected for self-contained, functional
+      bug fixes. Systems receive the issue and repository and must produce a patch that passes the issue's tests.
+      The leaderboard accepts different agent scaffolds, so a result reflects the whole system.
+    task_population: Issues in SWE-bench Lite
+    overview_url: https://www.swebench.com/lite.html
+  swebench_test:
+    label: SWE-bench Full
+    short_label: SWE Full
+    in_reference: false
+    source: swebench_test
+    family: SWE-bench
+    models: complete
+    strata: repository
+    stratum_type: repository
+    clusters: repository
+    metric: Resolved issues (%)
+    resampling_unit: Tasks, with every model's result on a task resampled together
+    limitations:
+    - Issues are treated as independent draws. Issues from the same repository can be correlated, which can change
+      the uncertainty.
+    - The analysis quantifies finite-task ranking uncertainty and does not establish construct validity or deployment
+      representativeness.
+    summary: The full 2,294-issue SWE-bench test set.
+    description: The original SWE-bench test set of real GitHub issues from popular Python repositories. Systems
+      receive the issue and repository and must produce a patch that passes the issue's tests. Few recent systems
+      report on the full set, so the model pool is older and smaller than Verified's.
+    task_population: Issues in the full SWE-bench test set
+    overview_url: https://www.swebench.com/original.html
+  tau2_airline:
+    label: Tau2 Airline
+    short_label: Tau2 Airline
+    family: Tau2-Bench
+    in_reference: true
+    source: tau2
+    pool:
+      domain: airline
+    models: complete
+    summary: Tool-using customer-service agents handling policy-constrained airline requests.
+    description: Tau2 places an agent in a simulated conversation with a customer, a domain policy, and operational
+      tools. The Airline domain covers reservation and itinerary requests such as changes, cancellations, and refunds.
+      The task reward records whether the conversation reaches the required outcome while following the policy.
+    metric: Task reward (%)
+    task_population: Airline customer-service simulations shared by all models
+    resampling_unit: Tasks, with every model's result on a task resampled together
+    overview_url: https://github.com/sierra-research/tau2-bench
+    limitations:
+    - Only models with complete task outcomes in this domain are included, which keeps the model pool small.
+    - Submissions can differ in user simulator and tau2-bench version. The matrix pools them, as the public leaderboard
+      does.
+    - The pooled task-row target does not model arbitrary dependence between related customer-service scenarios.
+  tau2_retail:
+    label: Tau2 Retail
+    short_label: Tau2 Retail
+    family: Tau2-Bench
+    in_reference: true
+    source: tau2
+    pool:
+      domain: retail
+    models: complete
+    summary: Tool-using customer-service agents resolving policy-constrained retail order requests.
+    description: Tau2 evaluates an agent interacting with a simulated customer through domain tools and policies.
+      The Retail domain covers order-management workflows such as changes, returns, exchanges, and refunds. The
+      task reward records whether the expected outcome is reached.
+    metric: Task reward (%)
+    task_population: Retail customer-service simulations shared by all models
+    resampling_unit: Tasks, with every model's result on a task resampled together
+    overview_url: https://github.com/sierra-research/tau2-bench
+    limitations:
+    - Only models with complete task outcomes in this domain are included, which keeps the model pool small.
+    - Submissions can differ in user simulator and tau2-bench version. The matrix pools them, as the public leaderboard
+      does.
+    - The pooled task-row target does not model arbitrary dependence between related customer-service scenarios.
+  tau2_telecom:
+    label: Tau2 Telecom
+    short_label: Tau2 Telecom
+    family: Tau2-Bench
+    in_reference: true
+    source: tau2
+    pool:
+      domain: telecom
+    models: complete
+    clusters: subcategory
+    summary: Tool-using customer-service agents troubleshooting mobile-service problems.
+    description: Tau2 tests whether an agent can work with a simulated customer, policy, and tools to complete a
+      support task. The Telecom domain focuses on diagnosing and resolving mobile-data, MMS, and service issues,
+      with reward based on the required task outcome.
+    metric: Task reward (%)
+    task_population: Telecom customer-service simulations shared by all models
+    resampling_unit: Tasks, with every model's result on a task resampled together
+    overview_url: https://github.com/sierra-research/tau2-bench
+    limitations:
+    - Only models with complete task outcomes in this domain are included, which keeps the model pool small.
+    - Submissions can differ in user simulator and tau2-bench version. The matrix pools them, as the public leaderboard
+      does.
+    - The pooled task-row target does not model arbitrary dependence between related customer-service scenarios.
+  alpaca_eval_2:
+    label: AlpacaEval 2 · raw weighted
+    short_label: AlpacaEval 2
+    family: AlpacaEval
+    in_reference: true
+    source: alpaca_eval_2
+    models: complete
+    strata: dataset
+    stratum_type: source dataset
+    summary: Automatic pairwise preference judgments of instruction-following responses against a GPT-4 Turbo reference.
+    description: AlpacaEval 2 asks an automatic evaluator to compare each model response with a GPT-4 Turbo reference
+      response on the same instruction. This report analyzes the raw weighted preference rate, not AlpacaEval's
+      official length-controlled headline, so response-length and judge biases remain important caveats.
+    metric: Raw weighted preference (%)
+    task_population: AlpacaEval 2 instructions shared by all models
+    resampling_unit: Tasks, with every model's result on a task resampled together
+    overview_url: https://github.com/tatsu-lab/alpaca_eval
+    limitations:
+    - The analyzed raw weighted preference is length-sensitive and is not the official length-controlled headline
+      metric.
+    - Scores inherit evaluator bias from an LLM judge.
+  wildbench_v2:
+    label: WildBench v2
+    short_label: WildBench v2
+    family: WildBench
+    in_reference: true
+    source: wildbench_v2
+    models: complete
+    summary: Checklist-guided evaluation of chat assistants on challenging conversations from real users.
+    description: WildBench v2 collects difficult, open-ended user conversations and builds a checklist of evaluation
+      criteria for each one. An LLM judge scores responses against those checklists. This report uses the tasks
+      that every model in the release was scored on.
+    metric: Checklist-guided score (%)
+    task_population: Real-user conversation tasks shared by all models
+    resampling_unit: Tasks, with every model's result on a task resampled together
+    overview_url: https://github.com/allenai/WildBench
+    limitations:
+    - Scores inherit evaluator bias from gpt-4o-2024-05-13.
+    - The common-task intersection is conditional on the release and the included model pool.
+  livebench_pooled:
+    label: LiveBench · pooled
+    short_label: LiveBench pooled
+    family: LiveBench
+    in_reference: true
+    source: livebench
+    models: complete
+    strata: category
+    stratum_type: category
+    summary: A pooled view of the coding, language, and instruction-following tasks shared by 81 models.
+    description: LiveBench uses regularly refreshed questions with automatically verifiable answers, which limits
+      contamination and removes the need for an LLM judge. This pooled view combines the coding, language, and instruction-following
+      tasks in the complete model-by-task block. It differs from LiveBench's overall score.
+    metric: Objective graded score (%)
+    task_population: Coding, language, and instruction-following tasks in the complete model-by-task block
+    resampling_unit: Tasks, with every model's result on a task resampled together
+    overview_url: https://livebench.ai/
+    limitations:
+    - LiveBench changes over time. Each report applies to its dataset revision and the selected model-by-task block.
+    - The pooled task-row bootstrap does not repair benchmark population or topical-clustering limitations.
+  livebench_coding:
+    label: LiveBench · coding
+    short_label: LiveBench Coding
+    family: LiveBench
+    in_reference: true
+    source: livebench
+    models: complete
+    tasks:
+      category: coding
+    summary: Objectively graded code-generation and code-completion problems from LiveBench.
+    description: This LiveBench slice measures program synthesis and completion using the LCB_generation and coding_completion
+      task groups. Answers are graded automatically against verifiable outcomes, and the benchmark is refreshed
+      over time to reduce exposure of current test questions.
+    metric: Objective graded score (%)
+    task_population: Coding tasks in the complete model-by-task block
+    resampling_unit: Tasks, with every model's result on a task resampled together
+    overview_url: https://github.com/livebench/livebench
+    limitations:
+    - LiveBench changes over time. Each report applies to its dataset revision and the selected model-by-task block.
+    - The pooled task-row bootstrap does not repair benchmark population or topical-clustering limitations.
+  livebench_language:
+    label: LiveBench · language
+    short_label: LiveBench Language
+    family: LiveBench
+    in_reference: true
+    source: livebench
+    models: complete
+    tasks:
+      category: language
+    summary: Objectively graded language reasoning through connections, plot unscrambling, and typo tasks.
+    description: This LiveBench slice covers the connections, plot_unscrambling, and typos task groups, testing
+      structured language understanding and manipulation rather than open-ended style preference. Responses are
+      scored against automatically verifiable answers.
+    metric: Objective graded score (%)
+    task_population: Language tasks in the complete model-by-task block
+    resampling_unit: Tasks, with every model's result on a task resampled together
+    overview_url: https://github.com/livebench/livebench
+    limitations:
+    - LiveBench changes over time. Each report applies to its dataset revision and the selected model-by-task block.
+    - The pooled task-row bootstrap does not repair benchmark population or topical-clustering limitations.
+  livebench_instruction_following:
+    label: LiveBench · instruction following
+    short_label: LiveBench Instr.
+    family: LiveBench
+    in_reference: true
+    source: livebench
+    models: complete
+    tasks:
+      category: instruction_following
+    summary: Verifiable paraphrasing and story-generation tasks with explicit instruction constraints.
+    description: This LiveBench slice tests whether models satisfy checkable instructions in paraphrase and story-generation
+      tasks. Its complete model-by-task block contains only 50 tasks, so its ranking is especially uncertain.
+    metric: Objective graded score (%)
+    task_population: Instruction-following tasks in the complete model-by-task block
+    resampling_unit: Tasks, with every model's result on a task resampled together
+    overview_url: https://github.com/livebench/livebench
+    limitations:
+    - With only 50 tasks, this slice's ranking is especially uncertain.
+    - LiveBench changes over time. Each report applies to its dataset revision and the selected model-by-task block.
+    - The pooled task-row bootstrap does not repair benchmark population or topical-clustering limitations.

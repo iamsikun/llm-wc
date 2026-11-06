@@ -1,0 +1,1139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>LLM leaderboard uncertainty report</title>
+  <style>
+    :root {
+      --bg: #f6f7fb;
+      --surface: #ffffff;
+      --surface-soft: #eef2f8;
+      --text: #18202d;
+      --muted: #5d6878;
+      --border: #d8dee9;
+      --accent: #315efb;
+      --accent-soft: #e5ebff;
+      --accent-2: #d65d30;
+      --positive: #147d55;
+      --shadow: 0 10px 30px rgba(34, 47, 74, 0.08);
+      --radius: 14px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+      color: var(--text);
+      background: var(--bg);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f141c;
+        --surface: #171e28;
+        --surface-soft: #222c39;
+        --text: #edf2f8;
+        --muted: #aab5c4;
+        --border: #344052;
+        --accent: #8ca8ff;
+        --accent-soft: #263557;
+        --accent-2: #f29a73;
+        --positive: #67d3a6;
+        --shadow: none;
+      }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text); }
+    button, input, select { font: inherit; }
+    button, select, input[type="search"] {
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      background: var(--surface);
+      color: var(--text);
+      padding: 0.58rem 0.72rem;
+    }
+    button { cursor: pointer; }
+    button:hover { border-color: var(--accent); }
+    button:focus-visible, select:focus-visible, input:focus-visible {
+      outline: 3px solid color-mix(in srgb, var(--accent) 35%, transparent);
+      outline-offset: 2px;
+    }
+    a { color: var(--accent); }
+    .shell { width: min(1480px, 100%); margin: 0 auto; padding: 1.2rem; }
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 1.2rem;
+      align-items: end;
+      padding: 1.4rem 0 1.1rem;
+    }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { margin-bottom: 0.45rem; font-size: clamp(1.7rem, 4vw, 2.65rem); }
+    h2 { font-size: 1.3rem; margin-bottom: 0.9rem; }
+    h3 { font-size: 1rem; margin-bottom: 0.7rem; }
+    .subtitle, .muted { color: var(--muted); }
+    .subtitle { margin-bottom: 0; max-width: 78ch; }
+    .eyebrow {
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 0.35rem;
+    }
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 1.05rem;
+      margin-bottom: 1rem;
+    }
+    .algorithm-frame {
+      border-top: 2px solid var(--text);
+      border-bottom: 2px solid var(--text);
+      background: var(--surface-soft);
+      font-family: Georgia, "Times New Roman", serif;
+    }
+    .algorithm-title {
+      border-bottom: 1px solid var(--text);
+      padding: 0.42rem 0.65rem 0.38rem;
+      font-size: 1.04rem;
+    }
+    .algorithm-io {
+      border-bottom: 1px solid var(--text);
+      padding: 0.35rem 1.15rem 0.45rem 2.45rem;
+    }
+    .algorithm-io p { margin: 0.12rem 0; line-height: 1.42; }
+    .algorithm-body { padding: 0.35rem 0.65rem 0.42rem; }
+    .algorithm-line {
+      display: grid;
+      grid-template-columns: 2rem minmax(0, 1fr);
+      gap: 0.45rem;
+      line-height: 1.42;
+      padding: 0.08rem 0;
+    }
+    .algorithm-line-number {
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+      color: var(--muted);
+    }
+    .algorithm-line.indent-1 .algorithm-statement { padding-left: 1.3rem; }
+    .algorithm-line.indent-2 .algorithm-statement { padding-left: 2.6rem; }
+    .algorithm-comment {
+      color: var(--muted);
+      font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+      font-size: 0.82rem;
+      margin-left: 0.55rem;
+    }
+    .algorithm-note {
+      border-left: 4px solid var(--accent-2);
+      margin: 0.8rem 0 0;
+      padding: 0.68rem 0.85rem;
+      background: color-mix(in srgb, var(--accent-2) 8%, transparent);
+      line-height: 1.5;
+    }
+    .algorithm-footnote {
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+      font-size: 0.82rem;
+      line-height: 1.48;
+      margin: 0.35rem 0.65rem 0;
+      padding: 0.48rem 0 0.6rem;
+    }
+    .algorithm-footnote sup { color: var(--text); font-weight: 800; }
+    .panel-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 0.75rem;
+    }
+    .panel-head h2, .panel-head p { margin-bottom: 0; }
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: end;
+      gap: 0.7rem;
+    }
+    label.field { display: grid; gap: 0.3rem; font-size: 0.84rem; color: var(--muted); }
+    .selector { min-width: min(26rem, 82vw); }
+    .overview-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(420px, 0.9fr);
+      gap: 1rem;
+    }
+    .table-wrap { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td {
+      padding: 0.68rem 0.62rem;
+      border-bottom: 1px solid var(--border);
+      text-align: left;
+      vertical-align: middle;
+    }
+    th {
+      font-size: 0.76rem;
+      color: var(--muted);
+      font-weight: 700;
+      letter-spacing: 0.035em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    td.numeric, th.numeric { text-align: right; font-variant-numeric: tabular-nums; }
+    tbody tr:last-child td { border-bottom: 0; }
+    tbody tr[data-benchmark] { cursor: pointer; }
+    tbody tr[data-benchmark]:hover { background: var(--surface-soft); }
+    .headline {
+      border-left: 4px solid var(--accent);
+      padding: 0.8rem 0.95rem;
+      background: var(--accent-soft);
+      border-radius: 0 10px 10px 0;
+      margin-bottom: 1rem;
+      font-weight: 650;
+    }
+    .benchmark-summary {
+      display: block;
+      max-width: 58ch;
+      margin-top: 0.22rem;
+      line-height: 1.35;
+    }
+    .benchmark-intro {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--surface-soft);
+      padding: 0.9rem 1rem;
+      margin-bottom: 1rem;
+    }
+    .benchmark-intro h3 { margin-bottom: 0.35rem; }
+    .benchmark-intro p {
+      max-width: 92ch;
+      margin-bottom: 0.42rem;
+      line-height: 1.55;
+    }
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.7rem;
+      margin: 0 0 1rem;
+    }
+    .meta-grid div { background: var(--surface-soft); padding: 0.72rem; border-radius: 10px; }
+    .meta-grid dt {
+      color: var(--muted);
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .meta-grid dd { margin: 0.25rem 0 0; overflow-wrap: anywhere; }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      padding: 0.17rem 0.5rem;
+      font-size: 0.77rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .badge.yes { color: var(--positive); background: color-mix(in srgb, var(--positive) 14%, transparent); }
+    .badge.no { color: var(--muted); background: var(--surface-soft); }
+    .badge.tier {
+      color: var(--accent);
+      background: var(--accent-soft);
+      min-width: 3.3rem;
+      justify-content: center;
+    }
+    .rank { font-variant-numeric: tabular-nums; white-space: nowrap; }
+    .model-name { min-width: 17rem; }
+    .method-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.7rem;
+      margin-bottom: 1rem;
+    }
+    .method-card {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 0.8rem;
+    }
+    .method-card strong { display: block; font-size: 1.2rem; margin: 0.25rem 0; }
+    .control-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: end;
+      justify-content: space-between;
+      gap: 0.75rem;
+      margin-bottom: 0.7rem;
+    }
+    .check {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      color: var(--text);
+      padding-bottom: 0.55rem;
+    }
+    .download-row { display: flex; flex-wrap: wrap; gap: 0.45rem; }
+    .viz-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) minmax(290px, 0.65fr);
+      gap: 1rem;
+    }
+    .canvas-wrap {
+      width: 100%;
+      overflow: auto;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--surface);
+    }
+    canvas { display: block; }
+    .inspect {
+      background: var(--surface-soft);
+      border-radius: 10px;
+      padding: 0.85rem;
+    }
+    .inspect .field { margin-bottom: 0.65rem; }
+    .value-line {
+      font-variant-numeric: tabular-nums;
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin: 0.55rem 0 0;
+    }
+    .tier-models { max-width: 42rem; line-height: 1.35; }
+    .limitations { margin-bottom: 0; padding-left: 1.2rem; }
+    .limitations li + li { margin-top: 0.35rem; }
+    .chart { width: 100%; min-height: 390px; }
+    .chart text { fill: var(--text); font-family: inherit; font-size: 11px; }
+    .chart .muted-text { fill: var(--muted); }
+    .chart .grid { stroke: var(--border); stroke-width: 1; }
+    .chart .moon { fill: var(--accent); }
+    .chart .ordinary { fill: var(--accent-2); }
+    .note { font-size: 0.84rem; color: var(--muted); }
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+    footer { color: var(--muted); font-size: 0.84rem; padding: 0.5rem 0 2rem; }
+    @media (max-width: 960px) {
+      .overview-grid, .viz-grid { grid-template-columns: 1fr; }
+      .meta-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .chart { min-height: 340px; }
+    }
+    @media (max-width: 640px) {
+      .shell { padding: 0.75rem; }
+      .hero { grid-template-columns: 1fr; }
+      .selector { min-width: 100%; width: 100%; }
+      .meta-grid, .method-grid { grid-template-columns: 1fr; }
+      .panel { padding: 0.8rem; }
+      th, td { padding: 0.58rem 0.5rem; }
+      .model-name { min-width: 13rem; }
+      .algorithm-io { padding-left: 0.75rem; }
+      .algorithm-body { padding-left: 0.2rem; padding-right: 0.45rem; }
+      .algorithm-line { grid-template-columns: 1.55rem minmax(0, 1fr); gap: 0.3rem; }
+      .algorithm-line.indent-1 .algorithm-statement { padding-left: 0.7rem; }
+      .algorithm-line.indent-2 .algorithm-statement { padding-left: 1.4rem; }
+      .algorithm-comment { display: block; margin-left: 0; margin-top: 0.12rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Finite-task uncertainty audit</p>
+        <h1>LLM leaderboard uncertainty report</h1>
+        <p class="subtitle">
+          Raw leaderboards with position-level selection adjustments, bootstrap
+          rank stability, and RPM bootstrap common-intersection tiers.
+        </p>
+      </div>
+      <label class="field">
+        Benchmark
+        <select id="benchmark-select" class="selector" aria-label="Select benchmark"></select>
+      </label>
+    </header>
+
+    <main>
+      <section class="overview-grid" aria-labelledby="overview-title">
+        <div class="panel">
+          <div class="panel-head">
+            <div>
+              <h2 id="overview-title">Fourteen-setting overview</h2>
+              <p class="muted">Select any row to inspect the complete report.</p>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Benchmark</th>
+                  <th class="numeric">Tasks</th>
+                  <th class="numeric">Models</th>
+                  <th class="numeric">m/N adj.</th>
+                  <th class="numeric">Ordinary adj.</th>
+                  <th class="numeric">90% tiers</th>
+                  <th class="numeric">Tier 1</th>
+                </tr>
+              </thead>
+              <tbody id="overview-body"></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="panel">
+          <h2>Rank-1 position adjustment</h2>
+          <svg id="comparison-chart" class="chart" role="img"
+            aria-label="Comparison of rank-1 m-out-of-N and ordinary bootstrap adjustments across fourteen leaderboards"></svg>
+          <p class="note">Dots show averages across tied observed ranks in percentage points. They are diagnostics, not reranked scores.</p>
+        </div>
+      </section>
+
+      <section class="panel" aria-labelledby="algorithm-title">
+        <div class="panel-head">
+          <div>
+            <p class="eyebrow">Method</p>
+            <h2 id="algorithm-title">Revised Algorithm 1 · RPM common-intersection tiering</h2>
+          </div>
+        </div>
+        <div class="algorithm-frame" role="group" aria-label="Algorithm 1 RPM bootstrap common-intersection tiering">
+          <div class="algorithm-title">
+            <strong>Revised Algorithm 1</strong> RPM bootstrap common-intersection tiering
+          </div>
+          <div class="algorithm-io">
+            <p><strong>Inputs:</strong> task-by-model outcome matrix <var>Y</var> ∈ ℝ<sup><var>N</var>×<var>J</var></sup>;
+              subsample size <var>m</var> (default max{2, ⌊<var>N</var><sup>0.9</sup>⌋});
+              replicate count <var>B</var> (default 5000); central rank-mass level 1 − <var>α</var>; RNG seed.</p>
+            <p><strong>Output:</strong> an ordered partition 𝒯 of the observed leaderboard into tiers.</p>
+          </div>
+          <div class="algorithm-body">
+            <div class="algorithm-line">
+              <span class="algorithm-line-number">1:</span>
+              <span class="algorithm-statement"><strong>(Bootstrap rank mass.)</strong>
+                For <var>b</var> = 1,…,<var>B</var>, sample <var>m</var> task rows with replacement and compute every model's bootstrap mean.
+                A <var>g</var>-way score tie occupying ranks <var>a</var>,…,<var>a</var>+<var>g</var>−1 contributes mass 1/<var>g</var>
+                to each tied model at each occupied rank.</span>
+            </div>
+            <div class="algorithm-line">
+              <span class="algorithm-line-number">2:</span>
+              <span class="algorithm-statement"><strong>(RPM and rank CDFs.)</strong>
+                Set R̂<sub><var>jk</var></sub> to model <var>j</var>'s average bootstrap mass at rank <var>k</var>, and
+                F̂<sub><var>j</var></sub>(<var>k</var>) ← ∑<sub><var>r</var>≤<var>k</var></sub> R̂<sub><var>jr</var></sub>.</span>
+            </div>
+            <div class="algorithm-line">
+              <span class="algorithm-line-number">3:</span>
+              <span class="algorithm-statement"><strong>(Central rank-mass intervals.)</strong>
+                For each model <var>j</var>, set
+                <var>L</var><sub><var>j</var></sub> ← min{<var>k</var> : F̂<sub><var>j</var></sub>(<var>k</var>) ≥ <var>α</var>/2}
+                and <var>U</var><sub><var>j</var></sub> ← min{<var>k</var> : F̂<sub><var>j</var></sub>(<var>k</var>) ≥ 1 − <var>α</var>/2}.</span>
+            </div>
+            <div class="algorithm-line">
+              <span class="algorithm-line-number">4:</span>
+              <span class="algorithm-statement"><strong>(Observed order.)</strong>
+                Let π(1),…,π(<var>J</var>) be the models sorted by descending observed score.<sup>†</sup></span>
+            </div>
+            <div class="algorithm-line">
+              <span class="algorithm-line-number">5:</span>
+              <span class="algorithm-statement">Initialize <var>T</var> ← {π(1)},
+                ℓ ← <var>L</var><sub>π(1)</sub>, <var>u</var> ← <var>U</var><sub>π(1)</sub>, and 𝒯 ← [ ].</span>
+            </div>
+            <div class="algorithm-line">
+              <span class="algorithm-line-number">6:</span>
+              <span class="algorithm-statement"><strong>for</strong> <var>t</var> = 2,…,<var>J</var> <strong>do</strong></span>
+            </div>
+            <div class="algorithm-line indent-1">
+              <span class="algorithm-line-number">7:</span>
+              <span class="algorithm-statement">ℓ′ ← max(ℓ, <var>L</var><sub>π(<var>t</var>)</sub>);
+                <var>u</var>′ ← min(<var>u</var>, <var>U</var><sub>π(<var>t</var>)</sub>).</span>
+            </div>
+            <div class="algorithm-line indent-1">
+              <span class="algorithm-line-number">8:</span>
+              <span class="algorithm-statement"><strong>if</strong> ℓ′ ≤ <var>u</var>′ <strong>then</strong>
+                <span class="algorithm-comment">▷ every member still shares a plausible rank</span></span>
+            </div>
+            <div class="algorithm-line indent-2">
+              <span class="algorithm-line-number">9:</span>
+              <span class="algorithm-statement"><var>T</var> ← <var>T</var> ∪ {π(<var>t</var>)};
+                ℓ ← ℓ′; <var>u</var> ← <var>u</var>′.</span>
+            </div>
+            <div class="algorithm-line indent-1">
+              <span class="algorithm-line-number">10:</span>
+              <span class="algorithm-statement"><strong>else</strong>
+                <span class="algorithm-comment">▷ empty common intersection: close the current tier</span></span>
+            </div>
+            <div class="algorithm-line indent-2">
+              <span class="algorithm-line-number">11:</span>
+              <span class="algorithm-statement">Append <var>T</var> to 𝒯;
+                <var>T</var> ← {π(<var>t</var>)};
+                ℓ ← <var>L</var><sub>π(<var>t</var>)</sub>; <var>u</var> ← <var>U</var><sub>π(<var>t</var>)</sub>.</span>
+            </div>
+            <div class="algorithm-line indent-1">
+              <span class="algorithm-line-number">12:</span>
+              <span class="algorithm-statement"><strong>end if</strong></span>
+            </div>
+            <div class="algorithm-line">
+              <span class="algorithm-line-number">13:</span>
+              <span class="algorithm-statement"><strong>end for</strong></span>
+            </div>
+            <div class="algorithm-line">
+              <span class="algorithm-line-number">14:</span>
+              <span class="algorithm-statement">Append <var>T</var> to 𝒯.</span>
+            </div>
+            <div class="algorithm-line">
+              <span class="algorithm-line-number">15:</span>
+              <span class="algorithm-statement"><strong>Return</strong> 𝒯 in observed-score order.</span>
+            </div>
+          </div>
+          <p class="algorithm-footnote" role="note">
+            <sup>†</sup> Models with equal unrounded observed scores (absolute tolerance 10<sup>−12</sup>) stay
+            together: intersect their rank-mass intervals and add the entire tied set at once. If adding it would
+            empty the current tier's common intersection, start the next tier before the tied set; if the tied
+            models themselves share no rank, flag the incompatibility rather than splitting them.
+          </p>
+        </div>
+        <p class="algorithm-note">
+          <strong>Revision relative to the theory note.</strong>
+          Step 8 requires one rank shared by every interval in a tier. It replaces connected-component
+          merging of pairwise overlaps, preventing a chain such as [1,2], [2,3], [3,4] from collapsing into one tier.
+          The first two intervals form a tier; the third starts the next tier.
+        </p>
+      </section>
+
+      <section id="detail" aria-labelledby="detail-title">
+        <div class="panel">
+          <div class="panel-head">
+            <div>
+              <p id="detail-family" class="eyebrow"></p>
+              <h2 id="detail-title"></h2>
+            </div>
+            <div class="download-row">
+              <button type="button" id="download-json">Download report JSON</button>
+            </div>
+          </div>
+          <div class="benchmark-intro">
+            <h3>What this leaderboard measures</h3>
+            <p id="benchmark-description"></p>
+            <a id="benchmark-about-link" target="_blank" rel="noopener noreferrer">
+              Official benchmark overview
+            </a>
+          </div>
+          <p id="headline" class="headline"></p>
+          <dl id="metadata" class="meta-grid"></dl>
+          <div class="method-grid">
+            <div class="method-card">
+              <span class="muted">Predeclared m-out-of-N rank-1 adjustment</span>
+              <strong id="moon-adjustment"></strong>
+              <span id="moon-method" class="note"></span>
+            </div>
+            <div class="method-card">
+              <span class="muted">Ordinary bootstrap rank-1 adjustment</span>
+              <strong id="ordinary-adjustment"></strong>
+              <span class="note">N-out-of-N task rows, reported as the assumption-light sensitivity baseline.</span>
+            </div>
+            <div class="method-card">
+              <span class="muted">RPM common-intersection tiers</span>
+              <strong id="tier-summary"></strong>
+              <span id="tier-method" class="note"></span>
+            </div>
+          </div>
+          <p id="method-separation" class="note"></p>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head">
+            <div>
+              <h2>Raw leaderboard and reporting diagnostics</h2>
+              <p class="muted">Rows stay in raw-score order. Search and filtering never rerank them.</p>
+            </div>
+            <div class="download-row">
+              <button type="button" id="download-leaderboard">Download leaderboard CSV</button>
+              <button type="button" id="download-leaderboard-json">Download leaderboard JSON</button>
+            </div>
+          </div>
+          <div class="control-row">
+            <div class="toolbar">
+              <label class="field">
+                Find model
+                <input id="model-search" type="search" placeholder="Model name or ID">
+              </label>
+              <label class="check">
+                <input id="tier-one-only" type="checkbox">
+                Tier 1 only
+              </label>
+            </div>
+            <span id="row-count" class="note" aria-live="polite"></span>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Raw rank</th>
+                  <th>Model</th>
+                  <th class="numeric">Raw score</th>
+                  <th class="numeric">Position adj.</th>
+                  <th class="numeric">P*(top-5)</th>
+                  <th class="numeric">Rank interval</th>
+                  <th>Tier</th>
+                </tr>
+              </thead>
+              <tbody id="leaderboard-body"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head">
+            <div>
+              <h2>RPM bootstrap common-intersection tiers</h2>
+              <p class="muted">Each tier is a maximal contiguous group whose rank-mass intervals share at least one rank.</p>
+            </div>
+            <div class="download-row">
+              <button type="button" id="download-tiers">Download tiers CSV</button>
+              <button type="button" id="download-tiers-json">Download tiers JSON</button>
+            </div>
+          </div>
+          <div class="control-row">
+            <label class="field">
+              Central rank mass
+              <select id="tier-level"></select>
+            </label>
+            <span class="note">90% is the predeclared primary result; 95% and 99% are sensitivity analyses.</span>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Tier</th>
+                  <th class="numeric">Observed ranks</th>
+                  <th class="numeric">Models</th>
+                  <th class="numeric">Common supported rank</th>
+                  <th>Model span</th>
+                </tr>
+              </thead>
+              <tbody id="tier-body"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head">
+            <div>
+              <h2>Tie-aware rank probability matrix</h2>
+              <p class="muted">Bootstrap rank frequencies; not posterior probabilities that a model is truly best.</p>
+            </div>
+            <div class="download-row">
+              <button type="button" id="download-rpm">Download full RPM CSV</button>
+              <button type="button" id="download-rpm-json">Download full RPM JSON</button>
+            </div>
+          </div>
+          <div class="control-row">
+            <label class="field">
+              Visible ranks and models
+              <select id="rpm-size">
+                <option value="10">Top 10</option>
+                <option value="tier1" selected>Tier 1</option>
+                <option value="25">Top 25</option>
+                <option value="50">Top 50</option>
+                <option value="all">All</option>
+              </select>
+            </label>
+            <span class="note">Darker cells indicate more bootstrap mass.</span>
+          </div>
+          <div class="viz-grid">
+            <div id="rpm-canvas-wrap" class="canvas-wrap">
+              <canvas id="rpm-canvas" aria-label="Tie-aware rank probability matrix"></canvas>
+            </div>
+            <div class="inspect">
+              <h3>Accessible cell inspector</h3>
+              <label class="field">
+                Model
+                <select id="rpm-model"></select>
+              </label>
+              <label class="field">
+                Rank
+                <select id="rpm-rank"></select>
+              </label>
+              <p id="rpm-cell-value" class="value-line" aria-live="polite"></p>
+              <p id="rpm-pointer-value" class="note"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h2>Interpretation and limitations</h2>
+          <ul id="limitations" class="limitations"></ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      The report is self-contained and uses pinned local task-level snapshots.
+      Tiers annotate the observed leaderboard; neither tiers nor position adjustments rerank it.
+    </footer>
+  </div>
+
+  <script>
+    "use strict";
+    const REPORT_DATA = null;
+    const byId = (id) => document.getElementById(id);
+    const state = { benchmark: null, tierKey: null, canvas: null };
+
+    function fmt(value, digits = 2) {
+      return Number(value).toFixed(digits);
+    }
+
+    function adjustmentText(value, low, high) {
+      const main = fmt(value);
+      if (Math.abs(high - low) < 0.0005) return `${main} pp`;
+      return `${main} [${fmt(low)}, ${fmt(high)}] pp`;
+    }
+
+    function currentTierLevel() {
+      return state.benchmark.tier_levels.find((level) => level.key === state.tierKey);
+    }
+
+    function rankSpan(low, high) {
+      return low === high ? String(low) : `${low}–${high}`;
+    }
+
+    function csvCell(value) {
+      const text = value == null ? "" : String(value);
+      return /[",\n]/.test(text) ? `"${text.replaceAll('"', '""')}"` : text;
+    }
+
+    function downloadText(filename, text, type) {
+      const blob = new Blob([text], { type });
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = filename;
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      URL.revokeObjectURL(link.href);
+    }
+
+    function benchmarkFilename(suffix) {
+      return `${state.benchmark.key}-${suffix}`;
+    }
+
+    function renderOverview() {
+      const body = byId("overview-body");
+      body.replaceChildren();
+      REPORT_DATA.benchmarks.forEach((benchmark) => {
+        const row = document.createElement("tr");
+        row.dataset.benchmark = benchmark.key;
+        row.innerHTML = `
+          <td>
+            <strong>${escapeHtml(benchmark.label)}</strong>
+            <span class="benchmark-summary note">${escapeHtml(benchmark.summary)}</span>
+          </td>
+          <td class="numeric">${benchmark.n_tasks}</td>
+          <td class="numeric">${benchmark.n_models}</td>
+          <td class="numeric">${fmt(benchmark.moon_rank_1_adjustment_pp)}</td>
+          <td class="numeric">${fmt(benchmark.ordinary_rank_1_adjustment_pp)}</td>
+          <td class="numeric">${benchmark.primary_tier_count}</td>
+          <td class="numeric">${benchmark.primary_tier_1_size} / ${benchmark.n_models}</td>`;
+        row.addEventListener("click", () => selectBenchmark(benchmark.key, true));
+        body.appendChild(row);
+      });
+      renderComparisonChart();
+    }
+
+    function renderComparisonChart() {
+      const svg = byId("comparison-chart");
+      const data = REPORT_DATA.benchmarks;
+      const width = Math.max(460, svg.clientWidth || 560);
+      const rowHeight = 24;
+      const margin = { top: 28, right: 18, bottom: 38, left: 158 };
+      const height = margin.top + margin.bottom + rowHeight * data.length;
+      const maxValue = Math.max(...data.flatMap((d) => [
+        d.moon_rank_1_adjustment_pp,
+        d.ordinary_rank_1_adjustment_pp,
+      ]), 0.1) * 1.08;
+      const plotWidth = width - margin.left - margin.right;
+      const x = (value) => margin.left + (value / maxValue) * plotWidth;
+      const ticks = 4;
+      const parts = [
+        `<title>Rank-1 position adjustments across fourteen leaderboards</title>`,
+        `<desc>Blue dots are m-out-of-N adjustments averaged across tied observed ranks and orange dots are ordinary bootstrap adjustments, in percentage points.</desc>`,
+      ];
+      for (let i = 0; i <= ticks; i += 1) {
+        const value = maxValue * i / ticks;
+        const xx = x(value);
+        parts.push(`<line class="grid" x1="${xx}" x2="${xx}" y1="${margin.top - 8}" y2="${height - margin.bottom}"></line>`);
+        parts.push(`<text class="muted-text" x="${xx}" y="${height - 15}" text-anchor="middle">${fmt(value, 1)}</text>`);
+      }
+      data.forEach((d, index) => {
+        const y = margin.top + index * rowHeight + rowHeight / 2;
+        const shortLabel = d.label.replace("SWE-bench ", "SWE ").replace("LiveBench · ", "LB ");
+        parts.push(`<text x="${margin.left - 10}" y="${y + 4}" text-anchor="end">${escapeHtml(shortLabel)}</text>`);
+        parts.push(`<line x1="${x(d.ordinary_rank_1_adjustment_pp)}" x2="${x(d.moon_rank_1_adjustment_pp)}" y1="${y}" y2="${y}" stroke="var(--border)" stroke-width="2"></line>`);
+        parts.push(`<circle class="ordinary" cx="${x(d.ordinary_rank_1_adjustment_pp)}" cy="${y}" r="4"><title>${escapeHtml(d.label)} ordinary: ${fmt(d.ordinary_rank_1_adjustment_pp)} pp</title></circle>`);
+        parts.push(`<circle class="moon" cx="${x(d.moon_rank_1_adjustment_pp)}" cy="${y}" r="4"><title>${escapeHtml(d.label)} m/N: ${fmt(d.moon_rank_1_adjustment_pp)} pp</title></circle>`);
+      });
+      parts.push(`<text class="muted-text" x="${margin.left + plotWidth / 2}" y="${height - 1}" text-anchor="middle">Position adjustment (percentage points)</text>`);
+      parts.push(`<circle class="moon" cx="${margin.left}" cy="10" r="4"></circle><text x="${margin.left + 9}" y="14">m/N</text>`);
+      parts.push(`<circle class="ordinary" cx="${margin.left + 54}" cy="10" r="4"></circle><text x="${margin.left + 63}" y="14">ordinary</text>`);
+      svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
+      svg.innerHTML = parts.join("");
+    }
+
+    function escapeHtml(value) {
+      return String(value)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;");
+    }
+
+    function selectBenchmark(key, scroll) {
+      const benchmark = REPORT_DATA.benchmarks.find((item) => item.key === key);
+      if (!benchmark) return;
+      state.benchmark = benchmark;
+      state.tierKey = benchmark.primary_tier_key;
+      byId("benchmark-select").value = key;
+      renderDetail();
+      if (scroll) byId("detail").scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    function renderMetadata(benchmark) {
+      const values = [
+        ["Snapshot", benchmark.snapshot],
+        ["Metric", benchmark.metric],
+        ["Tasks / models", `${benchmark.n_tasks} / ${benchmark.n_models}`],
+        ["Task population", benchmark.task_population],
+        ["Resampling unit", benchmark.resampling_unit],
+        ["Bootstrap", `m=${benchmark.m}; B=${benchmark.n_bootstraps}; seed=${benchmark.seed}`],
+        ["Tier construction", `${Math.round(benchmark.primary_rank_mass * 100)}% RPM mass; α=${benchmark.primary_alpha}`],
+        ["Tier rule", benchmark.tier_rule],
+        ["Source revision", benchmark.source_revision],
+        ["Source", benchmark.source_url],
+      ];
+      byId("metadata").innerHTML = values.map(([label, value]) => `
+        <div><dt>${escapeHtml(label)}</dt><dd>${escapeHtml(value)}</dd></div>`).join("");
+    }
+
+    function renderDetail() {
+      const benchmark = state.benchmark;
+      byId("detail-family").textContent = benchmark.family;
+      byId("detail-title").textContent = benchmark.label;
+      byId("benchmark-description").textContent = benchmark.description;
+      byId("benchmark-about-link").href = benchmark.overview_url;
+      renderMetadata(benchmark);
+      byId("moon-adjustment").textContent = adjustmentText(
+        benchmark.moon_rank_1_adjustment_pp,
+        benchmark.moon_rank_1_adjustment_low_pp,
+        benchmark.moon_rank_1_adjustment_high_pp
+      );
+      byId("moon-method").textContent =
+        `m=floor(${benchmark.n_tasks}^${benchmark.gamma})=${benchmark.m}; ${benchmark.n_bootstraps.toLocaleString()} replicates.`;
+      byId("ordinary-adjustment").textContent = adjustmentText(
+        benchmark.ordinary_rank_1_adjustment_pp,
+        benchmark.ordinary_rank_1_adjustment_low_pp,
+        benchmark.ordinary_rank_1_adjustment_high_pp
+      );
+      byId("method-separation").textContent =
+        "The position adjustment estimates selection-induced score bias. The RPM summarizes rank stability and supplies the rank-mass intervals used for tiering. Neither quantity is a reranking score.";
+      byId("tier-level").innerHTML = benchmark.tier_levels.map((level) =>
+        `<option value="${level.key}"${level.key === benchmark.primary_tier_key ? " selected" : ""}>${Math.round(level.rank_mass * 100)}% (α=${level.alpha})</option>`
+      ).join("");
+      byId("model-search").value = "";
+      byId("tier-one-only").checked = false;
+      renderTierLevel();
+      renderLeaderboard();
+      populateModelSelects();
+      renderRpm();
+      updateRpmInspector();
+      renderLimitations();
+    }
+
+    function renderTierLevel() {
+      const benchmark = state.benchmark;
+      const level = currentTierLevel();
+      byId("headline").textContent =
+        `Under the ${Math.round(level.rank_mass * 100)}% RPM-mass common-intersection rule, ` +
+        `Tier 1 contains ${level.tier_1_size} of ${benchmark.n_models} models and the ` +
+        `observed leaderboard is partitioned into ${level.tier_count} tiers.`;
+      byId("tier-summary").textContent =
+        `${level.tier_count} tiers · Tier 1: ${level.tier_1_size}`;
+      byId("tier-method").textContent =
+        `${Math.round(level.rank_mass * 100)}% central rank mass (α=${level.alpha}).`;
+      renderTiers();
+    }
+
+    function renderTiers() {
+      const benchmark = state.benchmark;
+      const level = currentTierLevel();
+      byId("tier-body").innerHTML = level.tiers.map((tier) => {
+        const first = benchmark.rows[tier.start_position - 1];
+        const last = benchmark.rows[tier.end_position - 1];
+        const modelSpan = tier.size === 1 ? first.model : `${first.model} — ${last.model}`;
+        return `
+          <tr>
+            <td><span class="badge tier">T${tier.tier}</span></td>
+            <td class="numeric">${rankSpan(tier.observed_rank_start, tier.observed_rank_end)}</td>
+            <td class="numeric">${tier.size}</td>
+            <td class="numeric">${rankSpan(tier.common_rank_low, tier.common_rank_high)}</td>
+            <td class="tier-models">${escapeHtml(modelSpan)}</td>
+          </tr>`;
+      }).join("");
+    }
+
+    function renderLeaderboard() {
+      const query = byId("model-search").value.trim().toLowerCase();
+      const tierOneOnly = byId("tier-one-only").checked;
+      const rows = state.benchmark.rows.filter((row) => {
+        const matches = !query ||
+          row.model.toLowerCase().includes(query) ||
+          row.model_id.toLowerCase().includes(query);
+        return matches && (!tierOneOnly || row.tiering[state.tierKey].tier === 1);
+      });
+      byId("leaderboard-body").innerHTML = rows.map((row) => `
+        <tr>
+          <td class="rank">${escapeHtml(row.rank)}</td>
+          <td class="model-name"><strong>${escapeHtml(row.model)}</strong><br><span class="note">${escapeHtml(row.model_id)}</span></td>
+          <td class="numeric">${fmt(row.raw_score_pct)}%</td>
+          <td class="numeric">${escapeHtml(adjustmentText(row.adjustment_pp, row.adjustment_low_pp, row.adjustment_high_pp))}</td>
+          <td class="numeric">${fmt(row.p_top_5, 3)}</td>
+          <td class="numeric">${rankSpan(row.tiering[state.tierKey].rank_low, row.tiering[state.tierKey].rank_high)}</td>
+          <td><span class="badge tier">T${row.tiering[state.tierKey].tier}</span></td>
+        </tr>`).join("");
+      byId("row-count").textContent = `${rows.length} of ${state.benchmark.rows.length} models`;
+    }
+
+    function populateSelect(select, rows, selectedIndex) {
+      select.innerHTML = rows.map((row, index) =>
+        `<option value="${index}"${index === selectedIndex ? " selected" : ""}>${escapeHtml(row.rank)} · ${escapeHtml(row.model)}</option>`
+      ).join("");
+    }
+
+    function populateModelSelects() {
+      const rows = state.benchmark.rows;
+      populateSelect(byId("rpm-model"), rows, 0);
+      byId("rpm-rank").innerHTML = rows.map((_, index) =>
+        `<option value="${index}">Rank ${index + 1}</option>`).join("");
+    }
+
+    function rpmVisibleCount() {
+      const raw = byId("rpm-size").value;
+      if (raw === "tier1") return currentTierLevel().tier_1_size;
+      return raw === "all" ? state.benchmark.n_models :
+        Math.min(Number(raw), state.benchmark.n_models);
+    }
+
+    function parseColor(color) {
+      const probe = document.createElement("span");
+      probe.style.color = color;
+      document.body.appendChild(probe);
+      const resolved = getComputedStyle(probe).color;
+      probe.remove();
+      const values = resolved.match(/[\d.]+/g).map(Number);
+      return values.slice(0, 3);
+    }
+
+    function renderRpm() {
+      const benchmark = state.benchmark;
+      const count = rpmVisibleCount();
+      const canvas = byId("rpm-canvas");
+      const ratio = window.devicePixelRatio || 1;
+      const labelWidth = count <= 50 ? 178 : 8;
+      const top = count <= 50 ? 34 : 8;
+      const cell = Math.max(3.2, Math.min(18, 740 / count));
+      const width = Math.ceil(labelWidth + count * cell + 12);
+      const height = Math.ceil(top + count * cell + 12);
+      canvas.style.width = `${width}px`;
+      canvas.style.height = `${height}px`;
+      canvas.width = Math.ceil(width * ratio);
+      canvas.height = Math.ceil(height * ratio);
+      const ctx = canvas.getContext("2d");
+      ctx.scale(ratio, ratio);
+      const styles = getComputedStyle(document.documentElement);
+      const bg = styles.getPropertyValue("--surface").trim();
+      const text = styles.getPropertyValue("--muted").trim();
+      const accent = parseColor(styles.getPropertyValue("--accent").trim());
+      const tierBoundary = styles.getPropertyValue("--accent-2").trim();
+      ctx.fillStyle = bg;
+      ctx.fillRect(0, 0, width, height);
+      for (let row = 0; row < count; row += 1) {
+        for (let rank = 0; rank < count; rank += 1) {
+          const value = benchmark.rpm[row][rank];
+          const alpha = Math.max(0.025, Math.min(1, Math.sqrt(value)));
+          ctx.fillStyle = `rgba(${accent[0]},${accent[1]},${accent[2]},${alpha})`;
+          ctx.fillRect(labelWidth + rank * cell, top + row * cell, Math.ceil(cell), Math.ceil(cell));
+        }
+      }
+      ctx.strokeStyle = tierBoundary;
+      ctx.lineWidth = 1.5;
+      currentTierLevel().tiers.forEach((tier) => {
+        if (tier.end_position >= count) return;
+        const y = top + tier.end_position * cell;
+        ctx.beginPath();
+        ctx.moveTo(labelWidth, y);
+        ctx.lineTo(labelWidth + count * cell, y);
+        ctx.stroke();
+      });
+      if (count <= 50) {
+        ctx.fillStyle = text;
+        ctx.font = "11px system-ui";
+        ctx.textAlign = "right";
+        ctx.textBaseline = "middle";
+        benchmark.rows.slice(0, count).forEach((row, index) => {
+          const label = row.model.length > 24 ? `${row.model.slice(0, 23)}…` : row.model;
+          ctx.fillText(label, labelWidth - 7, top + index * cell + cell / 2);
+        });
+        ctx.textAlign = "center";
+        ctx.textBaseline = "bottom";
+        for (let rank = 0; rank < count; rank += Math.max(1, Math.ceil(count / 12))) {
+          ctx.fillText(String(rank + 1), labelWidth + rank * cell + cell / 2, top - 5);
+        }
+      }
+      state.canvas = { count, labelWidth, top, cell };
+    }
+
+    function updateRpmInspector() {
+      const model = Number(byId("rpm-model").value || 0);
+      const rank = Number(byId("rpm-rank").value || 0);
+      const value = state.benchmark.rpm[model][rank];
+      const tiering = state.benchmark.rows[model].tiering[state.tierKey];
+      byId("rpm-cell-value").textContent =
+        `${state.benchmark.rows[model].model} at rank ${rank + 1}: ${fmt(value, 4)} · ` +
+        `T${tiering.tier} · interval ${rankSpan(tiering.rank_low, tiering.rank_high)}`;
+    }
+
+    function renderLimitations() {
+      const benchmark = state.benchmark;
+      const shared = [
+        "Tiers annotate the observed leaderboard and do not replace or reorder its raw scores.",
+        "Membership in the same tier does not imply equal true performance; different tiers do not establish pairwise superiority.",
+        "The stated percentage is central mass in each bootstrap RPM row, not coverage for the entire tier partition.",
+        "Common-intersection tiers depend on observed-score order, and partitions at different rank-mass levels need not be nested.",
+        "With a finite number of bootstrap replicates, models near a tier boundary can move across it under a different random seed.",
+        "Interior-rank position adjustments are diagnostics and can over- or under-correct when local score gaps matter.",
+      ];
+      byId("limitations").innerHTML = [...benchmark.limitations, ...shared]
+        .map((item) => `<li>${escapeHtml(item)}</li>`).join("");
+    }
+
+    function leaderboardCsv() {
+      const header = [
+        "raw_rank", "model", "model_id", "raw_score_pct",
+        "position_adjustment_pp", "position_adjustment_low_pp",
+        "position_adjustment_high_pp", "p_top_5",
+        "rank_mass_low", "rank_mass_high", "tier",
+      ];
+      const lines = [header.join(",")];
+      state.benchmark.rows.forEach((row) => {
+        const tiering = row.tiering[state.tierKey];
+        lines.push([
+          row.rank, row.model, row.model_id, row.raw_score_pct,
+          row.adjustment_pp, row.adjustment_low_pp, row.adjustment_high_pp,
+          row.p_top_5, tiering.rank_low, tiering.rank_high, tiering.tier,
+        ].map(csvCell).join(","));
+      });
+      return `${lines.join("\n")}\n`;
+    }
+
+    function rpmCsv() {
+      const benchmark = state.benchmark;
+      const lines = [[
+        "raw_rank", "model", "model_id",
+        ...benchmark.rows.map((_, index) => `rank_${index + 1}`),
+      ].map(csvCell).join(",")];
+      benchmark.rows.forEach((row, index) => {
+        lines.push([
+          row.rank, row.model, row.model_id, ...benchmark.rpm[index],
+        ].map(csvCell).join(","));
+      });
+      return `${lines.join("\n")}\n`;
+    }
+
+    function tiersCsv() {
+      const lines = [[
+        "tier", "observed_rank_start", "observed_rank_end", "models",
+        "common_rank_low", "common_rank_high",
+      ].join(",")];
+      currentTierLevel().tiers.forEach((tier) => lines.push([
+        tier.tier,
+        tier.observed_rank_start,
+        tier.observed_rank_end,
+        tier.size,
+        tier.common_rank_low,
+        tier.common_rank_high,
+      ].map(csvCell).join(",")));
+      return `${lines.join("\n")}\n`;
+    }
+
+    byId("benchmark-select").innerHTML = REPORT_DATA.benchmarks.map((benchmark) =>
+      `<option value="${benchmark.key}">${escapeHtml(benchmark.label)}</option>`).join("");
+    byId("benchmark-select").addEventListener("change", (event) => selectBenchmark(event.target.value, false));
+    byId("model-search").addEventListener("input", renderLeaderboard);
+    byId("tier-one-only").addEventListener("change", renderLeaderboard);
+    byId("tier-level").addEventListener("change", (event) => {
+      state.tierKey = event.target.value;
+      renderTierLevel();
+      renderLeaderboard();
+      renderRpm();
+      updateRpmInspector();
+    });
+    byId("rpm-size").addEventListener("change", renderRpm);
+    byId("rpm-model").addEventListener("change", updateRpmInspector);
+    byId("rpm-rank").addEventListener("change", updateRpmInspector);
+    byId("rpm-canvas").addEventListener("pointermove", (event) => {
+      if (!state.canvas) return;
+      const rect = event.currentTarget.getBoundingClientRect();
+      const x = event.clientX - rect.left;
+      const y = event.clientY - rect.top;
+      const rank = Math.floor((x - state.canvas.labelWidth) / state.canvas.cell);
+      const model = Math.floor((y - state.canvas.top) / state.canvas.cell);
+      if (model >= 0 && model < state.canvas.count && rank >= 0 && rank < state.canvas.count) {
+        byId("rpm-pointer-value").textContent =
+          `${state.benchmark.rows[model].model} · rank ${rank + 1}: ${fmt(state.benchmark.rpm[model][rank], 4)}`;
+      } else {
+        byId("rpm-pointer-value").textContent = "";
+      }
+    });
+    byId("download-json").addEventListener("click", () =>
+      downloadText(benchmarkFilename("report.json"), `${JSON.stringify(state.benchmark, null, 2)}\n`, "application/json"));
+    byId("download-leaderboard").addEventListener("click", () =>
+      downloadText(benchmarkFilename("leaderboard.csv"), leaderboardCsv(), "text/csv"));
+    byId("download-leaderboard-json").addEventListener("click", () =>
+      downloadText(
+        benchmarkFilename("leaderboard.json"),
+        `${JSON.stringify(state.benchmark.rows, null, 2)}\n`,
+        "application/json"
+      ));
+    byId("download-rpm").addEventListener("click", () =>
+      downloadText(benchmarkFilename("rank-probability-matrix.csv"), rpmCsv(), "text/csv"));
+    byId("download-rpm-json").addEventListener("click", () =>
+      downloadText(
+        benchmarkFilename("rank-probability-matrix.json"),
+        `${JSON.stringify({
+          models: state.benchmark.rows.map((row) => ({
+            raw_rank: row.rank,
+            model: row.model,
+            model_id: row.model_id,
+          })),
+          ranks: state.benchmark.rows.map((_, index) => index + 1),
+          frequencies: state.benchmark.rpm,
+        }, null, 2)}\n`,
+        "application/json"
+      ));
+    byId("download-tiers").addEventListener("click", () =>
+      downloadText(benchmarkFilename(`${state.tierKey}-rpm-tiers.csv`), tiersCsv(), "text/csv"));
+    byId("download-tiers-json").addEventListener("click", () =>
+      downloadText(
+        benchmarkFilename(`${state.tierKey}-rpm-tiers.json`),
+        `${JSON.stringify(currentTierLevel(), null, 2)}\n`,
+        "application/json"
+      ));
+    window.addEventListener("resize", () => {
+      renderComparisonChart();
+      renderRpm();
+    });
+
+    renderOverview();
+    selectBenchmark(REPORT_DATA.benchmarks[0].key, false);
+  </script>
+</body>
+</html>

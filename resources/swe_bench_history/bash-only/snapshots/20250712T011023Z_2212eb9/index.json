@@ -1,0 +1,358 @@
+{
+  "counts": {
+    "entries": 12,
+    "failures": 12,
+    "parsed_models": 0
+  },
+  "failures": [
+    {
+      "entry": {
+        "checked": true,
+        "date": "2025-05-21",
+        "folder": "20250521_claude-sonnet-4-20250514",
+        "logo": [
+          "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_400x400.jpg"
+        ],
+        "logs": "s3://swe-bench-experiments/bash-only/20250521_claude-sonnet-4-20250514/logs",
+        "name": "Claude 4 Sonnet (20250514)",
+        "os_model": false,
+        "os_system": true,
+        "resolved": 65.17,
+        "site": "https://www.anthropic.com/news/claude-4",
+        "tags": [
+          "Org: Anthropic",
+          "Model: claude-4-sonnet-20250514",
+          "System: Attempts - 1"
+        ],
+        "trajs": "s3://swe-bench-experiments/bash-only/20250521_claude-sonnet-4-20250514/trajs",
+        "warning": null
+      },
+      "error": "candidate_scan_failed: No candidate trajectory URL was accessible.",
+      "model": "Claude 4 Sonnet (20250514)",
+      "model_id": "claude-4-sonnet-20250514",
+      "trajectory_url": null
+    },
+    {
+      "entry": {
+        "checked": true,
+        "date": "2025-05-21",
+        "folder": "20250521_o3-20250416",
+        "logo": [
+          "https://upload.wikimedia.org/wikipedia/commons/6/66/OpenAI_logo_2025_%28symbol%29.svg"
+        ],
+        "logs": "s3://swe-bench-experiments/bash-only/20250521_o3-20250416/logs",
+        "name": "o3 (2025-04-16)",
+        "os_model": false,
+        "os_system": true,
+        "resolved": 63.2,
+        "site": "https://platform.openai.com/docs/models/o3",
+        "tags": [
+          "Org: OpenAI",
+          "Model: o3-20250416",
+          "System: Attempts - 1"
+        ],
+        "trajs": "s3://swe-bench-experiments/bash-only/20250521_o3-20250416/trajs",
+        "warning": null
+      },
+      "error": "candidate_scan_failed: No candidate trajectory URL was accessible.",
+      "model": "o3 (2025-04-16)",
+      "model_id": "o3-2025-04-16",
+      "trajectory_url": null
+    },
+    {
+      "entry": {
+        "checked": true,
+        "date": "2025-05-21",
+        "folder": "20250521_o4-mini-20250416",
+        "logo": [
+          "https://upload.wikimedia.org/wikipedia/commons/6/66/OpenAI_logo_2025_%28symbol%29.svg"
+        ],
+        "logs": "s3://swe-bench-experiments/bash-only/20250521_o4-mini-20250416/logs",
+        "name": "o4-mini (2025-04-16)",
+        "os_model": false,
+        "os_system": true,
+        "resolved": 53.92,
+        "site": "https://platform.openai.com/docs/models/o4-mini",
+        "tags": [
+          "Org: OpenAI",
+          "Model: o4-mini-20250416",
+          "System: Attempts - 1"
+        ],
+        "trajs": "s3://swe-bench-experiments/bash-only/20250521_o4-mini-20250416/trajs",
+        "warning": null
+      },
+      "error": "candidate_scan_failed: No candidate trajectory URL was accessible.",
+      "model": "o4-mini (2025-04-16)",
+      "model_id": "o4-mini-2025-04-16",
+      "trajectory_url": null
+    },
+    {
+      "entry": {
+        "checked": true,
+        "date": "2025-05-21",
+        "folder": "20250521_claude-3-7-sonnet-20250219",
+        "logo": [
+          "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_400x400.jpg"
+        ],
+        "logs": "s3://swe-bench-experiments/bash-only/20250521_claude-3-7-sonnet-20250219/logs",
+        "name": "Claude 3.7 Sonnet (20250219)",
+        "os_model": false,
+        "os_system": true,
+        "resolved": 52.8,
+        "site": "https://www.anthropic.com/news/claude-3-7-sonnet",
+        "tags": [
+          "Org: Anthropic",
+          "Model: claude-3-7-sonnet-20250219",
+          "System: Attempts - 1"
+        ],
+        "trajs": "s3://swe-bench-experiments/bash-only/20250521_claude-3-7-sonnet-20250219/trajs",
+        "warning": null
+      },
+      "error": "candidate_scan_failed: No candidate trajectory URL was accessible.",
+      "model": "Claude 3.7 Sonnet (20250219)",
+      "model_id": "claude-3-7-sonnet-20250219",
+      "trajectory_url": null
+    },
+    {
+      "entry": {
+        "checked": true,
+        "date": "2025-05-21",
+        "folder": "20250521_gemini-2-5-pro-20250506",
+        "logo": [
+          "https://upload.wikimedia.org/wikipedia/commons/8/8f/Google-gemini-icon.svg"
+        ],
+        "logs": "s3://swe-bench-experiments/bash-only/20250521_gemini-2-5-pro-20250506/logs",
+        "name": "Gemini 2.5 Pro (2025-05-06)",
+        "os_model": false,
+        "os_system": true,
+        "resolved": 50.6,
+        "site": "https://ai.google.dev/gemini-api/docs/models",
+        "tags": [
+          "Org: Google DeepMind",
+          "Model: gemini-2.5-pro",
+          "System: Attempts - 1"
+        ],
+        "trajs": "s3://swe-bench-experiments/bash-only/20250521_gemini-2-5-pro-20250506/trajs",
+        "warning": null
+      },
+      "error": "candidate_scan_failed: No candidate trajectory URL was accessible.",
+      "model": "Gemini 2.5 Pro (2025-05-06)",
+      "model_id": "gemini-2-5-pro-2025-05-06",
+      "trajectory_url": null
+    },
+    {
+      "entry": {
+        "checked": true,
+        "date": "2025-05-21",
+        "folder": "20250521_gpt-4-1-20250414",
+        "logo": [
+          "https://upload.wikimedia.org/wikipedia/commons/6/66/OpenAI_logo_2025_%28symbol%29.svg"
+        ],
+        "logs": "s3://swe-bench-experiments/bash-only/20250521_gpt-4-1-20250414/logs",
+        "name": "GPT-4.1 (2025-04-14)",
+        "os_model": false,
+        "os_system": true,
+        "resolved": 39.58,
+        "site": "https://platform.openai.com/docs/models/gpt-4.1",
+        "tags": [
+          "Org: OpenAI",
+          "Model: gpt-4.1-20250414",
+          "System: Attempts - 1"
+        ],
+        "trajs": "s3://swe-bench-experiments/bash-only/20250521_gpt-4-1-20250414/trajs",
+        "warning": null
+      },
+      "error": "candidate_scan_failed: No candidate trajectory URL was accessible.",
+      "model": "GPT-4.1 (2025-04-14)",
+      "model_id": "gpt-4-1-2025-04-14",
+      "trajectory_url": null
+    },
+    {
+      "entry": {
+        "checked": true,
+        "date": "2025-05-21",
+        "folder": "20250521_gemini-2-5-flash-20250417",
+        "logo": [
+          "https://upload.wikimedia.org/wikipedia/commons/8/8f/Google-gemini-icon.svg"
+        ],
+        "logs": "s3://swe-bench-experiments/bash-only/20250521_gemini-2-5-flash-20250417/logs",
+        "name": "Gemini 2.5 Flash (2025-04-17)",
+        "os_model": false,
+        "os_system": true,
+        "resolved": 28.73,
+        "site": "https://ai.google.dev/gemini-api/docs/models",
+        "tags": [
+          "Org: Google DeepMind",
+          "Model: gemini-2.5-flash",
+          "System: Attempts - 1"
+        ],
+        "trajs": "s3://swe-bench-experiments/bash-only/20250521_gemini-2-5-flash-20250417/trajs",
+        "warning": null
+      },
+      "error": "candidate_scan_failed: No candidate trajectory URL was accessible.",
+      "model": "Gemini 2.5 Flash (2025-04-17)",
+      "model_id": "gemini-2-5-flash-2025-04-17",
+      "trajectory_url": null
+    },
+    {
+      "entry": {
+        "checked": true,
+        "date": "2025-05-21",
+        "folder": "20250521_gpt-4-1-mini-20250414",
+        "logo": [
+          "https://upload.wikimedia.org/wikipedia/commons/6/66/OpenAI_logo_2025_%28symbol%29.svg"
+        ],
+        "logs": "s3://swe-bench-experiments/bash-only/20250521_gpt-4-1-mini-20250414/logs",
+        "name": "GPT-4.1-mini (2025-04-14)",
+        "os_model": false,
+        "os_system": true,
+        "resolved": 24.25,
+        "site": "https://platform.openai.com/docs/models/gpt-4.1-mini",
+        "tags": [
+          "Org: OpenAI",
+          "Model: gpt-4.1-mini-20250414",
+          "System: Attempts - 1"
+        ],
+        "trajs": "s3://swe-bench-experiments/bash-only/20250521_gpt-4-1-mini-20250414/trajs",
+        "warning": null
+      },
+      "error": "candidate_scan_failed: No candidate trajectory URL was accessible.",
+      "model": "GPT-4.1-mini (2025-04-14)",
+      "model_id": "gpt-4-1-mini-2025-04-14",
+      "trajectory_url": null
+    },
+    {
+      "entry": {
+        "checked": true,
+        "date": "2025-05-21",
+        "folder": "20250521_gpt-4o-20241120",
+        "logo": [
+          "https://upload.wikimedia.org/wikipedia/commons/6/66/OpenAI_logo_2025_%28symbol%29.svg"
+        ],
+        "logs": "s3://swe-bench-experiments/bash-only/20250521_gpt-4o-20241120/logs",
+        "name": "GPT-4o (2024-11-20)",
+        "os_model": false,
+        "os_system": true,
+        "resolved": 22.53,
+        "site": "https://platform.openai.com/docs/models/gpt-4o",
+        "tags": [
+          "Org: OpenAI",
+          "Model: gpt-4o-20241120",
+          "System: Attempts - 1"
+        ],
+        "trajs": "s3://swe-bench-experiments/bash-only/20250521_gpt-4o-20241120/trajs",
+        "warning": null
+      },
+      "error": "candidate_scan_failed: No candidate trajectory URL was accessible.",
+      "model": "GPT-4o (2024-11-20)",
+      "model_id": "gpt-4o-2024-11-20",
+      "trajectory_url": null
+    },
+    {
+      "entry": {
+        "checked": true,
+        "date": "2025-05-21",
+        "folder": "20250521_llama-4-maverick-instruct",
+        "logo": [
+          "https://upload.wikimedia.org/wikipedia/commons/d/d0/Meta_Platforms_logo.svg"
+        ],
+        "logs": "s3://swe-bench-experiments/bash-only/20250521_llama-4-maverick-instruct/logs",
+        "name": "Llama 4 Maverick Instruct",
+        "os_model": false,
+        "os_system": true,
+        "resolved": 21.04,
+        "site": "https://www.together.ai/models/llama-4-maverick",
+        "tags": [
+          "Org: Meta",
+          "Model: llama-4-maverick-instruct",
+          "System: Attempts - 1"
+        ],
+        "trajs": "s3://swe-bench-experiments/bash-only/20250521_llama-4-maverick-instruct/trajs",
+        "warning": null
+      },
+      "error": "candidate_scan_failed: No candidate trajectory URL was accessible.",
+      "model": "Llama 4 Maverick Instruct",
+      "model_id": "llama-4-maverick-instruct",
+      "trajectory_url": null
+    },
+    {
+      "entry": {
+        "checked": true,
+        "date": "2025-05-21",
+        "folder": "20250521_gemini-2-0-flash",
+        "logo": [
+          "https://upload.wikimedia.org/wikipedia/commons/8/8f/Google-gemini-icon.svg"
+        ],
+        "logs": "s3://swe-bench-experiments/bash-only/20250521_gemini-2-0-flash/logs",
+        "name": "Gemini 2.0 flash",
+        "os_model": false,
+        "os_system": true,
+        "resolved": 14.61,
+        "site": "https://ai.google.dev/gemini-api/docs/models",
+        "tags": [
+          "Org: Google DeepMind",
+          "Model: gemini-2.0-flash",
+          "System: Attempts - 1"
+        ],
+        "trajs": "s3://swe-bench-experiments/bash-only/20250521_gemini-2-0-flash/trajs",
+        "warning": null
+      },
+      "error": "candidate_scan_failed: No candidate trajectory URL was accessible.",
+      "model": "Gemini 2.0 flash",
+      "model_id": "gemini-2-0-flash",
+      "trajectory_url": null
+    },
+    {
+      "entry": {
+        "checked": true,
+        "date": "2025-05-21",
+        "folder": "20250521_llama-4-scout-instruct",
+        "logo": [
+          "https://upload.wikimedia.org/wikipedia/commons/d/d0/Meta_Platforms_logo.svg"
+        ],
+        "logs": "s3://swe-bench-experiments/bash-only/20250521_llama-4-scout-instruct/logs",
+        "name": "Llama 4 Scout Instruct",
+        "os_model": false,
+        "os_system": true,
+        "resolved": 9.06,
+        "site": "https://www.together.ai/models/llama-4-scout",
+        "tags": [
+          "Org: Meta",
+          "Model: llama-4-scout-instruct",
+          "System: Attempts - 1"
+        ],
+        "trajs": "s3://swe-bench-experiments/bash-only/20250521_llama-4-scout-instruct/trajs",
+        "warning": null
+      },
+      "error": "candidate_scan_failed: No candidate trajectory URL was accessible.",
+      "model": "Llama 4 Scout Instruct",
+      "model_id": "llama-4-scout-instruct",
+      "trajectory_url": null
+    }
+  ],
+  "leaderboard": "bash-only",
+  "models": [],
+  "snapshot_id": "20250712T011023Z_2212eb9",
+  "source": {
+    "experiments_base": "https://raw.githubusercontent.com/SWE-bench/experiments/e56d2296a61d3b4912aa90526bb56ddbdffc7f4a/evaluation/bash-only",
+    "experiments_commit": {
+      "date": "2025-08-25T21:18:10+00:00",
+      "html_url": "https://github.com/SWE-bench/experiments/commit/e56d2296a61d3b4912aa90526bb56ddbdffc7f4a",
+      "message": "Add `bash-only` split",
+      "sha": "e56d2296a61d3b4912aa90526bb56ddbdffc7f4a"
+    },
+    "experiments_fallback": true,
+    "experiments_repo": "SWE-bench/experiments",
+    "leaderboard_commit": {
+      "date": "2025-07-12T01:10:23+00:00",
+      "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/2212eb9e64a518ae4076435325a12269641acc30",
+      "message": "Add bash only page",
+      "raw_url": "https://raw.githubusercontent.com/SWE-bench/swe-bench.github.io/2212eb9e64a518ae4076435325a12269641acc30/data/leaderboards.json",
+      "sha": "2212eb9e64a518ae4076435325a12269641acc30"
+    },
+    "leaderboard_path": "data/leaderboards.json",
+    "leaderboard_repo": "SWE-bench/swe-bench.github.io"
+  },
+  "status": "ok",
+  "status_message": null
+}

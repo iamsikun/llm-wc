@@ -1,0 +1,186 @@
+{
+  "counts": {
+    "models": 13,
+    "scores": 3913,
+    "tasks": 301
+  },
+  "created_at": "2026-10-25T14:02:38+00:00",
+  "files": {
+    "models.csv": {
+      "bytes": 517,
+      "sha256": "1fa847226c6a5a955dbfd1d9ee4f7165b40080b6e00a161172a05324bb18876a"
+    },
+    "scores.csv.gz": {
+      "bytes": 15574,
+      "sha256": "d5b5e78ca2c5fe6628959416c49ddf521ab0a545c3f302d4e7a6f5483fc6ee2d"
+    },
+    "tasks.csv.gz": {
+      "bytes": 1802,
+      "sha256": "0fef0c3d5afbdc29165efd478ea1c39734e2c112fe22a0dad186989764330378"
+    }
+  },
+  "fingerprint": "f8a80b99daa765812a326dfd09504ccb0db61b4ef7f58b5912845e8c362034d6",
+  "format_version": 1,
+  "notes": {
+    "parser_failures": 0
+  },
+  "snapshot_id": "20260901T025340Z_193160a",
+  "source": "swebench_multilingual",
+  "upstream": {
+    "date": "2026-09-01T02:53:40Z",
+    "experiments": "SWE-bench/experiments",
+    "index": {
+      "counts": {
+        "entries": 13,
+        "failures": 0,
+        "parsed_models": 13
+      },
+      "leaderboard": "multilingual",
+      "models": [
+        {
+          "counts": {
+            "resolved": 218,
+            "total": 300
+          },
+          "model": "Gemini 3 Flash",
+          "model_id": "gemini-3-flash",
+          "trajectory_url": "leaderboard:per_instance_details"
+        },
+        {
+          "counts": {
+            "resolved": 216,
+            "total": 300
+          },
+          "model": "Claude 4.6 Opus",
+          "model_id": "claude-4-6-opus",
+          "trajectory_url": "leaderboard:per_instance_details"
+        },
+        {
+          "counts": {
+            "resolved": 212,
+            "total": 300
+          },
+          "model": "Claude 4.5 Opus",
+          "model_id": "claude-4-5-opus",
+          "trajectory_url": "leaderboard:per_instance_details"
+        },
+        {
+          "counts": {
+            "resolved": 209,
+            "total": 300
+          },
+          "model": "GLM 5",
+          "model_id": "glm-5",
+          "trajectory_url": "leaderboard:per_instance_details"
+        },
+        {
+          "counts": {
+            "resolved": 206,
+            "total": 300
+          },
+          "model": "Gemini 3 Pro",
+          "model_id": "gemini-3-pro",
+          "trajectory_url": "leaderboard:per_instance_details"
+        },
+        {
+          "counts": {
+            "resolved": 203,
+            "total": 297
+          },
+          "model": "MiniMax M2.5",
+          "model_id": "minimax-m2-5",
+          "trajectory_url": "leaderboard:per_instance_details"
+        },
+        {
+          "counts": {
+            "resolved": 202,
+            "total": 300
+          },
+          "model": "Kimi K2.5",
+          "model_id": "kimi-k2-5",
+          "trajectory_url": "leaderboard:per_instance_details"
+        },
+        {
+          "counts": {
+            "resolved": 201,
+            "total": 300
+          },
+          "model": "Claude 4.5 Sonnet",
+          "model_id": "claude-4-5-sonnet",
+          "trajectory_url": "leaderboard:per_instance_details"
+        },
+        {
+          "counts": {
+            "resolved": 200,
+            "total": 300
+          },
+          "model": "GPT 5.2 (high)",
+          "model_id": "gpt-5-2-high",
+          "trajectory_url": "leaderboard:per_instance_details"
+        },
+        {
+          "counts": {
+            "resolved": 199,
+            "total": 300
+          },
+          "model": "GPT 5.2 Codex",
+          "model_id": "gpt-5-2-codex",
+          "trajectory_url": "leaderboard:per_instance_details"
+        },
+        {
+          "counts": {
+            "resolved": 194,
+            "total": 300
+          },
+          "model": "Claude 4.5 Haiku",
+          "model_id": "claude-4-5-haiku",
+          "trajectory_url": "leaderboard:per_instance_details"
+        },
+        {
+          "counts": {
+            "resolved": 177,
+            "total": 300
+          },
+          "model": "DeepSeek V3.2",
+          "model_id": "deepseek-v3-2",
+          "trajectory_url": "leaderboard:per_instance_details"
+        },
+        {
+          "counts": {
+            "resolved": 119,
+            "total": 300
+          },
+          "model": "GPT 5 mini",
+          "model_id": "gpt-5-mini",
+          "trajectory_url": "leaderboard:per_instance_details"
+        }
+      ],
+      "snapshot_id": "20260901T025340Z_193160a",
+      "source": {
+        "experiments_base": "https://raw.githubusercontent.com/SWE-bench/experiments/1faa91cade0562ba62b66c1c99e71f7b72d96f13/evaluation/multilingual",
+        "experiments_commit": {
+          "date": "2026-08-10T01:57:28+00:00",
+          "html_url": "https://github.com/SWE-bench/experiments/commit/1faa91cade0562ba62b66c1c99e71f7b72d96f13",
+          "message": "Clean up model display names in mini-SWE-agent metadata",
+          "sha": "1faa91cade0562ba62b66c1c99e71f7b72d96f13"
+        },
+        "experiments_fallback": false,
+        "experiments_repo": "SWE-bench/experiments",
+        "leaderboard_commit": {
+          "date": "2026-09-01T02:53:40+00:00",
+          "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/193160a463a435d05cf44a1fa9dc5eac832113c3",
+          "message": "Drop bash-only board; show mini icon alongside model logo",
+          "raw_url": "https://raw.githubusercontent.com/SWE-bench/swe-bench.github.io/193160a463a435d05cf44a1fa9dc5eac832113c3/data/leaderboards.json",
+          "sha": "193160a463a435d05cf44a1fa9dc5eac832113c3"
+        },
+        "leaderboard_path": "data/leaderboards.json",
+        "leaderboard_repo": "SWE-bench/swe-bench.github.io"
+      },
+      "status": "ok",
+      "status_message": null
+    },
+    "leaderboard": "SWE-bench/swe-bench.github.io/data/leaderboards.json",
+    "revision": "193160a463a435d05cf44a1fa9dc5eac832113c3",
+    "url": "https://github.com/SWE-bench/swe-bench.github.io/commit/193160a463a435d05cf44a1fa9dc5eac832113c3"
+  }
+}

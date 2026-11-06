@@ -1,0 +1,142 @@
+{
+  "counts": {
+    "entries": 12,
+    "failures": 0,
+    "parsed_models": 12
+  },
+  "failures": [],
+  "leaderboard": "multilingual",
+  "models": [
+    {
+      "counts": {
+        "resolved": 216,
+        "total": 298
+      },
+      "model": "Gemini 3 Flash",
+      "model_id": "gemini-3-flash",
+      "trajectory_url": "leaderboard:per_instance_details"
+    },
+    {
+      "counts": {
+        "resolved": 213,
+        "total": 298
+      },
+      "model": "Claude 4.6 Opus",
+      "model_id": "claude-4-6-opus",
+      "trajectory_url": "leaderboard:per_instance_details"
+    },
+    {
+      "counts": {
+        "resolved": 210,
+        "total": 298
+      },
+      "model": "Claude 4.5 Opus",
+      "model_id": "claude-4-5-opus",
+      "trajectory_url": "leaderboard:per_instance_details"
+    },
+    {
+      "counts": {
+        "resolved": 207,
+        "total": 298
+      },
+      "model": "GLM-5",
+      "model_id": "glm-5",
+      "trajectory_url": "leaderboard:per_instance_details"
+    },
+    {
+      "counts": {
+        "resolved": 204,
+        "total": 298
+      },
+      "model": "Gemini 3 Pro",
+      "model_id": "gemini-3-pro",
+      "trajectory_url": "leaderboard:per_instance_details"
+    },
+    {
+      "counts": {
+        "resolved": 203,
+        "total": 297
+      },
+      "model": "Minimax 2.5",
+      "model_id": "minimax-2-5",
+      "trajectory_url": "leaderboard:per_instance_details"
+    },
+    {
+      "counts": {
+        "resolved": 199,
+        "total": 298
+      },
+      "model": "Claude 4.5 Sonnet",
+      "model_id": "claude-4-5-sonnet",
+      "trajectory_url": "leaderboard:per_instance_details"
+    },
+    {
+      "counts": {
+        "resolved": 199,
+        "total": 297
+      },
+      "model": "Kimi K2.5",
+      "model_id": "kimi-k2-5",
+      "trajectory_url": "leaderboard:per_instance_details"
+    },
+    {
+      "counts": {
+        "resolved": 197,
+        "total": 297
+      },
+      "model": "GPT-5.2 (high reasoning)",
+      "model_id": "gpt-5-2-high-reasoning",
+      "trajectory_url": "leaderboard:per_instance_details"
+    },
+    {
+      "counts": {
+        "resolved": 191,
+        "total": 297
+      },
+      "model": "Claude 4.5 Haiku",
+      "model_id": "claude-4-5-haiku",
+      "trajectory_url": "leaderboard:per_instance_details"
+    },
+    {
+      "counts": {
+        "resolved": 174,
+        "total": 298
+      },
+      "model": "DeepSeek V3.2",
+      "model_id": "deepseek-v3-2",
+      "trajectory_url": "leaderboard:per_instance_details"
+    },
+    {
+      "counts": {
+        "resolved": 117,
+        "total": 298
+      },
+      "model": "GPT-5 mini",
+      "model_id": "gpt-5-mini",
+      "trajectory_url": "leaderboard:per_instance_details"
+    }
+  ],
+  "snapshot_id": "20260218T102035Z_6560f87",
+  "source": {
+    "experiments_base": "https://raw.githubusercontent.com/SWE-bench/experiments/e4af158d8cd5c9d93e75b56c9455ec7eba2b2dc5/evaluation/multilingual",
+    "experiments_commit": {
+      "date": "2026-02-18T10:20:29+00:00",
+      "html_url": "https://github.com/SWE-bench/experiments/commit/e4af158d8cd5c9d93e75b56c9455ec7eba2b2dc5",
+      "message": "Add missing logo/site metadata for Minimax, GLM-5, and DeepSeek models\n\n- Minimax M2, M2.5, and M2.5 (high): Add logo and site URLs\n- GLM-5 (high): Add logo and site URLs\n- DeepSeek V3.2 (high): Add site URL",
+      "sha": "e4af158d8cd5c9d93e75b56c9455ec7eba2b2dc5"
+    },
+    "experiments_fallback": false,
+    "experiments_repo": "SWE-bench/experiments",
+    "leaderboard_commit": {
+      "date": "2026-02-18T10:20:35+00:00",
+      "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/6560f8742653bdecf25940de9705d95ec3e94480",
+      "message": "Update leaderboards: add 11 bash-only models, update multilingual docent URLs\n\nbash-only: 38 \u2192 45 entries (11 new Feb 17 models)\nmultilingual: 12 entries with updated docent dashboard URLs",
+      "raw_url": "https://raw.githubusercontent.com/SWE-bench/swe-bench.github.io/6560f8742653bdecf25940de9705d95ec3e94480/data/leaderboards.json",
+      "sha": "6560f8742653bdecf25940de9705d95ec3e94480"
+    },
+    "leaderboard_path": "data/leaderboards.json",
+    "leaderboard_repo": "SWE-bench/swe-bench.github.io"
+  },
+  "status": "ok",
+  "status_message": null
+}

@@ -1,0 +1,142 @@
+{
+  "counts": {
+    "entries": 12,
+    "failures": 0,
+    "parsed_models": 12
+  },
+  "failures": [],
+  "leaderboard": "multilingual",
+  "models": [
+    {
+      "counts": {
+        "resolved": 216,
+        "total": 298
+      },
+      "model": "Gemini 3 Flash",
+      "model_id": "gemini-3-flash",
+      "trajectory_url": "leaderboard:per_instance_details"
+    },
+    {
+      "counts": {
+        "resolved": 213,
+        "total": 298
+      },
+      "model": "Claude 4.6 Opus",
+      "model_id": "claude-4-6-opus",
+      "trajectory_url": "leaderboard:per_instance_details"
+    },
+    {
+      "counts": {
+        "resolved": 210,
+        "total": 298
+      },
+      "model": "Claude 4.5 Opus",
+      "model_id": "claude-4-5-opus",
+      "trajectory_url": "leaderboard:per_instance_details"
+    },
+    {
+      "counts": {
+        "resolved": 207,
+        "total": 298
+      },
+      "model": "GLM-5",
+      "model_id": "glm-5",
+      "trajectory_url": "leaderboard:per_instance_details"
+    },
+    {
+      "counts": {
+        "resolved": 204,
+        "total": 298
+      },
+      "model": "Gemini 3 Pro",
+      "model_id": "gemini-3-pro",
+      "trajectory_url": "leaderboard:per_instance_details"
+    },
+    {
+      "counts": {
+        "resolved": 203,
+        "total": 297
+      },
+      "model": "Minimax 2.5",
+      "model_id": "minimax-2-5",
+      "trajectory_url": "leaderboard:per_instance_details"
+    },
+    {
+      "counts": {
+        "resolved": 199,
+        "total": 298
+      },
+      "model": "Claude 4.5 Sonnet",
+      "model_id": "claude-4-5-sonnet",
+      "trajectory_url": "leaderboard:per_instance_details"
+    },
+    {
+      "counts": {
+        "resolved": 199,
+        "total": 297
+      },
+      "model": "Kimi K2.5",
+      "model_id": "kimi-k2-5",
+      "trajectory_url": "leaderboard:per_instance_details"
+    },
+    {
+      "counts": {
+        "resolved": 197,
+        "total": 297
+      },
+      "model": "GPT-5.2",
+      "model_id": "gpt-5-2",
+      "trajectory_url": "leaderboard:per_instance_details"
+    },
+    {
+      "counts": {
+        "resolved": 191,
+        "total": 297
+      },
+      "model": "Claude 4.5 Haiku",
+      "model_id": "claude-4-5-haiku",
+      "trajectory_url": "leaderboard:per_instance_details"
+    },
+    {
+      "counts": {
+        "resolved": 174,
+        "total": 298
+      },
+      "model": "DeepSeek V3.2",
+      "model_id": "deepseek-v3-2",
+      "trajectory_url": "leaderboard:per_instance_details"
+    },
+    {
+      "counts": {
+        "resolved": 117,
+        "total": 298
+      },
+      "model": "GPT-5 mini",
+      "model_id": "gpt-5-mini",
+      "trajectory_url": "leaderboard:per_instance_details"
+    }
+  ],
+  "snapshot_id": "20260218T103120Z_494cbaf",
+  "source": {
+    "experiments_base": "https://raw.githubusercontent.com/SWE-bench/experiments/33824506ec6a82ae7ffa24269acfe1adc30c34d3/evaluation/multilingual",
+    "experiments_commit": {
+      "date": "2026-02-18T10:31:16+00:00",
+      "html_url": "https://github.com/SWE-bench/experiments/commit/33824506ec6a82ae7ffa24269acfe1adc30c34d3",
+      "message": "Remove (high reasoning) suffix from model names",
+      "sha": "33824506ec6a82ae7ffa24269acfe1adc30c34d3"
+    },
+    "experiments_fallback": false,
+    "experiments_repo": "SWE-bench/experiments",
+    "leaderboard_commit": {
+      "date": "2026-02-18T10:31:20+00:00",
+      "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/494cbafe33cc725653296ada7caef0a355a5bc29",
+      "message": "Remove (high reasoning) suffix from model names",
+      "raw_url": "https://raw.githubusercontent.com/SWE-bench/swe-bench.github.io/494cbafe33cc725653296ada7caef0a355a5bc29/data/leaderboards.json",
+      "sha": "494cbafe33cc725653296ada7caef0a355a5bc29"
+    },
+    "leaderboard_path": "data/leaderboards.json",
+    "leaderboard_repo": "SWE-bench/swe-bench.github.io"
+  },
+  "status": "ok",
+  "status_message": null
+}

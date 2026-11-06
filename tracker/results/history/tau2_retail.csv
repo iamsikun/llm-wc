@@ -1,0 +1,3 @@
+snapshot_id,date,edition,n_tasks,n_models,m,leader_model,leader_raw_score_pct,leader_adjustment_pp,position_1_adjustment_pp,leader_p_rank_1,tiers_80,tier_1_size_80
+20260410,2026-04-10,reference,114,7,70,Nemotron-Orchestrator-8B,84.21052631578947,2.2002370342206587,2.2002370342206587,0.6308333333333334,2,5
+20261023_0763c6e,2026-10-23,live,114,8,70,Qwen3.5-397B-A17B,84.4298245614035,0.899838489948168,0.899838489948168,0.7831666666666668,3,3

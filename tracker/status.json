@@ -1,0 +1,114 @@
+{
+  "alpaca_eval_2": {
+    "checked_at": "2026-10-25T13:57:16+00:00",
+    "last_success": "2026-10-25T13:57:16+00:00",
+    "result": "same_as_reference",
+    "upstream": {
+      "data_path_commit": "474386e3be4159b3ebe8f755071e706c47ea7f4f",
+      "date": "2024-12-27T20:22:47Z",
+      "revision": "cd543a149df89434d8a54582c0151c0b945c3d20",
+      "url": "https://github.com/tatsu-lab/alpaca_eval/commit/cd543a149df89434d8a54582c0151c0b945c3d20"
+    }
+  },
+  "livebench": {
+    "checked_at": "2026-10-25T13:57:14+00:00",
+    "last_success": "2026-10-25T13:57:14+00:00",
+    "result": "same_as_reference",
+    "upstream": {
+      "date": "2025-04-07T20:34:22+00:00",
+      "revision": "9704e5da7bfbefe75ac1482a13de827127295993",
+      "url": "https://huggingface.co/datasets/livebench/model_judgment/tree/9704e5da7bfbefe75ac1482a13de827127295993"
+    }
+  },
+  "swebench_bash_only": {
+    "checked_at": "2026-10-25T14:08:00+00:00",
+    "reason": "upstream no longer lists this board (commit 193160a: Drop bash-only board; show mini icon alongside model logo)",
+    "result": "unavailable"
+  },
+  "swebench_lite": {
+    "checked_at": "2026-10-25T14:02:38+00:00",
+    "last_success": "2026-10-25T14:02:38+00:00",
+    "reports": 1,
+    "result": "updated",
+    "snapshot_id": "20260901T025340Z_193160a",
+    "upstream": {
+      "date": "2026-09-01T02:53:40Z",
+      "revision": "193160a463a435d05cf44a1fa9dc5eac832113c3",
+      "url": "https://github.com/SWE-bench/swe-bench.github.io/commit/193160a463a435d05cf44a1fa9dc5eac832113c3"
+    }
+  },
+  "swebench_multilingual": {
+    "checked_at": "2026-10-25T14:02:35+00:00",
+    "last_success": "2026-10-25T14:02:35+00:00",
+    "reports": 1,
+    "result": "updated",
+    "snapshot_id": "20260901T025340Z_193160a",
+    "upstream": {
+      "date": "2026-09-01T02:53:40Z",
+      "revision": "193160a463a435d05cf44a1fa9dc5eac832113c3",
+      "url": "https://github.com/SWE-bench/swe-bench.github.io/commit/193160a463a435d05cf44a1fa9dc5eac832113c3"
+    }
+  },
+  "swebench_multimodal": {
+    "checked_at": "2026-10-25T14:01:55+00:00",
+    "last_success": "2026-10-25T14:01:55+00:00",
+    "result": "same_as_reference",
+    "upstream": {
+      "date": "2026-09-01T02:53:40Z",
+      "revision": "193160a463a435d05cf44a1fa9dc5eac832113c3",
+      "url": "https://github.com/SWE-bench/swe-bench.github.io/commit/193160a463a435d05cf44a1fa9dc5eac832113c3"
+    }
+  },
+  "swebench_pro": {
+    "checked_at": "2026-10-25T14:05:37+00:00",
+    "last_success": "2026-10-25T14:05:37+00:00",
+    "result": "same_as_reference"
+  },
+  "swebench_test": {
+    "checked_at": "2026-10-25T14:04:55+00:00",
+    "last_success": "2026-10-25T14:04:55+00:00",
+    "reports": 1,
+    "result": "updated",
+    "snapshot_id": "20260901T025340Z_193160a",
+    "upstream": {
+      "date": "2026-09-01T02:53:40Z",
+      "revision": "193160a463a435d05cf44a1fa9dc5eac832113c3",
+      "url": "https://github.com/SWE-bench/swe-bench.github.io/commit/193160a463a435d05cf44a1fa9dc5eac832113c3"
+    }
+  },
+  "swebench_verified": {
+    "checked_at": "2026-10-25T13:57:27+00:00",
+    "last_success": "2026-10-25T13:57:27+00:00",
+    "reports": 1,
+    "result": "updated",
+    "snapshot_id": "20260901T025340Z_193160a",
+    "upstream": {
+      "date": "2026-09-01T02:53:40Z",
+      "revision": "193160a463a435d05cf44a1fa9dc5eac832113c3",
+      "url": "https://github.com/SWE-bench/swe-bench.github.io/commit/193160a463a435d05cf44a1fa9dc5eac832113c3"
+    }
+  },
+  "tau2": {
+    "checked_at": "2026-10-25T14:10:43+00:00",
+    "last_success": "2026-10-25T14:10:43+00:00",
+    "reports": 3,
+    "result": "updated",
+    "snapshot_id": "20261023_0763c6e",
+    "upstream": {
+      "date": "2026-10-23T20:18:32Z",
+      "revision": "0763c6e076dd635aab3a6e65e80ba500dcb5e36e",
+      "url": "https://github.com/sierra-research/tau2-bench/commit/0763c6e076dd635aab3a6e65e80ba500dcb5e36e"
+    }
+  },
+  "wildbench_v2": {
+    "checked_at": "2026-10-25T13:57:18+00:00",
+    "last_success": "2026-10-25T13:57:18+00:00",
+    "result": "same_as_reference",
+    "upstream": {
+      "data_path_commit": "d6b8dcaf377d173d031980f97c16e1a82618c03d",
+      "date": "2024-08-01T07:26:26Z",
+      "revision": "d6b8dcaf377d173d031980f97c16e1a82618c03d",
+      "url": "https://github.com/allenai/WildBench/commit/d6b8dcaf377d173d031980f97c16e1a82618c03d"
+    }
+  }
+}

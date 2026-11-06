@@ -1,0 +1,33 @@
+{
+  "counts": {
+    "entries": 0,
+    "failures": 0,
+    "parsed_models": 0
+  },
+  "failures": [],
+  "leaderboard": "bash-only",
+  "models": [],
+  "snapshot_id": "20250704T172209Z_64ecce3",
+  "source": {
+    "experiments_base": "https://raw.githubusercontent.com/SWE-bench/experiments/e56d2296a61d3b4912aa90526bb56ddbdffc7f4a/evaluation/bash-only",
+    "experiments_commit": {
+      "date": "2025-08-25T21:18:10+00:00",
+      "html_url": "https://github.com/SWE-bench/experiments/commit/e56d2296a61d3b4912aa90526bb56ddbdffc7f4a",
+      "message": "Add `bash-only` split",
+      "sha": "e56d2296a61d3b4912aa90526bb56ddbdffc7f4a"
+    },
+    "experiments_fallback": true,
+    "experiments_repo": "SWE-bench/experiments",
+    "leaderboard_commit": {
+      "date": "2025-07-04T17:22:09+00:00",
+      "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/64ecce3a25c7647d72f8835dbaf38c71de1aade2",
+      "message": "Update leaderboard",
+      "raw_url": "https://raw.githubusercontent.com/SWE-bench/swe-bench.github.io/64ecce3a25c7647d72f8835dbaf38c71de1aade2/data/leaderboards.json",
+      "sha": "64ecce3a25c7647d72f8835dbaf38c71de1aade2"
+    },
+    "leaderboard_path": "data/leaderboards.json",
+    "leaderboard_repo": "SWE-bench/swe-bench.github.io"
+  },
+  "status": "missing_leaderboard",
+  "status_message": "\"No leaderboard named 'bash-only' found in list payload\""
+}

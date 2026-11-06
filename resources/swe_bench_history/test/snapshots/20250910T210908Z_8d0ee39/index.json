@@ -1,0 +1,232 @@
+{
+  "counts": {
+    "entries": 22,
+    "failures": 0,
+    "parsed_models": 22
+  },
+  "failures": [],
+  "leaderboard": "test",
+  "models": [
+    {
+      "counts": {
+        "resolved": 963,
+        "total": 963
+      },
+      "model": "Atlassian Rovo Dev (2025-06-05)",
+      "model_id": "atlassian-rovo-dev-2025-06-05",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6adccbd67eb9e743510db8106a51535ae5f3d041/evaluation/test/20250605_atlassian-rovo-dev/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 851,
+        "total": 851
+      },
+      "model": "Amazon Q Developer Agent (v20250405-dev)",
+      "model_id": "amazon-q-developer-agent-v20250405-dev",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6adccbd67eb9e743510db8106a51535ae5f3d041/evaluation/test/20250522_amazon-q-developer-agent-20250405-dev/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 776,
+        "total": 776
+      },
+      "model": "SWE-agent 1.0 (Claude 3.7 Sonnet)",
+      "model_id": "swe-agent-1-0-claude-3-7-sonnet",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6adccbd67eb9e743510db8106a51535ae5f3d041/evaluation/test/20250227_sweagent-claude-3-7-20250219/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 688,
+        "total": 688
+      },
+      "model": "Amazon Q Developer Agent (v20241202-dev)",
+      "model_id": "amazon-q-developer-agent-v20241202-dev",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6adccbd67eb9e743510db8106a51535ae5f3d041/evaluation/test/20250131_amazon-q-developer-agent-20241202-dev/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 674,
+        "total": 674
+      },
+      "model": "OpenHands + CodeAct v2.1 (claude-3-5-sonnet-20241022)",
+      "model_id": "openhands-codeact-v2-1-claude-3-5-sonnet-20241022",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6adccbd67eb9e743510db8106a51535ae5f3d041/evaluation/test/20241103_OpenHands-CodeAct-2.1-sonnet-20241022/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 571,
+        "total": 571
+      },
+      "model": "AutoCodeRover-v2.0 (Claude-3.5-Sonnet-20241022)",
+      "model_id": "autocoderover-v2-0-claude-3-5-sonnet-20241022",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6adccbd67eb9e743510db8106a51535ae5f3d041/evaluation/test/20241121_autocoderover-v2.0-claude-3-5-sonnet-20241022/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 506,
+        "total": 506
+      },
+      "model": "Honeycomb",
+      "model_id": "honeycomb",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6adccbd67eb9e743510db8106a51535ae5f3d041/evaluation/test/20240820_honeycomb/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 453,
+        "total": 453
+      },
+      "model": "Amazon Q Developer Agent (v20240719-dev)",
+      "model_id": "amazon-q-developer-agent-v20240719-dev",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6adccbd67eb9e743510db8106a51535ae5f3d041/evaluation/test/20240721_amazon-q-developer-agent-20240719-dev/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 442,
+        "total": 442
+      },
+      "model": "Factory Code Droid",
+      "model_id": "factory-code-droid",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6adccbd67eb9e743510db8106a51535ae5f3d041/evaluation/test/20240617_factory_code_droid/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 432,
+        "total": 432
+      },
+      "model": "AutoCodeRover (v20240620) + GPT 4o (2024-05-13)",
+      "model_id": "autocoderover-v20240620-gpt-4o-2024-05-13",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6adccbd67eb9e743510db8106a51535ae5f3d041/evaluation/test/20240628_autocoderover-v20240620/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 416,
+        "total": 416
+      },
+      "model": "SWE-agent + Claude 3.5 Sonnet",
+      "model_id": "swe-agent-claude-3-5-sonnet",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6adccbd67eb9e743510db8106a51535ae5f3d041/evaluation/test/20240620_sweagent_claude3.5sonnet/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 335,
+        "total": 335
+      },
+      "model": "AppMap Navie + GPT 4o (2024-05-13)",
+      "model_id": "appmap-navie-gpt-4o-2024-05-13",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6adccbd67eb9e743510db8106a51535ae5f3d041/evaluation/test/20240615_appmap-navie_gpt4o/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 317,
+        "total": 317
+      },
+      "model": "Amazon Q Developer Agent (v20240430-dev)",
+      "model_id": "amazon-q-developer-agent-v20240430-dev",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6adccbd67eb9e743510db8106a51535ae5f3d041/evaluation/test/20240509_amazon-q-developer-agent-20240430-dev/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 286,
+        "total": 286
+      },
+      "model": "SWE-agent + GPT 4 (1106)",
+      "model_id": "swe-agent-gpt-4-1106",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6adccbd67eb9e743510db8106a51535ae5f3d041/evaluation/test/20240402_sweagent_gpt4/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 275,
+        "total": 275
+      },
+      "model": "SWE-agent + GPT 4o (2024-05-13)",
+      "model_id": "swe-agent-gpt-4o-2024-05-13",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6adccbd67eb9e743510db8106a51535ae5f3d041/evaluation/test/20240728_sweagent_gpt4o/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 213,
+        "total": 213
+      },
+      "model": "SWE-agent + Claude 3 Opus",
+      "model_id": "swe-agent-claude-3-opus",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6adccbd67eb9e743510db8106a51535ae5f3d041/evaluation/test/20240402_sweagent_claude3opus/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 87,
+        "total": 87
+      },
+      "model": "RAG + Claude 3 Opus",
+      "model_id": "rag-claude-3-opus",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6adccbd67eb9e743510db8106a51535ae5f3d041/evaluation/test/20240402_rag_claude3opus/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 45,
+        "total": 45
+      },
+      "model": "RAG + Claude 2",
+      "model_id": "rag-claude-2",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6adccbd67eb9e743510db8106a51535ae5f3d041/evaluation/test/20231010_rag_claude2/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 30,
+        "total": 30
+      },
+      "model": "RAG + GPT 4 (1106)",
+      "model_id": "rag-gpt-4-1106",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6adccbd67eb9e743510db8106a51535ae5f3d041/evaluation/test/20240402_rag_gpt4/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 16,
+        "total": 16
+      },
+      "model": "RAG + SWE-Llama 13B",
+      "model_id": "rag-swe-llama-13b",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6adccbd67eb9e743510db8106a51535ae5f3d041/evaluation/test/20231010_rag_swellama13b/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 16,
+        "total": 16
+      },
+      "model": "RAG + SWE-Llama 7B",
+      "model_id": "rag-swe-llama-7b",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6adccbd67eb9e743510db8106a51535ae5f3d041/evaluation/test/20231010_rag_swellama7b/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 4,
+        "total": 4
+      },
+      "model": "RAG + ChatGPT 3.5",
+      "model_id": "rag-chatgpt-3-5",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/6adccbd67eb9e743510db8106a51535ae5f3d041/evaluation/test/20231010_rag_gpt35/results/results.json"
+    }
+  ],
+  "snapshot_id": "20250910T210908Z_8d0ee39",
+  "source": {
+    "experiments_base": "https://raw.githubusercontent.com/SWE-bench/experiments/6adccbd67eb9e743510db8106a51535ae5f3d041/evaluation/test",
+    "experiments_commit": {
+      "date": "2025-06-19T00:58:42+00:00",
+      "html_url": "https://github.com/SWE-bench/experiments/commit/6adccbd67eb9e743510db8106a51535ae5f3d041",
+      "message": "20250605 - Atlassian Rovo Dev - SWE-Bench Full (#256)\n\n* submit 20250605_atlassian-rovo-dev\n\n* clarify no internet access\n\n* add technical report in README\n\n* formatting fixes\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+      "sha": "6adccbd67eb9e743510db8106a51535ae5f3d041"
+    },
+    "experiments_fallback": false,
+    "experiments_repo": "SWE-bench/experiments",
+    "leaderboard_commit": {
+      "date": "2025-09-10T21:09:08+00:00",
+      "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/8d0ee39d611d2c758f1d0578c25c65cb24592591",
+      "message": "Add glm 4.5",
+      "raw_url": "https://raw.githubusercontent.com/SWE-bench/swe-bench.github.io/8d0ee39d611d2c758f1d0578c25c65cb24592591/data/leaderboards.json",
+      "sha": "8d0ee39d611d2c758f1d0578c25c65cb24592591"
+    },
+    "leaderboard_path": "data/leaderboards.json",
+    "leaderboard_repo": "SWE-bench/swe-bench.github.io"
+  },
+  "status": "ok",
+  "status_message": null
+}

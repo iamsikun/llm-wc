@@ -1,0 +1,25 @@
+model_id,model,date
+sonar-foundation-agent-claude-4-5-opus,Sonar Foundation Agent + Claude 4.5 Opus,2025-12-19
+salesforce-ai-research-sage-bash-only,Salesforce AI Research SAGE (bash-only),2025-10-27
+atlassian-rovo-dev-2025-06-05,Atlassian Rovo Dev (2025-06-05),2025-06-05
+amazon-q-developer-agent-v20250405-dev,Amazon Q Developer Agent (v20250405-dev),2025-05-22
+swe-agent-1-0-claude-3-7-sonnet,SWE-agent 1.0 (Claude 3.7 Sonnet),2025-02-27
+amazon-q-developer-agent-v20241202-dev,Amazon Q Developer Agent (v20241202-dev),2025-01-31
+openhands-codeact-v2-1-claude-3-5-sonnet-20241022,OpenHands + CodeAct v2.1 (claude-3-5-sonnet-20241022),2024-11-03
+autocoderover-v2-0-claude-3-5-sonnet-20241022,AutoCodeRover-v2.0 (Claude-3.5-Sonnet-20241022),2024-11-21
+honeycomb,Honeycomb,2024-08-20
+amazon-q-developer-agent-v20240719-dev,Amazon Q Developer Agent (v20240719-dev),2024-07-21
+factory-code-droid,Factory Code Droid,2024-06-17
+autocoderover-v20240620-gpt-4o-2024-05-13,AutoCodeRover (v20240620) + GPT 4o (2024-05-13),2024-06-28
+swe-agent-claude-3-5-sonnet,SWE-agent + Claude 3.5 Sonnet,2024-06-20
+appmap-navie-gpt-4o-2024-05-13,AppMap Navie + GPT 4o (2024-05-13),2024-06-15
+amazon-q-developer-agent-v20240430-dev,Amazon Q Developer Agent (v20240430-dev),2024-05-09
+swe-agent-gpt-4-1106,SWE-agent + GPT 4 (1106),2024-04-02
+swe-agent-gpt-4o-2024-05-13,SWE-agent + GPT 4o (2024-05-13),2024-07-28
+swe-agent-claude-3-opus,SWE-agent + Claude 3 Opus,2024-04-02
+rag-claude-3-opus,RAG + Claude 3 Opus,2024-04-02
+rag-claude-2,RAG + Claude 2,2023-10-10
+rag-gpt-4-1106,RAG + GPT 4 (1106),2024-04-02
+rag-swe-llama-13b,RAG + SWE-Llama 13B,2023-10-10
+rag-swe-llama-7b,RAG + SWE-Llama 7B,2023-10-10
+rag-chatgpt-3-5,RAG + ChatGPT 3.5,2023-10-10

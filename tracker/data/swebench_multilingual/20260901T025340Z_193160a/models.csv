@@ -1,0 +1,14 @@
+model_id,model,date
+gemini-3-flash,Gemini 3 Flash,2026-02-13
+claude-4-6-opus,Claude 4.6 Opus,2026-02-13
+claude-4-5-opus,Claude 4.5 Opus,2026-02-13
+glm-5,GLM 5,2026-02-13
+gemini-3-pro,Gemini 3 Pro,2026-02-13
+minimax-m2-5,MiniMax M2.5,2026-02-16
+kimi-k2-5,Kimi K2.5,2026-02-13
+claude-4-5-sonnet,Claude 4.5 Sonnet,2026-02-13
+gpt-5-2-high,GPT 5.2 (high),2026-02-13
+gpt-5-2-codex,GPT 5.2 Codex,2026-02-20
+claude-4-5-haiku,Claude 4.5 Haiku,2026-02-13
+deepseek-v3-2,DeepSeek V3.2,2026-02-13
+gpt-5-mini,GPT 5 mini,2026-02-13

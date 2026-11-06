@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% block title %}Coverage · {{ site.title }}{% endblock %}
+{% macro status_chip(entry) -%}
+{%- set r = entry.result if entry else "" -%}
+{%- if r in ("updated", "unchanged", "same_as_reference") -%}<span class="chip live"><span class="dot"></span>Up to date</span>
+{%- elif r == "unavailable" -%}<span class="chip warn">Unavailable</span>
+{%- elif r == "failed" -%}<span class="chip fail">Fetch failed</span>
+{%- else -%}<span class="chip">Not checked</span>{%- endif -%}
+{%- endmacro %}
+{% block content %}
+<section class="bench-head">
+  <div class="wrap">
+    <p class="eyebrow">Coverage</p>
+    <h1 style="font-size:clamp(1.9rem,4vw,2.6rem)">Which leaderboards can RULER analyze?</h1>
+    <p class="lede">RULER needs every model's score on every task. Most leaderboards publish one number per model. The
+      tracker follows the leaderboards that publish per-task scores, checks them {{ site.update_cadence }}, and searches
+      for new ones.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0.5rem">
+  <div class="wrap">
+    <div class="panel">
+      <div class="panel-head"><div><h2>Feasibility criteria</h2><p>The probe
+        (<code>python -m llm_wc.tracker probe</code>) checks each one on a score table.</p></div></div>
+      <div class="grid three">
+        {% for name, text in [
+          ("Per-task scores", "Each model has a score on each task."),
+          ("Stable task IDs", "Each (task, model) pair appears once, or repeats follow a stated rule: average the trials or keep one submission."),
+          ("A shared task pool", "A block of tasks that every included model was scored on. RULER uses the largest such block, as the paper does for LiveBench."),
+          ("At least " ~ criteria.min_tasks ~ " tasks", "Enough tasks in that block to resample."),
+          ("At least " ~ criteria.min_models ~ " models", "Enough systems to rank."),
+          ("Scores on a fixed scale", "Numeric scores in [0, 1], or in [0, 100] or [1, 10], which are rescaled."),
+        ] %}
+        <div><h3 style="font-family:var(--sans);font-size:0.98rem;margin-bottom:0.25rem">{{ loop.index }}. {{ name }}</h3><p class="small muted" style="margin:0">{{ text }}</p></div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-head"><div><h2>Tracked sources</h2><p>Each source's newest data on this site, with a link to
+        that revision. When a check fails, the source keeps its last good data.</p></div></div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Source</th><th>Settings</th><th>Source data</th><th>Last checked</th><th>Status</th></tr></thead>
+          <tbody>
+          {% for key, src in registry_sources %}
+            {% set entry = status.get(key) %}
+            <tr>
+              <td><a href="{{ src.homepage }}" class="bench-link">{{ src.label }}</a><span class="sub">{{ src.upstream }}</span></td>
+              <td>{% for b in benchmarks if b.source == key %}<a href="benchmarks/{{ b.key }}.html">{{ b.short_label }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</td>
+              {% set up = source_data.get(key) %}
+              <td class="nowrap">{% if up and up.date %}{% if up.url %}<a href="{{ up.url }}">{{ up.date }}</a>{% else %}{{ up.date }}{% endif %}{% else %}—{% endif %}</td>
+              <td class="nowrap">{{ entry.checked_at | date if entry else "—" }}</td>
+              <td>{{ status_chip(entry) }}{% if entry and entry.reason %}<span class="sub">{{ entry.reason }}</span>{% endif %}</td>
+            </tr>
+          {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-head"><div><h2>Candidates</h2><p>Leaderboards under review. Each joins the tracker once it
+        passes the criteria and has an adapter.</p></div>
+        <a class="btn small" href="{{ site.repo_url }}/issues/new?labels=benchmark-candidate&amp;title=Benchmark%20candidate%3A%20">Propose a leaderboard</a></div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Leaderboard</th><th>Status</th><th>Per-task data</th><th>Notes</th></tr></thead>
+          <tbody>
+          {% for c in candidates %}
+            <tr>
+              <td><a href="{{ c.url }}" class="bench-link">{{ c.name }}</a></td>
+              <td>{% if c.status == "parser ready" %}<span class="chip live">Parser ready</span>
+                {% elif c.status == "candidate" %}<span class="chip reference">Candidate</span>
+                {% elif c.status == "to verify" %}<span class="chip">To verify</span>
+                {% elif c.status == "not feasible" %}<span class="chip fail">Not feasible</span>
+                {% else %}<span class="chip warn">Out of scope</span>{% endif %}</td>
+              <td class="small">{{ c.data }}</td>
+              <td class="small muted">{{ c.notes }}</td>
+            </tr>
+          {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

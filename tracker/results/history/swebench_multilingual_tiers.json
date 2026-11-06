@@ -1,0 +1,780 @@
+{
+ "20260121T051227Z_34697c5": {
+  "date": "2026-01-21",
+  "n_models": 3,
+  "leaders": [
+   "claude-4-5-opus-medium-20251101"
+  ],
+  "tier1": [
+   "claude-4-5-opus-medium-20251101"
+  ],
+  "models": [
+   "claude-4-5-opus-medium-20251101",
+   "gpt-5-2-2025-12-11",
+   "gpt-5-mini"
+  ],
+  "names": {
+   "claude-4-5-opus-medium-20251101": "Claude 4.5 Opus medium (20251101)",
+   "gpt-5-2-2025-12-11": "GPT-5.2 (2025-12-11)",
+   "gpt-5-mini": "GPT-5 mini"
+  }
+ },
+ "20260122T064412Z_ce83475": {
+  "date": "2026-01-22",
+  "n_models": 6,
+  "leaders": [
+   "claude-4-5-opus-medium-20251101"
+  ],
+  "tier1": [
+   "claude-4-5-opus-medium-20251101",
+   "claude-4-5-sonnet-20250929",
+   "claude-4-5-haiku-20251101",
+   "gpt-5-2-2025-12-11-high-reasoning",
+   "gpt-5-2-2025-12-11"
+  ],
+  "models": [
+   "claude-4-5-haiku-20251101",
+   "claude-4-5-opus-medium-20251101",
+   "claude-4-5-sonnet-20250929",
+   "gpt-5-2-2025-12-11",
+   "gpt-5-2-2025-12-11-high-reasoning",
+   "gpt-5-mini"
+  ],
+  "names": {
+   "claude-4-5-opus-medium-20251101": "Claude 4.5 Opus medium (20251101)",
+   "claude-4-5-sonnet-20250929": "Claude 4.5 Sonnet (20250929)",
+   "claude-4-5-haiku-20251101": "Claude 4.5 Haiku (20251101)",
+   "gpt-5-2-2025-12-11-high-reasoning": "GPT-5.2 (2025-12-11) (high reasoning)",
+   "gpt-5-2-2025-12-11": "GPT-5.2 (2025-12-11)",
+   "gpt-5-mini": "GPT-5 mini"
+  }
+ },
+ "20260127T072941Z_1545564": {
+  "date": "2026-01-27",
+  "n_models": 7,
+  "leaders": [
+   "claude-4-5-opus-medium-20251101"
+  ],
+  "tier1": [
+   "claude-4-5-opus-medium-20251101",
+   "claude-4-5-sonnet-20250929",
+   "claude-4-5-haiku-20251101",
+   "gpt-5-2-2025-12-11-high-reasoning",
+   "gpt-5-2-2025-12-11"
+  ],
+  "models": [
+   "claude-4-5-haiku-20251101",
+   "claude-4-5-opus-medium-20251101",
+   "claude-4-5-sonnet-20250929",
+   "gemini-3-pro",
+   "gpt-5-2-2025-12-11",
+   "gpt-5-2-2025-12-11-high-reasoning",
+   "gpt-5-mini"
+  ],
+  "names": {
+   "claude-4-5-opus-medium-20251101": "Claude 4.5 Opus medium (20251101)",
+   "claude-4-5-sonnet-20250929": "Claude 4.5 Sonnet (20250929)",
+   "claude-4-5-haiku-20251101": "Claude 4.5 Haiku (20251101)",
+   "gpt-5-2-2025-12-11-high-reasoning": "GPT-5.2 (2025-12-11) (high reasoning)",
+   "gpt-5-2-2025-12-11": "GPT-5.2 (2025-12-11)",
+   "gpt-5-mini": "GPT-5 mini",
+   "gemini-3-pro": "Gemini 3 Pro"
+  }
+ },
+ "20260127T101619Z_c7494f8": {
+  "date": "2026-01-27",
+  "n_models": 7,
+  "leaders": [
+   "claude-4-5-opus-medium-20251101"
+  ],
+  "tier1": [
+   "claude-4-5-opus-medium-20251101",
+   "claude-4-5-sonnet-20250929",
+   "claude-4-5-haiku-20251101",
+   "gpt-5-2-2025-12-11-high-reasoning"
+  ],
+  "models": [
+   "claude-4-5-haiku-20251101",
+   "claude-4-5-opus-medium-20251101",
+   "claude-4-5-sonnet-20250929",
+   "gemini-3-pro",
+   "gpt-5-2-2025-12-11",
+   "gpt-5-2-2025-12-11-high-reasoning",
+   "gpt-5-mini"
+  ],
+  "names": {
+   "claude-4-5-opus-medium-20251101": "Claude 4.5 Opus medium (20251101)",
+   "claude-4-5-sonnet-20250929": "Claude 4.5 Sonnet (20250929)",
+   "claude-4-5-haiku-20251101": "Claude 4.5 Haiku (20251101)",
+   "gpt-5-2-2025-12-11-high-reasoning": "GPT-5.2 (2025-12-11) (high reasoning)",
+   "gpt-5-2-2025-12-11": "GPT-5.2 (2025-12-11)",
+   "gemini-3-pro": "Gemini 3 Pro",
+   "gpt-5-mini": "GPT-5 mini"
+  }
+ },
+ "20260127T131104Z_3752d48": {
+  "date": "2026-01-27",
+  "n_models": 7,
+  "leaders": [
+   "claude-4-5-opus-medium-20251101"
+  ],
+  "tier1": [
+   "claude-4-5-opus-medium-20251101",
+   "claude-4-5-sonnet-20250929",
+   "claude-4-5-haiku-20251101",
+   "gpt-5-2-2025-12-11-high-reasoning"
+  ],
+  "models": [
+   "claude-4-5-haiku-20251101",
+   "claude-4-5-opus-medium-20251101",
+   "claude-4-5-sonnet-20250929",
+   "gemini-3-pro",
+   "gpt-5-2-2025-12-11",
+   "gpt-5-2-2025-12-11-high-reasoning",
+   "gpt-5-mini"
+  ],
+  "names": {
+   "claude-4-5-opus-medium-20251101": "Claude 4.5 Opus medium (20251101)",
+   "claude-4-5-sonnet-20250929": "Claude 4.5 Sonnet (20250929)",
+   "claude-4-5-haiku-20251101": "Claude 4.5 Haiku (20251101)",
+   "gpt-5-2-2025-12-11-high-reasoning": "GPT-5.2 (2025-12-11) (high reasoning)",
+   "gpt-5-2-2025-12-11": "GPT-5.2 (2025-12-11)",
+   "gemini-3-pro": "Gemini 3 Pro",
+   "gpt-5-mini": "GPT-5 mini"
+  }
+ },
+ "20260213T150807Z_8e223ac": {
+  "date": "2026-02-13",
+  "n_models": 11,
+  "leaders": [
+   "gemini-3-flash"
+  ],
+  "tier1": [
+   "gemini-3-flash",
+   "claude-4-6-opus",
+   "claude-4-5-opus",
+   "glm-5",
+   "gemini-3-pro",
+   "claude-4-5-sonnet",
+   "kimi-k2-5",
+   "gpt-5-2-high-reasoning"
+  ],
+  "models": [
+   "claude-4-5-haiku",
+   "claude-4-5-opus",
+   "claude-4-5-sonnet",
+   "claude-4-6-opus",
+   "deepseek-v3-2",
+   "gemini-3-flash",
+   "gemini-3-pro",
+   "glm-5",
+   "gpt-5-2-high-reasoning",
+   "gpt-5-mini",
+   "kimi-k2-5"
+  ],
+  "names": {
+   "gemini-3-flash": "Gemini 3 Flash",
+   "claude-4-6-opus": "Claude 4.6 Opus",
+   "claude-4-5-opus": "Claude 4.5 Opus",
+   "glm-5": "GLM-5",
+   "gemini-3-pro": "Gemini 3 Pro",
+   "claude-4-5-sonnet": "Claude 4.5 Sonnet",
+   "kimi-k2-5": "Kimi K2.5",
+   "gpt-5-2-high-reasoning": "GPT-5.2 (high reasoning)",
+   "claude-4-5-haiku": "Claude 4.5 Haiku",
+   "deepseek-v3-2": "DeepSeek V3.2",
+   "gpt-5-mini": "GPT-5 mini"
+  }
+ },
+ "20260213T151757Z_81c966b": {
+  "date": "2026-02-13",
+  "n_models": 11,
+  "leaders": [
+   "gemini-3-flash"
+  ],
+  "tier1": [
+   "gemini-3-flash",
+   "claude-4-6-opus",
+   "claude-4-5-opus",
+   "glm-5",
+   "gemini-3-pro",
+   "claude-4-5-sonnet",
+   "kimi-k2-5",
+   "gpt-5-2-high-reasoning"
+  ],
+  "models": [
+   "claude-4-5-haiku",
+   "claude-4-5-opus",
+   "claude-4-5-sonnet",
+   "claude-4-6-opus",
+   "deepseek-v3-2",
+   "gemini-3-flash",
+   "gemini-3-pro",
+   "glm-5",
+   "gpt-5-2-high-reasoning",
+   "gpt-5-mini",
+   "kimi-k2-5"
+  ],
+  "names": {
+   "gemini-3-flash": "Gemini 3 Flash",
+   "claude-4-6-opus": "Claude 4.6 Opus",
+   "claude-4-5-opus": "Claude 4.5 Opus",
+   "glm-5": "GLM-5",
+   "gemini-3-pro": "Gemini 3 Pro",
+   "claude-4-5-sonnet": "Claude 4.5 Sonnet",
+   "kimi-k2-5": "Kimi K2.5",
+   "gpt-5-2-high-reasoning": "GPT-5.2 (high reasoning)",
+   "claude-4-5-haiku": "Claude 4.5 Haiku",
+   "deepseek-v3-2": "DeepSeek V3.2",
+   "gpt-5-mini": "GPT-5 mini"
+  }
+ },
+ "20260216T063705Z_09eb2d3": {
+  "date": "2026-02-16",
+  "n_models": 11,
+  "leaders": [
+   "gemini-3-flash"
+  ],
+  "tier1": [
+   "gemini-3-flash",
+   "claude-4-6-opus",
+   "claude-4-5-opus",
+   "glm-5",
+   "gemini-3-pro",
+   "claude-4-5-sonnet",
+   "kimi-k2-5",
+   "gpt-5-2-high-reasoning"
+  ],
+  "models": [
+   "claude-4-5-haiku",
+   "claude-4-5-opus",
+   "claude-4-5-sonnet",
+   "claude-4-6-opus",
+   "deepseek-v3-2",
+   "gemini-3-flash",
+   "gemini-3-pro",
+   "glm-5",
+   "gpt-5-2-high-reasoning",
+   "gpt-5-mini",
+   "kimi-k2-5"
+  ],
+  "names": {
+   "gemini-3-flash": "Gemini 3 Flash",
+   "claude-4-6-opus": "Claude 4.6 Opus",
+   "claude-4-5-opus": "Claude 4.5 Opus",
+   "glm-5": "GLM-5",
+   "gemini-3-pro": "Gemini 3 Pro",
+   "claude-4-5-sonnet": "Claude 4.5 Sonnet",
+   "kimi-k2-5": "Kimi K2.5",
+   "gpt-5-2-high-reasoning": "GPT-5.2 (high reasoning)",
+   "claude-4-5-haiku": "Claude 4.5 Haiku",
+   "deepseek-v3-2": "DeepSeek V3.2",
+   "gpt-5-mini": "GPT-5 mini"
+  }
+ },
+ "20260216T065234Z_d3f1edf": {
+  "date": "2026-02-16",
+  "n_models": 12,
+  "leaders": [
+   "gemini-3-flash"
+  ],
+  "tier1": [
+   "gemini-3-flash",
+   "claude-4-6-opus",
+   "claude-4-5-opus",
+   "glm-5",
+   "minimax-2-5",
+   "gemini-3-pro",
+   "claude-4-5-sonnet",
+   "kimi-k2-5"
+  ],
+  "models": [
+   "claude-4-5-haiku",
+   "claude-4-5-opus",
+   "claude-4-5-sonnet",
+   "claude-4-6-opus",
+   "deepseek-v3-2",
+   "gemini-3-flash",
+   "gemini-3-pro",
+   "glm-5",
+   "gpt-5-2-high-reasoning",
+   "gpt-5-mini",
+   "kimi-k2-5",
+   "minimax-2-5"
+  ],
+  "names": {
+   "gemini-3-flash": "Gemini 3 Flash",
+   "claude-4-6-opus": "Claude 4.6 Opus",
+   "claude-4-5-opus": "Claude 4.5 Opus",
+   "glm-5": "GLM-5",
+   "minimax-2-5": "Minimax 2.5",
+   "gemini-3-pro": "Gemini 3 Pro",
+   "claude-4-5-sonnet": "Claude 4.5 Sonnet",
+   "kimi-k2-5": "Kimi K2.5",
+   "gpt-5-2-high-reasoning": "GPT-5.2 (high reasoning)",
+   "claude-4-5-haiku": "Claude 4.5 Haiku",
+   "deepseek-v3-2": "DeepSeek V3.2",
+   "gpt-5-mini": "GPT-5 mini"
+  }
+ },
+ "20260218T102035Z_6560f87": {
+  "date": "2026-02-18",
+  "n_models": 12,
+  "leaders": [
+   "gemini-3-flash"
+  ],
+  "tier1": [
+   "gemini-3-flash",
+   "claude-4-6-opus",
+   "claude-4-5-opus",
+   "glm-5",
+   "gemini-3-pro",
+   "minimax-2-5",
+   "claude-4-5-sonnet",
+   "kimi-k2-5"
+  ],
+  "models": [
+   "claude-4-5-haiku",
+   "claude-4-5-opus",
+   "claude-4-5-sonnet",
+   "claude-4-6-opus",
+   "deepseek-v3-2",
+   "gemini-3-flash",
+   "gemini-3-pro",
+   "glm-5",
+   "gpt-5-2-high-reasoning",
+   "gpt-5-mini",
+   "kimi-k2-5",
+   "minimax-2-5"
+  ],
+  "names": {
+   "gemini-3-flash": "Gemini 3 Flash",
+   "claude-4-6-opus": "Claude 4.6 Opus",
+   "claude-4-5-opus": "Claude 4.5 Opus",
+   "glm-5": "GLM-5",
+   "gemini-3-pro": "Gemini 3 Pro",
+   "minimax-2-5": "Minimax 2.5",
+   "claude-4-5-sonnet": "Claude 4.5 Sonnet",
+   "kimi-k2-5": "Kimi K2.5",
+   "gpt-5-2-high-reasoning": "GPT-5.2 (high reasoning)",
+   "claude-4-5-haiku": "Claude 4.5 Haiku",
+   "deepseek-v3-2": "DeepSeek V3.2",
+   "gpt-5-mini": "GPT-5 mini"
+  }
+ },
+ "20260218T103120Z_494cbaf": {
+  "date": "2026-02-18",
+  "n_models": 12,
+  "leaders": [
+   "gemini-3-flash"
+  ],
+  "tier1": [
+   "gemini-3-flash",
+   "claude-4-6-opus",
+   "claude-4-5-opus",
+   "glm-5",
+   "gemini-3-pro",
+   "minimax-2-5",
+   "claude-4-5-sonnet",
+   "kimi-k2-5"
+  ],
+  "models": [
+   "claude-4-5-haiku",
+   "claude-4-5-opus",
+   "claude-4-5-sonnet",
+   "claude-4-6-opus",
+   "deepseek-v3-2",
+   "gemini-3-flash",
+   "gemini-3-pro",
+   "glm-5",
+   "gpt-5-2",
+   "gpt-5-mini",
+   "kimi-k2-5",
+   "minimax-2-5"
+  ],
+  "names": {
+   "gemini-3-flash": "Gemini 3 Flash",
+   "claude-4-6-opus": "Claude 4.6 Opus",
+   "claude-4-5-opus": "Claude 4.5 Opus",
+   "glm-5": "GLM-5",
+   "gemini-3-pro": "Gemini 3 Pro",
+   "minimax-2-5": "Minimax 2.5",
+   "claude-4-5-sonnet": "Claude 4.5 Sonnet",
+   "kimi-k2-5": "Kimi K2.5",
+   "gpt-5-2": "GPT-5.2",
+   "claude-4-5-haiku": "Claude 4.5 Haiku",
+   "deepseek-v3-2": "DeepSeek V3.2",
+   "gpt-5-mini": "GPT-5 mini"
+  }
+ },
+ "20260218T120900Z_a0179c5": {
+  "date": "2026-02-18",
+  "n_models": 12,
+  "leaders": [
+   "gemini-3-flash"
+  ],
+  "tier1": [
+   "gemini-3-flash",
+   "claude-4-6-opus",
+   "claude-4-5-opus",
+   "glm-5",
+   "gemini-3-pro",
+   "minimax-2-5",
+   "claude-4-5-sonnet",
+   "kimi-k2-5"
+  ],
+  "models": [
+   "claude-4-5-haiku",
+   "claude-4-5-opus",
+   "claude-4-5-sonnet",
+   "claude-4-6-opus",
+   "deepseek-v3-2",
+   "gemini-3-flash",
+   "gemini-3-pro",
+   "glm-5",
+   "gpt-5-2",
+   "gpt-5-mini",
+   "kimi-k2-5",
+   "minimax-2-5"
+  ],
+  "names": {
+   "gemini-3-flash": "Gemini 3 Flash",
+   "claude-4-6-opus": "Claude 4.6 Opus",
+   "claude-4-5-opus": "Claude 4.5 Opus",
+   "glm-5": "GLM-5",
+   "gemini-3-pro": "Gemini 3 Pro",
+   "minimax-2-5": "Minimax 2.5",
+   "claude-4-5-sonnet": "Claude 4.5 Sonnet",
+   "kimi-k2-5": "Kimi K2.5",
+   "gpt-5-2": "GPT-5.2",
+   "claude-4-5-haiku": "Claude 4.5 Haiku",
+   "deepseek-v3-2": "DeepSeek V3.2",
+   "gpt-5-mini": "GPT-5 mini"
+  }
+ },
+ "20260218T140037Z_b9254b1": {
+  "date": "2026-02-18",
+  "n_models": 12,
+  "leaders": [
+   "gemini-3-flash"
+  ],
+  "tier1": [
+   "gemini-3-flash",
+   "claude-4-6-opus",
+   "claude-4-5-opus",
+   "glm-5",
+   "gemini-3-pro",
+   "minimax-2-5",
+   "claude-4-5-sonnet",
+   "kimi-k2-5"
+  ],
+  "models": [
+   "claude-4-5-haiku",
+   "claude-4-5-opus",
+   "claude-4-5-sonnet",
+   "claude-4-6-opus",
+   "deepseek-v3-2",
+   "gemini-3-flash",
+   "gemini-3-pro",
+   "glm-5",
+   "gpt-5-2",
+   "gpt-5-mini",
+   "kimi-k2-5",
+   "minimax-2-5"
+  ],
+  "names": {
+   "gemini-3-flash": "Gemini 3 Flash",
+   "claude-4-6-opus": "Claude 4.6 Opus",
+   "claude-4-5-opus": "Claude 4.5 Opus",
+   "glm-5": "GLM-5",
+   "gemini-3-pro": "Gemini 3 Pro",
+   "minimax-2-5": "Minimax 2.5",
+   "claude-4-5-sonnet": "Claude 4.5 Sonnet",
+   "kimi-k2-5": "Kimi K2.5",
+   "gpt-5-2": "GPT-5.2",
+   "claude-4-5-haiku": "Claude 4.5 Haiku",
+   "deepseek-v3-2": "DeepSeek V3.2",
+   "gpt-5-mini": "GPT-5 mini"
+  }
+ },
+ "20260218T141717Z_d6882b9": {
+  "date": "2026-02-18",
+  "n_models": 12,
+  "leaders": [
+   "gemini-3-flash"
+  ],
+  "tier1": [
+   "gemini-3-flash",
+   "claude-4-6-opus",
+   "claude-4-5-opus",
+   "glm-5",
+   "gemini-3-pro",
+   "minimax-2-5",
+   "claude-4-5-sonnet",
+   "kimi-k2-5"
+  ],
+  "models": [
+   "claude-4-5-haiku",
+   "claude-4-5-opus",
+   "claude-4-5-sonnet",
+   "claude-4-6-opus",
+   "deepseek-v3-2",
+   "gemini-3-flash",
+   "gemini-3-pro",
+   "glm-5",
+   "gpt-5-2",
+   "gpt-5-mini",
+   "kimi-k2-5",
+   "minimax-2-5"
+  ],
+  "names": {
+   "gemini-3-flash": "Gemini 3 Flash",
+   "claude-4-6-opus": "Claude 4.6 Opus",
+   "claude-4-5-opus": "Claude 4.5 Opus",
+   "glm-5": "GLM-5",
+   "gemini-3-pro": "Gemini 3 Pro",
+   "minimax-2-5": "Minimax 2.5",
+   "claude-4-5-sonnet": "Claude 4.5 Sonnet",
+   "kimi-k2-5": "Kimi K2.5",
+   "gpt-5-2": "GPT-5.2",
+   "claude-4-5-haiku": "Claude 4.5 Haiku",
+   "deepseek-v3-2": "DeepSeek V3.2",
+   "gpt-5-mini": "GPT-5 mini"
+  }
+ },
+ "20260218T161325Z_d7615e4": {
+  "date": "2026-02-18",
+  "n_models": 12,
+  "leaders": [
+   "gemini-3-flash"
+  ],
+  "tier1": [
+   "gemini-3-flash",
+   "claude-4-6-opus",
+   "claude-4-5-opus",
+   "glm-5",
+   "gemini-3-pro",
+   "minimax-2-5",
+   "claude-4-5-sonnet",
+   "kimi-k2-5"
+  ],
+  "models": [
+   "claude-4-5-haiku",
+   "claude-4-5-opus",
+   "claude-4-5-sonnet",
+   "claude-4-6-opus",
+   "deepseek-v3-2",
+   "gemini-3-flash",
+   "gemini-3-pro",
+   "glm-5",
+   "gpt-5-2-high-reasoning",
+   "gpt-5-mini",
+   "kimi-k2-5",
+   "minimax-2-5"
+  ],
+  "names": {
+   "gemini-3-flash": "Gemini 3 Flash",
+   "claude-4-6-opus": "Claude 4.6 Opus",
+   "claude-4-5-opus": "Claude 4.5 Opus",
+   "glm-5": "GLM-5",
+   "gemini-3-pro": "Gemini 3 Pro",
+   "minimax-2-5": "Minimax 2.5",
+   "claude-4-5-sonnet": "Claude 4.5 Sonnet",
+   "kimi-k2-5": "Kimi K2.5",
+   "gpt-5-2-high-reasoning": "GPT-5.2 (high reasoning)",
+   "claude-4-5-haiku": "Claude 4.5 Haiku",
+   "deepseek-v3-2": "DeepSeek V3.2",
+   "gpt-5-mini": "GPT-5 mini"
+  }
+ },
+ "20260218T164757Z_95d54ce": {
+  "date": "2026-02-18",
+  "n_models": 12,
+  "leaders": [
+   "gemini-3-flash"
+  ],
+  "tier1": [
+   "gemini-3-flash",
+   "claude-4-6-opus",
+   "claude-4-5-opus",
+   "glm-5",
+   "gemini-3-pro",
+   "minimax-2-5",
+   "claude-4-5-sonnet",
+   "kimi-k2-5"
+  ],
+  "models": [
+   "claude-4-5-haiku",
+   "claude-4-5-opus",
+   "claude-4-5-sonnet",
+   "claude-4-6-opus",
+   "deepseek-v3-2",
+   "gemini-3-flash",
+   "gemini-3-pro",
+   "glm-5",
+   "gpt-5-2-high-reasoning",
+   "gpt-5-mini",
+   "kimi-k2-5",
+   "minimax-2-5"
+  ],
+  "names": {
+   "gemini-3-flash": "Gemini 3 Flash",
+   "claude-4-6-opus": "Claude 4.6 Opus",
+   "claude-4-5-opus": "Claude 4.5 Opus",
+   "glm-5": "GLM-5",
+   "gemini-3-pro": "Gemini 3 Pro",
+   "minimax-2-5": "Minimax 2.5",
+   "claude-4-5-sonnet": "Claude 4.5 Sonnet",
+   "kimi-k2-5": "Kimi K2.5",
+   "gpt-5-2-high-reasoning": "GPT-5.2 (high reasoning)",
+   "claude-4-5-haiku": "Claude 4.5 Haiku",
+   "deepseek-v3-2": "DeepSeek V3.2",
+   "gpt-5-mini": "GPT-5 mini"
+  }
+ },
+ "20260220T161422Z_2c622f5": {
+  "date": "2026-02-20",
+  "n_models": 13,
+  "leaders": [
+   "gemini-3-flash"
+  ],
+  "tier1": [
+   "gemini-3-flash",
+   "claude-4-6-opus",
+   "claude-4-5-opus",
+   "glm-5",
+   "gemini-3-pro",
+   "minimax-2-5",
+   "claude-4-5-sonnet",
+   "kimi-k2-5",
+   "gpt-5-2-codex"
+  ],
+  "models": [
+   "claude-4-5-haiku",
+   "claude-4-5-opus",
+   "claude-4-5-sonnet",
+   "claude-4-6-opus",
+   "deepseek-v3-2",
+   "gemini-3-flash",
+   "gemini-3-pro",
+   "glm-5",
+   "gpt-5-2-codex",
+   "gpt-5-2-high-reasoning",
+   "gpt-5-mini",
+   "kimi-k2-5",
+   "minimax-2-5"
+  ],
+  "names": {
+   "gemini-3-flash": "Gemini 3 Flash",
+   "claude-4-6-opus": "Claude 4.6 Opus",
+   "claude-4-5-opus": "Claude 4.5 Opus",
+   "glm-5": "GLM-5",
+   "gemini-3-pro": "Gemini 3 Pro",
+   "minimax-2-5": "Minimax 2.5",
+   "claude-4-5-sonnet": "Claude 4.5 Sonnet",
+   "kimi-k2-5": "Kimi K2.5",
+   "gpt-5-2-codex": "GPT 5.2 Codex",
+   "gpt-5-2-high-reasoning": "GPT-5.2 (high reasoning)",
+   "claude-4-5-haiku": "Claude 4.5 Haiku",
+   "deepseek-v3-2": "DeepSeek V3.2",
+   "gpt-5-mini": "GPT-5 mini"
+  }
+ },
+ "20260227T165949Z_7c4289f": {
+  "date": "2026-02-27",
+  "n_models": 14,
+  "leaders": [
+   "gemini-3-flash"
+  ],
+  "tier1": [
+   "gemini-3-flash",
+   "claude-4-6-opus",
+   "claude-4-5-opus",
+   "glm-5",
+   "gemini-3-pro",
+   "minimax-2-5",
+   "kimi-k2-5",
+   "claude-4-5-sonnet"
+  ],
+  "models": [
+   "claude-4-5-haiku",
+   "claude-4-5-opus",
+   "claude-4-5-sonnet",
+   "claude-4-6-opus",
+   "deepseek-v3-2",
+   "gemini-3-flash",
+   "gemini-3-pro",
+   "glm-5",
+   "gpt-5-2-codex",
+   "gpt-5-2-codex-2",
+   "gpt-5-2-high-reasoning",
+   "gpt-5-mini",
+   "kimi-k2-5",
+   "minimax-2-5"
+  ],
+  "names": {
+   "gemini-3-flash": "Gemini 3 Flash",
+   "claude-4-6-opus": "Claude 4.6 Opus",
+   "claude-4-5-opus": "Claude 4.5 Opus",
+   "glm-5": "GLM-5",
+   "gemini-3-pro": "Gemini 3 Pro",
+   "minimax-2-5": "Minimax 2.5",
+   "kimi-k2-5": "Kimi K2.5",
+   "claude-4-5-sonnet": "Claude 4.5 Sonnet",
+   "gpt-5-2-high-reasoning": "GPT-5.2 (high reasoning)",
+   "gpt-5-2-codex": "GPT-5-2 Codex",
+   "gpt-5-2-codex-2": "GPT 5.2 Codex",
+   "claude-4-5-haiku": "Claude 4.5 Haiku",
+   "deepseek-v3-2": "DeepSeek V3.2",
+   "gpt-5-mini": "GPT-5 mini"
+  }
+ },
+ "20260901T025340Z_193160a": {
+  "date": "2026-09-01",
+  "n_models": 13,
+  "leaders": [
+   "gemini-3-flash"
+  ],
+  "tier1": [
+   "gemini-3-flash",
+   "claude-4-6-opus",
+   "claude-4-5-opus",
+   "glm-5",
+   "gemini-3-pro",
+   "minimax-m2-5",
+   "kimi-k2-5",
+   "claude-4-5-sonnet",
+   "gpt-5-2-high"
+  ],
+  "models": [
+   "claude-4-5-haiku",
+   "claude-4-5-opus",
+   "claude-4-5-sonnet",
+   "claude-4-6-opus",
+   "deepseek-v3-2",
+   "gemini-3-flash",
+   "gemini-3-pro",
+   "glm-5",
+   "gpt-5-2-codex",
+   "gpt-5-2-high",
+   "gpt-5-mini",
+   "kimi-k2-5",
+   "minimax-m2-5"
+  ],
+  "names": {
+   "gemini-3-flash": "Gemini 3 Flash",
+   "claude-4-6-opus": "Claude 4.6 Opus",
+   "claude-4-5-opus": "Claude 4.5 Opus",
+   "glm-5": "GLM 5",
+   "gemini-3-pro": "Gemini 3 Pro",
+   "minimax-m2-5": "MiniMax M2.5",
+   "kimi-k2-5": "Kimi K2.5",
+   "claude-4-5-sonnet": "Claude 4.5 Sonnet",
+   "gpt-5-2-high": "GPT 5.2 (high)",
+   "gpt-5-2-codex": "GPT 5.2 Codex",
+   "claude-4-5-haiku": "Claude 4.5 Haiku",
+   "deepseek-v3-2": "DeepSeek V3.2",
+   "gpt-5-mini": "GPT 5 mini"
+  }
+ }
+}

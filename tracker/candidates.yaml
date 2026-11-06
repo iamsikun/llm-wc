@@ -1,0 +1,84 @@
+# Leaderboards under review for the tracker. Curated by hand: `python -m llm_wc.tracker scan`
+# writes raw hits to tracker/discovery_inbox.json, and a person moves the promising ones here
+# after running `python -m llm_wc.tracker probe <table>`.
+#
+# status: parser ready  - per-task data found and a parser exists; needs a source adapter
+#         candidate     - per-task data appears to exist; needs a probe
+#         to verify     - a lead; whether per-task scores are public is not yet checked
+#         not feasible  - probed; fails a blocking criterion (see notes)
+#         out of scope  - data exist but do not form a task-by-model score matrix
+
+candidates:
+  - id: terminal-bench-2
+    name: Terminal-Bench 2.0
+    status: parser ready
+    url: https://huggingface.co/datasets/harborframework/terminal-bench-2-leaderboard
+    data: Per-trial Harbor result.json files for each task and submission (Hugging Face dataset)
+    notes: >-
+      scripts/parsers/parse_termbench2.py already reads Harbor result.json files (pass@1 or pass@k
+      per task). Needs a source adapter that downloads the leaderboard dataset; submissions run
+      several trials per task, so scores are per-task pass rates.
+
+  - id: tau2-banking-knowledge
+    name: Tau2-Bench banking_knowledge domain
+    status: candidate
+    url: https://taubench.com
+    data: Same public trajectory bucket as the tracked Tau2 domains
+    notes: >-
+      Newer Tau2 submissions add a banking_knowledge domain. It becomes a setting once enough
+      models report it on a shared task set; scores before tau2-bench 1.0.1 are not comparable
+      according to the submission notes.
+
+  - id: livecodebench-pro
+    name: LiveCodeBench Pro
+    status: parser ready
+    url: https://huggingface.co/datasets/QAQAQAQAQ/LiveCodeBench-Pro
+    data: benchmark_result.json files with per-problem verdicts
+    notes: >-
+      scripts/parsers/parse_livecodebenchpro.py parses per-problem results from local files. A
+      public location for every model's results is not yet confirmed.
+
+  - id: open-llm-leaderboard-v2
+    name: Open LLM Leaderboard v2 (per-sample details)
+    status: candidate
+    aliases: [open-llm-leaderboard/contents]
+    url: https://huggingface.co/open-llm-leaderboard
+    data: One "<model>-details" dataset per evaluated model with per-sample results (IFEval, BBH, MATH, GPQA, MuSR, MMLU-Pro)
+    notes: >-
+      Thousands of models, so the matrix is very wide; the report would need a top-K view. The
+      leaderboard is no longer updated, so it would be a frozen setting.
+
+  - id: helm
+    name: HELM
+    status: to verify
+    url: https://crfm.stanford.edu/helm/
+    data: Raw per-instance predictions and metrics published with each HELM release
+    notes: Check which scenarios have every model on the same instances.
+
+  - id: matharena
+    name: MathArena
+    status: to verify
+    url: https://matharena.ai
+    data: Competition problems on Hugging Face (MathArena/*); per-problem model grades to be located
+    notes: >-
+      Each competition has few problems (about 30), below the 30-task minimum alone; pooling
+      competitions would need a stated target population.
+
+  - id: mmlu-pro-leaderboard
+    name: MMLU-Pro leaderboard submissions
+    status: not feasible
+    url: https://huggingface.co/datasets/TIGER-Lab/mmlu_pro_leaderboard_submission
+    data: results.csv with per-subject accuracies
+    notes: >-
+      Probed 2026-10-25. Only 14 subject-level aggregates per model, not per-question scores, so
+      the task pool is too small and the tasks are not items.
+
+  - id: lmarena
+    name: LMArena (Chatbot Arena)
+    status: out of scope
+    aliases: [lmarena-ai/leaderboard-dataset]
+    url: https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset
+    data: Pairwise human-preference battles and aggregate ratings
+    notes: >-
+      Pairwise battles do not give every model a score on a shared task pool, so task-row
+      resampling does not apply directly.

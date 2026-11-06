@@ -1,0 +1,22 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - name: Install
+        run: uv sync --group dev --group tracker
+      - name: Tests (library and tracker, including the reference-fidelity checks)
+        run: uv run pytest -q
+      - name: Build the site (runs the site's own checks)
+        run: uv run python -m llm_wc.tracker build

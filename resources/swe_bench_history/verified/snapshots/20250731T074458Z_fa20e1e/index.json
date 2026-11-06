@@ -1,0 +1,934 @@
+{
+  "counts": {
+    "entries": 100,
+    "failures": 0,
+    "parsed_models": 100
+  },
+  "failures": [],
+  "leaderboard": "verified",
+  "models": [
+    {
+      "counts": {
+        "resolved": 376,
+        "total": 376
+      },
+      "model": "TRAE",
+      "model_id": "trae",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20250612_trae/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 372,
+        "total": 372
+      },
+      "model": "Refact.ai Agent",
+      "model_id": "refact-ai-agent",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20250603_Refact_Agent_claude-4-sonnet/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 366,
+        "total": 366
+      },
+      "model": "Tools + Claude 4 Opus (2025-05-22)",
+      "model_id": "tools-claude-4-opus-2025-05-22",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20250522_tools_claude-4-opus/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 362,
+        "total": 362
+      },
+      "model": "Tools + Claude 4 Sonnet (2025-05-22)",
+      "model_id": "tools-claude-4-sonnet-2025-05-22",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20250522_tools_claude-4-sonnet/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 355,
+        "total": 355
+      },
+      "model": "Warp",
+      "model_id": "warp",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20250623_warp/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 354,
+        "total": 354
+      },
+      "model": "Moatless Tools + Claude 4 Sonnet",
+      "model_id": "moatless-tools-claude-4-sonnet",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20250611_moatless_claude-4-sonnet-20250514/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 353,
+        "total": 353
+      },
+      "model": "TRAE",
+      "model_id": "trae-2",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20250519_trae/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 352,
+        "total": 352
+      },
+      "model": "Refact.ai Agent",
+      "model_id": "refact-ai-agent-2",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20250515_Refact_Agent/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 352,
+        "total": 352
+      },
+      "model": "OpenHands + Claude 4 Sonnet",
+      "model_id": "openhands-claude-4-sonnet",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20250524_openhands_claude_4_sonnet/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 352,
+        "total": 352
+      },
+      "model": "Augment Agent v1",
+      "model_id": "augment-agent-v1",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20250610_augment_agent_v1/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 351,
+        "total": 351
+      },
+      "model": "devlo",
+      "model_id": "devlo",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20250519_devlo/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 350,
+        "total": 350
+      },
+      "model": "Zencoder (2025-04-30)",
+      "model_id": "zencoder-2025-04-30",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20250430_zencoder_ai/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 341,
+        "total": 341
+      },
+      "model": "Nemotron-CORTEXA",
+      "model_id": "nemotron-cortexa",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20250516_cortexa_o3/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 333,
+        "total": 333
+      },
+      "model": "SWE-agent + Claude 4 Sonnet",
+      "model_id": "swe-agent-claude-4-sonnet",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20250522_sweagent_claude-4-sonnet-20250514/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 332,
+        "total": 332
+      },
+      "model": "Aime-coder v1 + Anthopic Claude 3.7 Sonnet",
+      "model_id": "aime-coder-v1-anthopic-claude-3-7-sonnet",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20250514_aime_coder/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 329,
+        "total": 329
+      },
+      "model": "OpenHands",
+      "model_id": "openhands",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20250415_openhands/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 327,
+        "total": 327
+      },
+      "model": "Augment Agent v0",
+      "model_id": "augment-agent-v0",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20250316_augment_agent_v0/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 327,
+        "total": 327
+      },
+      "model": "Amazon Q Developer Agent (v20250405-dev)",
+      "model_id": "amazon-q-developer-agent-v20250405-dev",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20250405_amazon-q-developer-agent-20250405-dev/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 323,
+        "total": 323
+      },
+      "model": "W&B Programmer O1 crosscheck5",
+      "model_id": "w-b-programmer-o1-crosscheck5",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20250117_wandb_programmer_o1_crosscheck5/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 323,
+        "total": 323
+      },
+      "model": "PatchPilot-v1.1",
+      "model_id": "patchpilot-v1-1",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20250503_patchpilot-v1.1-o4-mini/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 317,
+        "total": 317
+      },
+      "model": "AgentScope",
+      "model_id": "agentscope",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20250206_agentscope/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 316,
+        "total": 316
+      },
+      "model": "Tools + Claude 3.7 Sonnet (2025-02-24)",
+      "model_id": "tools-claude-3-7-sonnet-2025-02-24",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20250224_tools_claude-3-7-sonnet/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 314,
+        "total": 314
+      },
+      "model": "Blackbox AI Agent",
+      "model_id": "blackbox-ai-agent",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20250110_blackboxai_agent_v1.1/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 314,
+        "total": 314
+      },
+      "model": "EPAM AI/Run Developer Agent v20250219 + Anthopic Claude 3.5 Sonnet",
+      "model_id": "epam-ai-run-developer-agent-v20250219-anthopic-claude-3-5-sonnet",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20250228_epam-ai-run-claude-3-5-sonnet/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 312,
+        "total": 312
+      },
+      "model": "SWE-agent + Claude 3.7 Sonnet w/ Review Heavy",
+      "model_id": "swe-agent-claude-3-7-sonnet-w-review-heavy",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20250225_sweagent_claude-3-7-sonnet/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 311,
+        "total": 311
+      },
+      "model": "CodeStory Midwit Agent + swe-search",
+      "model_id": "codestory-midwit-agent-swe-search",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20241221_codestory_midwit_claude-3-5-sonnet_swe-search/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 304,
+        "total": 304
+      },
+      "model": "OpenHands + 4x Scaled (2024-02-03)",
+      "model_id": "openhands-4x-scaled-2024-02-03",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20250203_openhands_4x_scaled/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 301,
+        "total": 301
+      },
+      "model": "Learn-by-interact",
+      "model_id": "learn-by-interact",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20250110_learn_by_interact_claude3.5/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 294,
+        "total": 294
+      },
+      "model": "DeepSWE-Preview",
+      "model_id": "deepswe-preview",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20250629_deepswerl_r2eagent_tts/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 291,
+        "total": 291
+      },
+      "model": "Nemotron-CORTEXA",
+      "model_id": "nemotron-cortexa-2",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20250410_cortexa/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 291,
+        "total": 291
+      },
+      "model": "devlo",
+      "model_id": "devlo-2",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20241213_devlo/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 286,
+        "total": 286
+      },
+      "model": "Emergent E1 (v2024-12-23)",
+      "model_id": "emergent-e1-v2024-12-23",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20241223_emergent/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 285,
+        "total": 285
+      },
+      "model": "Gru(2024-12-08)",
+      "model_id": "gru-2024-12-08",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20241208_gru/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 283,
+        "total": 283
+      },
+      "model": "SWE-Rizzo",
+      "model_id": "swe-rizzo",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20250405_swe-rizzo_claude37/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 277,
+        "total": 277
+      },
+      "model": "EPAM AI/Run Developer Agent v20241212 + Anthopic Claude 3.5 Sonnet",
+      "model_id": "epam-ai-run-developer-agent-v20241212-anthopic-claude-3-5-sonnet",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20241212_epam-ai-run-claude-3-5-sonnet/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 275,
+        "total": 275
+      },
+      "model": "Amazon Q Developer Agent (v20241202-dev)",
+      "model_id": "amazon-q-developer-agent-v20241202-dev",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20241202_amazon-q-developer-agent-20241202-dev/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 271,
+        "total": 271
+      },
+      "model": "devlo",
+      "model_id": "devlo-3",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20241108_devlo/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 266,
+        "total": 266
+      },
+      "model": "Bracket.sh",
+      "model_id": "bracket-sh",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20250120_Bracket/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 265,
+        "total": 265
+      },
+      "model": "OpenHands + CodeAct v2.1 (claude-3-5-sonnet-20241022)",
+      "model_id": "openhands-codeact-v2-1-claude-3-5-sonnet-20241022",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20241029_OpenHands-CodeAct-2.1-sonnet-20241022/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 261,
+        "total": 261
+      },
+      "model": "Google Jules + Gemini 2.0 Flash (v20241212-experimental)",
+      "model_id": "google-jules-gemini-2-0-flash-v20241212-experimental",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20241212_google_jules_gemini_2.0_flash_experimental/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 259,
+        "total": 259
+      },
+      "model": "Engine Labs (2024-11-25)",
+      "model_id": "engine-labs-2024-11-25",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20241125_enginelabs/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 258,
+        "total": 258
+      },
+      "model": "AutoCodeRover-v2.1 (Claude-3.5-Sonnet-20241022)",
+      "model_id": "autocoderover-v2-1-claude-3-5-sonnet-20241022",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20250122_autocoderover-v2.1-claude-3-5-sonnet-20241022/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 254,
+        "total": 254
+      },
+      "model": "Agentless-1.5 + Claude-3.5 Sonnet (20241022)",
+      "model_id": "agentless-1-5-claude-3-5-sonnet-20241022",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20241202_agentless-1.5_claude-3.5-sonnet-20241022/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 250,
+        "total": 250
+      },
+      "model": "Solver (2024-10-28)",
+      "model_id": "solver-2024-10-28",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20241028_solver/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 250,
+        "total": 250
+      },
+      "model": "Bytedance MarsCode Agent",
+      "model_id": "bytedance-marscode-agent",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20241125_marscode-agent-dev/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 246,
+        "total": 246
+      },
+      "model": "nFactorial (2024-11-05)",
+      "model_id": "nfactorial-2024-11-05",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20241105_nfactorial/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 245,
+        "total": 245
+      },
+      "model": "Tools + Claude 3.5 Sonnet (2024-10-22)",
+      "model_id": "tools-claude-3-5-sonnet-2024-10-22",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20241022_tools_claude-3-5-sonnet-updated/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 243,
+        "total": 243
+      },
+      "model": "Composio SWE-Kit (2024-10-25)",
+      "model_id": "composio-swe-kit-2024-10-25",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20241025_composio_swekit/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 236,
+        "total": 236
+      },
+      "model": "AppMap Navie v2",
+      "model_id": "appmap-navie-v2",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20241106_navie-2-gpt4o-sonnet/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 235,
+        "total": 235
+      },
+      "model": "Skywork-SWE-32B + TTS(Bo8)",
+      "model_id": "skywork-swe-32b-tts-bo8",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20250616_Skywork-SWE-32B+TTS_Bo8/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 234,
+        "total": 234
+      },
+      "model": "OpenHands + DevStral Small 2505",
+      "model_id": "openhands-devstral-small-2505",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20250520_openhands_devstral_small/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 233,
+        "total": 233
+      },
+      "model": "Emergent E1 (v2024-10-12)",
+      "model_id": "emergent-e1-v2024-10-12",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20241023_emergent/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 231,
+        "total": 231
+      },
+      "model": "AutoCodeRover-v2.0 (Claude-3.5-Sonnet-20241022)",
+      "model_id": "autocoderover-v2-0-claude-3-5-sonnet-20241022",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20241108_autocoderover-v2.0-claude-3-5-sonnet-20241022/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 230,
+        "total": 230
+      },
+      "model": "PatchPilot + Co-PatcheR",
+      "model_id": "patchpilot-co-patcher",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20250528_patchpilot_Co-PatcheR/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 227,
+        "total": 227
+      },
+      "model": "Solver (2024-09-12)",
+      "model_id": "solver-2024-09-12",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20240924_solver/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 226,
+        "total": 226
+      },
+      "model": "Gru(2024-08-24)",
+      "model_id": "gru-2024-08-24",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20240824_gru/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 221,
+        "total": 221
+      },
+      "model": "CodeShellAgent + Gemini 2.0 Flash (Experimental)",
+      "model_id": "codeshellagent-gemini-2-0-flash-experimental",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20250118_codeshellagent_gemini_2.0_flash_experimental/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 218,
+        "total": 218
+      },
+      "model": "Solver (2024-09-12)",
+      "model_id": "solver-2024-09-12-2",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20240920_solver/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 212,
+        "total": 212
+      },
+      "model": "Amazon Nova Premier 1.0 (2025-04-30)",
+      "model_id": "amazon-nova-premier-1-0-2025-04-30",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20250527_amazon.nova-premier-v1.0/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 212,
+        "total": 212
+      },
+      "model": "Agentless Lite + O3 Mini (20250214)",
+      "model_id": "agentless-lite-o3-mini-20250214",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20250214_agentless_lite_o3_mini/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 211,
+        "total": 211
+      },
+      "model": "DeepSWE-Preview",
+      "model_id": "deepswe-preview-2",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20250629_deepswerl_r2eagent/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 208,
+        "total": 208
+      },
+      "model": "ugaiforge",
+      "model_id": "ugaiforge",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20250112_ugaiforge/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 208,
+        "total": 208
+      },
+      "model": "nFactorial (2024-10-30)",
+      "model_id": "nfactorial-2024-10-30",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20241030_nfactorial/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 206,
+        "total": 206
+      },
+      "model": "SWE-RL (Llama3-SWE-RL-70B + Agentless Mini) (20250226)",
+      "model_id": "swe-rl-llama3-swe-rl-70b-agentless-mini-20250226",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20250226_swerl_llama3_70b/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 203,
+        "total": 203
+      },
+      "model": "Nebius AI Qwen 2.5 72B Generator + LLama 3.1 70B Critic",
+      "model_id": "nebius-ai-qwen-2-5-72b-generator-llama-3-1-70b-critic",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20241113_nebius-search-open-weight-models-11-24/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 203,
+        "total": 203
+      },
+      "model": "Tools + Claude 3.5 Haiku",
+      "model_id": "tools-claude-3-5-haiku",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20241022_tools_claude-3-5-haiku/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 203,
+        "total": 203
+      },
+      "model": "Honeycomb",
+      "model_id": "honeycomb",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20240820_honeycomb/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 203,
+        "total": 203
+      },
+      "model": "Composio SWEkit + Claude 3.5 Sonnet (2024-10-16)",
+      "model_id": "composio-swekit-claude-3-5-sonnet-2024-10-16",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20241016_composio_swekit/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 201,
+        "total": 201
+      },
+      "model": "SWE-agent + SWE-agent-LM-32B",
+      "model_id": "swe-agent-swe-agent-lm-32b",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20250511_sweagent_lm_32b/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 198,
+        "total": 198
+      },
+      "model": "EPAM AI/Run Developer Agent v20241029 + Anthopic Claude 3.5 Sonnet",
+      "model_id": "epam-ai-run-developer-agent-v20241029-anthopic-claude-3-5-sonnet",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20241029_epam-ai-run-claude-3-5-sonnet/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 194,
+        "total": 194
+      },
+      "model": "Amazon Q Developer Agent (v20240719-dev)",
+      "model_id": "amazon-q-developer-agent-v20240719-dev",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20240721_amazon-q-developer-agent-20240719-dev/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 194,
+        "total": 194
+      },
+      "model": "Agentless-1.5 + GPT 4o (2024-05-13)",
+      "model_id": "agentless-1-5-gpt-4o-2024-05-13",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20241028_agentless-1.5_gpt4o/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 192,
+        "total": 192
+      },
+      "model": "AutoCodeRover (v20240620) + GPT 4o (2024-05-13)",
+      "model_id": "autocoderover-v20240620-gpt-4o-2024-05-13",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20240628_autocoderover-v20240620/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 190,
+        "total": 190
+      },
+      "model": "Skywork-SWE-32B",
+      "model_id": "skywork-swe-32b",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20250616_Skywork-SWE-32B/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 185,
+        "total": 185
+      },
+      "model": "Factory Code Droid",
+      "model_id": "factory-code-droid",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20240617_factory_code_droid/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 168,
+        "total": 168
+      },
+      "model": "SWE-agent + Claude 3.5 Sonnet",
+      "model_id": "swe-agent-claude-3-5-sonnet",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20240620_sweagent_claude3.5sonnet/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 164,
+        "total": 164
+      },
+      "model": "SWE-Fixer (Qwen2.5-7b retriever + Qwen2.5-72b editor)",
+      "model_id": "swe-fixer-qwen2-5-7b-retriever-qwen2-5-72b-editor",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20250306_SWE-Fixer_Qwen2.5-7b-retriever_Qwen2.5-72b-editor/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 163,
+        "total": 163
+      },
+      "model": "MASAI + GPT 4o (2024-06-12)",
+      "model_id": "masai-gpt-4o-2024-06-12",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20240612_MASAI_gpt4o/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 160,
+        "total": 160
+      },
+      "model": "Artemis Agent v1 (2024-11-20)",
+      "model_id": "artemis-agent-v1-2024-11-20",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20241120_artemis_agent/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 158,
+        "total": 158
+      },
+      "model": "nFactorial (2024-10-07)",
+      "model_id": "nfactorial-2024-10-07",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20241007_nfactorial/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 151,
+        "total": 151
+      },
+      "model": "SWE-Fixer (Qwen2.5-7b retriever + Qwen2.5-72b editor) 20241128",
+      "model_id": "swe-fixer-qwen2-5-7b-retriever-qwen2-5-72b-editor-20241128",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20241128_SWE-Fixer_Qwen2.5-7b-retriever_Qwen2.5-72b-editor_20241128/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 144,
+        "total": 144
+      },
+      "model": "Lingma Agent + Lingma SWE-GPT 72b (v0925)",
+      "model_id": "lingma-agent-lingma-swe-gpt-72b-v0925",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20241002_lingma-agent_lingma-swe-gpt-72b/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 135,
+        "total": 135
+      },
+      "model": "EPAM AI/Run Developer Agent + GPT4o",
+      "model_id": "epam-ai-run-developer-agent-gpt4o",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20241016_epam-ai-run-gpt-4o/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 131,
+        "total": 131
+      },
+      "model": "AppMap Navie + GPT 4o (2024-05-13)",
+      "model_id": "appmap-navie-gpt-4o-2024-05-13",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20240615_appmap-navie_gpt4o/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 129,
+        "total": 129
+      },
+      "model": "nFactorial (2024-10-01)",
+      "model_id": "nfactorial-2024-10-01",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20241001_nfactorial/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 128,
+        "total": 128
+      },
+      "model": "Amazon Q Developer Agent (v20240430-dev)",
+      "model_id": "amazon-q-developer-agent-v20240430-dev",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20240509_amazon-q-developer-agent-20240430-dev/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 125,
+        "total": 125
+      },
+      "model": "Lingma Agent + Lingma SWE-GPT 72b (v0918)",
+      "model_id": "lingma-agent-lingma-swe-gpt-72b-v0918",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20240918_lingma-agent_lingma-swe-gpt-72b/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 120,
+        "total": 120
+      },
+      "model": "EPAM AI/Run Developer Agent + GPT4o",
+      "model_id": "epam-ai-run-developer-agent-gpt4o-2",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20240820_epam-ai-run-gpt-4o/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 116,
+        "total": 116
+      },
+      "model": "MCTS-Refine-7B",
+      "model_id": "mcts-refine-7b",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20250627_agentless_MCTS-Refine-7B/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 116,
+        "total": 116
+      },
+      "model": "SWE-agent + GPT 4o (2024-05-13)",
+      "model_id": "swe-agent-gpt-4o-2024-05-13",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20240728_sweagent_gpt4o/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 112,
+        "total": 112
+      },
+      "model": "SWE-agent + GPT 4 (1106)",
+      "model_id": "swe-agent-gpt-4-1106",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20240402_sweagent_gpt4/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 79,
+        "total": 79
+      },
+      "model": "SWE-agent + Claude 3 Opus",
+      "model_id": "swe-agent-claude-3-opus",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20240402_sweagent_claude3opus/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 91,
+        "total": 91
+      },
+      "model": "Lingma Agent + Lingma SWE-GPT 7b (v0925)",
+      "model_id": "lingma-agent-lingma-swe-gpt-7b-v0925",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20241002_lingma-agent_lingma-swe-gpt-7b/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 51,
+        "total": 51
+      },
+      "model": "Lingma Agent + Lingma SWE-GPT 7b (v0918)",
+      "model_id": "lingma-agent-lingma-swe-gpt-7b-v0918",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20240918_lingma-agent_lingma-swe-gpt-7b/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 35,
+        "total": 35
+      },
+      "model": "RAG + Claude 3 Opus",
+      "model_id": "rag-claude-3-opus",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20240402_rag_claude3opus/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 22,
+        "total": 22
+      },
+      "model": "RAG + Claude 2",
+      "model_id": "rag-claude-2",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20231010_rag_claude2/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 14,
+        "total": 14
+      },
+      "model": "RAG + GPT 4 (1106)",
+      "model_id": "rag-gpt-4-1106",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20240402_rag_gpt4/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 7,
+        "total": 7
+      },
+      "model": "RAG + SWE-Llama 7B",
+      "model_id": "rag-swe-llama-7b",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20231010_rag_swellama7b/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 6,
+        "total": 6
+      },
+      "model": "RAG + SWE-Llama 13B",
+      "model_id": "rag-swe-llama-13b",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20231010_rag_swellama13b/results/results.json"
+    },
+    {
+      "counts": {
+        "resolved": 2,
+        "total": 2
+      },
+      "model": "RAG + ChatGPT 3.5",
+      "model_id": "rag-chatgpt-3-5",
+      "trajectory_url": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified/20231010_rag_gpt35/results/results.json"
+    }
+  ],
+  "snapshot_id": "20250731T074458Z_fa20e1e",
+  "source": {
+    "experiments_base": "https://raw.githubusercontent.com/SWE-bench/experiments/aa74fab5a5f1c829d05b44edfa106b41a38ac057/evaluation/verified",
+    "experiments_commit": {
+      "date": "2025-07-10T17:43:29+00:00",
+      "html_url": "https://github.com/SWE-bench/experiments/commit/aa74fab5a5f1c829d05b44edfa106b41a38ac057",
+      "message": "fix: DeepSWE TTS metadata.yml (#294)",
+      "sha": "aa74fab5a5f1c829d05b44edfa106b41a38ac057"
+    },
+    "experiments_fallback": false,
+    "experiments_repo": "SWE-bench/experiments",
+    "leaderboard_commit": {
+      "date": "2025-07-31T07:44:58+00:00",
+      "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/fa20e1e88edc8ff3e903dd30acb504b68a4940d2",
+      "message": "Update leaderboard data",
+      "raw_url": "https://raw.githubusercontent.com/SWE-bench/swe-bench.github.io/fa20e1e88edc8ff3e903dd30acb504b68a4940d2/data/leaderboards.json",
+      "sha": "fa20e1e88edc8ff3e903dd30acb504b68a4940d2"
+    },
+    "leaderboard_path": "data/leaderboards.json",
+    "leaderboard_repo": "SWE-bench/swe-bench.github.io"
+  },
+  "status": "ok",
+  "status_message": null
+}

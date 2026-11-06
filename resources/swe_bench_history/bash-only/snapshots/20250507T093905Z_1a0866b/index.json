@@ -1,0 +1,33 @@
+{
+  "counts": {
+    "entries": 0,
+    "failures": 0,
+    "parsed_models": 0
+  },
+  "failures": [],
+  "leaderboard": "bash-only",
+  "models": [],
+  "snapshot_id": "20250507T093905Z_1a0866b",
+  "source": {
+    "experiments_base": "https://raw.githubusercontent.com/SWE-bench/experiments/e56d2296a61d3b4912aa90526bb56ddbdffc7f4a/evaluation/bash-only",
+    "experiments_commit": {
+      "date": "2025-08-25T21:18:10+00:00",
+      "html_url": "https://github.com/SWE-bench/experiments/commit/e56d2296a61d3b4912aa90526bb56ddbdffc7f4a",
+      "message": "Add `bash-only` split",
+      "sha": "e56d2296a61d3b4912aa90526bb56ddbdffc7f4a"
+    },
+    "experiments_fallback": true,
+    "experiments_repo": "SWE-bench/experiments",
+    "leaderboard_commit": {
+      "date": "2025-05-07T09:39:05+00:00",
+      "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/1a0866b0ffeccc72af72dd7d77906886f7829e7a",
+      "message": "Refactor entire website into jinja based template (#14)\n\n* Refactor entire website into jinja based template\n\n* copy CNAME to dist directory\n\n* Add GitHub Pages deployment workflow",
+      "raw_url": "https://raw.githubusercontent.com/SWE-bench/swe-bench.github.io/1a0866b0ffeccc72af72dd7d77906886f7829e7a/data/leaderboards.json",
+      "sha": "1a0866b0ffeccc72af72dd7d77906886f7829e7a"
+    },
+    "leaderboard_path": "data/leaderboards.json",
+    "leaderboard_repo": "SWE-bench/swe-bench.github.io"
+  },
+  "status": "missing_leaderboard",
+  "status_message": "\"No leaderboard named 'bash-only' found in list payload\""
+}

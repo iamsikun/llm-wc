@@ -1,0 +1,1705 @@
+{
+  "counts": {
+    "all_experiments_commits": 21,
+    "all_leaderboard_commits": 70,
+    "failures": 0,
+    "parsed_models": 1555,
+    "selected_leaderboard_commits": 70,
+    "snapshots_written": 70
+  },
+  "filters": {
+    "max_commits": null,
+    "since_date": "2025-02-27",
+    "until_date": null
+  },
+  "leaderboard": "test",
+  "run_at": "2026-03-13T02:25:00.501124+00:00",
+  "snapshots": [
+    {
+      "counts": {
+        "entries": 20,
+        "failures": 0,
+        "parsed_models": 20
+      },
+      "experiments_commit": {
+        "date": "2025-03-06T17:39:52+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/7e1afacc3e50c13a22243da7b2b4aa18c3cf84ae",
+        "message": "Add SWE-agent on Test result",
+        "sha": "7e1afacc3e50c13a22243da7b2b4aa18c3cf84ae"
+      },
+      "leaderboard_commit": {
+        "date": "2025-05-07T09:39:05+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/1a0866b0ffeccc72af72dd7d77906886f7829e7a",
+        "message": "Refactor entire website into jinja based template (#14)\n\n* Refactor entire website into jinja based template\n\n* copy CNAME to dist directory\n\n* Add GitHub Pages deployment workflow",
+        "sha": "1a0866b0ffeccc72af72dd7d77906886f7829e7a"
+      },
+      "path": "snapshots/20250507T093905Z_1a0866b",
+      "snapshot_id": "20250507T093905Z_1a0866b",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 20,
+        "failures": 0,
+        "parsed_models": 20
+      },
+      "experiments_commit": {
+        "date": "2025-05-11T06:10:54+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/3be1e1a1df43b7b2048f6167f4b88885be4849b2",
+        "message": "Minor updates",
+        "sha": "3be1e1a1df43b7b2048f6167f4b88885be4849b2"
+      },
+      "leaderboard_commit": {
+        "date": "2025-05-11T06:52:34+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/f1aaf66b4adc95b66038e1c79a3cbdd108ab37fd",
+        "message": "Add OS model, system toggles",
+        "sha": "f1aaf66b4adc95b66038e1c79a3cbdd108ab37fd"
+      },
+      "path": "snapshots/20250511T065234Z_f1aaf66",
+      "snapshot_id": "20250511T065234Z_f1aaf66",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 20,
+        "failures": 0,
+        "parsed_models": 20
+      },
+      "experiments_commit": {
+        "date": "2025-05-11T06:10:54+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/3be1e1a1df43b7b2048f6167f4b88885be4849b2",
+        "message": "Minor updates",
+        "sha": "3be1e1a1df43b7b2048f6167f4b88885be4849b2"
+      },
+      "leaderboard_commit": {
+        "date": "2025-05-11T18:39:45+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/55fda5037d4d7a1453c7359508ba59cbad8b659f",
+        "message": "Add tag selection for filtering leaderboard",
+        "sha": "55fda5037d4d7a1453c7359508ba59cbad8b659f"
+      },
+      "path": "snapshots/20250511T183945Z_55fda50",
+      "snapshot_id": "20250511T183945Z_55fda50",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 20,
+        "failures": 0,
+        "parsed_models": 20
+      },
+      "experiments_commit": {
+        "date": "2025-05-11T22:17:33+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/cfcca715276403ba8795e48a2091fd7e328f0e94",
+        "message": "Fix SWE-bench references",
+        "sha": "cfcca715276403ba8795e48a2091fd7e328f0e94"
+      },
+      "leaderboard_commit": {
+        "date": "2025-05-12T05:10:01+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/9e0bdf869796656a27e4156547e6dad611db1bfd",
+        "message": "Make filters checkboxes",
+        "sha": "9e0bdf869796656a27e4156547e6dad611db1bfd"
+      },
+      "path": "snapshots/20250512T051001Z_9e0bdf8",
+      "snapshot_id": "20250512T051001Z_9e0bdf8",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 20,
+        "failures": 0,
+        "parsed_models": 20
+      },
+      "experiments_commit": {
+        "date": "2025-05-11T22:17:33+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/cfcca715276403ba8795e48a2091fd7e328f0e94",
+        "message": "Fix SWE-bench references",
+        "sha": "cfcca715276403ba8795e48a2091fd7e328f0e94"
+      },
+      "leaderboard_commit": {
+        "date": "2025-05-13T00:51:30+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/f911ab69a0bfb087f21ec4188a88385b9e112fe0",
+        "message": "Update leaderboard",
+        "sha": "f911ab69a0bfb087f21ec4188a88385b9e112fe0"
+      },
+      "path": "snapshots/20250513T005130Z_f911ab6",
+      "snapshot_id": "20250513T005130Z_f911ab6",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 20,
+        "failures": 0,
+        "parsed_models": 20
+      },
+      "experiments_commit": {
+        "date": "2025-05-11T22:17:33+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/cfcca715276403ba8795e48a2091fd7e328f0e94",
+        "message": "Fix SWE-bench references",
+        "sha": "cfcca715276403ba8795e48a2091fd7e328f0e94"
+      },
+      "leaderboard_commit": {
+        "date": "2025-05-13T02:51:06+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/5cf62bc04d2f4fc6894c16cd9512bc6110187b80",
+        "message": "Update leaderboard",
+        "sha": "5cf62bc04d2f4fc6894c16cd9512bc6110187b80"
+      },
+      "path": "snapshots/20250513T025106Z_5cf62bc",
+      "snapshot_id": "20250513T025106Z_5cf62bc",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 20,
+        "failures": 0,
+        "parsed_models": 20
+      },
+      "experiments_commit": {
+        "date": "2025-05-13T23:27:39+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/8447fb6f048ffefbad11af21ce09494e3bfd4d35",
+        "message": "Add annotations for # of attempts",
+        "sha": "8447fb6f048ffefbad11af21ce09494e3bfd4d35"
+      },
+      "leaderboard_commit": {
+        "date": "2025-05-13T23:38:20+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/d7e7ec2abef444146bbfc285c749ec467c386828",
+        "message": "Add system tags",
+        "sha": "d7e7ec2abef444146bbfc285c749ec467c386828"
+      },
+      "path": "snapshots/20250513T233820Z_d7e7ec2",
+      "snapshot_id": "20250513T233820Z_d7e7ec2",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 20,
+        "failures": 0,
+        "parsed_models": 20
+      },
+      "experiments_commit": {
+        "date": "2025-05-13T23:27:39+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/8447fb6f048ffefbad11af21ce09494e3bfd4d35",
+        "message": "Add annotations for # of attempts",
+        "sha": "8447fb6f048ffefbad11af21ce09494e3bfd4d35"
+      },
+      "leaderboard_commit": {
+        "date": "2025-05-15T21:23:32+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/15ff951f38db3df4b00c8641607deb2ddc72ce37",
+        "message": "Update leaderboard",
+        "sha": "15ff951f38db3df4b00c8641607deb2ddc72ce37"
+      },
+      "path": "snapshots/20250515T212332Z_15ff951",
+      "snapshot_id": "20250515T212332Z_15ff951",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 20,
+        "failures": 0,
+        "parsed_models": 20
+      },
+      "experiments_commit": {
+        "date": "2025-05-21T20:38:52+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/a3ed594cf74f92932eaeb1532fe4557b8bea2187",
+        "message": "Move predictions to s3 bucket",
+        "sha": "a3ed594cf74f92932eaeb1532fe4557b8bea2187"
+      },
+      "leaderboard_commit": {
+        "date": "2025-05-22T01:56:19+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/a12c231df9f5d2ccc911f915aa6156f3ca8fa752",
+        "message": "Update leaderboard",
+        "sha": "a12c231df9f5d2ccc911f915aa6156f3ca8fa752"
+      },
+      "path": "snapshots/20250522T015619Z_a12c231",
+      "snapshot_id": "20250522T015619Z_a12c231",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 20,
+        "failures": 0,
+        "parsed_models": 20
+      },
+      "experiments_commit": {
+        "date": "2025-05-23T20:19:25+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/8430e63f6d290bccd88b5add51ec20ee7e36242c",
+        "message": "add Amazon Q Developer Agent (v20250405-dev) results on test (#236)\n\n* add Amazon Q Developer Agent (v20250405-dev) results on test\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n* Remove `all_preds.jsonl` (moved to s3 bucket)\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "8430e63f6d290bccd88b5add51ec20ee7e36242c"
+      },
+      "leaderboard_commit": {
+        "date": "2025-05-23T20:37:12+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/9f7b5b17d924a09527154425c6bc134dca9067c8",
+        "message": "Update leaderboard",
+        "sha": "9f7b5b17d924a09527154425c6bc134dca9067c8"
+      },
+      "path": "snapshots/20250523T203712Z_9f7b5b1",
+      "snapshot_id": "20250523T203712Z_9f7b5b1",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 21,
+        "failures": 0,
+        "parsed_models": 21
+      },
+      "experiments_commit": {
+        "date": "2025-05-27T22:25:20+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/02d67343bb118c590dc4800c471b94d54729fd83",
+        "message": "Fix sweagent logo (#239)",
+        "sha": "02d67343bb118c590dc4800c471b94d54729fd83"
+      },
+      "leaderboard_commit": {
+        "date": "2025-05-29T17:22:31+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/5ee3e1053ac0b951b9966732a5da209ada527b97",
+        "message": "Update leaderboard",
+        "sha": "5ee3e1053ac0b951b9966732a5da209ada527b97"
+      },
+      "path": "snapshots/20250529T172231Z_5ee3e10",
+      "snapshot_id": "20250529T172231Z_5ee3e10",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 22,
+        "failures": 0,
+        "parsed_models": 22
+      },
+      "experiments_commit": {
+        "date": "2025-06-19T00:58:42+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/6adccbd67eb9e743510db8106a51535ae5f3d041",
+        "message": "20250605 - Atlassian Rovo Dev - SWE-Bench Full (#256)\n\n* submit 20250605_atlassian-rovo-dev\n\n* clarify no internet access\n\n* add technical report in README\n\n* formatting fixes\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "6adccbd67eb9e743510db8106a51535ae5f3d041"
+      },
+      "leaderboard_commit": {
+        "date": "2025-06-24T17:50:29+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/96ad2486384ff1ba3d3d1fb940d28745f011b071",
+        "message": "Update leaderboard",
+        "sha": "96ad2486384ff1ba3d3d1fb940d28745f011b071"
+      },
+      "path": "snapshots/20250624T175029Z_96ad248",
+      "snapshot_id": "20250624T175029Z_96ad248",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 22,
+        "failures": 0,
+        "parsed_models": 22
+      },
+      "experiments_commit": {
+        "date": "2025-06-19T00:58:42+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/6adccbd67eb9e743510db8106a51535ae5f3d041",
+        "message": "20250605 - Atlassian Rovo Dev - SWE-Bench Full (#256)\n\n* submit 20250605_atlassian-rovo-dev\n\n* clarify no internet access\n\n* add technical report in README\n\n* formatting fixes\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "6adccbd67eb9e743510db8106a51535ae5f3d041"
+      },
+      "leaderboard_commit": {
+        "date": "2025-07-04T17:22:09+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/64ecce3a25c7647d72f8835dbaf38c71de1aade2",
+        "message": "Update leaderboard",
+        "sha": "64ecce3a25c7647d72f8835dbaf38c71de1aade2"
+      },
+      "path": "snapshots/20250704T172209Z_64ecce3",
+      "snapshot_id": "20250704T172209Z_64ecce3",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 22,
+        "failures": 0,
+        "parsed_models": 22
+      },
+      "experiments_commit": {
+        "date": "2025-06-19T00:58:42+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/6adccbd67eb9e743510db8106a51535ae5f3d041",
+        "message": "20250605 - Atlassian Rovo Dev - SWE-Bench Full (#256)\n\n* submit 20250605_atlassian-rovo-dev\n\n* clarify no internet access\n\n* add technical report in README\n\n* formatting fixes\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "6adccbd67eb9e743510db8106a51535ae5f3d041"
+      },
+      "leaderboard_commit": {
+        "date": "2025-07-12T01:10:23+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/2212eb9e64a518ae4076435325a12269641acc30",
+        "message": "Add bash only page",
+        "sha": "2212eb9e64a518ae4076435325a12269641acc30"
+      },
+      "path": "snapshots/20250712T011023Z_2212eb9",
+      "snapshot_id": "20250712T011023Z_2212eb9",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 22,
+        "failures": 0,
+        "parsed_models": 22
+      },
+      "experiments_commit": {
+        "date": "2025-06-19T00:58:42+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/6adccbd67eb9e743510db8106a51535ae5f3d041",
+        "message": "20250605 - Atlassian Rovo Dev - SWE-Bench Full (#256)\n\n* submit 20250605_atlassian-rovo-dev\n\n* clarify no internet access\n\n* add technical report in README\n\n* formatting fixes\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "6adccbd67eb9e743510db8106a51535ae5f3d041"
+      },
+      "leaderboard_commit": {
+        "date": "2025-07-28T22:03:32+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/cd39b58675acaffce337659d63666e33f59e17b9",
+        "message": "Fix tab link for mini",
+        "sha": "cd39b58675acaffce337659d63666e33f59e17b9"
+      },
+      "path": "snapshots/20250728T220332Z_cd39b58",
+      "snapshot_id": "20250728T220332Z_cd39b58",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 22,
+        "failures": 0,
+        "parsed_models": 22
+      },
+      "experiments_commit": {
+        "date": "2025-06-19T00:58:42+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/6adccbd67eb9e743510db8106a51535ae5f3d041",
+        "message": "20250605 - Atlassian Rovo Dev - SWE-Bench Full (#256)\n\n* submit 20250605_atlassian-rovo-dev\n\n* clarify no internet access\n\n* add technical report in README\n\n* formatting fixes\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "6adccbd67eb9e743510db8106a51535ae5f3d041"
+      },
+      "leaderboard_commit": {
+        "date": "2025-07-28T22:05:04+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/fa569f3086d880bc39772ef098badb85b9f143ab",
+        "message": "Rename micro -> mini swe agent",
+        "sha": "fa569f3086d880bc39772ef098badb85b9f143ab"
+      },
+      "path": "snapshots/20250728T220504Z_fa569f3",
+      "snapshot_id": "20250728T220504Z_fa569f3",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 22,
+        "failures": 0,
+        "parsed_models": 22
+      },
+      "experiments_commit": {
+        "date": "2025-06-19T00:58:42+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/6adccbd67eb9e743510db8106a51535ae5f3d041",
+        "message": "20250605 - Atlassian Rovo Dev - SWE-Bench Full (#256)\n\n* submit 20250605_atlassian-rovo-dev\n\n* clarify no internet access\n\n* add technical report in README\n\n* formatting fixes\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "6adccbd67eb9e743510db8106a51535ae5f3d041"
+      },
+      "leaderboard_commit": {
+        "date": "2025-07-31T01:58:42+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/3c70f867d4403e18ced3e0973c4676af0fbce045",
+        "message": "Update filter view",
+        "sha": "3c70f867d4403e18ced3e0973c4676af0fbce045"
+      },
+      "path": "snapshots/20250731T015842Z_3c70f86",
+      "snapshot_id": "20250731T015842Z_3c70f86",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 22,
+        "failures": 0,
+        "parsed_models": 22
+      },
+      "experiments_commit": {
+        "date": "2025-06-19T00:58:42+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/6adccbd67eb9e743510db8106a51535ae5f3d041",
+        "message": "20250605 - Atlassian Rovo Dev - SWE-Bench Full (#256)\n\n* submit 20250605_atlassian-rovo-dev\n\n* clarify no internet access\n\n* add technical report in README\n\n* formatting fixes\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "6adccbd67eb9e743510db8106a51535ae5f3d041"
+      },
+      "leaderboard_commit": {
+        "date": "2025-07-31T07:44:58+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/fa20e1e88edc8ff3e903dd30acb504b68a4940d2",
+        "message": "Update leaderboard data",
+        "sha": "fa20e1e88edc8ff3e903dd30acb504b68a4940d2"
+      },
+      "path": "snapshots/20250731T074458Z_fa20e1e",
+      "snapshot_id": "20250731T074458Z_fa20e1e",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 22,
+        "failures": 0,
+        "parsed_models": 22
+      },
+      "experiments_commit": {
+        "date": "2025-06-19T00:58:42+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/6adccbd67eb9e743510db8106a51535ae5f3d041",
+        "message": "20250605 - Atlassian Rovo Dev - SWE-Bench Full (#256)\n\n* submit 20250605_atlassian-rovo-dev\n\n* clarify no internet access\n\n* add technical report in README\n\n* formatting fixes\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "6adccbd67eb9e743510db8106a51535ae5f3d041"
+      },
+      "leaderboard_commit": {
+        "date": "2025-07-31T08:13:34+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/a56b68c9b2c2981f5008cca62675703c5c4794ff",
+        "message": "Update leaderboard data with cross listed mini entries",
+        "sha": "a56b68c9b2c2981f5008cca62675703c5c4794ff"
+      },
+      "path": "snapshots/20250731T081334Z_a56b68c",
+      "snapshot_id": "20250731T081334Z_a56b68c",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 22,
+        "failures": 0,
+        "parsed_models": 22
+      },
+      "experiments_commit": {
+        "date": "2025-06-19T00:58:42+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/6adccbd67eb9e743510db8106a51535ae5f3d041",
+        "message": "20250605 - Atlassian Rovo Dev - SWE-Bench Full (#256)\n\n* submit 20250605_atlassian-rovo-dev\n\n* clarify no internet access\n\n* add technical report in README\n\n* formatting fixes\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "6adccbd67eb9e743510db8106a51535ae5f3d041"
+      },
+      "leaderboard_commit": {
+        "date": "2025-07-31T15:43:24+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/c03a702a173a6e63205d7686e9bc5960815485a4",
+        "message": "Add the Bash Only Dataset (#32)\n\n* Update scores\n\n* Add twitter social icon\n\n* Make description leaderboard style cursive\n\n* Fix <br> in bottom table\n\n* Update banner with mini-swe-agent\n\n* Add mini to the news\n\n* Style: Right-align resolved column (#28)\n\n* fix leaderboard scores\n\n---------\n\nCo-authored-by: Kilian Lieret <kilian.lieret@posteo.de>",
+        "sha": "c03a702a173a6e63205d7686e9bc5960815485a4"
+      },
+      "path": "snapshots/20250731T154324Z_c03a702",
+      "snapshot_id": "20250731T154324Z_c03a702",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 22,
+        "failures": 0,
+        "parsed_models": 22
+      },
+      "experiments_commit": {
+        "date": "2025-06-19T00:58:42+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/6adccbd67eb9e743510db8106a51535ae5f3d041",
+        "message": "20250605 - Atlassian Rovo Dev - SWE-Bench Full (#256)\n\n* submit 20250605_atlassian-rovo-dev\n\n* clarify no internet access\n\n* add technical report in README\n\n* formatting fixes\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "6adccbd67eb9e743510db8106a51535ae5f3d041"
+      },
+      "leaderboard_commit": {
+        "date": "2025-07-31T16:33:36+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/1d2b395af20b28e6f61fa9fd5e5da56076b8feaa",
+        "message": "Fix leaderboard ordering",
+        "sha": "1d2b395af20b28e6f61fa9fd5e5da56076b8feaa"
+      },
+      "path": "snapshots/20250731T163336Z_1d2b395",
+      "snapshot_id": "20250731T163336Z_1d2b395",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 22,
+        "failures": 0,
+        "parsed_models": 22
+      },
+      "experiments_commit": {
+        "date": "2025-06-19T00:58:42+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/6adccbd67eb9e743510db8106a51535ae5f3d041",
+        "message": "20250605 - Atlassian Rovo Dev - SWE-Bench Full (#256)\n\n* submit 20250605_atlassian-rovo-dev\n\n* clarify no internet access\n\n* add technical report in README\n\n* formatting fixes\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "6adccbd67eb9e743510db8106a51535ae5f3d041"
+      },
+      "leaderboard_commit": {
+        "date": "2025-08-04T09:27:02+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/f6392a446f9dcf1500ec9d73321cd90348fa81fc",
+        "message": "Add opus",
+        "sha": "f6392a446f9dcf1500ec9d73321cd90348fa81fc"
+      },
+      "path": "snapshots/20250804T092702Z_f6392a4",
+      "snapshot_id": "20250804T092702Z_f6392a4",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 22,
+        "failures": 0,
+        "parsed_models": 22
+      },
+      "experiments_commit": {
+        "date": "2025-06-19T00:58:42+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/6adccbd67eb9e743510db8106a51535ae5f3d041",
+        "message": "20250605 - Atlassian Rovo Dev - SWE-Bench Full (#256)\n\n* submit 20250605_atlassian-rovo-dev\n\n* clarify no internet access\n\n* add technical report in README\n\n* formatting fixes\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "6adccbd67eb9e743510db8106a51535ae5f3d041"
+      },
+      "leaderboard_commit": {
+        "date": "2025-08-06T02:44:21+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/dc7a3deffea1bb011190648410fcbe9c909c7e96",
+        "message": "Add qwen3 data",
+        "sha": "dc7a3deffea1bb011190648410fcbe9c909c7e96"
+      },
+      "path": "snapshots/20250806T024421Z_dc7a3de",
+      "snapshot_id": "20250806T024421Z_dc7a3de",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 22,
+        "failures": 0,
+        "parsed_models": 22
+      },
+      "experiments_commit": {
+        "date": "2025-06-19T00:58:42+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/6adccbd67eb9e743510db8106a51535ae5f3d041",
+        "message": "20250605 - Atlassian Rovo Dev - SWE-Bench Full (#256)\n\n* submit 20250605_atlassian-rovo-dev\n\n* clarify no internet access\n\n* add technical report in README\n\n* formatting fixes\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "6adccbd67eb9e743510db8106a51535ae5f3d041"
+      },
+      "leaderboard_commit": {
+        "date": "2025-08-06T02:48:24+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/34b660408b1fcba5b69ad4dd5041575659477fec",
+        "message": "Add qwen2.5 coder 32b results",
+        "sha": "34b660408b1fcba5b69ad4dd5041575659477fec"
+      },
+      "path": "snapshots/20250806T024824Z_34b6604",
+      "snapshot_id": "20250806T024824Z_34b6604",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 22,
+        "failures": 0,
+        "parsed_models": 22
+      },
+      "experiments_commit": {
+        "date": "2025-06-19T00:58:42+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/6adccbd67eb9e743510db8106a51535ae5f3d041",
+        "message": "20250605 - Atlassian Rovo Dev - SWE-Bench Full (#256)\n\n* submit 20250605_atlassian-rovo-dev\n\n* clarify no internet access\n\n* add technical report in README\n\n* formatting fixes\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "6adccbd67eb9e743510db8106a51535ae5f3d041"
+      },
+      "leaderboard_commit": {
+        "date": "2025-08-06T02:50:39+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/0c77a6cb264ca042cc42775fc29f13f65a9ed0bb",
+        "message": "Correct names and metedata for qwen3 / qwen2.5 mini-swe-agent",
+        "sha": "0c77a6cb264ca042cc42775fc29f13f65a9ed0bb"
+      },
+      "path": "snapshots/20250806T025039Z_0c77a6c",
+      "snapshot_id": "20250806T025039Z_0c77a6c",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 22,
+        "failures": 0,
+        "parsed_models": 22
+      },
+      "experiments_commit": {
+        "date": "2025-06-19T00:58:42+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/6adccbd67eb9e743510db8106a51535ae5f3d041",
+        "message": "20250605 - Atlassian Rovo Dev - SWE-Bench Full (#256)\n\n* submit 20250605_atlassian-rovo-dev\n\n* clarify no internet access\n\n* add technical report in README\n\n* formatting fixes\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "6adccbd67eb9e743510db8106a51535ae5f3d041"
+      },
+      "leaderboard_commit": {
+        "date": "2025-08-06T08:20:45+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/b2491c050c49644e9234b69228b9405adc0b8aac",
+        "message": "correct metadata for gemini 2.5 pro",
+        "sha": "b2491c050c49644e9234b69228b9405adc0b8aac"
+      },
+      "path": "snapshots/20250806T082045Z_b2491c0",
+      "snapshot_id": "20250806T082045Z_b2491c0",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 22,
+        "failures": 0,
+        "parsed_models": 22
+      },
+      "experiments_commit": {
+        "date": "2025-06-19T00:58:42+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/6adccbd67eb9e743510db8106a51535ae5f3d041",
+        "message": "20250605 - Atlassian Rovo Dev - SWE-Bench Full (#256)\n\n* submit 20250605_atlassian-rovo-dev\n\n* clarify no internet access\n\n* add technical report in README\n\n* formatting fixes\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "6adccbd67eb9e743510db8106a51535ae5f3d041"
+      },
+      "leaderboard_commit": {
+        "date": "2025-08-08T19:01:09+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/1af9b30508175735be8146a8f17ec69667c69486",
+        "message": "Add gpt-5-* numbers",
+        "sha": "1af9b30508175735be8146a8f17ec69667c69486"
+      },
+      "path": "snapshots/20250808T190109Z_1af9b30",
+      "snapshot_id": "20250808T190109Z_1af9b30",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 22,
+        "failures": 0,
+        "parsed_models": 22
+      },
+      "experiments_commit": {
+        "date": "2025-06-19T00:58:42+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/6adccbd67eb9e743510db8106a51535ae5f3d041",
+        "message": "20250605 - Atlassian Rovo Dev - SWE-Bench Full (#256)\n\n* submit 20250605_atlassian-rovo-dev\n\n* clarify no internet access\n\n* add technical report in README\n\n* formatting fixes\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "6adccbd67eb9e743510db8106a51535ae5f3d041"
+      },
+      "leaderboard_commit": {
+        "date": "2025-08-09T00:59:31+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/3e401b05a66dfaee0cee3509b654d0152058e5be",
+        "message": "add reasoning level to gpt-5 models",
+        "sha": "3e401b05a66dfaee0cee3509b654d0152058e5be"
+      },
+      "path": "snapshots/20250809T005931Z_3e401b0",
+      "snapshot_id": "20250809T005931Z_3e401b0",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 22,
+        "failures": 0,
+        "parsed_models": 22
+      },
+      "experiments_commit": {
+        "date": "2025-06-19T00:58:42+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/6adccbd67eb9e743510db8106a51535ae5f3d041",
+        "message": "20250605 - Atlassian Rovo Dev - SWE-Bench Full (#256)\n\n* submit 20250605_atlassian-rovo-dev\n\n* clarify no internet access\n\n* add technical report in README\n\n* formatting fixes\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "6adccbd67eb9e743510db8106a51535ae5f3d041"
+      },
+      "leaderboard_commit": {
+        "date": "2025-08-12T02:37:58+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/a77ba693c7035dcb17afe33d456452387dca6c58",
+        "message": "add os models",
+        "sha": "a77ba693c7035dcb17afe33d456452387dca6c58"
+      },
+      "path": "snapshots/20250812T023758Z_a77ba69",
+      "snapshot_id": "20250812T023758Z_a77ba69",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 22,
+        "failures": 0,
+        "parsed_models": 22
+      },
+      "experiments_commit": {
+        "date": "2025-06-19T00:58:42+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/6adccbd67eb9e743510db8106a51535ae5f3d041",
+        "message": "20250605 - Atlassian Rovo Dev - SWE-Bench Full (#256)\n\n* submit 20250605_atlassian-rovo-dev\n\n* clarify no internet access\n\n* add technical report in README\n\n* formatting fixes\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "6adccbd67eb9e743510db8106a51535ae5f3d041"
+      },
+      "leaderboard_commit": {
+        "date": "2025-08-25T20:02:28+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/7ba8f41454af05d00759152d4f96ab82fd94523e",
+        "message": "Update leaderboard",
+        "sha": "7ba8f41454af05d00759152d4f96ab82fd94523e"
+      },
+      "path": "snapshots/20250825T200228Z_7ba8f41",
+      "snapshot_id": "20250825T200228Z_7ba8f41",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 22,
+        "failures": 0,
+        "parsed_models": 22
+      },
+      "experiments_commit": {
+        "date": "2025-06-19T00:58:42+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/6adccbd67eb9e743510db8106a51535ae5f3d041",
+        "message": "20250605 - Atlassian Rovo Dev - SWE-Bench Full (#256)\n\n* submit 20250605_atlassian-rovo-dev\n\n* clarify no internet access\n\n* add technical report in README\n\n* formatting fixes\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "6adccbd67eb9e743510db8106a51535ae5f3d041"
+      },
+      "leaderboard_commit": {
+        "date": "2025-08-25T21:52:28+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/80fced6b38f7f0915ea3025dbf1f2f88474f900b",
+        "message": "Update leaderboard",
+        "sha": "80fced6b38f7f0915ea3025dbf1f2f88474f900b"
+      },
+      "path": "snapshots/20250825T215228Z_80fced6",
+      "snapshot_id": "20250825T215228Z_80fced6",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 22,
+        "failures": 0,
+        "parsed_models": 22
+      },
+      "experiments_commit": {
+        "date": "2025-06-19T00:58:42+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/6adccbd67eb9e743510db8106a51535ae5f3d041",
+        "message": "20250605 - Atlassian Rovo Dev - SWE-Bench Full (#256)\n\n* submit 20250605_atlassian-rovo-dev\n\n* clarify no internet access\n\n* add technical report in README\n\n* formatting fixes\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "6adccbd67eb9e743510db8106a51535ae5f3d041"
+      },
+      "leaderboard_commit": {
+        "date": "2025-09-10T18:14:29+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/ef093fb9b62df369cae85a9d92769a1117f1253e",
+        "message": "Bring release values back",
+        "sha": "ef093fb9b62df369cae85a9d92769a1117f1253e"
+      },
+      "path": "snapshots/20250910T181429Z_ef093fb",
+      "snapshot_id": "20250910T181429Z_ef093fb",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 22,
+        "failures": 0,
+        "parsed_models": 22
+      },
+      "experiments_commit": {
+        "date": "2025-06-19T00:58:42+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/6adccbd67eb9e743510db8106a51535ae5f3d041",
+        "message": "20250605 - Atlassian Rovo Dev - SWE-Bench Full (#256)\n\n* submit 20250605_atlassian-rovo-dev\n\n* clarify no internet access\n\n* add technical report in README\n\n* formatting fixes\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "6adccbd67eb9e743510db8106a51535ae5f3d041"
+      },
+      "leaderboard_commit": {
+        "date": "2025-09-10T21:09:08+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/8d0ee39d611d2c758f1d0578c25c65cb24592591",
+        "message": "Add glm 4.5",
+        "sha": "8d0ee39d611d2c758f1d0578c25c65cb24592591"
+      },
+      "path": "snapshots/20250910T210908Z_8d0ee39",
+      "snapshot_id": "20250910T210908Z_8d0ee39",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 22,
+        "failures": 0,
+        "parsed_models": 22
+      },
+      "experiments_commit": {
+        "date": "2025-06-19T00:58:42+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/6adccbd67eb9e743510db8106a51535ae5f3d041",
+        "message": "20250605 - Atlassian Rovo Dev - SWE-Bench Full (#256)\n\n* submit 20250605_atlassian-rovo-dev\n\n* clarify no internet access\n\n* add technical report in README\n\n* formatting fixes\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "6adccbd67eb9e743510db8106a51535ae5f3d041"
+      },
+      "leaderboard_commit": {
+        "date": "2025-09-10T21:28:50+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/80be3f4abf3b985b311f3a5062ba294763eb327b",
+        "message": "Fix incorrect unit glm",
+        "sha": "80be3f4abf3b985b311f3a5062ba294763eb327b"
+      },
+      "path": "snapshots/20250910T212850Z_80be3f4",
+      "snapshot_id": "20250910T212850Z_80be3f4",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 22,
+        "failures": 0,
+        "parsed_models": 22
+      },
+      "experiments_commit": {
+        "date": "2025-06-19T00:58:42+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/6adccbd67eb9e743510db8106a51535ae5f3d041",
+        "message": "20250605 - Atlassian Rovo Dev - SWE-Bench Full (#256)\n\n* submit 20250605_atlassian-rovo-dev\n\n* clarify no internet access\n\n* add technical report in README\n\n* formatting fixes\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "6adccbd67eb9e743510db8106a51535ae5f3d041"
+      },
+      "leaderboard_commit": {
+        "date": "2025-09-11T14:18:20+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/f660691505a206775d4598fcfab7b7caee371fb4",
+        "message": "Update leaderboard",
+        "sha": "f660691505a206775d4598fcfab7b7caee371fb4"
+      },
+      "path": "snapshots/20250911T141820Z_f660691",
+      "snapshot_id": "20250911T141820Z_f660691",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 22,
+        "failures": 0,
+        "parsed_models": 22
+      },
+      "experiments_commit": {
+        "date": "2025-06-19T00:58:42+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/6adccbd67eb9e743510db8106a51535ae5f3d041",
+        "message": "20250605 - Atlassian Rovo Dev - SWE-Bench Full (#256)\n\n* submit 20250605_atlassian-rovo-dev\n\n* clarify no internet access\n\n* add technical report in README\n\n* formatting fixes\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "6adccbd67eb9e743510db8106a51535ae5f3d041"
+      },
+      "leaderboard_commit": {
+        "date": "2025-09-30T01:20:33+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/38bf0233d359e17894f1eadd7e986495ceeafe89",
+        "message": "Add Sonnet 4.5",
+        "sha": "38bf0233d359e17894f1eadd7e986495ceeafe89"
+      },
+      "path": "snapshots/20250930T012033Z_38bf023",
+      "snapshot_id": "20250930T012033Z_38bf023",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 22,
+        "failures": 0,
+        "parsed_models": 22
+      },
+      "experiments_commit": {
+        "date": "2025-06-19T00:58:42+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/6adccbd67eb9e743510db8106a51535ae5f3d041",
+        "message": "20250605 - Atlassian Rovo Dev - SWE-Bench Full (#256)\n\n* submit 20250605_atlassian-rovo-dev\n\n* clarify no internet access\n\n* add technical report in README\n\n* formatting fixes\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "6adccbd67eb9e743510db8106a51535ae5f3d041"
+      },
+      "leaderboard_commit": {
+        "date": "2025-10-06T16:43:32+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/f702a7f5b1274494f6fb84d3a96fd8be9828c1e7",
+        "message": "Update leaderboard",
+        "sha": "f702a7f5b1274494f6fb84d3a96fd8be9828c1e7"
+      },
+      "path": "snapshots/20251006T164332Z_f702a7f",
+      "snapshot_id": "20251006T164332Z_f702a7f",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 22,
+        "failures": 0,
+        "parsed_models": 22
+      },
+      "experiments_commit": {
+        "date": "2025-06-19T00:58:42+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/6adccbd67eb9e743510db8106a51535ae5f3d041",
+        "message": "20250605 - Atlassian Rovo Dev - SWE-Bench Full (#256)\n\n* submit 20250605_atlassian-rovo-dev\n\n* clarify no internet access\n\n* add technical report in README\n\n* formatting fixes\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "6adccbd67eb9e743510db8106a51535ae5f3d041"
+      },
+      "leaderboard_commit": {
+        "date": "2025-11-18T21:53:17+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/bdcd3ddd7b28fa96055e35585db898e3e81bb459",
+        "message": "Update leaderboard",
+        "sha": "bdcd3ddd7b28fa96055e35585db898e3e81bb459"
+      },
+      "path": "snapshots/20251118T215317Z_bdcd3dd",
+      "snapshot_id": "20251118T215317Z_bdcd3dd",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 22,
+        "failures": 0,
+        "parsed_models": 22
+      },
+      "experiments_commit": {
+        "date": "2025-06-19T00:58:42+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/6adccbd67eb9e743510db8106a51535ae5f3d041",
+        "message": "20250605 - Atlassian Rovo Dev - SWE-Bench Full (#256)\n\n* submit 20250605_atlassian-rovo-dev\n\n* clarify no internet access\n\n* add technical report in README\n\n* formatting fixes\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "6adccbd67eb9e743510db8106a51535ae5f3d041"
+      },
+      "leaderboard_commit": {
+        "date": "2025-11-19T14:46:38+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/81430ddc64cfd8f6a5301e3841c73ca4a7ae788b",
+        "message": "wip",
+        "sha": "81430ddc64cfd8f6a5301e3841c73ca4a7ae788b"
+      },
+      "path": "snapshots/20251119T144638Z_81430dd",
+      "snapshot_id": "20251119T144638Z_81430dd",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 22,
+        "failures": 0,
+        "parsed_models": 22
+      },
+      "experiments_commit": {
+        "date": "2025-06-19T00:58:42+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/6adccbd67eb9e743510db8106a51535ae5f3d041",
+        "message": "20250605 - Atlassian Rovo Dev - SWE-Bench Full (#256)\n\n* submit 20250605_atlassian-rovo-dev\n\n* clarify no internet access\n\n* add technical report in README\n\n* formatting fixes\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "6adccbd67eb9e743510db8106a51535ae5f3d041"
+      },
+      "leaderboard_commit": {
+        "date": "2025-11-19T16:19:12+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/c7f5d657b06c10be0a5dc4c3c870a2fc5ee8b999",
+        "message": "Leaderboard update",
+        "sha": "c7f5d657b06c10be0a5dc4c3c870a2fc5ee8b999"
+      },
+      "path": "snapshots/20251119T161912Z_c7f5d65",
+      "snapshot_id": "20251119T161912Z_c7f5d65",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 22,
+        "failures": 0,
+        "parsed_models": 22
+      },
+      "experiments_commit": {
+        "date": "2025-06-19T00:58:42+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/6adccbd67eb9e743510db8106a51535ae5f3d041",
+        "message": "20250605 - Atlassian Rovo Dev - SWE-Bench Full (#256)\n\n* submit 20250605_atlassian-rovo-dev\n\n* clarify no internet access\n\n* add technical report in README\n\n* formatting fixes\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "6adccbd67eb9e743510db8106a51535ae5f3d041"
+      },
+      "leaderboard_commit": {
+        "date": "2025-11-19T18:07:33+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/d6e083990aeb8988b5af6a75b7620714443986ca",
+        "message": "Merge branch 'add-comparison-plots' of github.com:SWE-bench/swe-bench.github.io into add-comparison-plots",
+        "sha": "d6e083990aeb8988b5af6a75b7620714443986ca"
+      },
+      "path": "snapshots/20251119T180733Z_d6e0839",
+      "snapshot_id": "20251119T180733Z_d6e0839",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 22,
+        "failures": 0,
+        "parsed_models": 22
+      },
+      "experiments_commit": {
+        "date": "2025-06-19T00:58:42+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/6adccbd67eb9e743510db8106a51535ae5f3d041",
+        "message": "20250605 - Atlassian Rovo Dev - SWE-Bench Full (#256)\n\n* submit 20250605_atlassian-rovo-dev\n\n* clarify no internet access\n\n* add technical report in README\n\n* formatting fixes\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "6adccbd67eb9e743510db8106a51535ae5f3d041"
+      },
+      "leaderboard_commit": {
+        "date": "2025-11-19T18:23:07+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/b01fe9ccfd6133bfcc18f55dcab5f5b8dfe7ac85",
+        "message": "Update per instance details",
+        "sha": "b01fe9ccfd6133bfcc18f55dcab5f5b8dfe7ac85"
+      },
+      "path": "snapshots/20251119T182307Z_b01fe9c",
+      "snapshot_id": "20251119T182307Z_b01fe9c",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 22,
+        "failures": 0,
+        "parsed_models": 22
+      },
+      "experiments_commit": {
+        "date": "2025-06-19T00:58:42+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/6adccbd67eb9e743510db8106a51535ae5f3d041",
+        "message": "20250605 - Atlassian Rovo Dev - SWE-Bench Full (#256)\n\n* submit 20250605_atlassian-rovo-dev\n\n* clarify no internet access\n\n* add technical report in README\n\n* formatting fixes\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "6adccbd67eb9e743510db8106a51535ae5f3d041"
+      },
+      "leaderboard_commit": {
+        "date": "2025-11-19T18:59:41+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/d2af9d9e62e0ba7ff73ddc9a81250831bbfb929c",
+        "message": "fix: broken link in Verified leaderboard table (#41)\n\n* Fix: Remove broken GitHub link for TRAE + Doubao-Seed-Code\n\nThe GitHub repository link (https://github.com/bytedance/trae-agent)\nreturns a 404 error. Removed it from the site array, keeping only the\nworking seed.bytedance.com link.\n\n* Update site URL in leaderboards.json",
+        "sha": "d2af9d9e62e0ba7ff73ddc9a81250831bbfb929c"
+      },
+      "path": "snapshots/20251119T185941Z_d2af9d9",
+      "snapshot_id": "20251119T185941Z_d2af9d9",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 23,
+        "failures": 0,
+        "parsed_models": 23
+      },
+      "experiments_commit": {
+        "date": "2025-11-20T21:22:01+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/ec83e63afe2a29ac9ba0deefa557ad0ac319f8f5",
+        "message": "Salesforce SWE-Bench Test submission (#355)\n\n* Salesforce test split submission\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "ec83e63afe2a29ac9ba0deefa557ad0ac319f8f5"
+      },
+      "leaderboard_commit": {
+        "date": "2025-11-24T21:54:52+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/d7658f9923bb47d9232b1ef74165ebfb80b17ebc",
+        "message": "Update leaderboard",
+        "sha": "d7658f9923bb47d9232b1ef74165ebfb80b17ebc"
+      },
+      "path": "snapshots/20251124T215452Z_d7658f9",
+      "snapshot_id": "20251124T215452Z_d7658f9",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 23,
+        "failures": 0,
+        "parsed_models": 23
+      },
+      "experiments_commit": {
+        "date": "2025-11-20T21:22:01+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/ec83e63afe2a29ac9ba0deefa557ad0ac319f8f5",
+        "message": "Salesforce SWE-Bench Test submission (#355)\n\n* Salesforce test split submission\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "ec83e63afe2a29ac9ba0deefa557ad0ac319f8f5"
+      },
+      "leaderboard_commit": {
+        "date": "2025-11-25T16:42:34+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/2cb87742bd52627e4310e70570a6243e3f3b7e04",
+        "message": "Leaderboard update opus 4.5",
+        "sha": "2cb87742bd52627e4310e70570a6243e3f3b7e04"
+      },
+      "path": "snapshots/20251125T164234Z_2cb8774",
+      "snapshot_id": "20251125T164234Z_2cb8774",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 23,
+        "failures": 0,
+        "parsed_models": 23
+      },
+      "experiments_commit": {
+        "date": "2025-11-20T21:22:01+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/ec83e63afe2a29ac9ba0deefa557ad0ac319f8f5",
+        "message": "Salesforce SWE-Bench Test submission (#355)\n\n* Salesforce test split submission\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "ec83e63afe2a29ac9ba0deefa557ad0ac319f8f5"
+      },
+      "leaderboard_commit": {
+        "date": "2025-11-25T16:46:05+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/f7cd9dac18e9361e6b99effc52afaf5a39126ded",
+        "message": "Sort all keys in data",
+        "sha": "f7cd9dac18e9361e6b99effc52afaf5a39126ded"
+      },
+      "path": "snapshots/20251125T164605Z_f7cd9da",
+      "snapshot_id": "20251125T164605Z_f7cd9da",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 23,
+        "failures": 0,
+        "parsed_models": 23
+      },
+      "experiments_commit": {
+        "date": "2025-11-20T21:22:01+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/ec83e63afe2a29ac9ba0deefa557ad0ac319f8f5",
+        "message": "Salesforce SWE-Bench Test submission (#355)\n\n* Salesforce test split submission\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "ec83e63afe2a29ac9ba0deefa557ad0ac319f8f5"
+      },
+      "leaderboard_commit": {
+        "date": "2025-12-02T21:06:19+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/1aa4db5ae769307237297758ef9c86e6e940defe",
+        "message": "Leaderboard update",
+        "sha": "1aa4db5ae769307237297758ef9c86e6e940defe"
+      },
+      "path": "snapshots/20251202T210619Z_1aa4db5",
+      "snapshot_id": "20251202T210619Z_1aa4db5",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 23,
+        "failures": 0,
+        "parsed_models": 23
+      },
+      "experiments_commit": {
+        "date": "2025-11-20T21:22:01+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/ec83e63afe2a29ac9ba0deefa557ad0ac319f8f5",
+        "message": "Salesforce SWE-Bench Test submission (#355)\n\n* Salesforce test split submission\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "ec83e63afe2a29ac9ba0deefa557ad0ac319f8f5"
+      },
+      "leaderboard_commit": {
+        "date": "2025-12-11T04:08:55+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/f1176b65ae29d14f4f52208b48e3d8cfc972bc17",
+        "message": "Update leaderboard",
+        "sha": "f1176b65ae29d14f4f52208b48e3d8cfc972bc17"
+      },
+      "path": "snapshots/20251211T040855Z_f1176b6",
+      "snapshot_id": "20251211T040855Z_f1176b6",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 23,
+        "failures": 0,
+        "parsed_models": 23
+      },
+      "experiments_commit": {
+        "date": "2025-11-20T21:22:01+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/ec83e63afe2a29ac9ba0deefa557ad0ac319f8f5",
+        "message": "Salesforce SWE-Bench Test submission (#355)\n\n* Salesforce test split submission\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "ec83e63afe2a29ac9ba0deefa557ad0ac319f8f5"
+      },
+      "leaderboard_commit": {
+        "date": "2025-12-11T17:28:40+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/c6a41fecce805ee6f8fc3c16ab2d94b838f5102d",
+        "message": "update with kimi",
+        "sha": "c6a41fecce805ee6f8fc3c16ab2d94b838f5102d"
+      },
+      "path": "snapshots/20251211T172840Z_c6a41fe",
+      "snapshot_id": "20251211T172840Z_c6a41fe",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 23,
+        "failures": 0,
+        "parsed_models": 23
+      },
+      "experiments_commit": {
+        "date": "2025-11-20T21:22:01+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/ec83e63afe2a29ac9ba0deefa557ad0ac319f8f5",
+        "message": "Salesforce SWE-Bench Test submission (#355)\n\n* Salesforce test split submission\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "ec83e63afe2a29ac9ba0deefa557ad0ac319f8f5"
+      },
+      "leaderboard_commit": {
+        "date": "2025-12-11T20:04:49+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/96b94cdd98c2eef07583a1b45c3df0a883f28582",
+        "message": "Clear out devstral cost",
+        "sha": "96b94cdd98c2eef07583a1b45c3df0a883f28582"
+      },
+      "path": "snapshots/20251211T200449Z_96b94cd",
+      "snapshot_id": "20251211T200449Z_96b94cd",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 23,
+        "failures": 0,
+        "parsed_models": 23
+      },
+      "experiments_commit": {
+        "date": "2025-11-20T21:22:01+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/ec83e63afe2a29ac9ba0deefa557ad0ac319f8f5",
+        "message": "Salesforce SWE-Bench Test submission (#355)\n\n* Salesforce test split submission\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "ec83e63afe2a29ac9ba0deefa557ad0ac319f8f5"
+      },
+      "leaderboard_commit": {
+        "date": "2025-12-11T21:21:16+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/37d8d5c0abe6a64c080ff5bc896eaad8fdced1a9",
+        "message": "gpt 5.2 bump",
+        "sha": "37d8d5c0abe6a64c080ff5bc896eaad8fdced1a9"
+      },
+      "path": "snapshots/20251211T212116Z_37d8d5c",
+      "snapshot_id": "20251211T212116Z_37d8d5c",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 23,
+        "failures": 0,
+        "parsed_models": 23
+      },
+      "experiments_commit": {
+        "date": "2026-01-06T06:52:12+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/6c148fe5011566a441940dfd13b72792a3e8c012",
+        "message": "Change swe-bench-experiments -> swe-bench-submissions",
+        "sha": "6c148fe5011566a441940dfd13b72792a3e8c012"
+      },
+      "leaderboard_commit": {
+        "date": "2026-01-20T05:57:31+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/45a98584353af8db79c603532170fcafdbcaa615",
+        "message": "Add multilingual leaderboard with language stratification\n\n- Create multilingual-leaderboard.html page with overview and documentation\n- Add empty multilingual leaderboard entry to leaderboards.json\n- Add Multilingual tab to index.html and sidebar navigation\n- Update mainResults.js to handle multilingual like bash-only (selection, cost, trajs)\n- Update leaderboardFilters.js for multilingual filter visibility and description\n- Create multilingualLanguageMap.js with repo->language mapping for 42 repos\n- Create groupedBarChartByLanguage.js for \"Resolved by language\" chart\n- Add language chart option to analysis modal\n\nFeatures 300 tasks across 9 programming languages:\nC, C++, Go, Java, JS/TS, PHP, Ruby, Rust",
+        "sha": "45a98584353af8db79c603532170fcafdbcaa615"
+      },
+      "path": "snapshots/20260120T055731Z_45a9858",
+      "snapshot_id": "20260120T055731Z_45a9858",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 23,
+        "failures": 0,
+        "parsed_models": 23
+      },
+      "experiments_commit": {
+        "date": "2026-01-06T06:52:12+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/6c148fe5011566a441940dfd13b72792a3e8c012",
+        "message": "Change swe-bench-experiments -> swe-bench-submissions",
+        "sha": "6c148fe5011566a441940dfd13b72792a3e8c012"
+      },
+      "leaderboard_commit": {
+        "date": "2026-01-21T05:12:27+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/34697c5a729025531d93dafe31108599e5e3ac68",
+        "message": "Add Release column to Multilingual leaderboard and fix model names\n\n- Include Multilingual in isBashOnly condition to show Release column\n- Update model names to match Bash-only format:\n  - \"Claude 4.5 Opus (multilingual)\" \u2192 \"Claude 4.5 Opus medium (20251101)\"\n  - \"GPT-5.2 (multilingual)\" \u2192 \"GPT-5.2 (2025-12-11)\"\n  - \"GPT-5 mini (multilingual)\" \u2192 \"GPT-5 mini\"",
+        "sha": "34697c5a729025531d93dafe31108599e5e3ac68"
+      },
+      "path": "snapshots/20260121T051227Z_34697c5",
+      "snapshot_id": "20260121T051227Z_34697c5",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 23,
+        "failures": 0,
+        "parsed_models": 23
+      },
+      "experiments_commit": {
+        "date": "2026-01-06T06:52:12+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/6c148fe5011566a441940dfd13b72792a3e8c012",
+        "message": "Change swe-bench-experiments -> swe-bench-submissions",
+        "sha": "6c148fe5011566a441940dfd13b72792a3e8c012"
+      },
+      "leaderboard_commit": {
+        "date": "2026-01-22T06:44:12+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/ce83475d63ab5376eab3b5f0bf530431dd1e3019",
+        "message": "Add multilingual leaderboard data for Claude 4.5 Sonnet\n\n- Add Claude 4.5 Sonnet (20250929) results for multilingual benchmark\n- Fix Multilingual tab data-leaderboard attribute capitalization\n- Update dev server port to 9000",
+        "sha": "ce83475d63ab5376eab3b5f0bf530431dd1e3019"
+      },
+      "path": "snapshots/20260122T064412Z_ce83475",
+      "snapshot_id": "20260122T064412Z_ce83475",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 23,
+        "failures": 0,
+        "parsed_models": 23
+      },
+      "experiments_commit": {
+        "date": "2026-01-26T04:43:14+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/e9b98356fdd89a8e5f384c9e364b8cb4e97bb1d4",
+        "message": "Add 20251219 Sonar Foundation Agent full SWE-bench (#393)\n\n* Add 20251219 Sonar Foundation Agent full SWE-bench\n\n* Add all_preds.jsonl\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "e9b98356fdd89a8e5f384c9e364b8cb4e97bb1d4"
+      },
+      "leaderboard_commit": {
+        "date": "2026-01-27T07:29:41+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/1545564e0051aa1d308e8f9c9861605aabbf6dba",
+        "message": "add gemini",
+        "sha": "1545564e0051aa1d308e8f9c9861605aabbf6dba"
+      },
+      "path": "snapshots/20260127T072941Z_1545564",
+      "snapshot_id": "20260127T072941Z_1545564",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 23,
+        "failures": 0,
+        "parsed_models": 23
+      },
+      "experiments_commit": {
+        "date": "2026-01-26T04:43:14+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/e9b98356fdd89a8e5f384c9e364b8cb4e97bb1d4",
+        "message": "Add 20251219 Sonar Foundation Agent full SWE-bench (#393)\n\n* Add 20251219 Sonar Foundation Agent full SWE-bench\n\n* Add all_preds.jsonl\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "e9b98356fdd89a8e5f384c9e364b8cb4e97bb1d4"
+      },
+      "leaderboard_commit": {
+        "date": "2026-01-27T10:16:19+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/c7494f89dcf252fab3d84ea6d0a7437f1ac97e0b",
+        "message": "Add Claude Sonnet 4.5, Claude Haiku 4.5, and Gemini 3 Pro to Multilingual leaderboard\n\n- Claude 4.5 Sonnet (20250929): 67.1% resolved, $211.71\n- Claude 4.5 Haiku (20251101): 66.3% resolved, $131.91\n- Gemini 3 Pro: 61.4% resolved, $307.97",
+        "sha": "c7494f89dcf252fab3d84ea6d0a7437f1ac97e0b"
+      },
+      "path": "snapshots/20260127T101619Z_c7494f8",
+      "snapshot_id": "20260127T101619Z_c7494f8",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 23,
+        "failures": 0,
+        "parsed_models": 23
+      },
+      "experiments_commit": {
+        "date": "2026-01-26T04:43:14+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/e9b98356fdd89a8e5f384c9e364b8cb4e97bb1d4",
+        "message": "Add 20251219 Sonar Foundation Agent full SWE-bench (#393)\n\n* Add 20251219 Sonar Foundation Agent full SWE-bench\n\n* Add all_preds.jsonl\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "e9b98356fdd89a8e5f384c9e364b8cb4e97bb1d4"
+      },
+      "leaderboard_commit": {
+        "date": "2026-01-27T13:11:04+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/3752d485f8b726ffbfc3af50c560aeaa5df1b6fb",
+        "message": "Fix Gemini 3 Pro logo URL",
+        "sha": "3752d485f8b726ffbfc3af50c560aeaa5df1b6fb"
+      },
+      "path": "snapshots/20260127T131104Z_3752d48",
+      "snapshot_id": "20260127T131104Z_3752d48",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 23,
+        "failures": 0,
+        "parsed_models": 23
+      },
+      "experiments_commit": {
+        "date": "2026-01-26T04:43:14+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/e9b98356fdd89a8e5f384c9e364b8cb4e97bb1d4",
+        "message": "Add 20251219 Sonar Foundation Agent full SWE-bench (#393)\n\n* Add 20251219 Sonar Foundation Agent full SWE-bench\n\n* Add all_preds.jsonl\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "e9b98356fdd89a8e5f384c9e364b8cb4e97bb1d4"
+      },
+      "leaderboard_commit": {
+        "date": "2026-02-13T15:08:07+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/8e223ac976b8483329bff189ab3305e7d7c1dfbb",
+        "message": "feat: bash only multilingual",
+        "sha": "8e223ac976b8483329bff189ab3305e7d7c1dfbb"
+      },
+      "path": "snapshots/20260213T150807Z_8e223ac",
+      "snapshot_id": "20260213T150807Z_8e223ac",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 23,
+        "failures": 0,
+        "parsed_models": 23
+      },
+      "experiments_commit": {
+        "date": "2026-01-26T04:43:14+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/e9b98356fdd89a8e5f384c9e364b8cb4e97bb1d4",
+        "message": "Add 20251219 Sonar Foundation Agent full SWE-bench (#393)\n\n* Add 20251219 Sonar Foundation Agent full SWE-bench\n\n* Add all_preds.jsonl\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "e9b98356fdd89a8e5f384c9e364b8cb4e97bb1d4"
+      },
+      "leaderboard_commit": {
+        "date": "2026-02-13T15:17:57+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/81c966b1458332d714aa2c2fac637371472909c9",
+        "message": "chore: GLM-5 icon",
+        "sha": "81c966b1458332d714aa2c2fac637371472909c9"
+      },
+      "path": "snapshots/20260213T151757Z_81c966b",
+      "snapshot_id": "20260213T151757Z_81c966b",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 23,
+        "failures": 0,
+        "parsed_models": 23
+      },
+      "experiments_commit": {
+        "date": "2026-01-26T04:43:14+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/e9b98356fdd89a8e5f384c9e364b8cb4e97bb1d4",
+        "message": "Add 20251219 Sonar Foundation Agent full SWE-bench (#393)\n\n* Add 20251219 Sonar Foundation Agent full SWE-bench\n\n* Add all_preds.jsonl\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "e9b98356fdd89a8e5f384c9e364b8cb4e97bb1d4"
+      },
+      "leaderboard_commit": {
+        "date": "2026-02-16T06:37:05+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/09eb2d36d2c5a991aece88f2b7245c1077df9b4a",
+        "message": "feat: Add trajs_docent links for multilingual leaderboard entries\n\n- Added Docent dashboard links for all 11 multilingual model entries\n- Enables visualization of model trajectories and reasoning patterns\n- Models updated: Gemini 3 Flash/Pro, Claude 4.6 Opus, Claude 4.5\n  Opus/Sonnet/Haiku, GLM-5, Kimi K2.5, GPT-5.2 High, GPT-5 Mini,\n  DeepSeek 3.2",
+        "sha": "09eb2d36d2c5a991aece88f2b7245c1077df9b4a"
+      },
+      "path": "snapshots/20260216T063705Z_09eb2d3",
+      "snapshot_id": "20260216T063705Z_09eb2d3",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 23,
+        "failures": 0,
+        "parsed_models": 23
+      },
+      "experiments_commit": {
+        "date": "2026-01-26T04:43:14+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/e9b98356fdd89a8e5f384c9e364b8cb4e97bb1d4",
+        "message": "Add 20251219 Sonar Foundation Agent full SWE-bench (#393)\n\n* Add 20251219 Sonar Foundation Agent full SWE-bench\n\n* Add all_preds.jsonl\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "e9b98356fdd89a8e5f384c9e364b8cb4e97bb1d4"
+      },
+      "leaderboard_commit": {
+        "date": "2026-02-16T06:52:34+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/d3f1edfc9d6671c37633f684be5f5fb9050e9984",
+        "message": "feat: Add Minimax 2.5 to multilingual leaderboard",
+        "sha": "d3f1edfc9d6671c37633f684be5f5fb9050e9984"
+      },
+      "path": "snapshots/20260216T065234Z_d3f1edf",
+      "snapshot_id": "20260216T065234Z_d3f1edf",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 24,
+        "failures": 0,
+        "parsed_models": 24
+      },
+      "experiments_commit": {
+        "date": "2026-01-26T04:43:14+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/e9b98356fdd89a8e5f384c9e364b8cb4e97bb1d4",
+        "message": "Add 20251219 Sonar Foundation Agent full SWE-bench (#393)\n\n* Add 20251219 Sonar Foundation Agent full SWE-bench\n\n* Add all_preds.jsonl\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "e9b98356fdd89a8e5f384c9e364b8cb4e97bb1d4"
+      },
+      "leaderboard_commit": {
+        "date": "2026-02-18T10:20:35+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/6560f8742653bdecf25940de9705d95ec3e94480",
+        "message": "Update leaderboards: add 11 bash-only models, update multilingual docent URLs\n\nbash-only: 38 \u2192 45 entries (11 new Feb 17 models)\nmultilingual: 12 entries with updated docent dashboard URLs",
+        "sha": "6560f8742653bdecf25940de9705d95ec3e94480"
+      },
+      "path": "snapshots/20260218T102035Z_6560f87",
+      "snapshot_id": "20260218T102035Z_6560f87",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 24,
+        "failures": 0,
+        "parsed_models": 24
+      },
+      "experiments_commit": {
+        "date": "2026-01-26T04:43:14+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/e9b98356fdd89a8e5f384c9e364b8cb4e97bb1d4",
+        "message": "Add 20251219 Sonar Foundation Agent full SWE-bench (#393)\n\n* Add 20251219 Sonar Foundation Agent full SWE-bench\n\n* Add all_preds.jsonl\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "e9b98356fdd89a8e5f384c9e364b8cb4e97bb1d4"
+      },
+      "leaderboard_commit": {
+        "date": "2026-02-18T10:31:20+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/494cbafe33cc725653296ada7caef0a355a5bc29",
+        "message": "Remove (high reasoning) suffix from model names",
+        "sha": "494cbafe33cc725653296ada7caef0a355a5bc29"
+      },
+      "path": "snapshots/20260218T103120Z_494cbaf",
+      "snapshot_id": "20260218T103120Z_494cbaf",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 24,
+        "failures": 0,
+        "parsed_models": 24
+      },
+      "experiments_commit": {
+        "date": "2026-01-26T04:43:14+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/e9b98356fdd89a8e5f384c9e364b8cb4e97bb1d4",
+        "message": "Add 20251219 Sonar Foundation Agent full SWE-bench (#393)\n\n* Add 20251219 Sonar Foundation Agent full SWE-bench\n\n* Add all_preds.jsonl\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "e9b98356fdd89a8e5f384c9e364b8cb4e97bb1d4"
+      },
+      "leaderboard_commit": {
+        "date": "2026-02-18T12:09:00+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/a0179c5c3cc9dd08e5dde9e2b0d56ffa055e1dba",
+        "message": "Add mini-swe-agent version as filterable tag",
+        "sha": "a0179c5c3cc9dd08e5dde9e2b0d56ffa055e1dba"
+      },
+      "path": "snapshots/20260218T120900Z_a0179c5",
+      "snapshot_id": "20260218T120900Z_a0179c5",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 24,
+        "failures": 0,
+        "parsed_models": 24
+      },
+      "experiments_commit": {
+        "date": "2026-01-26T04:43:14+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/e9b98356fdd89a8e5f384c9e364b8cb4e97bb1d4",
+        "message": "Add 20251219 Sonar Foundation Agent full SWE-bench (#393)\n\n* Add 20251219 Sonar Foundation Agent full SWE-bench\n\n* Add all_preds.jsonl\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "e9b98356fdd89a8e5f384c9e364b8cb4e97bb1d4"
+      },
+      "leaderboard_commit": {
+        "date": "2026-02-18T14:00:37+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/b9254b18e73baf68016aa7df4f006b8e502c5f63",
+        "message": "Update leaderboard with Gemini 3 Pro (v2.0.0) bash-only",
+        "sha": "b9254b18e73baf68016aa7df4f006b8e502c5f63"
+      },
+      "path": "snapshots/20260218T140037Z_b9254b1",
+      "snapshot_id": "20260218T140037Z_b9254b1",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 24,
+        "failures": 0,
+        "parsed_models": 24
+      },
+      "experiments_commit": {
+        "date": "2026-01-26T04:43:14+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/e9b98356fdd89a8e5f384c9e364b8cb4e97bb1d4",
+        "message": "Add 20251219 Sonar Foundation Agent full SWE-bench (#393)\n\n* Add 20251219 Sonar Foundation Agent full SWE-bench\n\n* Add all_preds.jsonl\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "e9b98356fdd89a8e5f384c9e364b8cb4e97bb1d4"
+      },
+      "leaderboard_commit": {
+        "date": "2026-02-18T14:17:17+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/d6882b9967d077758b9cf28bb950dc51c04d3cec",
+        "message": "Update leaderboard: fix gpt-5-mini model tag",
+        "sha": "d6882b9967d077758b9cf28bb950dc51c04d3cec"
+      },
+      "path": "snapshots/20260218T141717Z_d6882b9",
+      "snapshot_id": "20260218T141717Z_d6882b9",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 24,
+        "failures": 0,
+        "parsed_models": 24
+      },
+      "experiments_commit": {
+        "date": "2026-01-26T04:43:14+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/e9b98356fdd89a8e5f384c9e364b8cb4e97bb1d4",
+        "message": "Add 20251219 Sonar Foundation Agent full SWE-bench (#393)\n\n* Add 20251219 Sonar Foundation Agent full SWE-bench\n\n* Add all_preds.jsonl\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "e9b98356fdd89a8e5f384c9e364b8cb4e97bb1d4"
+      },
+      "leaderboard_commit": {
+        "date": "2026-02-18T16:13:25+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/d7615e41a506b2a61ebd4bd11de497f273b4d246",
+        "message": "Restore high reasoning suffixes",
+        "sha": "d7615e41a506b2a61ebd4bd11de497f273b4d246"
+      },
+      "path": "snapshots/20260218T161325Z_d7615e4",
+      "snapshot_id": "20260218T161325Z_d7615e4",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 24,
+        "failures": 0,
+        "parsed_models": 24
+      },
+      "experiments_commit": {
+        "date": "2026-01-26T04:43:14+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/e9b98356fdd89a8e5f384c9e364b8cb4e97bb1d4",
+        "message": "Add 20251219 Sonar Foundation Agent full SWE-bench (#393)\n\n* Add 20251219 Sonar Foundation Agent full SWE-bench\n\n* Add all_preds.jsonl\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "e9b98356fdd89a8e5f384c9e364b8cb4e97bb1d4"
+      },
+      "leaderboard_commit": {
+        "date": "2026-02-18T16:47:57+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/95d54ce0f72a203ca0975b027c40024ea8e721fa",
+        "message": "Remove unfinished gemini run; hide v1.x results by default",
+        "sha": "95d54ce0f72a203ca0975b027c40024ea8e721fa"
+      },
+      "path": "snapshots/20260218T164757Z_95d54ce",
+      "snapshot_id": "20260218T164757Z_95d54ce",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 24,
+        "failures": 0,
+        "parsed_models": 24
+      },
+      "experiments_commit": {
+        "date": "2026-01-26T04:43:14+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/e9b98356fdd89a8e5f384c9e364b8cb4e97bb1d4",
+        "message": "Add 20251219 Sonar Foundation Agent full SWE-bench (#393)\n\n* Add 20251219 Sonar Foundation Agent full SWE-bench\n\n* Add all_preds.jsonl\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "e9b98356fdd89a8e5f384c9e364b8cb4e97bb1d4"
+      },
+      "leaderboard_commit": {
+        "date": "2026-02-20T16:14:22+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/2c622f5b646072a4fa24c57bb759ab9a11cb19ff",
+        "message": "Add GPT 5.2 Codex to bash-only and multilingual leaderboards (#50)",
+        "sha": "2c622f5b646072a4fa24c57bb759ab9a11cb19ff"
+      },
+      "path": "snapshots/20260220T161422Z_2c622f5",
+      "snapshot_id": "20260220T161422Z_2c622f5",
+      "status": "ok",
+      "status_message": null
+    },
+    {
+      "counts": {
+        "entries": 24,
+        "failures": 0,
+        "parsed_models": 24
+      },
+      "experiments_commit": {
+        "date": "2026-01-26T04:43:14+00:00",
+        "fallback_used": false,
+        "html_url": "https://github.com/SWE-bench/experiments/commit/e9b98356fdd89a8e5f384c9e364b8cb4e97bb1d4",
+        "message": "Add 20251219 Sonar Foundation Agent full SWE-bench (#393)\n\n* Add 20251219 Sonar Foundation Agent full SWE-bench\n\n* Add all_preds.jsonl\n\n* Remove logs and trajs (Uploaded to shared s3 bucket)\n\n* Update metadata with s3 paths\n\n---------\n\nCo-authored-by: John Yang <byjohnyang@gmail.com>",
+        "sha": "e9b98356fdd89a8e5f384c9e364b8cb4e97bb1d4"
+      },
+      "leaderboard_commit": {
+        "date": "2026-02-27T16:59:49+00:00",
+        "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/7c4289f30aa1a1c63c2e2a25aae30c16d92b5114",
+        "message": "Add Gemini 3 Pro to bash-only leaderboard (#53)\n\n* Add GPT 5.2 Codex (high reasoning) and fix GPT 5.2 naming on leaderboards\n\n* Add Gemini 3 Pro to bash-only leaderboard\n\nResolved: 69.6% (348/500), Cost: $480.01, mini-swe-agent v2.0.0\n\n* Fix os_model flags for open-weights models in leaderboard data\n\nFix os_model: false \u2192 true for DeepSeek V3.2, GLM-5, Kimi K2.5, and\nMiniMax M2.5 (high reasoning) in both bash-only and verified leaderboards.\n\n* Fix Gemini 3 Pro resolved counts in leaderboard\n\nRegenerated leaderboards.json with corrected per_instance_details\nshowing 348/500 resolved (69.6%) instead of 0.",
+        "sha": "7c4289f30aa1a1c63c2e2a25aae30c16d92b5114"
+      },
+      "path": "snapshots/20260227T165949Z_7c4289f",
+      "snapshot_id": "20260227T165949Z_7c4289f",
+      "status": "ok",
+      "status_message": null
+    }
+  ],
+  "source": {
+    "experiments_path": "evaluation/test",
+    "experiments_repo": "SWE-bench/experiments",
+    "leaderboard_path": "data/leaderboards.json",
+    "leaderboard_repo": "SWE-bench/swe-bench.github.io"
+  }
+}

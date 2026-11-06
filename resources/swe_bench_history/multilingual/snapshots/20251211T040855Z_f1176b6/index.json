@@ -1,0 +1,33 @@
+{
+  "counts": {
+    "entries": 0,
+    "failures": 0,
+    "parsed_models": 0
+  },
+  "failures": [],
+  "leaderboard": "multilingual",
+  "models": [],
+  "snapshot_id": "20251211T040855Z_f1176b6",
+  "source": {
+    "experiments_base": "https://raw.githubusercontent.com/SWE-bench/experiments/726c03e4181f51ab54f3dc40068f704a6ffc9133/evaluation/multilingual",
+    "experiments_commit": {
+      "date": "2026-02-17T17:24:47+00:00",
+      "html_url": "https://github.com/SWE-bench/experiments/commit/726c03e4181f51ab54f3dc40068f704a6ffc9133",
+      "message": "Add mini-v2 experiment metadata for bash-only (11 models) and multilingual (12 models) (#413)\n\nBash-only (SWE-bench Verified, mini-v2.0.0):\n- Claude Opus 4.6, Opus 4.5, Sonnet 4.5, Haiku 4.5\n- Gemini 3 Flash, GPT-5-2, GPT-5 mini\n- GLM-5, Minimax 2.5, Kimi K2.5, DeepSeek V3.2\n\nMultilingual (SWE-bench Multilingual, mini-v2.0.0a0):\n- Same models + Gemini 3 Pro\n\nEach dir includes metadata.yaml and per_instance_details.json.\nTrajectories and logs are on S3 only (not in repo).\n\nAlso fixes analysis scripts:\n- get_leaderboard.py: None-safe sort, use `in` for split checks, fix name formatting\n- ingest_mini_swe_agent.py: skip unknown roles, handle None content, sibling logs fallback",
+      "sha": "726c03e4181f51ab54f3dc40068f704a6ffc9133"
+    },
+    "experiments_fallback": true,
+    "experiments_repo": "SWE-bench/experiments",
+    "leaderboard_commit": {
+      "date": "2025-12-11T04:08:55+00:00",
+      "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/f1176b65ae29d14f4f52208b48e3d8cfc972bc17",
+      "message": "Update leaderboard",
+      "raw_url": "https://raw.githubusercontent.com/SWE-bench/swe-bench.github.io/f1176b65ae29d14f4f52208b48e3d8cfc972bc17/data/leaderboards.json",
+      "sha": "f1176b65ae29d14f4f52208b48e3d8cfc972bc17"
+    },
+    "leaderboard_path": "data/leaderboards.json",
+    "leaderboard_repo": "SWE-bench/swe-bench.github.io"
+  },
+  "status": "missing_leaderboard",
+  "status_message": "\"No leaderboard named 'multilingual' found in list payload\""
+}

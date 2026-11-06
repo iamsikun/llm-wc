@@ -1,0 +1,160 @@
+{
+  "counts": {
+    "entries": 14,
+    "failures": 0,
+    "parsed_models": 14
+  },
+  "failures": [],
+  "leaderboard": "multilingual",
+  "models": [
+    {
+      "counts": {
+        "resolved": 218,
+        "total": 300
+      },
+      "model": "Gemini 3 Flash",
+      "model_id": "gemini-3-flash",
+      "trajectory_url": "leaderboard:per_instance_details"
+    },
+    {
+      "counts": {
+        "resolved": 216,
+        "total": 300
+      },
+      "model": "Claude 4.6 Opus",
+      "model_id": "claude-4-6-opus",
+      "trajectory_url": "leaderboard:per_instance_details"
+    },
+    {
+      "counts": {
+        "resolved": 212,
+        "total": 300
+      },
+      "model": "Claude 4.5 Opus",
+      "model_id": "claude-4-5-opus",
+      "trajectory_url": "leaderboard:per_instance_details"
+    },
+    {
+      "counts": {
+        "resolved": 209,
+        "total": 300
+      },
+      "model": "GLM-5",
+      "model_id": "glm-5",
+      "trajectory_url": "leaderboard:per_instance_details"
+    },
+    {
+      "counts": {
+        "resolved": 206,
+        "total": 300
+      },
+      "model": "Gemini 3 Pro",
+      "model_id": "gemini-3-pro",
+      "trajectory_url": "leaderboard:per_instance_details"
+    },
+    {
+      "counts": {
+        "resolved": 203,
+        "total": 297
+      },
+      "model": "Minimax 2.5",
+      "model_id": "minimax-2-5",
+      "trajectory_url": "leaderboard:per_instance_details"
+    },
+    {
+      "counts": {
+        "resolved": 202,
+        "total": 300
+      },
+      "model": "Kimi K2.5",
+      "model_id": "kimi-k2-5",
+      "trajectory_url": "leaderboard:per_instance_details"
+    },
+    {
+      "counts": {
+        "resolved": 201,
+        "total": 300
+      },
+      "model": "Claude 4.5 Sonnet",
+      "model_id": "claude-4-5-sonnet",
+      "trajectory_url": "leaderboard:per_instance_details"
+    },
+    {
+      "counts": {
+        "resolved": 200,
+        "total": 300
+      },
+      "model": "GPT-5.2 (high reasoning)",
+      "model_id": "gpt-5-2-high-reasoning",
+      "trajectory_url": "leaderboard:per_instance_details"
+    },
+    {
+      "counts": {
+        "resolved": 199,
+        "total": 300
+      },
+      "model": "GPT-5-2 Codex",
+      "model_id": "gpt-5-2-codex",
+      "trajectory_url": "leaderboard:per_instance_details"
+    },
+    {
+      "counts": {
+        "resolved": 194,
+        "total": 300
+      },
+      "model": "Claude 4.5 Haiku",
+      "model_id": "claude-4-5-haiku",
+      "trajectory_url": "leaderboard:per_instance_details"
+    },
+    {
+      "counts": {
+        "resolved": 177,
+        "total": 300
+      },
+      "model": "DeepSeek V3.2",
+      "model_id": "deepseek-v3-2",
+      "trajectory_url": "leaderboard:per_instance_details"
+    },
+    {
+      "counts": {
+        "resolved": 119,
+        "total": 300
+      },
+      "model": "GPT-5 mini",
+      "model_id": "gpt-5-mini",
+      "trajectory_url": "leaderboard:per_instance_details"
+    },
+    {
+      "counts": {
+        "resolved": 199,
+        "total": 300
+      },
+      "model": "GPT 5.2 Codex",
+      "model_id": "gpt-5-2-codex-2",
+      "trajectory_url": "leaderboard:per_instance_details"
+    }
+  ],
+  "snapshot_id": "20260227T165949Z_7c4289f",
+  "source": {
+    "experiments_base": "https://raw.githubusercontent.com/SWE-bench/experiments/6083d312573b9122a694aa556f9a2ab1c57a9605/evaluation/multilingual",
+    "experiments_commit": {
+      "date": "2026-02-24T14:41:20+00:00",
+      "html_url": "https://github.com/SWE-bench/experiments/commit/6083d312573b9122a694aa556f9a2ab1c57a9605",
+      "message": "Update multilingual per_instance_details.json to 300 instances (#421)\n\nAll 11 multilingual submissions now have exactly 300 instances in\nper_instance_details.json (previously 297-298 due to missing trajs).\n\nNotable changes:\n- claude-4-5-haiku: rerun facebook__docusaurus-10309 (now resolved, 193\u2192194)\n- kimi-k2-5: rerun burntsushi__ripgrep-2209 (now resolved, 201\u2192202)\n- gpt-5-2-high: recovered missing tokio-rs__axum-1730 traj\n- All models: updated metadata.yaml cost fields to match full 300 instances",
+      "sha": "6083d312573b9122a694aa556f9a2ab1c57a9605"
+    },
+    "experiments_fallback": false,
+    "experiments_repo": "SWE-bench/experiments",
+    "leaderboard_commit": {
+      "date": "2026-02-27T16:59:49+00:00",
+      "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/7c4289f30aa1a1c63c2e2a25aae30c16d92b5114",
+      "message": "Add Gemini 3 Pro to bash-only leaderboard (#53)\n\n* Add GPT 5.2 Codex (high reasoning) and fix GPT 5.2 naming on leaderboards\n\n* Add Gemini 3 Pro to bash-only leaderboard\n\nResolved: 69.6% (348/500), Cost: $480.01, mini-swe-agent v2.0.0\n\n* Fix os_model flags for open-weights models in leaderboard data\n\nFix os_model: false \u2192 true for DeepSeek V3.2, GLM-5, Kimi K2.5, and\nMiniMax M2.5 (high reasoning) in both bash-only and verified leaderboards.\n\n* Fix Gemini 3 Pro resolved counts in leaderboard\n\nRegenerated leaderboards.json with corrected per_instance_details\nshowing 348/500 resolved (69.6%) instead of 0.",
+      "raw_url": "https://raw.githubusercontent.com/SWE-bench/swe-bench.github.io/7c4289f30aa1a1c63c2e2a25aae30c16d92b5114/data/leaderboards.json",
+      "sha": "7c4289f30aa1a1c63c2e2a25aae30c16d92b5114"
+    },
+    "leaderboard_path": "data/leaderboards.json",
+    "leaderboard_repo": "SWE-bench/swe-bench.github.io"
+  },
+  "status": "ok",
+  "status_message": null
+}

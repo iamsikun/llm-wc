@@ -1,0 +1,2 @@
+snapshot_id,date,edition,n_tasks,n_models,m,leader_model,leader_raw_score_pct,leader_adjustment_pp,position_1_adjustment_pp,leader_p_rank_1,tiers_80,tier_1_size_80
+20260305,2026-03-05,reference,395,14,217,Claude 4.5 Sonnet - 10132025,44.303797468354425,0.8722939478131732,0.8722939478131732,0.7486666666666667,6,4

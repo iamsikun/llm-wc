@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block title %}Leaderboards · {{ site.title }}{% endblock %}
+{% block content %}
+<section class="bench-head">
+  <div class="wrap">
+    <p class="eyebrow">Leaderboards</p>
+    <h1 style="font-size:clamp(1.9rem,4vw,2.6rem)">Tracked leaderboards</h1>
+    <p class="lede">Every leaderboard the tracker follows, with its latest data. Select one for its full report.</p>
+  </div>
+</section>
+<section class="section" style="padding-top:0.5rem">
+  <div class="wrap">
+    <div class="controls">
+      <label class="field">Search<input type="search" id="bench-search" placeholder="Benchmark or leader"></label>
+      <label class="field">Family
+        <select id="bench-family"><option value="">All families</option>
+          {% for f in benchmarks | map(attribute="family") | unique %}<option>{{ f }}</option>{% endfor %}
+        </select></label>
+    </div>
+    <div class="table-wrap">
+      <table class="sortable" id="bench-table">
+        <thead><tr>
+          <th data-sort="text">Leaderboard</th>
+          <th data-sort="num" class="num" title="Tasks in the analyzed matrix">Tasks</th>
+          <th data-sort="num" class="num" title="Systems in the analyzed matrix">Systems</th>
+          <th data-sort="text">Top system</th>
+          <th data-sort="num" class="num" title="Top system's observed score">Score</th>
+          <th data-sort="num" class="num" title="Observed score minus the estimated inflation">Adjusted</th>
+          <th data-sort="num" class="num" title="Estimated inflation of the top position">Inflation at #1</th>
+          <th data-sort="num" class="num" title="Share of rebuilt leaderboards in which the top system ranks #1">#1 in</th>
+          <th data-sort="num" class="num" title="Systems the tasks cannot order at the top (80%)">Top tier</th>
+          <th data-sort="text" title="Date of the source revision analyzed">Source data</th>
+        </tr></thead>
+        <tbody>
+        {% for b in benchmarks %}{% set e = b.default %}
+          <tr data-family="{{ b.family }}" data-search="{{ (b.label ~ ' ' ~ b.family ~ ' ' ~ e.leader) | lower }}">
+            <td data-v="{{ b.label }}"><a class="bench-link" href="benchmarks/{{ b.key }}.html">{{ b.label }}</a><span class="sub">{{ b.family }}</span></td>
+            <td class="num" data-v="{{ e.n_tasks }}">{{ e.n_tasks | num }}</td>
+            <td class="num" data-v="{{ e.n_models }}">{{ e.n_models | num }}</td>
+            <td data-v="{{ e.leader }}"><span class="model">{{ e.leader }}</span></td>
+            <td class="num" data-v="{{ e.leader_raw }}">{{ e.leader_raw | pct }}</td>
+            <td class="num" data-v="{{ e.leader_adjusted }}">{{ e.leader_adjusted | pct }}</td>
+            <td class="num" data-v="{{ e.position_1_adjustment }}">{{ e.position_1_adjustment | pp }} pp</td>
+            <td class="num" data-v="{{ e.leader_p_rank_1 }}">{{ (100 * e.leader_p_rank_1) | pct(0) }}%</td>
+            <td class="num" data-v="{{ e.tier_1_size_80 }}">{{ e.tier_1_size_80 }}</td>
+            <td data-v="{{ e.snapshot_id }}">
+              <span class="nowrap">{% if e.upstream.url %}<a href="{{ e.upstream.url }}">{{ e.date }}</a>{% else %}{{ e.date }}{% endif %}</span>
+            </td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <p class="small muted" style="margin-top:0.8rem">Scores are percentages on each leaderboard's own metric. Rebuilt
+      leaderboards use {% filter tex %}m = \lfloor N^{ {{ analysis.gamma }} } \rfloor{% endfilter %} resampled tasks, {{ "{:,}".format(analysis.n_bootstraps) }}
+      times, and the top tier uses 80% rank ranges. The LiveBench category rows are subsets of the pooled LiveBench
+      matrix.</p>
+  </div>
+</section>
+{% endblock %}
+{% block scripts %}
+<script>
+(function () {
+  const q = document.getElementById("bench-search"), fam = document.getElementById("bench-family");
+  function apply() {
+    const s = q.value.trim().toLowerCase(), f = fam.value;
+    document.querySelectorAll("#bench-table tbody tr").forEach((tr) => {
+      tr.hidden = (s && !tr.dataset.search.includes(s)) || (f && tr.dataset.family !== f);
+    });
+  }
+  q.addEventListener("input", apply); fam.addEventListener("change", apply);
+})();
+</script>
+{% endblock %}

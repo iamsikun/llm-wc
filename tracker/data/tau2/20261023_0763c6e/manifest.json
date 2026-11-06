@@ -1,0 +1,190 @@
+{
+  "counts": {
+    "models": 8,
+    "scores": 2224,
+    "tasks": 278
+  },
+  "created_at": "2026-10-25T14:11:40+00:00",
+  "files": {
+    "models.csv": {
+      "bytes": 747,
+      "sha256": "68c51242ae33e9ebaf8721d068d1b505f123f78ee9954e96ced2c055e8680fe1"
+    },
+    "scores.csv.gz": {
+      "bytes": 8748,
+      "sha256": "09cac01f1d96b21c382a03128044559907a5884f2fcff7c2d4063baf3b903af4"
+    },
+    "tasks.csv.gz": {
+      "bytes": 1257,
+      "sha256": "c58530832ee232d5d846c4450f74f4982be34e6a4771c96606f3d461d793fcbd"
+    }
+  },
+  "fingerprint": "4ee5000e25e43ed438c2344a91577cf6e6c897073fa8f7e5eb0a597e35135b3c",
+  "format_version": 1,
+  "notes": {
+    "excluded": [
+      {
+        "model_id": "distyl-buttonagent",
+        "reason": "no public trajectories for airline, retail, or telecom"
+      },
+      {
+        "model_id": "gpt-5-4",
+        "reason": "no public trajectories for airline, retail, or telecom"
+      },
+      {
+        "model_id": "raft-30b-a3b",
+        "reason": "no public trajectories for airline, retail, or telecom"
+      },
+      {
+        "model_id": "raft-30b-a3b",
+        "reason": "trajectory file not found for retail"
+      },
+      {
+        "model_id": "gpt-5-5",
+        "reason": "no public trajectories for airline, retail, or telecom"
+      },
+      {
+        "model_id": "claude-opus-4-6",
+        "reason": "no public trajectories for airline, retail, or telecom"
+      },
+      {
+        "model_id": "claude-opus-4-7",
+        "reason": "no public trajectories for airline, retail, or telecom"
+      },
+      {
+        "model_id": "gemini-2-5-pro",
+        "reason": "no public trajectories for airline, retail, or telecom"
+      },
+      {
+        "model_id": "gemini-3-1-pro-preview",
+        "reason": "no public trajectories for airline, retail, or telecom"
+      },
+      {
+        "model_id": "grok-4-fast",
+        "reason": "no public trajectories for airline, retail, or telecom"
+      },
+      {
+        "model_id": "grok-4-1-fast",
+        "reason": "no public trajectories for airline, retail, or telecom"
+      },
+      {
+        "model_id": "grok-4-2",
+        "reason": "no public trajectories for airline, retail, or telecom"
+      },
+      {
+        "model_id": "gpt-5-6-sol",
+        "reason": "no public trajectories for airline, retail, or telecom"
+      },
+      {
+        "model_id": "claude-opus-4-8",
+        "reason": "no public trajectories for airline, retail, or telecom"
+      },
+      {
+        "model_id": "claude-fable-5",
+        "reason": "no public trajectories for airline, retail, or telecom"
+      },
+      {
+        "model_id": "muse-spark-1-1",
+        "reason": "no public trajectories for airline, retail, or telecom"
+      },
+      {
+        "model_id": "kimi-k3",
+        "reason": "no public trajectories for airline, retail, or telecom"
+      },
+      {
+        "model_id": "glm-5-2",
+        "reason": "no public trajectories for airline, retail, or telecom"
+      },
+      {
+        "model_id": "grok-4-5",
+        "reason": "no public trajectories for airline, retail, or telecom"
+      },
+      {
+        "model_id": "inkling",
+        "reason": "no public trajectories for airline, retail, or telecom"
+      },
+      {
+        "model_id": "claude-opus-5",
+        "reason": "no public trajectories for airline, retail, or telecom"
+      },
+      {
+        "model_id": "qwen-3-8-max",
+        "reason": "no public trajectories for airline, retail, or telecom"
+      },
+      {
+        "model_id": "claude-3-7-sonnet",
+        "reason": "no public trajectories for airline, retail, or telecom"
+      },
+      {
+        "model_id": "claude-opus-4",
+        "reason": "no public trajectories for airline, retail, or telecom"
+      },
+      {
+        "model_id": "claude-opus-4-1",
+        "reason": "no public trajectories for airline, retail, or telecom"
+      },
+      {
+        "model_id": "claude-sonnet-4",
+        "reason": "no public trajectories for airline, retail, or telecom"
+      },
+      {
+        "model_id": "claude-sonnet-4-5-2",
+        "reason": "no public trajectories for airline, retail, or telecom"
+      },
+      {
+        "model_id": "gpt-4-1",
+        "reason": "no public trajectories for airline, retail, or telecom"
+      },
+      {
+        "model_id": "gpt-4-1-mini",
+        "reason": "no public trajectories for airline, retail, or telecom"
+      },
+      {
+        "model_id": "kimi-k2",
+        "reason": "no public trajectories for airline, retail, or telecom"
+      },
+      {
+        "model_id": "o3",
+        "reason": "no public trajectories for airline, retail, or telecom"
+      },
+      {
+        "model_id": "o4-mini",
+        "reason": "no public trajectories for airline, retail, or telecom"
+      },
+      {
+        "model_id": "gpt-5",
+        "reason": "no public trajectories for airline, retail, or telecom"
+      },
+      {
+        "model_id": "qwen3-max",
+        "reason": "no public trajectories for airline, retail, or telecom"
+      },
+      {
+        "model_id": "gemini-3-0-pro",
+        "reason": "no public trajectories for airline, retail, or telecom"
+      },
+      {
+        "model_id": "deepseek-v3-2",
+        "reason": "no public trajectories for airline, retail, or telecom"
+      },
+      {
+        "model_id": "nemotron-orchestrator-8b",
+        "reason": "no public trajectories for airline, retail, or telecom"
+      },
+      {
+        "model_id": "qwen3-max-thinking",
+        "reason": "no public trajectories for airline, retail, or telecom"
+      }
+    ],
+    "submissions": 45,
+    "with_trajectories": 8
+  },
+  "snapshot_id": "20261023_0763c6e",
+  "source": "tau2",
+  "upstream": {
+    "date": "2026-10-23T20:18:32Z",
+    "revision": "0763c6e076dd635aab3a6e65e80ba500dcb5e36e",
+    "trajectories": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions",
+    "url": "https://github.com/sierra-research/tau2-bench/commit/0763c6e076dd635aab3a6e65e80ba500dcb5e36e"
+  }
+}

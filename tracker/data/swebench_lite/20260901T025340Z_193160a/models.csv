@@ -1,0 +1,85 @@
+model_id,model,date
+experepair-v1-0-claude-4-sonnet,ExpeRepair-v1.0 + Claude 4 Sonnet,2025-06-25
+refact-ai-agent,Refact.ai Agent,2025-04-25
+kgcompass-claude-4-sonnet-20250514,KGCompass + Claude 4 Sonnet (20250514),2025-09-06
+swe-agent-claude-4-sonnet,SWE-agent + Claude 4 Sonnet,2025-05-26
+isoform,Isoform,2025-01-14
+semagent-multi-v1-0,SemAgent_Multi-v1.0,2025-06-25
+isea,Isea,2025-09-11
+entropo-r2e-qwen3-coder-30b-a3b-instruct,EntroPO + R2E + Qwen3-Coder-30B-A3B-Instruct,2025-09-01
+blackbox-ai-agent,Blackbox AI Agent,2024-12-20
+codev,Codev,2025-05-28
+gru-2024-12-08,Gru(2024-12-08),2024-12-08
+globant-code-fixer-agent,Globant Code Fixer Agent,2024-11-27
+experepair-v1-0,ExpeRepair-v1.0,2025-06-13
+swe-agent-claude-3-7-sonnet,SWE-agent + Claude 3.7 Sonnet,2025-02-26
+devlo,devlo,2024-11-22
+dars-agent,DARS Agent,2025-02-05
+kgcompass-claude-3-5-sonnet-20241022,KGCompass + Claude 3.5 Sonnet (20241022),2025-06-19
+entropo-r2e-qwen3-coder-30b-a3b-instruct-2,EntroPO + R2E + Qwen3-Coder-30B-A3B-Instruct,2025-09-01
+kodu-v1-claude-3-5-sonnet-20241022,Kodu-v1 + Claude-3.5 Sonnet (20241022),2024-12-07
+codefuse-cgm,CodeFuse-CGM,2025-03-10
+codestory-aide-mixed-models,CodeStory Aide + Mixed Models,2024-07-02
+lingxi,Lingxi,2025-05-09
+openhands-codeact-v2-1-claude-3-5-sonnet-20241022,OpenHands + CodeAct v2.1 (claude-3-5-sonnet-20241022),2024-10-25
+codart-ai,Codart AI,2025-05-15
+patchkitty-0-9-claude-3-5-sonnet-20241022,PatchKitty-0.9 + Claude-3.5 Sonnet (20241022),2024-12-20
+composio-swe-kit-2024-10-30,Composio SWE-Kit (2024-10-30),2024-10-30
+orcaloca-agentless-1-5-claude-3-5-sonnet-20241022,OrcaLoca + Agentless-1.5 + Claude-3.5 Sonnet (20241022),2025-01-13
+agentless-1-5-claude-3-5-sonnet-20241022,Agentless-1.5 + Claude-3.5 Sonnet (20241022),2024-12-02
+opencsg-starship-agentic-coder-gpt-4-0806,OpenCSG Starship Agentic Coder + GPT 4 (0806),2025-01-13
+bytedance-marscode-agent,Bytedance MarsCode Agent,2024-09-12
+moatless-tools-claude-3-5-sonnet-20241022,Moatless Tools + Claude 3.5 Sonnet (20241022),2025-01-14
+honeycomb,Honeycomb,2024-08-20
+moatless-tools-claude-3-5-sonnet-20241022-2,Moatless Tools + Claude 3.5 Sonnet (20241022),2025-01-14
+abanteai-mentatbot-gpt-4o-2024-05-13,AbanteAI MentatBot + GPT 4o (2024-05-13),2024-06-27
+patched-codes-patchwork,Patched.Codes Patchwork,2025-01-04
+kgcompass-deepseek-v3,KGCompass + DeepSeek V3,2025-06-09
+appmap-navie-v2,AppMap Navie v2,2024-11-13
+gru-2024-08-11,Gru(2024-08-11),2024-08-11
+codefuse-aais,CodeFuse-AAIS,2025-01-04
+isoform-2,Isoform,2025-01-14
+bytedance-marscode-agent-gpt-4o-2024-05-13,Bytedance MarsCode Agent + GPT 4o (2024-05-13),2024-07-23
+supercoder2-0,SuperCoder2.0,2024-08-06
+alibaba-lingma-agent,Alibaba Lingma Agent,2024-06-22
+agentless-lite-o3-mini-20250214,Agentless Lite + O3 Mini (20250214),2025-02-14
+agentless-1-5-gpt-4o-2024-05-13,Agentless-1.5 + GPT 4o (2024-05-13),2024-10-28
+factory-code-droid,Factory Code Droid,2024-06-17
+codeshelltester-gpt-4o-2024-05-13,CodeShellTester + GPT 4o (2024-05-13),2024-11-11
+autocoderover-v20240620-gpt-4o-2024-05-13,AutoCodeRover (v20240620) + GPT 4o (2024-05-13),2024-06-21
+moatless-tools-deepseek-v3,Moatless Tools + Deepseek V3,2025-01-11
+aegis-o3-mini-1-0,Aegis - o3-mini_1.0,2025-02-07
+aigcode-infant-coder-2024-08-30,AIGCode Infant-Coder(2024-08-30),2024-09-08
+kortix-ai-claude-3-5-sonnet-20241022,Kortix AI (claude-3-5-sonnet-20241022),2024-12-03
+amazon-q-developer-agent-v20240719-dev,Amazon Q Developer Agent (v20240719-dev),2024-07-21
+agentless-repograph-gpt-4o,Agentless + RepoGraph + GPT-4o,2024-08-08
+coder-gpt-4-1106,CodeR + GPT 4 (1106),2024-06-04
+reproducedrg,reproducedRG,2024-11-17
+sima-gpt-4o-2024-05-13,SIMA + GPT 4o (2024-05-13),2024-07-06
+masai-gpt-4o-2024-05-13,MASAI + GPT 4o (2024-05-13),2024-06-12
+agentless-gpt-4o-2024-05-13,Agentless + GPT 4o (2024-05-13),2024-06-30
+ibm-research-agent-101,IBM Research Agent-101,2024-06-12
+moatless-tools-claude-3-5-sonnet,Moatless Tools + Claude 3.5 Sonnet,2024-06-23
+openhands-codeact-v1-8,OpenHands + CodeAct v1.8,2024-07-25
+aider-gpt-4o-claude-3-opus,Aider + GPT 4o & Claude 3 Opus,2024-05-23
+hyperagent,HyperAgent,2024-09-25
+moatless-tools-gpt-4o-2024-05-13,Moatless Tools + GPT 4o (2024-05-13),2024-06-17
+swe-fixer-qwen2-5-7b-retriever-qwen2-5-72b-editor,SWE-Fixer (Qwen2.5-7b retriever + Qwen2.5-72b editor),2025-03-06
+opencsg-starship-codegenagent-gpt-4-0613,OpenCSG StarShip CodeGenAgent + GPT 4 (0613),2024-05-24
+ibm-ai-agent-swe-1-0-with-open-llms,IBM AI Agent SWE-1.0 (with open LLMs),2024-10-16
+swe-fixer-qwen2-5-7b-retriever-qwen2-5-72b-editor-20241128,SWE-Fixer (Qwen2.5-7b retriever + Qwen2.5-72b editor) 20241128,2024-11-28
+swe-agent-claude-3-5-sonnet,SWE-agent + Claude 3.5 Sonnet,2024-06-20
+appmap-navie-gpt-4o-2024-05-13,AppMap Navie + GPT 4o (2024-05-13),2024-06-15
+bytedance-autose-based-on-swe-agent-gpt4-gpt4o-mixed-20240828,Bytedance AutoSE (based on SWE-Agent) + GPT4/GPT4o Mixed (20240828),2024-08-28
+amazon-q-developer-agent-v20240430-dev,Amazon Q Developer Agent (v20240430-dev),2024-05-09
+autocoderover-v20240408-gpt-4-0125,AutoCodeRover (v20240408) + GPT 4 (0125),2024-05-30
+swe-agent-gpt-4o-2024-05-13,SWE-agent + GPT 4o (2024-05-13),2024-07-28
+swe-agent-gpt-4-1106,SWE-agent + GPT 4 (1106),2024-04-02
+mcts-refine-7b,MCTS-Refine-7B,2025-06-27
+swe-agent-claude-3-opus,SWE-agent + Claude 3 Opus,2024-04-02
+rag-claude-3-opus,RAG + Claude 3 Opus,2024-04-02
+rag-claude-2,RAG + Claude 2,2023-10-10
+rag-gpt-4-1106,RAG + GPT 4 (1106),2024-04-02
+rag-swe-llama-7b,RAG + SWE-Llama 7B,2023-10-10
+rag-swe-llama-13b,RAG + SWE-Llama 13B,2023-10-10
+rag-chatgpt-3-5,RAG + ChatGPT 3.5,2023-10-10

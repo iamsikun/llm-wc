@@ -1,0 +1,738 @@
+{
+  "counts": {
+    "entries": 22,
+    "failures": 22,
+    "parsed_models": 0
+  },
+  "failures": [
+    {
+      "entry": {
+        "checked": true,
+        "cost": 279.1673704500001,
+        "date": "2025-09-29",
+        "folder": "20250929_mini-v1.13.3_sonnet-4-5-20250929",
+        "instance_calls": 50.988,
+        "instance_cost": 0.5583347409000001,
+        "logo": [
+          "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_400x400.jpg"
+        ],
+        "logs": null,
+        "mini-swe-agent_version": "1.13.3",
+        "name": "Claude 4.5 Sonnet (20250929)",
+        "os_model": false,
+        "os_system": true,
+        "resolved": 70.6,
+        "site": "https://www.anthropic.com/news/claude-sonnet-4-5",
+        "tags": [
+          "Model: claude-sonnet-4-5-20250929",
+          "Org: Anthropic",
+          "System: Attempts - 1"
+        ],
+        "trajs": "s3://swe-bench-experiments/bash-only/20250929_mini-v1.13.3_sonnet-4-5-20250929/trajs",
+        "trajs_docent": "https://docent.transluce.org/dashboard/a4844da1-fbb9-4d61-b82c-f46e471f748a",
+        "warning": null
+      },
+      "error": "candidate_scan_failed: No candidate trajectory URL was accessible.",
+      "model": "Claude 4.5 Sonnet (20250929)",
+      "model_id": "claude-4-5-sonnet-20250929",
+      "trajectory_url": null
+    },
+    {
+      "entry": {
+        "checked": true,
+        "cost": 565.6352234999996,
+        "date": "2025-08-02",
+        "folder": "20250802_mini-v1.0.0_claude-4-opus-20250514",
+        "instance_calls": 31.076,
+        "instance_cost": 1.1312704469999992,
+        "logo": [
+          "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_400x400.jpg"
+        ],
+        "logs": "s3://swe-bench-experiments/bash-only/20250802_mini-v1.0.0_claude-4-opus-20250514/logs",
+        "mini-swe-agent_version": "1.0.0",
+        "name": "Claude 4 Opus (20250514)",
+        "os_model": false,
+        "os_system": true,
+        "resolved": 67.6,
+        "site": "https://www.anthropic.com/news/claude-4",
+        "tags": [
+          "Model: claude-4-opus-20250514",
+          "Org: Anthropic",
+          "System: Attempts - 1"
+        ],
+        "trajs": "s3://swe-bench-experiments/bash-only/20250802_mini-v1.0.0_claude-4-opus-20250514/trajs",
+        "trajs_docent": "https://docent.transluce.org/dashboard/c93d3381-a539-4cd6-89be-97066d36d906",
+        "warning": null
+      },
+      "error": "candidate_scan_failed: No candidate trajectory URL was accessible.",
+      "model": "Claude 4 Opus (20250514)",
+      "model_id": "claude-4-opus-20250514",
+      "trajectory_url": null
+    },
+    {
+      "entry": {
+        "checked": true,
+        "cost": 140.19150875,
+        "date": "2025-08-07",
+        "folder": "20250807_mini-v1.7.0_gpt-5",
+        "instance_calls": 13.208,
+        "instance_cost": 0.2803830175,
+        "logo": [
+          "https://upload.wikimedia.org/wikipedia/commons/6/66/OpenAI_logo_2025_%28symbol%29.svg"
+        ],
+        "logs": "s3://swe-bench-experiments/bash-only/20250807_mini-v1.7.0_gpt-5/logs",
+        "mini-swe-agent_version": "1.7.0",
+        "name": "GPT-5 (2025-08-07) (medium reasoning)",
+        "os_model": false,
+        "os_system": true,
+        "resolved": 65.0,
+        "site": "https://platform.openai.com/docs/models/gpt-5",
+        "tags": [
+          "Model: gpt-5-2025-08-07",
+          "Org: OpenAI",
+          "System: Attempts - 1"
+        ],
+        "trajs": "s3://swe-bench-experiments/bash-only/20250807_mini-v1.7.0_gpt-5/trajs",
+        "trajs_docent": "https://docent.transluce.org/dashboard/4844cb3c-d5cd-4c75-b64b-973029f2d37c",
+        "warning": null
+      },
+      "error": "candidate_scan_failed: No candidate trajectory URL was accessible.",
+      "model": "GPT-5 (2025-08-07) (medium reasoning)",
+      "model_id": "gpt-5-2025-08-07-medium-reasoning",
+      "trajectory_url": null
+    },
+    {
+      "entry": {
+        "checked": true,
+        "cost": 185.7265839000001,
+        "date": "2025-07-26",
+        "folder": "20250726_mini-v1.0.0_claude-sonnet-4-20250514",
+        "instance_calls": 37.172,
+        "instance_cost": 0.3714531678000002,
+        "logo": [
+          "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_400x400.jpg"
+        ],
+        "logs": "s3://swe-bench-experiments/bash-only/20250726_mini-v1.0.0_claude-sonnet-4-20250514/logs",
+        "mini-swe-agent_version": "1.0.0",
+        "name": "Claude 4 Sonnet (20250514)",
+        "os_model": false,
+        "os_system": true,
+        "resolved": 64.93,
+        "site": "https://www.anthropic.com/news/claude-4",
+        "tags": [
+          "Model: claude-4-sonnet-20250514",
+          "Org: Anthropic",
+          "System: Attempts - 1"
+        ],
+        "trajs": "s3://swe-bench-experiments/bash-only/20250726_mini-v1.0.0_claude-sonnet-4-20250514/trajs",
+        "trajs_docent": "https://docent.transluce.org/dashboard/0cb59666-bca8-476b-bf8e-3b924fafcae7",
+        "warning": null
+      },
+      "error": "candidate_scan_failed: No candidate trajectory URL was accessible.",
+      "model": "Claude 4 Sonnet (20250514)",
+      "model_id": "claude-4-sonnet-20250514",
+      "trajectory_url": null
+    },
+    {
+      "entry": {
+        "checked": true,
+        "cost": 17.738533649999997,
+        "date": "2025-08-07",
+        "folder": "20250807_mini-v1.7.0_gpt-5-mini",
+        "instance_calls": 14.466,
+        "instance_cost": 0.03547706729999999,
+        "logo": [
+          "https://upload.wikimedia.org/wikipedia/commons/6/66/OpenAI_logo_2025_%28symbol%29.svg"
+        ],
+        "logs": "s3://swe-bench-experiments/bash-only/20250807_mini-v1.7.0_gpt-5-mini/logs",
+        "mini-swe-agent_version": "1.7.0",
+        "name": "GPT-5 mini (2025-08-07) (medium reasoning)",
+        "os_model": false,
+        "os_system": true,
+        "resolved": 59.8,
+        "site": "https://platform.openai.com/docs/models/gpt-5-mini",
+        "tags": [
+          "Model: gpt-5-mini-2025-08-07",
+          "Org: OpenAI",
+          "System: Attempts - 1"
+        ],
+        "trajs": "s3://swe-bench-experiments/bash-only/20250807_mini-v1.7.0_gpt-5-mini/trajs",
+        "trajs_docent": "https://docent.transluce.org/dashboard/7f5e3cfc-8e38-4c73-812c-aca21298e7bc",
+        "warning": null
+      },
+      "error": "candidate_scan_failed: No candidate trajectory URL was accessible.",
+      "model": "GPT-5 mini (2025-08-07) (medium reasoning)",
+      "model_id": "gpt-5-mini-2025-08-07-medium-reasoning",
+      "trajectory_url": null
+    },
+    {
+      "entry": {
+        "checked": true,
+        "cost": 166.826374,
+        "date": "2025-07-26",
+        "folder": "20250726_mini-v1.0.0_o3-2025-04-16",
+        "instance_calls": 24.698,
+        "instance_cost": 0.333652748,
+        "logo": [
+          "https://upload.wikimedia.org/wikipedia/commons/6/66/OpenAI_logo_2025_%28symbol%29.svg"
+        ],
+        "logs": "s3://swe-bench-experiments/bash-only/20250726_mini-v1.0.0_o3-2025-04-16/logs",
+        "mini-swe-agent_version": "1.0.0",
+        "name": "o3 (2025-04-16)",
+        "os_model": false,
+        "os_system": true,
+        "resolved": 58.4,
+        "site": "https://platform.openai.com/docs/models/o3",
+        "tags": [
+          "Model: o3-20250416",
+          "Org: OpenAI",
+          "System: Attempts - 1"
+        ],
+        "trajs": "s3://swe-bench-experiments/bash-only/20250726_mini-v1.0.0_o3-2025-04-16/trajs",
+        "trajs_docent": "https://docent.transluce.org/dashboard/565e5680-b913-4031-b537-00721a7a619a",
+        "warning": null
+      },
+      "error": "candidate_scan_failed: No candidate trajectory URL was accessible.",
+      "model": "o3 (2025-04-16)",
+      "model_id": "o3-2025-04-16",
+      "trajectory_url": null
+    },
+    {
+      "entry": {
+        "checked": true,
+        "cost": null,
+        "date": "2025-08-02",
+        "folder": "20250802_mini-v1.0.0_qwen3-coder-480b-a35b-instruct",
+        "instance_calls": null,
+        "instance_cost": null,
+        "logo": [
+          "https://avatars.githubusercontent.com/u/141221163?s=200&v=4"
+        ],
+        "logs": "s3://swe-bench-experiments/bash-only/20250802_mini-v1.0.0_Qwen3-Coder-480B-A35B-Instruct/logs",
+        "mini-swe-agent_version": "1.0.0",
+        "name": "Qwen3-Coder 480B/A35B Instruct",
+        "os_model": true,
+        "os_system": true,
+        "resolved": 55.4,
+        "site": "https://qwenlm.github.io/blog/qwen3-coder/",
+        "tags": [
+          "Model: Qwen3-Coder-480B-A35B-Instruct",
+          "Org: Qwen",
+          "System: Attempts - 1"
+        ],
+        "trajs": "s3://swe-bench-experiments/bash-only/20250802_mini-v1.0.0_Qwen3-Coder-480B-A35B-Instruct/trajs",
+        "trajs_docent": "https://docent.transluce.org/dashboard/f39d3041-d9d7-4f1b-b75e-8a13addb9e6e",
+        "warning": null
+      },
+      "error": "candidate_scan_failed: No candidate trajectory URL was accessible.",
+      "model": "Qwen3-Coder 480B/A35B Instruct",
+      "model_id": "qwen3-coder-480b-a35b-instruct",
+      "trajectory_url": null
+    },
+    {
+      "entry": {
+        "checked": true,
+        "cost": 148.59517440000016,
+        "date": "2025-08-22",
+        "folder": "20250822_mini-v1.9.1_glm-4.5",
+        "instance_calls": 40.224,
+        "instance_cost": 0.29719034880000034,
+        "logo": [
+          "https://pbs.twimg.com/profile_images/1911947416678350848/USaKwZgh_400x400.jpg"
+        ],
+        "logs": "s3://swe-bench-experiments/bash-only/20250822_mini-v1.9.1_glm-4.5/logs/",
+        "mini-swe-agent_version": "1.9.1",
+        "name": "GLM-4.5 (2025-08-22)",
+        "os_model": true,
+        "os_system": true,
+        "resolved": 54.2,
+        "site": "https://z.ai/blog/glm-4.5",
+        "tags": [
+          "Model: GLM-4.5",
+          "Org: Z.ai",
+          "System: Attempts - 1"
+        ],
+        "trajs": "s3://swe-bench-experiments/bash-only/20250822_mini-v1.9.1_glm-4.5/trajs/",
+        "trajs_docent": "https://docent.transluce.org/dashboard/9ae7f9a3-c9e3-48af-833c-52adcc7f5921",
+        "warning": null
+      },
+      "error": "candidate_scan_failed: No candidate trajectory URL was accessible.",
+      "model": "GLM-4.5 (2025-08-22)",
+      "model_id": "glm-4-5-2025-08-22",
+      "trajectory_url": null
+    },
+    {
+      "entry": {
+        "checked": true,
+        "cost": 144.1860478125,
+        "date": "2025-07-26",
+        "folder": "20250726_mini-v1.0.0_gemini-2.5-pro",
+        "instance_calls": 20.478,
+        "instance_cost": 0.288372095625,
+        "logo": [
+          "https://upload.wikimedia.org/wikipedia/commons/8/8f/Google-gemini-icon.svg"
+        ],
+        "logs": "s3://swe-bench-experiments/bash-only/20250726_mini-v1.0.0_gemini-2.5-pro/logs",
+        "mini-swe-agent_version": "1.0.0",
+        "name": "Gemini 2.5 Pro (2025-05-06)",
+        "os_model": false,
+        "os_system": true,
+        "resolved": 53.6,
+        "site": "https://ai.google.dev/gemini-api/docs/models",
+        "tags": [
+          "Model: gemini-2.5-pro",
+          "Org: Google DeepMind",
+          "System: Attempts - 1"
+        ],
+        "trajs": "s3://swe-bench-experiments/bash-only/20250726_mini-v1.0.0_gemini-2.5-pro/trajs",
+        "trajs_docent": "https://docent.transluce.org/dashboard/8b22ae97-2cfd-4b05-8438-38550cfaa163",
+        "warning": null
+      },
+      "error": "candidate_scan_failed: No candidate trajectory URL was accessible.",
+      "model": "Gemini 2.5 Pro (2025-05-06)",
+      "model_id": "gemini-2-5-pro-2025-05-06",
+      "trajectory_url": null
+    },
+    {
+      "entry": {
+        "checked": true,
+        "cost": 177.30772409999986,
+        "date": "2025-07-20",
+        "folder": "20250720_mini-v0.0.0-claude-3-7-sonnet-20250219",
+        "instance_calls": 34.7,
+        "instance_cost": 0.35461544819999974,
+        "logo": [
+          "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_400x400.jpg"
+        ],
+        "logs": "s3://swe-bench-experiments/bash-only/20250720_mini-v0.0.0-claude-3-7-sonnet-20250219/logs",
+        "mini-swe-agent_version": "0.0.0",
+        "name": "Claude 3.7 Sonnet (20250219)",
+        "os_model": false,
+        "os_system": true,
+        "resolved": 52.8,
+        "site": "https://www.anthropic.com/news/claude-3-7-sonnet",
+        "tags": [
+          "Model: claude-3-7-sonnet-20250219",
+          "Org: Anthropic",
+          "System: Attempts - 1"
+        ],
+        "trajs": "s3://swe-bench-experiments/bash-only/20250720_mini-v0.0.0-claude-3-7-sonnet-20250219/trajs",
+        "trajs_docent": false,
+        "warning": null
+      },
+      "error": "candidate_scan_failed: No candidate trajectory URL was accessible.",
+      "model": "Claude 3.7 Sonnet (20250219)",
+      "model_id": "claude-3-7-sonnet-20250219",
+      "trajectory_url": null
+    },
+    {
+      "entry": {
+        "checked": true,
+        "cost": 104.98666640000002,
+        "date": "2025-07-26",
+        "folder": "20250726_mini-v1.0.0_o4-mini-2025-04-16",
+        "instance_calls": 23.278,
+        "instance_cost": 0.20997333280000002,
+        "logo": [
+          "https://upload.wikimedia.org/wikipedia/commons/6/66/OpenAI_logo_2025_%28symbol%29.svg"
+        ],
+        "logs": "s3://swe-bench-experiments/bash-only/20250521_o4-mini-20250416/logs",
+        "mini-swe-agent_version": "1.0.0",
+        "name": "o4-mini (2025-04-16)",
+        "os_model": false,
+        "os_system": true,
+        "resolved": 45.0,
+        "site": "https://platform.openai.com/docs/models/o4-mini",
+        "tags": [
+          "Model: o4-mini-20250416",
+          "Org: OpenAI",
+          "System: Attempts - 1"
+        ],
+        "trajs": "s3://swe-bench-experiments/bash-only/20250726_mini-v1.0.0_o4-mini-2025-04-16/trajs",
+        "trajs_docent": "https://docent.transluce.org/dashboard/f46eb5b4-b4b2-478e-bc11-f1eb47eca637",
+        "warning": null
+      },
+      "error": "candidate_scan_failed: No candidate trajectory URL was accessible.",
+      "model": "o4-mini (2025-04-16)",
+      "model_id": "o4-mini-2025-04-16",
+      "trajectory_url": null
+    },
+    {
+      "entry": {
+        "checked": true,
+        "cost": 0.0,
+        "date": "2025-08-07",
+        "folder": "20250807_mini-v1.7.0_kimi-k2-instruct",
+        "instance_calls": 0.0,
+        "instance_cost": 0.0,
+        "logo": [
+          "https://avatars.githubusercontent.com/u/129152888?s=200&v=4"
+        ],
+        "logs": "s3://swe-bench-experiments/bash-only/20250807_mini-v1.7.0_Kimi-K2-Instruct/logs",
+        "mini-swe-agent_version": "1.7.0",
+        "name": "Kimi K2 Instruct",
+        "os_model": true,
+        "os_system": true,
+        "resolved": 43.8,
+        "site": "https://moonshotai.github.io/Kimi-K2/",
+        "tags": [
+          "Model: Kimi-K2-Instruct",
+          "Org: Moonshot AI",
+          "System: Attempts - 1"
+        ],
+        "trajs": "s3://swe-bench-experiments/bash-only/20250807_mini-v1.7.0_Kimi-K2-Instruct/trajs",
+        "trajs_docent": "https://docent.transluce.org/dashboard/b6a6d69b-e69e-4011-aa94-46f44b84202e",
+        "warning": null
+      },
+      "error": "candidate_scan_failed: No candidate trajectory URL was accessible.",
+      "model": "Kimi K2 Instruct",
+      "model_id": "kimi-k2-instruct",
+      "trajectory_url": null
+    },
+    {
+      "entry": {
+        "checked": true,
+        "cost": 73.15656200000005,
+        "date": "2025-07-26",
+        "folder": "20250726_mini-v1.0.0_gpt-4.1-2025-04-14",
+        "instance_calls": 19.544,
+        "instance_cost": 0.1463131240000001,
+        "logo": [
+          "https://upload.wikimedia.org/wikipedia/commons/6/66/OpenAI_logo_2025_%28symbol%29.svg"
+        ],
+        "logs": "s3://swe-bench-experiments/bash-only/20250726_mini-v1.0.0_gpt-4.1-2025-04-14/logs",
+        "mini-swe-agent_version": "1.0.0",
+        "name": "GPT-4.1 (2025-04-14)",
+        "os_model": false,
+        "os_system": true,
+        "resolved": 39.58,
+        "site": "https://platform.openai.com/docs/models/gpt-4.1",
+        "tags": [
+          "Model: gpt-4.1-20250414",
+          "Org: OpenAI",
+          "System: Attempts - 1"
+        ],
+        "trajs": "s3://swe-bench-experiments/bash-only/20250726_mini-v1.0.0_gpt-4.1-2025-04-14/trajs",
+        "trajs_docent": "https://docent.transluce.org/dashboard/cd7a23c5-a2b1-4cab-b851-6e2c42aaf0f3",
+        "warning": null
+      },
+      "error": "candidate_scan_failed: No candidate trajectory URL was accessible.",
+      "model": "GPT-4.1 (2025-04-14)",
+      "model_id": "gpt-4-1-2025-04-14",
+      "trajectory_url": null
+    },
+    {
+      "entry": {
+        "checked": true,
+        "cost": 19.037590390000002,
+        "date": "2025-08-07",
+        "folder": "20250807_mini-v1.7.0_gpt-5-nano",
+        "instance_calls": 39.76,
+        "instance_cost": 0.03807518078,
+        "logo": [
+          "https://upload.wikimedia.org/wikipedia/commons/6/66/OpenAI_logo_2025_%28symbol%29.svg"
+        ],
+        "logs": "s3://swe-bench-experiments/bash-only/20250807_mini-v1.7.0_gpt-5-nano/logs",
+        "mini-swe-agent_version": "1.7.0",
+        "name": "GPT-5 nano (2025-08-07) (medium reasoning)",
+        "os_model": false,
+        "os_system": true,
+        "resolved": 34.8,
+        "site": "https://platform.openai.com/docs/models/gpt-5-nano",
+        "tags": [
+          "Model: gpt-5-nano-2025-08-07",
+          "Org: OpenAI",
+          "System: Attempts - 1"
+        ],
+        "trajs": "s3://swe-bench-experiments/bash-only/20250807_mini-v1.7.0_gpt-5-nano/trajs",
+        "trajs_docent": "https://docent.transluce.org/dashboard/3dc9b424-547c-4bdc-9b72-3b58d316cb0a",
+        "warning": null
+      },
+      "error": "candidate_scan_failed: No candidate trajectory URL was accessible.",
+      "model": "GPT-5 nano (2025-08-07) (medium reasoning)",
+      "model_id": "gpt-5-nano-2025-08-07-medium-reasoning",
+      "trajectory_url": null
+    },
+    {
+      "entry": {
+        "checked": true,
+        "cost": 66.94285917499998,
+        "date": "2025-07-26",
+        "folder": "20250726_mini-v1.0.0_gemini-2.5-flash",
+        "instance_calls": 26.646,
+        "instance_cost": 0.13388571834999996,
+        "logo": [
+          "https://upload.wikimedia.org/wikipedia/commons/8/8f/Google-gemini-icon.svg"
+        ],
+        "logs": "s3://swe-bench-experiments/bash-only/20250726_mini-v1.0.0_gemini-2.5-flash/logs",
+        "mini-swe-agent_version": "1.0.0",
+        "name": "Gemini 2.5 Flash (2025-04-17)",
+        "os_model": false,
+        "os_system": true,
+        "resolved": 28.73,
+        "site": "https://ai.google.dev/gemini-api/docs/models",
+        "tags": [
+          "Model: gemini-2.5-flash",
+          "Org: Google DeepMind",
+          "System: Attempts - 1"
+        ],
+        "trajs": "s3://swe-bench-experiments/bash-only/20250726_mini-v1.0.0_gemini-2.5-flash/trajs",
+        "trajs_docent": "https://docent.transluce.org/dashboard/37e5933e-71a1-4011-8340-fbca563124b3",
+        "warning": null
+      },
+      "error": "candidate_scan_failed: No candidate trajectory URL was accessible.",
+      "model": "Gemini 2.5 Flash (2025-04-17)",
+      "model_id": "gemini-2-5-flash-2025-04-17",
+      "trajectory_url": null
+    },
+    {
+      "entry": {
+        "checked": true,
+        "cost": 28.559527900000013,
+        "date": "2025-08-07",
+        "folder": "20250807_mini-v1.7.0_gpt-oss-120b",
+        "instance_calls": 27.598,
+        "instance_cost": 0.057119055800000026,
+        "logo": [
+          "https://upload.wikimedia.org/wikipedia/commons/6/66/OpenAI_logo_2025_%28symbol%29.svg"
+        ],
+        "logs": "s3://swe-bench-experiments/bash-only/20250807_mini-v1.7.0_gpt-oss-120b/logs",
+        "mini-swe-agent_version": "1.7.0",
+        "name": "gpt-oss-120b",
+        "os_model": true,
+        "os_system": true,
+        "resolved": 26.0,
+        "site": "https://platform.openai.com/docs/models/gpt-oss-120b",
+        "tags": [
+          "Model: gpt-oss-120b",
+          "Org: OpenAI",
+          "System: Attempts - 1"
+        ],
+        "trajs": "s3://swe-bench-experiments/bash-only/20250807_mini-v1.7.0_gpt-oss-120b/trajs",
+        "trajs_docent": "https://docent.transluce.org/dashboard/4a0a2b2a-a65b-452a-88c7-bb5d99745c75",
+        "warning": null
+      },
+      "error": "candidate_scan_failed: No candidate trajectory URL was accessible.",
+      "model": "gpt-oss-120b",
+      "model_id": "gpt-oss-120b",
+      "trajectory_url": null
+    },
+    {
+      "entry": {
+        "checked": true,
+        "cost": 217.57707640000024,
+        "date": "2025-07-20",
+        "folder": "20250720_mini-v0.0.0_gpt-4.1-mini-2025-04-14",
+        "instance_calls": 89.196,
+        "instance_cost": 0.43515415280000047,
+        "logo": [
+          "https://upload.wikimedia.org/wikipedia/commons/6/66/OpenAI_logo_2025_%28symbol%29.svg"
+        ],
+        "logs": "s3://swe-bench-experiments/bash-only/20250720_mini-v0.0.0_gpt-4.1-mini-2025-04-14/logs",
+        "mini-swe-agent_version": "0.0.0",
+        "name": "GPT-4.1-mini (2025-04-14)",
+        "os_model": false,
+        "os_system": true,
+        "resolved": 23.94,
+        "site": "https://platform.openai.com/docs/models/gpt-4.1-mini",
+        "tags": [
+          "Model: gpt-4.1-mini-20250414",
+          "Org: OpenAI",
+          "System: Attempts - 1"
+        ],
+        "trajs": "s3://swe-bench-experiments/bash-only/20250720_mini-v0.0.0_gpt-4.1-mini-2025-04-14/trajs",
+        "trajs_docent": false,
+        "warning": null
+      },
+      "error": "candidate_scan_failed: No candidate trajectory URL was accessible.",
+      "model": "GPT-4.1-mini (2025-04-14)",
+      "model_id": "gpt-4-1-mini-2025-04-14",
+      "trajectory_url": null
+    },
+    {
+      "entry": {
+        "checked": true,
+        "cost": 765.5740625000009,
+        "date": "2025-07-20",
+        "folder": "20250720_mini-v0.0.0-gpt-4o-2024-11-20",
+        "instance_calls": 63.066,
+        "instance_cost": 1.5311481250000019,
+        "logo": [
+          "https://upload.wikimedia.org/wikipedia/commons/6/66/OpenAI_logo_2025_%28symbol%29.svg"
+        ],
+        "logs": "s3://swe-bench-experiments/bash-only/20250720_mini-v0.0.0-gpt-4o-2024-11-20/logs",
+        "mini-swe-agent_version": "0.0.0",
+        "name": "GPT-4o (2024-11-20)",
+        "os_model": false,
+        "os_system": true,
+        "resolved": 21.62,
+        "site": "https://platform.openai.com/docs/models/gpt-4o",
+        "tags": [
+          "Model: gpt-4o-20241120",
+          "Org: OpenAI",
+          "System: Attempts - 1"
+        ],
+        "trajs": "s3://swe-bench-experiments/bash-only/20250720_mini-v0.0.0-gpt-4o-2024-11-20/trajs",
+        "trajs_docent": false,
+        "warning": null
+      },
+      "error": "candidate_scan_failed: No candidate trajectory URL was accessible.",
+      "model": "GPT-4o (2024-11-20)",
+      "model_id": "gpt-4o-2024-11-20",
+      "trajectory_url": null
+    },
+    {
+      "entry": {
+        "checked": true,
+        "cost": 156.85304880000004,
+        "date": "2025-07-20",
+        "folder": "20250720_mini-v0.0.0-Llama-4-Maverick-17B-Instruct",
+        "instance_calls": 48.076,
+        "instance_cost": 0.31370609760000007,
+        "logo": [
+          "https://upload.wikimedia.org/wikipedia/commons/d/d0/Meta_Platforms_logo.svg"
+        ],
+        "logs": "s3://swe-bench-experiments/bash-only/20250720_mini-v0.0.0-Llama-4-Maverick-17B-Instruct/logs",
+        "mini-swe-agent_version": "0.0.0",
+        "name": "Llama 4 Maverick Instruct",
+        "os_model": false,
+        "os_system": true,
+        "resolved": 21.04,
+        "site": "https://www.together.ai/models/llama-4-maverick",
+        "tags": [
+          "Model: llama-4-maverick-instruct",
+          "Org: Meta",
+          "System: Attempts - 1"
+        ],
+        "trajs": "s3://swe-bench-experiments/bash-only/20250720_mini-v0.0.0-Llama-4-Maverick-17B-Instruct/trajs",
+        "trajs_docent": false,
+        "warning": null
+      },
+      "error": "candidate_scan_failed: No candidate trajectory URL was accessible.",
+      "model": "Llama 4 Maverick Instruct",
+      "model_id": "llama-4-maverick-instruct",
+      "trajectory_url": null
+    },
+    {
+      "entry": {
+        "checked": true,
+        "cost": 0.0,
+        "date": "2025-07-26",
+        "folder": "20250726_mini-v1.0.0_gemini-2.0-flash",
+        "instance_calls": 0.0,
+        "instance_cost": 0.0,
+        "logo": [
+          "https://upload.wikimedia.org/wikipedia/commons/8/8f/Google-gemini-icon.svg"
+        ],
+        "logs": "s3://swe-bench-experiments/bash-only/20250726_mini-v1.0.0_gemini-2.0-flash/logs",
+        "mini-swe-agent_version": "0.0.0",
+        "name": "Gemini 2.0 flash",
+        "os_model": false,
+        "os_system": true,
+        "resolved": 13.52,
+        "site": "https://ai.google.dev/gemini-api/docs/models",
+        "tags": [
+          "Model: gemini-2.0-flash",
+          "Org: Google DeepMind",
+          "System: Attempts - 1"
+        ],
+        "trajs": "s3://swe-bench-experiments/bash-only/20250726_mini-v1.0.0_gemini-2.0-flash/trajs",
+        "trajs_docent": false,
+        "warning": null
+      },
+      "error": "candidate_scan_failed: No candidate trajectory URL was accessible.",
+      "model": "Gemini 2.0 flash",
+      "model_id": "gemini-2-0-flash",
+      "trajectory_url": null
+    },
+    {
+      "entry": {
+        "checked": true,
+        "cost": 57.815761499999965,
+        "date": "2025-07-20",
+        "folder": "20250720_mini-v0.0.0-Llama-4-Scout-17B-Instruct",
+        "instance_calls": 29.216,
+        "instance_cost": 0.11563152299999993,
+        "logo": [
+          "https://upload.wikimedia.org/wikipedia/commons/d/d0/Meta_Platforms_logo.svg"
+        ],
+        "logs": "s3://swe-bench-experiments/bash-only/20250720_mini-v0.0.0-Llama-4-Scout-17B-Instruct/logs",
+        "mini-swe-agent_version": "0.0.0",
+        "name": "Llama 4 Scout Instruct",
+        "os_model": false,
+        "os_system": true,
+        "resolved": 9.06,
+        "site": "https://www.together.ai/models/llama-4-scout",
+        "tags": [
+          "Model: llama-4-scout-instruct",
+          "Org: Meta",
+          "System: Attempts - 1"
+        ],
+        "trajs": "s3://swe-bench-experiments/bash-only/20250720_mini-v0.0.0-Llama-4-Scout-17B-Instruct/trajs",
+        "trajs_docent": false,
+        "warning": null
+      },
+      "error": "candidate_scan_failed: No candidate trajectory URL was accessible.",
+      "model": "Llama 4 Scout Instruct",
+      "model_id": "llama-4-scout-instruct",
+      "trajectory_url": null
+    },
+    {
+      "entry": {
+        "checked": true,
+        "cost": 0.0,
+        "date": "2025-08-03",
+        "folder": "20250803_mini-v1.0.0_qwen2-5-coder-32b-instruct",
+        "instance_calls": 0.0,
+        "instance_cost": 0.0,
+        "logo": [
+          "https://avatars.githubusercontent.com/u/141221163?s=200&v=4"
+        ],
+        "logs": "s3://swe-bench-experiments/bash-only/20250803_mini-v1.0.0_qwen2-5-coder-32b-instruct/",
+        "mini-swe-agent_version": "1.0.0",
+        "name": "Qwen2.5-Coder 32B Instruct",
+        "os_model": true,
+        "os_system": true,
+        "resolved": 9.0,
+        "site": "https://qwenlm.github.io/blog/qwen2.5-coder/",
+        "tags": [
+          "Model: Qwen2.5-Coder-32B-Instruct",
+          "Org: Qwen",
+          "System: Attempts - 1"
+        ],
+        "trajs": "s3://swe-bench-experiments/bash-only/20250803_mini-v1.0.0_qwen2-5-coder-32b-instruct/",
+        "trajs_docent": "https://docent.transluce.org/dashboard/f5288cc2-48b7-4df9-8e30-072d96b58606",
+        "warning": null
+      },
+      "error": "candidate_scan_failed: No candidate trajectory URL was accessible.",
+      "model": "Qwen2.5-Coder 32B Instruct",
+      "model_id": "qwen2-5-coder-32b-instruct",
+      "trajectory_url": null
+    }
+  ],
+  "leaderboard": "bash-only",
+  "models": [],
+  "snapshot_id": "20251006T164332Z_f702a7f",
+  "source": {
+    "experiments_base": "https://raw.githubusercontent.com/SWE-bench/experiments/fa6189be843287d586dab2b052073fc5ff9b019e/evaluation/bash-only",
+    "experiments_commit": {
+      "date": "2025-09-30T01:15:43+00:00",
+      "html_url": "https://github.com/SWE-bench/experiments/commit/fa6189be843287d586dab2b052073fc5ff9b019e",
+      "message": "Fix: Add resolved data for sonnet 4-5",
+      "sha": "fa6189be843287d586dab2b052073fc5ff9b019e"
+    },
+    "experiments_fallback": false,
+    "experiments_repo": "SWE-bench/experiments",
+    "leaderboard_commit": {
+      "date": "2025-10-06T16:43:32+00:00",
+      "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/f702a7f5b1274494f6fb84d3a96fd8be9828c1e7",
+      "message": "Update leaderboard",
+      "raw_url": "https://raw.githubusercontent.com/SWE-bench/swe-bench.github.io/f702a7f5b1274494f6fb84d3a96fd8be9828c1e7/data/leaderboards.json",
+      "sha": "f702a7f5b1274494f6fb84d3a96fd8be9828c1e7"
+    },
+    "leaderboard_path": "data/leaderboards.json",
+    "leaderboard_repo": "SWE-bench/swe-bench.github.io"
+  },
+  "status": "ok",
+  "status_message": null
+}

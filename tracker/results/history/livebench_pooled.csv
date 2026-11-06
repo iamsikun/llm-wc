@@ -1,0 +1,2 @@
+snapshot_id,date,edition,n_tasks,n_models,m,leader_model,leader_raw_score_pct,leader_adjustment_pp,position_1_adjustment_pp,leader_p_rank_1,tiers_80,tier_1_size_80
+20250407_9704e5d,2025-04-07,reference,318,81,178,gemini-2.5-pro-exp-03-25,77.56040209384274,0.12170306761730641,0.12170306761730641,0.9896,9,1

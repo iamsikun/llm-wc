@@ -1,0 +1,2 @@
+snapshot_id,date,edition,n_tasks,n_models,m,leader_model,leader_raw_score_pct,leader_adjustment_pp,position_1_adjustment_pp,leader_p_rank_1,tiers_80,tier_1_size_80
+20240801_d6b8dca,2024-08-01,reference,988,63,495,Athene-70B,79.8076923076915,0.09464723888839588,0.09464723888839588,0.8082,15,2

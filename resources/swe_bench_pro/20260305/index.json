@@ -1,0 +1,120 @@
+{
+  "leaderboard": "swe-bench-pro",
+  "models": [
+    {
+      "counts": {
+        "resolved": 240,
+        "total": 562
+      },
+      "model": "Claude 4 Sonnet - 10132025",
+      "model_id": "claude-4-sonnet-10132025"
+    },
+    {
+      "counts": {
+        "resolved": 288,
+        "total": 729
+      },
+      "model": "Claude 4.5 Haiku -- 10222025",
+      "model_id": "claude-4-5-haiku-10222025"
+    },
+    {
+      "counts": {
+        "resolved": 319,
+        "total": 730
+      },
+      "model": "Claude 4.5 Sonnet - 10132025",
+      "model_id": "claude-4-5-sonnet-10132025"
+    },
+    {
+      "counts": {
+        "resolved": 166,
+        "total": 663
+      },
+      "model": "Claude Opus 4.1 - paper",
+      "model_id": "claude-opus-4-1-paper"
+    },
+    {
+      "counts": {
+        "resolved": 126,
+        "total": 626
+      },
+      "model": "Claude Sonnet 4 - paper",
+      "model_id": "claude-sonnet-4-paper"
+    },
+    {
+      "counts": {
+        "resolved": 259,
+        "total": 729
+      },
+      "model": "GLM-4.5 -- 10222025",
+      "model_id": "glm-4-5-10222025"
+    },
+    {
+      "counts": {
+        "resolved": 118,
+        "total": 728
+      },
+      "model": "GPT OSS - paper",
+      "model_id": "gpt-oss-paper"
+    },
+    {
+      "counts": {
+        "resolved": 36,
+        "total": 619
+      },
+      "model": "GPT-4o - paper",
+      "model_id": "gpt-4o-paper"
+    },
+    {
+      "counts": {
+        "resolved": 265,
+        "total": 729
+      },
+      "model": "GPT-5 - 10132025",
+      "model_id": "gpt-5-10132025"
+    },
+    {
+      "counts": {
+        "resolved": 191,
+        "total": 708
+      },
+      "model": "GPT-5 Codex -- debug-oct22",
+      "model_id": "gpt-5-codex-debug-oct22"
+    },
+    {
+      "counts": {
+        "resolved": 189,
+        "total": 730
+      },
+      "model": "GPT-5 High - paper",
+      "model_id": "gpt-5-high-paper"
+    },
+    {
+      "counts": {
+        "resolved": 99,
+        "total": 719
+      },
+      "model": "Gemini 2.5 Pro Preview - paper",
+      "model_id": "gemini-2-5-pro-preview-paper"
+    },
+    {
+      "counts": {
+        "resolved": 142,
+        "total": 728
+      },
+      "model": "Gemini 2.5 Pro Preview -- debug-oct22",
+      "model_id": "gemini-2-5-pro-preview-debug-oct22"
+    },
+    {
+      "counts": {
+        "resolved": 202,
+        "total": 729
+      },
+      "model": "Kimi - paper",
+      "model_id": "kimi-paper"
+    }
+  ],
+  "source": {
+    "docent_collection": "032fb63d-4992-4bfc-911d-3b7dafcb931f"
+  }
+}

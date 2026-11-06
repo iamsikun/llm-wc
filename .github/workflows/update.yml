@@ -1,0 +1,79 @@
+name: Monthly tracker update
+
+# Checks every tracked leaderboard, commits new snapshots and RULER reports under tracker/,
+# scans for candidate leaderboards, and redeploys the site. Off until the repository
+# variable TRACKER_UPDATES is set to "true". SWE-bench Pro also needs the DOCENT_API_KEY
+# secret; without it that source is reported as unavailable and skipped.
+
+on:
+  schedule:
+    - cron: "0 6 3 * *"   # 06:00 UTC on the 3rd of every month
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: tracker-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    if: vars.TRACKER_UPDATES == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - name: Install
+        run: uv sync --group parsers --group tracker
+      - name: Restore download cache
+        uses: actions/cache@v4
+        with:
+          path: .cache/tracker
+          key: tracker-${{ github.run_id }}
+          restore-keys: tracker-
+      - name: Update sources
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DOCENT_API_KEY: ${{ secrets.DOCENT_API_KEY }}
+        run: uv run python -m llm_wc.tracker update
+      - name: Refresh history (top-tier membership per snapshot)
+        run: uv run python -m llm_wc.tracker history
+      - name: Validate snapshots and reports
+        run: uv run python -m llm_wc.tracker validate
+      - name: Scan for candidate leaderboards
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: uv run python -m llm_wc.tracker scan || true
+      - name: Check that the site builds
+        run: uv run python -m llm_wc.tracker build
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add tracker/
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "Tracker update $(date -u +%Y-%m-%d)"
+            git push
+          fi
+      - name: Open an issue for failed sources
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          failed=$(uv run python -c "import json; s=json.load(open('tracker/status.json')); print('\n'.join(f'- {k}: {v[\"result\"]}: {v.get(\"reason\", \"\")}' for k, v in sorted(s.items()) if v['result'] in ('failed', 'unavailable')))")
+          if [ -n "$failed" ]; then
+            gh issue create --title "Tracker update $(date -u +%Y-%m-%d): sources need attention" \
+              --body "$(printf 'The monthly update could not refresh these sources. Each keeps its last good data.\n\n%s\n' "$failed")" || true
+          fi
+
+  deploy:
+    needs: update
+    uses: ./.github/workflows/pages.yml
+    permissions:
+      contents: read
+      pages: write
+      id-token: write

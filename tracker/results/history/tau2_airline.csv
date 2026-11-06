@@ -1,0 +1,3 @@
+snapshot_id,date,edition,n_tasks,n_models,m,leader_model,leader_raw_score_pct,leader_adjustment_pp,position_1_adjustment_pp,leader_p_rank_1,tiers_80,tier_1_size_80
+20260410,2026-04-10,reference,50,7,33,Qwen3-Max-Thinking,69.0,3.067725527464007,3.067725527464007,0.7454166666666667,2,5
+20261023_0763c6e,2026-10-23,live,50,8,33,Claude Opus 4.5,84.0,2.547417795094427,2.547417795094427,0.3042499999999998,2,6

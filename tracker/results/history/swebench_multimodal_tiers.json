@@ -1,0 +1,2646 @@
+{
+ "20250507T093905Z_1a0866b": {
+  "date": "2025-05-07",
+  "n_models": 3,
+  "leaders": [
+   "globant-code-fixer-agent"
+  ],
+  "tier1": [
+   "globant-code-fixer-agent"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "globant-code-fixer-agent",
+   "zencoder-2025-03-10"
+  ],
+  "names": {
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20250511T065234Z_f1aaf66": {
+  "date": "2025-05-11",
+  "n_models": 3,
+  "leaders": [
+   "globant-code-fixer-agent"
+  ],
+  "tier1": [
+   "globant-code-fixer-agent"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "globant-code-fixer-agent",
+   "zencoder-2025-03-10"
+  ],
+  "names": {
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20250511T183945Z_55fda50": {
+  "date": "2025-05-11",
+  "n_models": 3,
+  "leaders": [
+   "globant-code-fixer-agent"
+  ],
+  "tier1": [
+   "globant-code-fixer-agent"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "globant-code-fixer-agent",
+   "zencoder-2025-03-10"
+  ],
+  "names": {
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20250512T051001Z_9e0bdf8": {
+  "date": "2025-05-12",
+  "n_models": 3,
+  "leaders": [
+   "globant-code-fixer-agent"
+  ],
+  "tier1": [
+   "globant-code-fixer-agent"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "globant-code-fixer-agent",
+   "zencoder-2025-03-10"
+  ],
+  "names": {
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20250513T005130Z_f911ab6": {
+  "date": "2025-05-13",
+  "n_models": 3,
+  "leaders": [
+   "globant-code-fixer-agent"
+  ],
+  "tier1": [
+   "globant-code-fixer-agent"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "globant-code-fixer-agent",
+   "zencoder-2025-03-10"
+  ],
+  "names": {
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20250513T025106Z_5cf62bc": {
+  "date": "2025-05-13",
+  "n_models": 4,
+  "leaders": [
+   "zencoder-2025-04-01"
+  ],
+  "tier1": [
+   "zencoder-2025-04-01",
+   "globant-code-fixer-agent"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "globant-code-fixer-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20250513T233820Z_d7e7ec2": {
+  "date": "2025-05-13",
+  "n_models": 4,
+  "leaders": [
+   "zencoder-2025-04-01"
+  ],
+  "tier1": [
+   "zencoder-2025-04-01",
+   "globant-code-fixer-agent"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "globant-code-fixer-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20250515T212332Z_15ff951": {
+  "date": "2025-05-15",
+  "n_models": 4,
+  "leaders": [
+   "zencoder-2025-04-01"
+  ],
+  "tier1": [
+   "zencoder-2025-04-01",
+   "globant-code-fixer-agent"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "globant-code-fixer-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20250522T015619Z_a12c231": {
+  "date": "2025-05-22",
+  "n_models": 4,
+  "leaders": [
+   "zencoder-2025-04-01"
+  ],
+  "tier1": [
+   "zencoder-2025-04-01",
+   "globant-code-fixer-agent"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "globant-code-fixer-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20250523T203712Z_9f7b5b1": {
+  "date": "2025-05-23",
+  "n_models": 4,
+  "leaders": [
+   "zencoder-2025-04-01"
+  ],
+  "tier1": [
+   "zencoder-2025-04-01",
+   "globant-code-fixer-agent"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "globant-code-fixer-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20250529T172231Z_5ee3e10": {
+  "date": "2025-05-29",
+  "n_models": 4,
+  "leaders": [
+   "zencoder-2025-04-01"
+  ],
+  "tier1": [
+   "zencoder-2025-04-01",
+   "globant-code-fixer-agent"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "globant-code-fixer-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20250624T175029Z_96ad248": {
+  "date": "2025-06-24",
+  "n_models": 10,
+  "leaders": [
+   "refact-ai-agent"
+  ],
+  "tier1": [
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20250704T172209Z_64ecce3": {
+  "date": "2025-07-04",
+  "n_models": 11,
+  "leaders": [
+   "guirepair-o3-2025-04-16"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20250712T011023Z_2212eb9": {
+  "date": "2025-07-12",
+  "n_models": 11,
+  "leaders": [
+   "guirepair-o3-2025-04-16"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20250728T220332Z_cd39b58": {
+  "date": "2025-07-28",
+  "n_models": 11,
+  "leaders": [
+   "guirepair-o3-2025-04-16"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20250728T220504Z_fa569f3": {
+  "date": "2025-07-28",
+  "n_models": 11,
+  "leaders": [
+   "guirepair-o3-2025-04-16"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20250731T015842Z_3c70f86": {
+  "date": "2025-07-31",
+  "n_models": 11,
+  "leaders": [
+   "guirepair-o3-2025-04-16"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20250731T074458Z_fa20e1e": {
+  "date": "2025-07-31",
+  "n_models": 11,
+  "leaders": [
+   "guirepair-o3-2025-04-16"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20250731T081334Z_a56b68c": {
+  "date": "2025-07-31",
+  "n_models": 11,
+  "leaders": [
+   "guirepair-o3-2025-04-16"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20250731T154324Z_c03a702": {
+  "date": "2025-07-31",
+  "n_models": 11,
+  "leaders": [
+   "guirepair-o3-2025-04-16"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20250731T163336Z_1d2b395": {
+  "date": "2025-07-31",
+  "n_models": 11,
+  "leaders": [
+   "guirepair-o3-2025-04-16"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20250804T092702Z_f6392a4": {
+  "date": "2025-08-04",
+  "n_models": 11,
+  "leaders": [
+   "guirepair-o3-2025-04-16"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20250806T024421Z_dc7a3de": {
+  "date": "2025-08-06",
+  "n_models": 11,
+  "leaders": [
+   "guirepair-o3-2025-04-16"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20250806T024824Z_34b6604": {
+  "date": "2025-08-06",
+  "n_models": 11,
+  "leaders": [
+   "guirepair-o3-2025-04-16"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20250806T025039Z_0c77a6c": {
+  "date": "2025-08-06",
+  "n_models": 11,
+  "leaders": [
+   "guirepair-o3-2025-04-16"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20250806T082045Z_b2491c0": {
+  "date": "2025-08-06",
+  "n_models": 11,
+  "leaders": [
+   "guirepair-o3-2025-04-16"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20250808T190109Z_1af9b30": {
+  "date": "2025-08-08",
+  "n_models": 11,
+  "leaders": [
+   "guirepair-o3-2025-04-16"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20250809T005931Z_3e401b0": {
+  "date": "2025-08-09",
+  "n_models": 11,
+  "leaders": [
+   "guirepair-o3-2025-04-16"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20250812T023758Z_a77ba69": {
+  "date": "2025-08-12",
+  "n_models": 11,
+  "leaders": [
+   "guirepair-o3-2025-04-16"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20250825T200228Z_7ba8f41": {
+  "date": "2025-08-25",
+  "n_models": 11,
+  "leaders": [
+   "guirepair-o3-2025-04-16"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20250825T215228Z_80fced6": {
+  "date": "2025-08-25",
+  "n_models": 11,
+  "leaders": [
+   "guirepair-o3-2025-04-16"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20250910T181429Z_ef093fb": {
+  "date": "2025-09-10",
+  "n_models": 11,
+  "leaders": [
+   "guirepair-o3-2025-04-16"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20250910T210908Z_8d0ee39": {
+  "date": "2025-09-10",
+  "n_models": 11,
+  "leaders": [
+   "guirepair-o3-2025-04-16"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20250910T212850Z_80be3f4": {
+  "date": "2025-09-10",
+  "n_models": 11,
+  "leaders": [
+   "guirepair-o3-2025-04-16"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20250911T141820Z_f660691": {
+  "date": "2025-09-11",
+  "n_models": 11,
+  "leaders": [
+   "guirepair-o3-2025-04-16"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20250930T012033Z_38bf023": {
+  "date": "2025-09-30",
+  "n_models": 11,
+  "leaders": [
+   "guirepair-o3-2025-04-16"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20251006T164332Z_f702a7f": {
+  "date": "2025-10-06",
+  "n_models": 11,
+  "leaders": [
+   "guirepair-o3-2025-04-16"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20251118T215317Z_bdcd3dd": {
+  "date": "2025-11-18",
+  "n_models": 11,
+  "leaders": [
+   "guirepair-o3-2025-04-16"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20251119T144638Z_81430dd": {
+  "date": "2025-11-19",
+  "n_models": 11,
+  "leaders": [
+   "guirepair-o3-2025-04-16"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20251119T161912Z_c7f5d65": {
+  "date": "2025-11-19",
+  "n_models": 11,
+  "leaders": [
+   "guirepair-o3-2025-04-16"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20251119T180733Z_d6e0839": {
+  "date": "2025-11-19",
+  "n_models": 11,
+  "leaders": [
+   "guirepair-o3-2025-04-16"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20251119T182307Z_b01fe9c": {
+  "date": "2025-11-19",
+  "n_models": 11,
+  "leaders": [
+   "guirepair-o3-2025-04-16"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20251119T185941Z_d2af9d9": {
+  "date": "2025-11-19",
+  "n_models": 11,
+  "leaders": [
+   "guirepair-o3-2025-04-16"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20251124T215452Z_d7658f9": {
+  "date": "2025-11-24",
+  "n_models": 12,
+  "leaders": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "codefuse-pycfuse-svr",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "codefuse-pycfuse-svr": "Codefuse_Pycfuse_SVR",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20251125T164234Z_2cb8774": {
+  "date": "2025-11-25",
+  "n_models": 12,
+  "leaders": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "codefuse-pycfuse-svr",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "codefuse-pycfuse-svr": "Codefuse_Pycfuse_SVR",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20251125T164605Z_f7cd9da": {
+  "date": "2025-11-25",
+  "n_models": 12,
+  "leaders": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "codefuse-pycfuse-svr",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "codefuse-pycfuse-svr": "Codefuse_Pycfuse_SVR",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20251202T210619Z_1aa4db5": {
+  "date": "2025-12-02",
+  "n_models": 12,
+  "leaders": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "codefuse-pycfuse-svr",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "codefuse-pycfuse-svr": "Codefuse_Pycfuse_SVR",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20251211T040855Z_f1176b6": {
+  "date": "2025-12-11",
+  "n_models": 12,
+  "leaders": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "codefuse-pycfuse-svr",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "codefuse-pycfuse-svr": "Codefuse_Pycfuse_SVR",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20251211T172840Z_c6a41fe": {
+  "date": "2025-12-11",
+  "n_models": 12,
+  "leaders": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "codefuse-pycfuse-svr",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "codefuse-pycfuse-svr": "Codefuse_Pycfuse_SVR",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20251211T200449Z_96b94cd": {
+  "date": "2025-12-11",
+  "n_models": 12,
+  "leaders": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "codefuse-pycfuse-svr",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "codefuse-pycfuse-svr": "Codefuse_Pycfuse_SVR",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20251211T212116Z_37d8d5c": {
+  "date": "2025-12-11",
+  "n_models": 12,
+  "leaders": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "codefuse-pycfuse-svr",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "codefuse-pycfuse-svr": "Codefuse_Pycfuse_SVR",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20260120T055731Z_45a9858": {
+  "date": "2026-01-20",
+  "n_models": 12,
+  "leaders": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "codefuse-pycfuse-svr",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "codefuse-pycfuse-svr": "Codefuse_Pycfuse_SVR",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20260121T051227Z_34697c5": {
+  "date": "2026-01-21",
+  "n_models": 12,
+  "leaders": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "codefuse-pycfuse-svr",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "codefuse-pycfuse-svr": "Codefuse_Pycfuse_SVR",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20260122T064412Z_ce83475": {
+  "date": "2026-01-22",
+  "n_models": 12,
+  "leaders": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "codefuse-pycfuse-svr",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "codefuse-pycfuse-svr": "Codefuse_Pycfuse_SVR",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20260127T072941Z_1545564": {
+  "date": "2026-01-27",
+  "n_models": 12,
+  "leaders": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "codefuse-pycfuse-svr",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "codefuse-pycfuse-svr": "Codefuse_Pycfuse_SVR",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20260127T101619Z_c7494f8": {
+  "date": "2026-01-27",
+  "n_models": 12,
+  "leaders": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "codefuse-pycfuse-svr",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "codefuse-pycfuse-svr": "Codefuse_Pycfuse_SVR",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20260127T131104Z_3752d48": {
+  "date": "2026-01-27",
+  "n_models": 12,
+  "leaders": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "codefuse-pycfuse-svr",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "codefuse-pycfuse-svr": "Codefuse_Pycfuse_SVR",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20260213T150807Z_8e223ac": {
+  "date": "2026-02-13",
+  "n_models": 12,
+  "leaders": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "codefuse-pycfuse-svr",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "codefuse-pycfuse-svr": "Codefuse_Pycfuse_SVR",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20260213T151757Z_81c966b": {
+  "date": "2026-02-13",
+  "n_models": 12,
+  "leaders": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "codefuse-pycfuse-svr",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "codefuse-pycfuse-svr": "Codefuse_Pycfuse_SVR",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20260216T063705Z_09eb2d3": {
+  "date": "2026-02-16",
+  "n_models": 12,
+  "leaders": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "codefuse-pycfuse-svr",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "codefuse-pycfuse-svr": "Codefuse_Pycfuse_SVR",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20260216T065234Z_d3f1edf": {
+  "date": "2026-02-16",
+  "n_models": 12,
+  "leaders": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "codefuse-pycfuse-svr",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "codefuse-pycfuse-svr": "Codefuse_Pycfuse_SVR",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20260218T102035Z_6560f87": {
+  "date": "2026-02-18",
+  "n_models": 12,
+  "leaders": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "codefuse-pycfuse-svr",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "codefuse-pycfuse-svr": "Codefuse_Pycfuse_SVR",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20260218T103120Z_494cbaf": {
+  "date": "2026-02-18",
+  "n_models": 12,
+  "leaders": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "codefuse-pycfuse-svr",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "codefuse-pycfuse-svr": "Codefuse_Pycfuse_SVR",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20260218T120900Z_a0179c5": {
+  "date": "2026-02-18",
+  "n_models": 12,
+  "leaders": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "codefuse-pycfuse-svr",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "codefuse-pycfuse-svr": "Codefuse_Pycfuse_SVR",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20260218T140037Z_b9254b1": {
+  "date": "2026-02-18",
+  "n_models": 12,
+  "leaders": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "codefuse-pycfuse-svr",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "codefuse-pycfuse-svr": "Codefuse_Pycfuse_SVR",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20260218T141717Z_d6882b9": {
+  "date": "2026-02-18",
+  "n_models": 12,
+  "leaders": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "codefuse-pycfuse-svr",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "codefuse-pycfuse-svr": "Codefuse_Pycfuse_SVR",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20260218T161325Z_d7615e4": {
+  "date": "2026-02-18",
+  "n_models": 12,
+  "leaders": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "codefuse-pycfuse-svr",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "codefuse-pycfuse-svr": "Codefuse_Pycfuse_SVR",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20260218T164757Z_95d54ce": {
+  "date": "2026-02-18",
+  "n_models": 12,
+  "leaders": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "codefuse-pycfuse-svr",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "codefuse-pycfuse-svr": "Codefuse_Pycfuse_SVR",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20260220T161422Z_2c622f5": {
+  "date": "2026-02-20",
+  "n_models": 12,
+  "leaders": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "codefuse-pycfuse-svr",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "codefuse-pycfuse-svr": "Codefuse_Pycfuse_SVR",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ },
+ "20260227T165949Z_7c4289f": {
+  "date": "2026-02-27",
+  "n_models": 12,
+  "leaders": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr"
+  ],
+  "tier1": [
+   "guirepair-o3-2025-04-16",
+   "codefuse-pycfuse-svr",
+   "refact-ai-agent",
+   "openhands-versa-claude-sonnet-4",
+   "guirepair-o4-mini-2025-04-16"
+  ],
+  "models": [
+   "agentless-lite-claude-3-5-sonnet",
+   "codefuse-pycfuse-svr",
+   "globant-code-fixer-agent",
+   "guirepair-gpt-4-1-2025-04-14",
+   "guirepair-gpt-4o-2024-08-06",
+   "guirepair-o3-2025-04-16",
+   "guirepair-o4-mini-2025-04-16",
+   "openhands-versa-claude-3-7-sonnet",
+   "openhands-versa-claude-sonnet-4",
+   "refact-ai-agent",
+   "zencoder-2025-03-10",
+   "zencoder-2025-04-01"
+  ],
+  "names": {
+   "guirepair-o3-2025-04-16": "GUIRepair + o3 (2025-04-16)",
+   "codefuse-pycfuse-svr": "Codefuse_Pycfuse_SVR",
+   "refact-ai-agent": "Refact.ai Agent",
+   "openhands-versa-claude-sonnet-4": "OpenHands-Versa (Claude-Sonnet 4)",
+   "guirepair-o4-mini-2025-04-16": "GUIRepair + o4-mini (2025-04-16)",
+   "openhands-versa-claude-3-7-sonnet": "OpenHands-Versa (Claude-3.7 Sonnet)",
+   "guirepair-gpt-4-1-2025-04-14": "GUIRepair + GPT 4.1 (2025-04-14)",
+   "zencoder-2025-04-01": "Zencoder (2025-04-01)",
+   "guirepair-gpt-4o-2024-08-06": "GUIRepair + GPT 4o (2024-08-06)",
+   "globant-code-fixer-agent": "Globant Code Fixer Agent",
+   "zencoder-2025-03-10": "Zencoder (2025-03-10)",
+   "agentless-lite-claude-3-5-sonnet": "Agentless Lite + Claude-3.5 Sonnet"
+  }
+ }
+}

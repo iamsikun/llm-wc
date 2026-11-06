@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+{% block title %}How it works · {{ site.title }}{% endblock %}
+{% block content %}
+<section class="bench-head">
+  <div class="wrap">
+    <p class="eyebrow">How it works</p>
+    <h1 style="font-size:clamp(1.9rem,4vw,2.6rem)">What would the leaderboard look like on fresh tasks?</h1>
+    <p class="lede">A leaderboard score is an average over a limited set of tasks. RULER estimates how each position's
+      score would change on a fresh set of tasks from the same benchmark, and how much the order would change.</p>
+  </div>
+</section>
+<section class="section" style="padding-top:0.5rem">
+  <div class="wrap prose">
+    <h2>Why the top score is inflated</h2>
+    <p>Each model's score combines its ability with luck: the tasks that happened to be in the benchmark suited some
+      models better than others. Sorting by score puts the models whose luck was good near the top. So the #1 score
+      tends to overstate what the #1 model would score on fresh tasks. This is the winner's curse, and it affects every
+      position: scores near the top tend to be inflated, and scores near the bottom deflated.</p>
+    <p>The simulation below makes the effect visible. Every model has the same true accuracy, so the winner of each
+      draw is simply the luckiest one.</p>
+    <div class="card sim" id="sim" style="margin:1.5rem 0">
+      <p class="eyebrow" style="margin-bottom:0.3rem">Simulation · equally good models</p>
+      <h3 style="font-family:var(--sans);font-size:1.02rem;margin:0 0 0.25rem">Who wins when nobody is better?</h3>
+      <p class="small muted" style="margin:0">Each draw scores every model on <span data-out="n">200</span> fresh tasks
+        and crowns the highest score. The dashed line is every model's true accuracy.</p>
+      <svg class="chart" id="sim-strip" role="img" aria-label="Observed scores of each model in the latest draw"></svg>
+      <div class="sim-readout" aria-live="polite">
+        <div>Winner's score minus its true accuracy<strong id="sim-last">—</strong></div>
+        <div>Average over draws<strong id="sim-avg">—</strong></div>
+        <div>Draws<strong id="sim-count">0</strong></div>
+      </div>
+      <div class="sim-controls">
+        <label>Models <output data-out="j">12</output><input type="range" id="sim-j" min="2" max="60" value="12"></label>
+        <label>Tasks per draw <output data-out="n">200</output><input type="range" id="sim-n" min="20" max="2000" step="10" value="200"></label>
+        <label>Spread of true accuracy <output data-out="s">0 pp</output><input type="range" id="sim-s" min="0" max="30" value="0"></label>
+        <div style="display:flex;align-items:end;gap:0.5rem"><button class="btn small" id="sim-run" type="button">Run 300 draws</button><button class="btn small" id="sim-reset" type="button">Reset</button></div>
+      </div>
+    </div>
+    <p>More tasks shrink the inflation. Larger true gaps between models shrink it too, because the winner then wins on
+      ability rather than luck.</p>
+
+    <h2>Step 1 · Rebuild the leaderboard from resampled tasks</h2>
+    <p>RULER draws tasks at random, with replacement, from the benchmark's {% filter tex %}N{% endfilter %} tasks. Each drawn task brings every model's
+      result on it, so models that do well on the same tasks stay linked. RULER recomputes every model's average, sorts
+      the models, and repeats this {{ "{:,}".format(analysis.n_bootstraps) }} times.</p>
+    <div class="callout">Each rebuilt leaderboard uses {% filter tex %}m = \lfloor N^{ {{ analysis.gamma }} } \rfloor{% endfilter %} tasks, fewer than {% filter tex %}N{% endfilter %} (the
+      exponent {{ analysis.gamma }} is a predeclared heuristic). With fewer tasks, close models swap places about as often
+      as they would on fresh tasks. Under exact population tiers, this gives a valid bias correction and the correct
+      limiting rank probabilities.</div>
+
+    <h2>Step 2 · Adjust each position's score</h2>
+    <p>At each position, RULER compares the rebuilt leaderboard's score with the same model's score on the full
+      benchmark. The average gap, scaled by {% filter tex %}\sqrt{m/N}{% endfilter %} to the full benchmark's noise level, is that position's estimated
+      inflation. The adjusted score is the observed score minus this estimate. Systems tied on the leaderboard share the
+      average adjustment of the positions they occupy.</p>
+
+    <h2>Step 3 · Record where each model lands</h2>
+    <p>The rank probability matrix records how often each model lands at each rank across the rebuilt leaderboards.
+      When models tie in a rebuilt leaderboard, they split the credit equally among the ranks they occupy.</p>
+
+    <h2>Step 4 · Rank ranges and tiers</h2>
+    <p>A model's rank range is the middle 80% of its ranks across the rebuilt leaderboards. Tiers come from walking down
+      the observed order: a tier grows while all of its members' rank ranges share at least one rank, and a new tier
+      starts when they no longer do. A tier marks the limit of what the benchmark's tasks can resolve: its members may
+      still differ in capability by amounts the tasks cannot detect. Ranges and tiers at 90%, 95%, and 99% are in
+      each leaderboard's report.</p>
+
+    <h2>Does the adjustment work?</h2>
+    <p>The paper checks it two ways. In sample splitting, half of each benchmark's tasks rank the models and the other
+      half scores them. Across settings, the adjustment reduces the average magnitude of the mean rank-1 split error from
+      2.41 to 0.76 pp. In a simulation calibrated to SWE-bench Verified, where true abilities are known, it reduces the
+      mean winner bias from 1.41 to 0.21 pp. The adjustment reduces systematic inflation but can overshoot at some
+      positions, and a single leaderboard's scores stay noisy.</p>
+
+    <h2>What it measures</h2>
+    <p>RULER measures the uncertainty that comes from which tasks are in the benchmark, holding the released model
+      responses and judge scores fixed. Two conditions shape the results:</p>
+    <ul>
+      <li><strong>Tasks are treated as independent draws.</strong> The paper's cluster analyses check this for
+        SWE-bench repositories and Tau2 telecom subcategories.</li>
+      <li><strong>The guarantees assume clear gaps or exact ties.</strong> When true gaps are comparable to sampling
+        noise, the paper's local analysis shows that the leading bias cannot be consistently estimated for every
+        population.</li>
+    </ul>
+    <p>Rerunning models or judges, contamination, adaptive submissions, and whether a benchmark measures the intended
+      capability are separate questions.</p>
+
+    <h2>Settings on this site</h2>
+    <p>Every report uses the same settings: {% filter tex %}m = \lfloor N^{ {{ analysis.gamma }} } \rfloor{% endfilter %}, {{ "{:,}".format(analysis.n_bootstraps) }}
+      rebuilt leaderboards, seed {{ analysis.seed }}, and rank ranges at 80%, 90%, 95%, and 99%. For the snapshots analyzed in the
+      paper, every build checks the numbers against the paper's committed results.</p>
+
+    <h2>Run it on your own leaderboard</h2>
+    <pre><code>from llm_wc.wc.ruler import ruler
+
+# obs: (N tasks, J models) array of per-task scores in [0, 1]
+r = ruler(obs)              # m = floor(N**0.9), 5,000 resamples, seed 42
+r.adjustment                # score adjustment at each position, in observed order
+r.rpm                       # rank probability matrix (models x ranks)
+r.intervals[0.2]            # (rank_low, rank_high, tier) at 80%
+r.tiers[0.2]                # tiers and the ranks their members share</code></pre>
+    <p class="small muted">RULER stands for Rank Uncertainty and Leaderboard Evaluation Report.</p>
+  </div>
+</section>
+{% endblock %}
+{% block scripts %}<script src="static/sim.js?v={{ v }}"></script>{% endblock %}

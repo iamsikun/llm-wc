@@ -1,0 +1,33 @@
+{
+  "counts": {
+    "entries": 0,
+    "failures": 0,
+    "parsed_models": 0
+  },
+  "failures": [],
+  "leaderboard": "bash-only",
+  "models": [],
+  "snapshot_id": "20250728T220332Z_cd39b58",
+  "source": {
+    "experiments_base": "https://raw.githubusercontent.com/SWE-bench/experiments/e56d2296a61d3b4912aa90526bb56ddbdffc7f4a/evaluation/bash-only",
+    "experiments_commit": {
+      "date": "2025-08-25T21:18:10+00:00",
+      "html_url": "https://github.com/SWE-bench/experiments/commit/e56d2296a61d3b4912aa90526bb56ddbdffc7f4a",
+      "message": "Add `bash-only` split",
+      "sha": "e56d2296a61d3b4912aa90526bb56ddbdffc7f4a"
+    },
+    "experiments_fallback": true,
+    "experiments_repo": "SWE-bench/experiments",
+    "leaderboard_commit": {
+      "date": "2025-07-28T22:03:32+00:00",
+      "html_url": "https://github.com/SWE-bench/swe-bench.github.io/commit/cd39b58675acaffce337659d63666e33f59e17b9",
+      "message": "Fix tab link for mini",
+      "raw_url": "https://raw.githubusercontent.com/SWE-bench/swe-bench.github.io/cd39b58675acaffce337659d63666e33f59e17b9/data/leaderboards.json",
+      "sha": "cd39b58675acaffce337659d63666e33f59e17b9"
+    },
+    "leaderboard_path": "data/leaderboards.json",
+    "leaderboard_repo": "SWE-bench/swe-bench.github.io"
+  },
+  "status": "missing_leaderboard",
+  "status_message": "\"No leaderboard named 'bash-only' found in list payload\""
+}

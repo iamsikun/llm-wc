@@ -1,0 +1,15 @@
+setting,n_tasks,n_models,stratification,n_strata,n_splits,n_bootstraps,gamma,seed
+swebench_bash_only,500,41,repository,12,200,2000,0.9,42
+swebench_verified,500,173,repository,12,200,2000,0.9,42
+swebench_multimodal,510,12,repository,12,200,2000,0.9,42
+swebench_multilingual,300,14,repository,41,200,2000,0.9,42
+swebench_pro,395,14,repository,11,200,2000,0.9,42
+tau2_airline,50,7,none,1,200,2000,0.9,42
+tau2_retail,114,7,none,1,200,2000,0.9,42
+tau2_telecom,114,7,none,1,200,2000,0.9,42
+alpaca_eval_2,805,208,source dataset,5,200,2000,0.9,42
+wildbench_v2,988,63,none,1,200,2000,0.9,42
+livebench_pooled,318,81,category,3,200,2000,0.9,42
+livebench_coding,128,81,none,1,200,2000,0.9,42
+livebench_language,140,81,none,1,200,2000,0.9,42
+livebench_instruction_following,50,81,none,1,200,2000,0.9,42

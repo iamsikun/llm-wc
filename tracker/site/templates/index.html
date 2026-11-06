@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+{% block title %}{{ site.title }} · {{ site.tagline }}{% endblock %}
+{% block content %}
+{% set featured = (benchmarks | selectattr("key", "equalto", site.featured) | first) or benchmarks[0] %}
+{% set fd = docs[featured.key].get("live") or docs[featured.key]["reference"] %}
+{% set top = fd.models[0] %}
+<section class="home-hero">
+  <div class="wrap">
+    <h1>{{ site.headline }}</h1>
+    <p class="lede">Every leaderboard score comes from a limited set of tasks, so part of it is luck. Sorting by score
+      rewards that luck. The top scores come out inflated, and the order is less certain than it looks.</p>
+    <div class="card key-figure" style="text-align:left">
+      <p class="fig-headline"><strong>{{ featured.label }}.</strong> The top score, <strong>{{ top.raw_score_pct | pct }}%</strong>,
+        adjusts to <strong>{{ (top.raw_score_pct - top.adjustment_pp) | pct }}%</strong>.
+        {% set leaders = fd.models | selectattr("rank_start", "equalto", 1) | list %}
+        {% if leaders | length > 1 %}The {{ leaders | length }} systems tied for #1 each rank anywhere from
+        <strong>#{{ leaders | map(attribute="rank_low_80") | min }} to #{{ leaders | map(attribute="rank_high_80") | max }}</strong>.
+        {% else %}The top system ranks anywhere from <strong>#{{ top.rank_low_80 }} to #{{ top.rank_high_80 }}</strong>.{% endif %}</p>
+      <div class="figure"><svg id="hero-figure" role="img" aria-label="{{ featured.label }}: observed and adjusted scores, and rank ranges, for the top systems"></svg></div>
+      <div class="fig-foot"><p class="fig-caption" id="hero-caption">{{ featured.label }}</p>
+        <button class="linkish" type="button" data-png="hero-figure" data-name="{{ featured.key }}">Download PNG</button></div>
+    </div>
+    {% if updates %}
+    <div class="updates" aria-label="Latest data">
+      <span class="updates-label">Latest data</span>
+      {% for u in updates[:4] %}
+      <a class="update" href="benchmarks/{{ u.key }}.html"><strong>{{ u.label }}</strong> · {{ u.date }} ·
+        {% if u.kind == "unchanged" %}#1 unchanged
+        {% elif u.kind == "new_unresolved" %}new #1, still in the top tier with the previous #1
+        {% elif u.kind == "new" %}new #1, ahead of the previous #1
+        {% elif u.kind == "new_absent" %}new #1 · the previous #1 is not in the current data
+        {% else %}{{ u.tier1 }} of {{ u.n_models }} in the top tier{% endif %}</a>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    {% set ns = namespace(p=0) %}{% for row in fd.rpm %}{% if row[0] > ns.p %}{% set ns.p = row[0] %}{% endif %}{% endfor %}
+    <h2 class="home-section-title">{% if ns.p < 0.5 %}No system ranks #1 in more than {{ (100 * ns.p) | round(0, "ceil") | int }}% of rebuilt leaderboards.
+      {%- else %}The top system ranks #1 in {{ (100 * fd.summary.leader_p_rank_1) | pct(0) }}% of rebuilt leaderboards.{% endif %}</h2>
+    <p class="home-section-sub">The rank probability matrix shows where each system on {{ featured.label }} lands when the
+      leaderboard is rebuilt from resampled tasks. Each row is one system. Each cell is the share of rebuilt leaderboards
+      that place it at that rank.</p>
+    <div class="card key-figure" style="margin-top:0">
+      <div class="figure"><svg id="rpm-figure" role="img" aria-label="{{ featured.label }}: rank probability matrix for the top systems"></svg></div>
+      <div class="rpm-legend" id="rpm-legend"></div>
+      <div class="fig-foot"><p class="fig-caption" id="rpm-caption"></p>
+        <button class="linkish" type="button" data-png="rpm-figure" data-name="{{ featured.key }}-rank-probabilities">Download PNG</button></div>
+    </div>
+  </div>
+</section>
+
+{% if story %}
+<section class="section">
+  <div class="wrap">
+    <h2 class="home-section-title">Since {{ story.first | month }}, {{ featured.label }} has had {{ story.changes }} new #1s.
+      {% if story.unresolved == story.changes %}The tasks could not separate any of them from the #1 it replaced.{% else %}In {{ story.unresolved }} cases, the tasks could not separate the new #1 from the one it replaced.{% endif %}</h2>
+    <p class="home-section-sub">{% if story.unresolved == story.changes %}Each time{% else %}In {{ story.unresolved }} of {{ story.changes }} changes{% endif %}, the previous #1 was still in the new top tier.</p>
+    <div class="card key-figure" style="margin-top:0">
+      <svg class="chart" id="story-chart" role="img" aria-label="Timeline of each #1 on {{ featured.label }}, with a marker at every change of #1"></svg>
+      <p class="story-key"><span>● new #1, still in the top tier with the previous #1</span>{% if story.departed %}<span>○ previous #1 renamed or withdrawn</span>{% endif %}</p>
+      <p class="fig-caption">Each bar is one #1's time at the top of the leaderboard. Hover a bar or a marker for the systems
+        involved. Each handover is judged on the leaderboard snapshot where it happened.</p>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<section class="section">
+  <div class="wrap">
+    <h2 class="home-section-title">Try another leaderboard</h2>
+    <div class="picker" style="margin:0.8rem 0 1.4rem">
+      <label class="sr-only" for="pick">Leaderboard</label>
+      <select id="pick">
+        {% for family, group in benchmarks | groupby("family", default="") %}
+        <optgroup label="{{ family }}">
+          {% for b in group %}<option value="{{ b.key }}"{% if b.key == "tau2_airline" %} selected{% endif %}>{{ b.label }}</option>{% endfor %}
+        </optgroup>
+        {% endfor %}
+      </select>
+      <a id="pick-link" href="benchmarks/tau2_airline.html">Full report →</a>
+    </div>
+    <div class="card key-figure" style="margin-top:0">
+      <div class="big-stats" id="pick-stats"></div>
+      <div class="figure"><svg id="pick-figure" role="img" aria-label="Observed and adjusted scores, and rank ranges, for the selected leaderboard"></svg></div>
+      <div class="fig-foot"><p class="fig-caption" id="pick-caption"></p>
+        <button class="linkish" type="button" data-png="pick-figure" data-name="leaderboard">Download PNG</button></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2 class="home-section-title">Across leaderboards</h2>
+    <p class="home-section-sub">Latest data for each leaderboard. Select a bar to open it.</p>
+    <div class="grid two">
+      <div class="card key-figure" style="margin:0">
+        <p class="fig-title-html">How much the top score is inflated</p>
+        <svg class="chart" id="overview-inflation" role="img" aria-label="Estimated inflation of the top score, by leaderboard"></svg>
+      </div>
+      <div class="card key-figure" style="margin:0">
+        <p class="fig-title-html">How many systems the tasks cannot order at the top</p>
+        <svg class="chart" id="overview-tier" role="img" aria-label="Size of the top tier, by leaderboard"></svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap next-links">
+    <a href="methods.html">How it works</a>
+    <a href="design.html">For benchmark designers</a>
+    <a href="coverage.html">Which leaderboards qualify</a>
+    <a href="about.html">About the paper</a>
+  </div>
+</section>
+{% endblock %}
+{% block scripts %}
+<script>window.SUMMARY = {{ summary | tojson_compact }}; window.FEATURED = {{ site.featured | tojson_compact }}; window.BUILD = {{ build_id | tojson_compact }}; window.STORY = {{ story | tojson_compact }};</script>
+<script src="static/home.js?v={{ v }}"></script>
+{% endblock %}
