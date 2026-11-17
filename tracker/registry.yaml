@@ -16,7 +16,11 @@ site:
   repo_url: https://github.com/iamsikun/llm-wc
   paper_url: null          # set to the arXiv URL at launch
   paper_title: "SOTA or Luck? The Winner's Curse in LLM Leaderboards"
-  authors: [Xu, Thomadsen, Zhang, Zhang]
+  authors:                 # shown on the About page, each linked to the author's website
+    - {name: Sikun Xu, url: "https://iamsikun.github.io/"}
+    - {name: Raphael Thomadsen, url: "https://sites.wustl.edu/thomadsen/"}
+    - {name: Dennis J. Zhang, url: "https://denniszhang.org"}
+    - {name: Heng Zhang, url: "https://sites.google.com/view/heng-zhang/home"}
   update_cadence: monthly
   featured: swebench_verified   # the leaderboard in the home page's key figure
 

@@ -3,9 +3,8 @@
 {% block content %}
 <section class="bench-head">
   <div class="wrap">
-    <p class="eyebrow">About</p>
     <h1 style="font-size:clamp(1.9rem,4vw,2.6rem)">{{ site.paper_title }}</h1>
-    <p class="lede">{{ site.authors | join(", ") }}</p>
+    <p class="lede">{% for a in site.authors %}<a href="{{ a.url }}">{{ a.name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>
     <div class="actions">
       {% if site.paper_url %}<a class="btn primary" href="{{ site.paper_url }}">Read the paper</a>
       {% else %}<span class="btn" aria-disabled="true">Paper · coming soon</span>{% endif %}

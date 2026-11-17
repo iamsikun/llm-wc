@@ -13,7 +13,7 @@ def site(tmp_path_factory):
 
 
 def test_every_page_is_built(site):
-    for page in ("index.html", "benchmarks.html", "methods.html", "design.html", "coverage.html",
+    for page in ("index.html", "benchmarks.html", "methods.html", "design.html",
                  "about.html", "404.html", ".nojekyll", "og/home.png"):
         assert (site / page).is_file()
     for key, spec in registry.settings().items():

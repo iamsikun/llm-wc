@@ -46,7 +46,7 @@
       const wl = el("text", { x: wx, y: 12, "text-anchor": wx > width - 60 ? "end" : "middle", class: "val" }, svg);
       wl.textContent = "winner";
     }
-    $("sim-last").textContent = L ? `${signed(L.infl, 1)} pp` : "—";
+    $("sim-last").textContent = L ? `${signed(L.infl, 2)} pp` : "—";
     $("sim-avg").textContent = state.draws ? `${signed(state.sum / state.draws, 2)} pp` : "—";
     $("sim-count").textContent = state.draws.toLocaleString();
   }

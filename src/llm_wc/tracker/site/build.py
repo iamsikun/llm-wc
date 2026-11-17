@@ -2,7 +2,7 @@
 
 Inputs (all read only): ``tracker/registry.yaml``, the reference edition in
 ``results/ruler_audit``, live reports in ``tracker/results``, history CSVs,
-``tracker/status.json``, ``tracker/candidates.yaml``, and the templates and
+``tracker/status.json``, and the templates and
 assets in ``tracker/site``. Output is plain HTML, CSS, JS, JSON, and CSV with
 relative links, so it works on localhost and under a GitHub Pages subpath.
 
@@ -149,53 +149,9 @@ def collect(out: Path) -> dict:
     if story and not story["changes"]:
         story = None
     return {"site": reg["site"], "analysis": reg["analysis"], "benchmarks": benchmarks, "docs": all_docs,
-            "story": story, "updates": _updates(benchmarks, all_docs),
-            "registry_sources": list(reg["sources"].items()), "source_data": _source_data(benchmarks, reg["sources"]),
-            "candidates": registry.candidates(), "status": status,
+            "story": story,
+            "registry_sources": list(reg["sources"].items()),
             "criteria": {"min_tasks": MIN_TASKS, "min_models": MIN_MODELS}}
-
-
-def _source_data(benchmarks: list[dict], sources: dict) -> dict:
-    """Per source: date and link of the newest upstream revision shown on the site."""
-    out: dict = {}
-    for b in benchmarks:
-        e = b["default"]
-        up = e.get("upstream") or {}
-        stamp = str(up.get("date") or e["snapshot_id"])
-        if b["source"] not in out or stamp > out[b["source"]]["stamp"]:
-            out[b["source"]] = {"stamp": stamp, "date": e["date"],
-                                "url": up.get("url") or sources.get(b["source"], {}).get("homepage")}
-    return out
-
-
-def _leaders(doc: dict) -> list[dict]:
-    return [m for m in doc["models"] if m["rank_start"] == 1]
-
-
-def _updates(benchmarks: list[dict], docs: dict) -> list[dict]:
-    """What changed at the top of each leaderboard with new data, newest first."""
-    out = []
-    for b in benchmarks:
-        live, prev = docs[b["key"]].get("live"), docs[b["key"]].get("reference")
-        if live is None:
-            continue
-        new, item = _leaders(live), {"key": b["key"], "label": b["label"], "date": _edition_meta(live)["date"],
-                                     "sort": live["snapshot_id"], "n_models": live["n_models"]}
-        item["leader"] = " and ".join(m["model"] for m in new)
-        if prev is None:
-            item["kind"] = "first"
-        else:
-            old = _leaders(prev)
-            old_ids, new_ids = {m["model_id"] for m in old}, {m["model_id"] for m in new}
-            tier1 = {m["model_id"] for m in live["models"] if m["tier_80"] == 1}
-            present = {m["model_id"] for m in live["models"]}
-            item["old"] = " and ".join(m["model"] for m in old)
-            item["kind"] = ("unchanged" if old_ids & new_ids else
-                            "new_absent" if not old_ids & present else
-                            "new_unresolved" if old_ids & tier1 else "new")
-        item["tier1"] = sum(m["tier_80"] == 1 for m in live["models"])
-        out.append(item)
-    return sorted(out, key=lambda x: x["sort"], reverse=True)
 
 
 def _summary_payload(ctx: dict) -> list[dict]:
@@ -211,7 +167,7 @@ def _summary_payload(ctx: dict) -> list[dict]:
 def _env() -> Environment:
     env = Environment(loader=FileSystemLoader(SITE_SRC / "templates"), autoescape=select_autoescape(["html"]),
                       trim_blocks=True, lstrip_blocks=True)
-    env.filters["pp"] = lambda v, d=2: f"{v:.{d}f}"
+    env.filters["pp"] = lambda v, d=2: f"{v:.{d}f}".replace("-", "\u2212")  # true minus sign
     env.filters["pct"] = lambda v, d=1: f"{v:.{d}f}"
     env.filters["num"] = lambda v: f"{int(v):,}"
     # JSON for inline <script> blocks: "<" is escaped so data can never close the tag.
@@ -242,7 +198,6 @@ PAGES = [
     ("benchmarks.html", "benchmarks.html", "benchmarks"),
     ("methods.html", "methods.html", "methods"),
     ("design.html", "design.html", "design"),
-    ("coverage.html", "coverage.html", "coverage"),
     ("about.html", "about.html", "about"),
     ("404.html", "404.html", ""),
 ]

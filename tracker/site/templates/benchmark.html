@@ -5,7 +5,6 @@
 <section class="bench-head">
   <div class="wrap">
     <div class="crumbs"><a href="../benchmarks.html">Leaderboards</a> / {{ b.family }}</div>
-    <p class="eyebrow">{{ b.family }}</p>
     <h1 style="font-size:clamp(1.9rem,4.2vw,2.8rem);max-width:none">{{ b.label }}</h1>
     <p class="lede" style="margin-top:0.25rem">{{ b.summary }}</p>
     <div class="edition-bar">
@@ -22,7 +21,7 @@
       <span class="edition-note" id="edition-note"></span>
     </div>
     {% if b.status and b.status.result in ("unavailable", "failed") %}
-    <p class="callout" style="margin-top:0"><strong>Updates paused.</strong> The last check ({{ b.status.checked_at | date }})
+    <p class="note"><strong>Updates paused.</strong> The last check ({{ b.status.checked_at | date }})
       could not fetch new data: {{ b.status.reason }}. The report below is the most recent data available.</p>
     {% endif %}
     <p class="headline" id="headline">Loading the report…</p>
@@ -31,32 +30,36 @@
 
 <section class="section" style="padding-top:0.5rem">
   <div class="wrap">
-    <div class="card key-figure" style="margin-top:0;margin-bottom:1.25rem">
-      <div class="figure"><svg id="key-figure" role="img" aria-label="Observed and adjusted scores, and rank ranges, for the top systems"></svg></div>
-      <div class="fig-foot"><p class="fig-caption">Hover a row for details. The full leaderboard is below.</p>
-        <button class="linkish" type="button" data-png="key-figure" data-name="{{ b.key }}">Download PNG</button></div>
-    </div>
+    <figure class="fig">
+      <div class="fig-head">
+        <p class="fig-title-html">RULER (Rank Uncertainty and Leaderboard Evaluation Report) for {{ b.label }}</p>
+        <button class="linkish" type="button" data-png="key-figure" data-name="{{ b.key }}">PNG ↓</button>
+      </div>
+      <div class="figure"><svg id="key-figure" role="img" aria-label="Observed and adjusted scores, and rank ranges, for the top agents"></svg></div>
+      <figcaption class="fig-caption"><span class="fig-num">Figure 1.</span> ○ observed score, ● adjusted for the rank-induced bias. Each rank range holds the rank
+        with 80% probability, estimated by bootstrap. The full leaderboard is below.</figcaption>
+    </figure>
     <div class="stats" id="stats"></div>
 
-    <div class="panel" style="margin-top:1.25rem" id="rpm-panel">
+    <div class="panel" id="rpm-panel">
       <div class="panel-head"><div><h2>Rank probability matrix</h2>
-        <p>Each row is one system, in observed order. Each cell is the share of leaderboards rebuilt from resampled tasks
-          that place the system at that rank. Darker means more often. The outlined cell is the system's observed
+        <p>Each row is one agent, in observed order. Each cell is the probability that the agent takes that rank,
+          estimated by bootstrap. Darker means more likely. The outlined cell is the agent's observed
           rank.</p></div>
-        <div class="fig-tools"><label class="field">Systems
+        <div class="fig-tools"><label class="field">Agents
           <select id="rpm-size"><option value="tier1">Top tier</option><option value="15" selected>Top 15</option><option value="30">Top 30</option><option value="60">Top 60</option><option value="all">All</option></select></label>
-          <button class="linkish" type="button" data-png="rpm-figure" data-name="{{ b.key }}-rank-probabilities">Download PNG</button></div>
+          <button class="linkish" type="button" data-png="rpm-figure" data-name="{{ b.key }}-rank-probabilities">PNG ↓</button></div>
       </div>
-      <div class="rpm-wrap"><svg id="rpm-figure" role="img" aria-label="Rank probability matrix: share of resampled leaderboards placing each system at each rank"></svg></div>
+      <div class="rpm-wrap"><svg id="rpm-figure" role="img" aria-label="Rank probability matrix: probability of each agent taking each rank"></svg></div>
       <div class="rpm-legend" id="rpm-legend"></div>
     </div>
 
-    <div class="panel" style="margin-top:1.25rem" id="leaderboard-panel">
+    <div class="panel" id="leaderboard-panel">
       <div class="panel-head">
         <div>
           <h2>Full leaderboard</h2>
-          <p>Every system in observed order, with its adjusted score, its rank range, and its tier. Shaded bands mark
-            tiers.</p>
+          <p>Every agent in observed order, with its adjusted score, its rank range, and its tier. Shaded bands mark
+            tiers, and tier 1 is the top tier.</p>
         </div>
       </div>
       <div class="controls">
@@ -64,19 +67,19 @@
         <label class="field">Rank mass
           <select id="lb-level"><option value="80">80%</option><option value="90">90%</option><option value="95">95%</option><option value="99">99%</option></select></label>
         <label class="field">Show
-          <select id="lb-rows"><option value="25">Top 25</option><option value="50" selected>Top 50</option><option value="100">Top 100</option><option value="all">All</option></select></label>
-        <label class="check"><input type="checkbox" id="lb-tier1"> Tier 1 only</label>
+          <select id="lb-rows"><option value="25" selected>Top 25</option><option value="50">Top 50</option><option value="100">Top 100</option><option value="all">All</option></select></label>
+        <label class="check"><input type="checkbox" id="lb-tier1"> Top tier only</label>
       </div>
       <div class="table-wrap">
         <table class="leaderboard-table">
           <thead><tr>
-            <th class="num" title="Observed rank. Tied systems share a range">Rank</th>
+            <th class="num" title="Observed rank. Tied agents share a range">Rank</th>
             <th>Model</th>
             <th class="num" title="Raw score (%)">Raw</th>
             <th class="num" title="Raw score minus the tie-averaged position adjustment">Adjusted</th>
-            <th class="num" title="Tie-averaged m-out-of-N position adjustment (pp)">Adjustment</th>
+            <th class="num" title="Tie-averaged position adjustment (pp)">Adjustment</th>
             <th title="Central rank-mass interval; the dot is the observed rank">Rank interval <span id="lb-axis" style="text-transform:none;letter-spacing:0;font-weight:500"></span></th>
-            <th class="num">Tier</th>
+            <th class="num" title="Tier 1 is the top tier">Tier</th>
             <th class="num" title="Bootstrap probability of finishing in the top five">P(top 5)</th>
           </tr></thead>
           <tbody id="lb-body"></tbody>
@@ -85,53 +88,52 @@
       <p class="small muted" id="lb-count" style="margin:0.6rem 0 0"></p>
     </div>
 
-    <div class="panel" style="margin-top:1.25rem" id="compare-panel" hidden>
-      <div class="panel-head"><div><h2>Compare two systems</h2>
-        <p>How often one system ranks above another across rebuilt leaderboards (top {{ 30 }} systems). It uses the
-          same resamples as the rest of the report.</p></div></div>
+    <div class="panel" id="compare-panel" hidden>
+      <div class="panel-head"><div><h2>Compare two agents</h2>
+        <p>The probability that one agent ranks above another (top {{ 30 }} agents), estimated by the same
+          bootstrap as the rest of the report.</p></div></div>
       <div class="controls">
-        <label class="field" style="flex:1 1 260px">System A<select id="cmp-a"></select></label>
-        <label class="field" style="flex:1 1 260px">System B<select id="cmp-b"></select></label>
+        <label class="field" style="flex:1 1 260px">Agent A<select id="cmp-a"></select></label>
+        <label class="field" style="flex:1 1 260px">Agent B<select id="cmp-b"></select></label>
       </div>
       <p class="cmp-out" id="cmp-out" aria-live="polite"></p>
       <div class="cmp-track"><div class="cmp-bar" id="cmp-bar"></div></div>
     </div>
 
-    <div class="panel" style="margin-top:1.25rem">
+    <div class="panel">
         <div class="panel-head"><div><h2>Inflation at each position</h2>
-          <p>RULER's estimate of how much each position's score is inflated (negative values mean deflated). The ordinary
-            bootstrap, which resamples all {% filter tex %}N{% endfilter %} tasks, is shown for comparison.</p></div></div>
-        <div class="chart-legend"><span class="key"><span class="sw"></span>RULER ({% filter tex %}m{% endfilter %}-out-of-{% filter tex %}N{% endfilter %})</span><span class="key"><span class="sw s2"></span>Ordinary bootstrap ({% filter tex %}N{% endfilter %}-out-of-{% filter tex %}N{% endfilter %})</span></div>
+          <p>RULER's estimate of how much the score at each position of the current leaderboard is inflated. Each bar is
+            one position, from #1 on the left. Bars below zero mean deflated.</p></div></div>
         <svg class="chart" id="pos-chart" role="img" aria-label="Score adjustment by leaderboard position"></svg>
     </div>
 
     {% if b.history_points >= 2 %}
-    <div class="panel" style="margin-top:1.25rem" id="history-panel">
+    <div class="panel" id="history-panel">
       <div class="panel-head"><div><h2>Over time</h2>
         <p>RULER on every past snapshot of this leaderboard, with the same settings.</p></div></div>
       <div class="grid three">
         <div><h3 style="font-family:var(--sans);font-size:0.95rem">Inflation at #1</h3><svg class="chart" id="hist-adj"></svg></div>
-        <div><h3 style="font-family:var(--sans);font-size:0.95rem">Systems in the top tier</h3><svg class="chart" id="hist-tier"></svg></div>
-        <div><h3 style="font-family:var(--sans);font-size:0.95rem">Systems on the leaderboard</h3><svg class="chart" id="hist-j"></svg></div>
+        <div><h3 style="font-family:var(--sans);font-size:0.95rem">Number of LLM agents in the top tier</h3><svg class="chart" id="hist-tier"></svg></div>
+        <div><h3 style="font-family:var(--sans);font-size:0.95rem">Number of LLM agents on the leaderboard</h3><svg class="chart" id="hist-j"></svg></div>
       </div>
     </div>
     {% endif %}
 
-    <div class="grid two" style="margin-top:1.25rem">
-      <div class="panel" style="margin:0">
+    <div class="grid two panel-pair">
+      <div class="panel">
         <h2>About this leaderboard</h2>
         <p class="muted">{{ b.description }}</p>
         <dl class="meta" id="meta">
           <dt>Score</dt><dd>{{ b.metric }}</dd>
           <dt>Task population</dt><dd>{{ b.task_population }}</dd>
           <dt>Resampling unit</dt><dd>{{ b.resampling_unit }}</dd>
-          <dt>Ties</dt><dd>Systems with equal observed scores stay together. Systems tied in a rebuilt leaderboard split the credit equally among the ranks they occupy.</dd>
+          <dt>Ties</dt><dd>Agents with equal observed scores stay together. Agents tied in a bootstrap resample split the credit equally among the ranks they occupy.</dd>
           <dt>Tier rule</dt><dd>Walking down the observed order, a tier grows while all its members' rank ranges share at least one rank.</dd>
           <dt>Upstream</dt><dd>{{ b.source_meta.upstream }}{% if b.overview_url %} · <a href="{{ b.overview_url }}">leaderboard</a>{% endif %}</dd>
           <dt>License</dt><dd>{{ b.source_meta.license }}</dd>
         </dl>
       </div>
-      <div class="panel" style="margin:0">
+      <div class="panel">
         <h2>This edition</h2>
         <dl class="meta" id="edition-meta"></dl>
         <h3 style="margin-top:1.4rem;font-family:var(--sans);font-size:1rem">Limitations</h3>
@@ -139,8 +141,9 @@
         <h3 style="margin-top:1.4rem;font-family:var(--sans);font-size:1rem">Download</h3>
         <div class="downloads" id="downloads"></div>
         <h3 style="margin-top:1.4rem;font-family:var(--sans);font-size:1rem">Embed a badge</h3>
-        <p style="margin:0 0 0.5rem"><img src="../badges/{{ b.key }}.svg" alt="RULER badge for {{ b.label }}" height="20"></p>
-        <pre class="small" style="margin:0"><code>[![RULER]({{ site.base_url }}badges/{{ b.key }}.svg)]({{ site.base_url }}benchmarks/{{ b.key }}.html)</code></pre>
+        <p style="margin:0 0 0.5rem"><img class="badge" src="../badges/{{ b.key }}.svg" alt="RULER badge for {{ b.label }}" height="20"></p>
+        <div class="copy-block"><pre class="small"><code id="badge-code">[![RULER]({{ site.base_url }}badges/{{ b.key }}.svg)]({{ site.base_url }}benchmarks/{{ b.key }}.html)</code></pre>
+          <button class="btn small" type="button" data-copy="#badge-code">Copy</button></div>
         <div id="excluded"></div>
       </div>
     </div>

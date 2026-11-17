@@ -3,75 +3,90 @@
 {% block content %}
 <section class="bench-head">
   <div class="wrap">
-    <p class="eyebrow">For benchmark designers</p>
-    <h1 style="font-size:clamp(1.9rem,4vw,2.6rem)">How many tasks does a leaderboard need?</h1>
-    <p class="lede">A benchmark's tasks set how finely it can rank models. Plan enough tasks for the precision you need,
-      and publish the uncertainty that remains.</p>
+    <h1 style="font-size:clamp(1.9rem,4vw,2.6rem)">How many tasks, and how large a lead?</h1>
+    <p class="lede">A benchmark's tasks set how finely it can rank models. One rule answers two questions: how many
+      tasks a benchmark needs, and how far ahead a new #1 must be to claim the top spot.</p>
   </div>
 </section>
 
 <section class="section" style="padding-top:0.5rem">
-  <div class="wrap grid two" style="align-items:start">
-    <div class="panel" style="margin:0" id="sizing">
-      <p class="eyebrow">Task-pool sizing</p>
-      <h2>Tasks needed for a target inflation</h2>
-      <p class="muted">Under the exact-tier approximation, the top score's expected inflation is about {% filter tex %}\delta/\sqrt{N}{% endfilter %}, so
-        halving it takes about four times as many tasks. To reach a target inflation {% filter tex %}\varepsilon{% endfilter %}, plan</p>
-      {% filter tex(true) %}N \gtrsim (\delta/\varepsilon)^2.{% endfilter %}
-      <p class="muted">Here {% filter tex %}\delta{% endfilter %} is the winning gap within the top tier. The calculator estimates it from the
+  <div class="wrap">
+    <div style="max-width:46rem">
+      <p>Under the exact-tier approximation, the top score's expected inflation with {% filter tex %}N{% endfilter %} tasks is about</p>
+      {% filter tex(true) %}b_N(1) \approx \delta/\sqrt{N}.{% endfilter %}
+      <p>Here {% filter tex %}\delta{% endfilter %} is the winning gap within the top tier. Both calculators estimate it from a
         leaderboard's current inflation at #1, {% filter tex %}\hat{b}_N(1){% endfilter %}, as {% filter tex %}\hat\delta = \sqrt{N}\,\hat{b}_N(1){% endfilter %}.</p>
       <div class="controls" style="margin-top:1rem">
-        <label class="field" style="flex:1 1 220px">Leaderboard<select id="size-bench"></select></label>
-        <label class="field" style="flex:1 1 160px"><span>Target inflation at #1, {% filter tex %}\varepsilon{% endfilter %} (pp)</span><input type="number" id="size-eps" min="0.01" max="10" step="0.05" value="0.5"></label>
+        <label class="field" style="flex:0 1 320px">Leaderboard<select id="size-bench"></select></label>
       </div>
-      <div class="stats" style="grid-template-columns:repeat(auto-fit,minmax(150px,1fr))">
-        <div class="stat"><div class="label">Tasks needed</div><div class="value" id="size-n">—</div><div class="note" id="size-n-note"></div></div>
-        <div class="stat"><div class="label">Inflation at #1 today</div><div class="value" id="size-now">—</div><div class="note" id="size-now-note"></div></div>
-      </div>
-      <div class="table-wrap" style="margin-top:1rem">
-        <table><thead><tr><th class="num">Target {% filter tex %}\varepsilon{% endfilter %} (pp)</th><th class="num">Tasks needed</th><th class="num">× today's tasks</th></tr></thead>
-          <tbody id="size-table"></tbody></table>
-      </div>
-      <p class="small muted" style="margin-top:0.8rem">These are planning sizes. They hold the models, the task
-        distribution, and the correlations between models fixed. Close gaps or a changing model pool change the
-        extrapolation.</p>
+      <p class="small muted" id="size-basis" style="margin-top:0.6rem"></p>
     </div>
 
-    <div class="panel" style="margin:0">
-      <p class="eyebrow">Reporting checklist</p>
-      <h2>What to publish with a ranking</h2>
-      <ul class="checklist">
-        <li><span class="tick">✓</span><div><strong>Per-task scores for every model</strong><span class="d">The task-by-model
-          matrix makes uncertainty analysis possible, including this one. Give tasks stable IDs.</span></div></li>
-        <li><span class="tick">✓</span><div><strong>The same task pool for every entry</strong><span class="d">If some
-          models ran on a subset, state which.</span></div></li>
-        <li><span class="tick">✓</span><div><strong>Adjusted scores next to raw scores</strong><span class="d">The raw
-          leader's score tends to overstate its expected score on fresh tasks. Show the adjustment at each position.</span></div></li>
-        <li><span class="tick">✓</span><div><strong>Rank ranges and tiers</strong><span class="d">Say which models the
-          tasks cannot order, at a stated level such as 80%.</span></div></li>
-        <li><span class="tick">✓</span><div><strong>The rank probability matrix</strong><span class="d">Show how ranking
-          uncertainty spreads beyond the leaders.</span></div></li>
-        <li><span class="tick">✓</span><div><strong>Score definition and target population</strong><span class="d">What
-          a task is, how it is scored, and what population the tasks stand for, including judge and version
-          details.</span></div></li>
-        <li><span class="tick">✓</span><div><strong>Dependence structure</strong><span class="d">Clusters such as
-          repositories or domains, so others can resample at the right level.</span></div></li>
-        <li><span class="tick">✓</span><div><strong>Versioned snapshots</strong><span class="d">Date every release of the
-          leaderboard so results can be reproduced as entries are added.</span></div></li>
-      </ul>
+    <div class="grid two calc-pair" style="margin-top:1.75rem">
+      <div class="tool" id="sizing">
+        <h2>How many tasks does a leaderboard need?</h2>
+        <p class="muted">Halving the inflation takes about four times as many tasks. To bring the inflation at #1
+          down to a target <span class="nowrap">{% filter tex %}\varepsilon{% endfilter %}, plan</span></p>
+        {% filter tex(true) %}N \gtrsim (\delta/\varepsilon)^2.{% endfilter %}
+        <div class="controls" style="margin-top:1rem">
+          <label class="field" style="flex:1 1 200px"><span>Target inflation at #1, {% filter tex %}\varepsilon{% endfilter %} (pp)</span><input type="number" id="size-eps" min="0.01" max="10" step="0.05" value="0.5"></label>
+        </div>
+        <div class="stats stats-inline">
+          <div class="stat"><div class="label">Tasks needed</div><div class="value" id="size-n">—</div><div class="note" id="size-n-note"></div></div>
+          <div class="stat"><div class="label">Compared with today</div><div class="value" id="size-x">—</div><div class="note" id="size-x-note"></div></div>
+        </div>
+        <div class="table-wrap flat" style="margin-top:1rem">
+          <table><thead><tr><th class="num">Target {% filter tex %}\varepsilon{% endfilter %} (pp)</th><th class="num">Tasks needed</th><th class="num" title="Tasks needed as a multiple of today's tasks">× today</th></tr></thead>
+            <tbody id="size-table"></tbody></table>
+        </div>
+      </div>
+
+      <div class="tool" id="margin">
+        <h2>How large a lead does a new #1 need?</h2>
+        <p class="muted">A lead smaller than the top score's expected inflation is within the luck of the draw. For a
+          confident claim with {% filter tex %}N{% endfilter %} tasks, a new #1 should beat the previous best score by
+          more than</p>
+        {% filter tex(true) %}\delta/\sqrt{N}.{% endfilter %}
+        <div class="controls" style="margin-top:1rem">
+          <label class="field" style="flex:1 1 200px"><span>Tasks, {% filter tex %}N{% endfilter %}</span><input type="number" id="margin-n" min="10" max="1000000" step="10"></label>
+        </div>
+        <div class="stats stats-inline">
+          <div class="stat"><div class="label">Lead needed</div><div class="value" id="margin-lead">—</div><div class="note" id="margin-lead-note"></div></div>
+          <div class="stat"><div class="label">Score to beat</div><div class="value" id="margin-beat">—</div><div class="note" id="margin-beat-note"></div></div>
+        </div>
+        <div class="table-wrap flat" style="margin-top:1rem">
+          <table><thead><tr><th class="num">Tasks</th><th class="num" title="Tasks as a multiple of today's tasks">× today</th><th class="num">Lead needed (pp)</th></tr></thead>
+            <tbody id="margin-table"></tbody></table>
+        </div>
+      </div>
     </div>
+    <p class="small muted" style="margin-top:1rem;max-width:46rem">These are planning figures. They hold the models, the
+      task distribution, and the correlations between models fixed. Close gaps or a changing model pool change the
+      extrapolation. A lead larger than the inflation is not the end of the check: the new #1's
+      <a href="benchmarks.html">RULER report</a> shows whether it is separated from its closest competitors.</p>
   </div>
 </section>
 
-<section class="section">
+<section class="section" id="share">
   <div class="wrap prose">
-    <h2>Share your leaderboard's data</h2>
-    <p>Any table with one row per (task, model) pair and a score in [0, 1] works, in CSV, JSON Lines, or Parquet:</p>
+    <h2>Add a leaderboard</h2>
+    <p>The tracker can analyze a leaderboard that publishes every model's score on every task. It needs:</p>
+    <ol>
+      <li>Per-task scores: each model has a score on each task.</li>
+      <li>Stable task IDs: each (task, model) pair appears once, or repeats follow a stated rule, such as averaging the
+        trials or keeping one submission.</li>
+      <li>A shared task pool that every included model was scored on. RULER uses the largest such block, as the paper
+        does for LiveBench.</li>
+      <li>At least {{ criteria.min_tasks }} tasks and {{ criteria.min_models }} models in that pool.</li>
+      <li>Scores on a fixed scale: numbers in [0, 1], or in [0, 100] or [1, 10], which are rescaled.</li>
+    </ol>
+    <p>Any table with one row per (task, model) pair works, in CSV, JSON Lines, or Parquet:</p>
     <pre><code>task_id,model_id,score
 django__django-11099,model-a,1
 django__django-11099,model-b,0
 astropy__astropy-12907,model-a,0.5</code></pre>
-    <p>Check it with the feasibility probe, then propose it on the <a href="coverage.html">coverage page</a>:</p>
+    <p>Check it with the feasibility probe, then
+      <a href="{{ site.repo_url }}/issues/new?labels=benchmark-candidate&amp;title=Benchmark%20candidate%3A%20">propose it as a GitHub issue</a>:</p>
     <pre><code>uv run python -m llm_wc.tracker probe scores.csv
 uv run python -m llm_wc.tracker probe hf:your-org/your-leaderboard-results</code></pre>
   </div>

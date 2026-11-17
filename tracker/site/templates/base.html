@@ -15,6 +15,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="{{ site.base_url }}{{ og }}">
   <link rel="icon" href="{{ root }}static/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="{{ root }}static/SourceSerif4-Bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="{{ root }}static/style.css?v={{ v }}">
   <script>
     (function () {
@@ -38,7 +39,6 @@
         <a href="{{ root }}benchmarks.html"{% if nav == "benchmarks" %} aria-current="page"{% endif %}>Leaderboards</a>
         <a href="{{ root }}methods.html"{% if nav == "methods" %} aria-current="page"{% endif %}>How it works</a>
         <a href="{{ root }}design.html"{% if nav == "design" %} aria-current="page"{% endif %}>For designers</a>
-        <a href="{{ root }}coverage.html"{% if nav == "coverage" %} aria-current="page"{% endif %}>Coverage</a>
         <a href="{{ root }}about.html"{% if nav == "about" %} aria-current="page"{% endif %}>About</a>
         <button class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
           <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13Zm0 1.5v10a5 5 0 0 1 0-10Z" fill="currentColor"/></svg>

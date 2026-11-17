@@ -46,10 +46,11 @@ def og_image(doc: dict, label: str, path: Path, title: str, url: str) -> None:
         ax.grid(axis="x", color=GRID, lw=1)
         ax.set_axisbelow(True)
     for y, r, a in zip(ys, raw, adjs):
-        ax1.plot([r, a], [y, y], color=ACCENT, lw=2, zorder=2)
+        ax1.annotate("", xy=(a, y), xytext=(r, y), zorder=2,
+                     arrowprops=dict(arrowstyle="-|>", color=ACCENT, lw=2, mutation_scale=12, shrinkA=0, shrinkB=5))
     ax1.scatter(raw, ys, s=55, facecolor=BG, edgecolor=INK, lw=1.6, zorder=3)
     ax1.scatter(adjs, ys, s=60, color=ACCENT, zorder=4)
-    ax1.set_title("The top scores are inflated", loc="left", fontsize=15, fontweight="bold", color=INK)
+    ax1.set_title("Score Adjustment", loc="left", fontsize=15, fontweight="bold", color=INK)
     ax1.xaxis.set_major_formatter(matplotlib.ticker.FuncFormatter(lambda v, _: f"{v:g}%"))
     for y, m in zip(ys, rows):
         ax2.plot([m["rank_low_80"], m["rank_high_80"]], [y, y], color=ACCENT if m["tier_80"] == 1 else MUTED,
@@ -60,7 +61,7 @@ def og_image(doc: dict, label: str, path: Path, title: str, url: str) -> None:
     step = max(1, int(round(rmax / 4 / 5)) * 5) if rmax > 8 else 1
     ax2.set_xticks([1] + list(range(step, rmax + 1, step))[(1 if step == 1 else 0):])
     ax2.xaxis.set_major_formatter(matplotlib.ticker.FuncFormatter(lambda v, _: f"#{int(v)}" if v >= 1 else ""))
-    ax2.set_title("The order is uncertain", loc="left", fontsize=15, fontweight="bold", color=INK)
+    ax2.set_title("Rank Interval", loc="left", fontsize=15, fontweight="bold", color=INK)
     for y, m in zip(ys, rows):
         name = m["model"] if len(m["model"]) <= 30 else m["model"][:29] + "…"
         fig.text(0.285, 0.12 + 0.6 * (k - 0.5 - y) / k, name, ha="right", va="center", fontsize=11.5, color=INK)
