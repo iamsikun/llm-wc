@@ -80,7 +80,7 @@ def build_history(keys: list[str] | None = None, verbose: bool = True) -> None:
             for sid, path in src.history_snapshots():
                 if sid in known:
                     continue
-                snap = _wide_snapshot(src.key, sid, _read_wide(path), {})
+                snap = _wide_snapshot(src.key, sid, _read_wide(path, src.variant), {})
                 matrix = build_matrix(snap, key, spec)
                 if matrix.obs.shape[1] < 2:
                     continue
@@ -125,7 +125,7 @@ def build_tier_history(keys: list[str] | None = None, verbose: bool = True) -> N
         if not isinstance(src, SweBenchClassic):
             continue
         out = read_tiers(key)
-        snaps = [(sid, lambda p=path, sid=sid: _wide_snapshot(src.key, sid, _read_wide(p), {}))
+        snaps = [(sid, lambda p=path, sid=sid: _wide_snapshot(src.key, sid, _read_wide(p, src.variant), {}))
                  for sid, path in src.history_snapshots()]
         snaps += [(d.name, lambda d=d: read_snapshot(d)) for d in list_snapshots(src.key)]
         for sid, load in snaps:

@@ -694,7 +694,8 @@
    "gemini-3-pro",
    "minimax-2-5",
    "kimi-k2-5",
-   "claude-4-5-sonnet"
+   "claude-4-5-sonnet",
+   "gpt-5-2-high-reasoning"
   ],
   "models": [
    "claude-4-5-haiku",

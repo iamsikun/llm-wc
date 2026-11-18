@@ -6,7 +6,9 @@
    "globant-code-fixer-agent"
   ],
   "tier1": [
-   "globant-code-fixer-agent"
+   "globant-code-fixer-agent",
+   "zencoder-2025-03-10",
+   "agentless-lite-claude-3-5-sonnet"
   ],
   "models": [
    "agentless-lite-claude-3-5-sonnet",
@@ -26,7 +28,9 @@
    "globant-code-fixer-agent"
   ],
   "tier1": [
-   "globant-code-fixer-agent"
+   "globant-code-fixer-agent",
+   "zencoder-2025-03-10",
+   "agentless-lite-claude-3-5-sonnet"
   ],
   "models": [
    "agentless-lite-claude-3-5-sonnet",
@@ -46,7 +50,9 @@
    "globant-code-fixer-agent"
   ],
   "tier1": [
-   "globant-code-fixer-agent"
+   "globant-code-fixer-agent",
+   "zencoder-2025-03-10",
+   "agentless-lite-claude-3-5-sonnet"
   ],
   "models": [
    "agentless-lite-claude-3-5-sonnet",
@@ -66,7 +72,9 @@
    "globant-code-fixer-agent"
   ],
   "tier1": [
-   "globant-code-fixer-agent"
+   "globant-code-fixer-agent",
+   "zencoder-2025-03-10",
+   "agentless-lite-claude-3-5-sonnet"
   ],
   "models": [
    "agentless-lite-claude-3-5-sonnet",
@@ -86,7 +94,9 @@
    "globant-code-fixer-agent"
   ],
   "tier1": [
-   "globant-code-fixer-agent"
+   "globant-code-fixer-agent",
+   "zencoder-2025-03-10",
+   "agentless-lite-claude-3-5-sonnet"
   ],
   "models": [
    "agentless-lite-claude-3-5-sonnet",
@@ -107,7 +117,8 @@
   ],
   "tier1": [
    "zencoder-2025-04-01",
-   "globant-code-fixer-agent"
+   "globant-code-fixer-agent",
+   "zencoder-2025-03-10"
   ],
   "models": [
    "agentless-lite-claude-3-5-sonnet",
@@ -130,7 +141,8 @@
   ],
   "tier1": [
    "zencoder-2025-04-01",
-   "globant-code-fixer-agent"
+   "globant-code-fixer-agent",
+   "zencoder-2025-03-10"
   ],
   "models": [
    "agentless-lite-claude-3-5-sonnet",
@@ -153,7 +165,8 @@
   ],
   "tier1": [
    "zencoder-2025-04-01",
-   "globant-code-fixer-agent"
+   "globant-code-fixer-agent",
+   "zencoder-2025-03-10"
   ],
   "models": [
    "agentless-lite-claude-3-5-sonnet",
@@ -176,7 +189,8 @@
   ],
   "tier1": [
    "zencoder-2025-04-01",
-   "globant-code-fixer-agent"
+   "globant-code-fixer-agent",
+   "zencoder-2025-03-10"
   ],
   "models": [
    "agentless-lite-claude-3-5-sonnet",
@@ -199,7 +213,8 @@
   ],
   "tier1": [
    "zencoder-2025-04-01",
-   "globant-code-fixer-agent"
+   "globant-code-fixer-agent",
+   "zencoder-2025-03-10"
   ],
   "models": [
    "agentless-lite-claude-3-5-sonnet",
@@ -222,7 +237,8 @@
   ],
   "tier1": [
    "zencoder-2025-04-01",
-   "globant-code-fixer-agent"
+   "globant-code-fixer-agent",
+   "zencoder-2025-03-10"
   ],
   "models": [
    "agentless-lite-claude-3-5-sonnet",

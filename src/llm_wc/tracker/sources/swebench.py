@@ -11,7 +11,8 @@ from pathlib import Path
 
 import pandas as pd
 
-from llm_wc.benchmarks import RESOURCES, SWE_SNAPSHOT, extract_repo, load_settings
+from llm_wc.benchmarks import RESOURCES, SWE_EXCLUDED_TASKS, SWE_SNAPSHOT, extract_repo, load_settings
+from llm_wc.parsers.swebench_tasks import load_swebench_task_ids
 from llm_wc.tracker.snapshot import Snapshot, frame_from_wide, make_snapshot
 from llm_wc.tracker.sources.base import (
     Context, Revision, Source, SourceUnavailable, github_latest_commit, run_script,
@@ -33,8 +34,25 @@ def _wide_snapshot(source: str, snapshot_id: str, frame: pd.DataFrame, upstream:
     return make_snapshot(source, snapshot_id, frame_from_wide(frame), tasks, models, upstream, notes)
 
 
-def _read_wide(path: Path) -> pd.DataFrame:
-    return pd.read_csv(path, dtype={"model": str, "model_id": str})
+def _read_wide(path: Path, variant: str | None = None) -> pd.DataFrame:
+    """A parser ``trajectory.csv`` as a wide frame.
+
+    With ``variant``, the frame gets the same task set as ``llm_wc.benchmarks``: excluded
+    columns are dropped and, where an official task list is pinned (Multimodal), unlisted
+    tasks are added as unresolved (0). Upstream result files for those boards list only
+    the tasks some system resolved.
+    """
+    frame = pd.read_csv(path, dtype={"model": str, "model_id": str})
+    if variant is None:
+        return frame
+    frame = frame.drop(columns=list(SWE_EXCLUDED_TASKS.get(variant, ())), errors="ignore")
+    official = load_swebench_task_ids(variant)
+    if official is not None:
+        listed = set(frame.columns) - {"model", "model_id"}
+        if not listed <= set(official):
+            raise ValueError(f"{path} lists tasks outside the official {variant} split")
+        frame = frame.reindex(columns=["model", "model_id", *official], fill_value=0)
+    return frame
 
 
 def _reference_wide(key: str) -> pd.DataFrame:
@@ -85,7 +103,7 @@ class SweBenchClassic(Source):
                     "experiments": "SWE-bench/experiments",
                     "index": {k: v for k, v in index.items() if k != "failures"}}
         notes = {"parser_failures": len(index.get("failures", []))}
-        return _wide_snapshot(self.key, snap_dir.name, _read_wide(snap_dir / "trajectory.csv"), upstream, lb, notes)
+        return _wide_snapshot(self.key, snap_dir.name, _read_wide(snap_dir / "trajectory.csv", self.variant), upstream, lb, notes)
 
     def reference_snapshot(self) -> Snapshot | None:
         if not self.in_reference:
