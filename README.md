@@ -1,16 +1,19 @@
 # SOTA or Luck? The winner's curse and rank uncertainty in LLM leaderboards
 
+[![arXiv](https://img.shields.io/badge/arXiv-2611.22227-b31b1b.svg?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2611.22227)
+[![Website](https://img.shields.io/badge/website-sikunxu.com%2Fllm--wc-0a7d5a.svg)](https://sikunxu.com/llm-wc/)
+[![Python 3.13+](https://img.shields.io/badge/python-3.13%2B-3776ab.svg?logo=python&logoColor=white)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
+[Sikun Xu](https://sikunxu.com/), [Raphael Thomadsen](https://sites.wustl.edu/thomadsen/),
+[Dennis J. Zhang](https://denniszhang.org), [Heng Zhang](https://sites.google.com/view/heng-zhang/home)
+
 **Is the top model better, or just luckier?** A leaderboard score is measured on
 a finite set of tasks, so part of it is luck. Sorting models by score rewards
 that luck: the top scores come out inflated, and the order is less certain than
 it looks. This repository measures both effects for any leaderboard where you
-have per-task results.
-
-**Website:** [sikunxu.com/llm-wc](https://sikunxu.com/llm-wc/) tracks these
-effects on public leaderboards and updates monthly.
-
-**Paper:** [SOTA or Luck? The Winner's Curse in LLM Leaderboards](https://arxiv.org/abs/2611.22227)
-(Xu, Thomadsen, Zhang, Zhang, arXiv:2611.22227).
+have per-task results, and the [project website](https://sikunxu.com/llm-wc/)
+applies the same analysis to public leaderboards every month.
 
 ![SWE-bench Verified: the top observed scores and their adjusted values (left), and the range of ranks each system could plausibly hold (right)](docs/assets/headline.png)
 
@@ -74,9 +77,9 @@ bootstraps for tasks that are not independent.
 ## Leaderboard tracker and website
 
 `src/llm_wc/tracker/` keeps RULER reports for public leaderboards current and builds the
-project website. It refreshes the data monthly and lets you browse each leaderboard's adjusted
-scores, rank probabilities, and tiers. Each leaderboard also keeps a frozen reference edition:
-the pinned snapshot in `resources/`, analyzed exactly as in `results/ruler_audit/`.
+[project website](https://sikunxu.com/llm-wc/). It refreshes the data monthly and lets you
+browse each leaderboard's adjusted scores, rank probabilities, and tiers. Each leaderboard also
+keeps a frozen reference edition: the pinned snapshot in `resources/`, analyzed exactly as in `results/ruler_audit/`.
 
 ```bash
 uv sync --group tracker
