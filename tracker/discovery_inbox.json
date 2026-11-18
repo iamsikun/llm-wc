@@ -999,5 +999,1215 @@
     "last_modified": "2026-07-10T11:25:06Z",
     "found_at": "2026-10-25T14:24:03+00:00",
     "status": "to review"
+  },
+  {
+    "id": "hf-audio/open-asr-leaderboard",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/hf-audio/open-asr-leaderboard",
+    "downloads": 28072,
+    "query": "leaderboard",
+    "last_modified": "2026-10-07 09:22:09+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "zai-org/Vision2Web-Leaderboard",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/zai-org/Vision2Web-Leaderboard",
+    "downloads": 23124,
+    "query": "leaderboard",
+    "last_modified": "2026-10-01 15:24:07+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "lmms-lab-si/EASI-Leaderboard-Data",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/lmms-lab-si/EASI-Leaderboard-Data",
+    "downloads": 12701,
+    "query": "leaderboard",
+    "last_modified": "2026-02-12 06:02:06+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "eduagarcia-temp/llm_pt_leaderboard_raw_results",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/eduagarcia-temp/llm_pt_leaderboard_raw_results",
+    "downloads": 9177,
+    "query": "leaderboard",
+    "last_modified": "2025-09-14 17:10:45+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "optimum-benchmark/llm-perf-leaderboard",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/optimum-benchmark/llm-perf-leaderboard",
+    "downloads": 8861,
+    "query": "leaderboard",
+    "last_modified": "2024-12-13 10:07:03+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "nebius/SWE-rebench-leaderboard",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/nebius/SWE-rebench-leaderboard",
+    "downloads": 7725,
+    "query": "leaderboard",
+    "last_modified": "2026-07-28 09:59:05+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "IntelligenceLab/LHTB-leaderboard",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/IntelligenceLab/LHTB-leaderboard",
+    "downloads": 7441,
+    "query": "leaderboard",
+    "last_modified": "2026-11-04 17:08:16+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "open-llm-leaderboard-old/results",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/open-llm-leaderboard-old/results",
+    "downloads": 6482,
+    "query": "leaderboard",
+    "last_modified": "2024-07-18 13:49:22+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "open-cn-llm-leaderboard/results",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/open-cn-llm-leaderboard/results",
+    "downloads": 6458,
+    "query": "leaderboard",
+    "last_modified": "2025-01-11 16:00:07+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "RyeAI/danish-asr-leaderboard",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/RyeAI/danish-asr-leaderboard",
+    "downloads": 5827,
+    "query": "leaderboard",
+    "last_modified": "2026-11-17 20:37:00+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "bezzam/tts_leaderboard_screenshots",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/bezzam/tts_leaderboard_screenshots",
+    "downloads": 5779,
+    "query": "leaderboard",
+    "last_modified": "2026-10-09 09:27:05+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "Weyaxi/huggingface-leaderboard",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/Weyaxi/huggingface-leaderboard",
+    "downloads": 5107,
+    "query": "leaderboard",
+    "last_modified": "2026-10-07 16:17:32+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "CHL0e/robocasa-eval-results",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/CHL0e/robocasa-eval-results",
+    "downloads": 3205,
+    "query": "eval results",
+    "last_modified": "2026-10-20 01:29:58+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "nyu-dice-lab/lm-eval-results-meta-math-MetaMath-Mistral-7B-private",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/nyu-dice-lab/lm-eval-results-meta-math-MetaMath-Mistral-7B-private",
+    "downloads": 2905,
+    "query": "eval results",
+    "last_modified": "2024-11-23 19:12:15+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "ASLP-lab/DRAMA-Eval-Results",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/ASLP-lab/DRAMA-Eval-Results",
+    "downloads": 2592,
+    "query": "eval results",
+    "last_modified": "2026-11-16 03:32:02+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "fansam39/LongE2V-eval-results",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/fansam39/LongE2V-eval-results",
+    "downloads": 2507,
+    "query": "eval results",
+    "last_modified": "2026-07-06 12:22:20+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "mim-chess-vlas/eval-results",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/mim-chess-vlas/eval-results",
+    "downloads": 1010,
+    "query": "eval results",
+    "last_modified": "2026-11-12 20:34:47+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "2inf/eval_vlm_results",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/2inf/eval_vlm_results",
+    "downloads": 882,
+    "query": "eval results",
+    "last_modified": "2026-11-18 03:18:29+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "nyu-dice-lab/lm-eval-results-hkust-nlp-dart-math-llama3-8b-prop2diff-private",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/nyu-dice-lab/lm-eval-results-hkust-nlp-dart-math-llama3-8b-prop2diff-private",
+    "downloads": 877,
+    "query": "eval results",
+    "last_modified": "2024-11-24 11:21:00+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "nyu-dice-lab/lm-eval-results-Kukedlc-Neural-4-Maths-7b-private",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/nyu-dice-lab/lm-eval-results-Kukedlc-Neural-4-Maths-7b-private",
+    "downloads": 766,
+    "query": "eval results",
+    "last_modified": "2024-11-26 21:51:29+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "yileitu/DCO_FLORES101_ALL_MODELS_EVAL_RESULTS",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/yileitu/DCO_FLORES101_ALL_MODELS_EVAL_RESULTS",
+    "downloads": 654,
+    "query": "eval results",
+    "last_modified": "2026-06-26 00:30:07+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "UI-MOPD/MobileWorld-Eval-Results",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/UI-MOPD/MobileWorld-Eval-Results",
+    "downloads": 570,
+    "query": "eval results",
+    "last_modified": "2026-07-07 06:44:07+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "openhonest/babylm-2026-fr-92m-v2-eval-results",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/openhonest/babylm-2026-fr-92m-v2-eval-results",
+    "downloads": 551,
+    "query": "eval results",
+    "last_modified": "2026-07-30 15:42:53+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "nyu-dice-lab/lm-eval-results-ChaoticNeutrals-Prima-LelantaclesV7-experimental-7b-private",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/nyu-dice-lab/lm-eval-results-ChaoticNeutrals-Prima-LelantaclesV7-experimental-7b-private",
+    "downloads": 510,
+    "query": "eval results",
+    "last_modified": "2024-11-25 03:45:37+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "nyu-dice-lab/lm-eval-results-jondurbin-bagel-7b-v0.1-private",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/nyu-dice-lab/lm-eval-results-jondurbin-bagel-7b-v0.1-private",
+    "downloads": 491,
+    "query": "eval results",
+    "last_modified": "2024-11-22 23:34:53+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "nyu-dice-lab/lm-eval-results-mistralai-Mistral-7B-v0.3-private",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/nyu-dice-lab/lm-eval-results-mistralai-Mistral-7B-v0.3-private",
+    "downloads": 484,
+    "query": "eval results",
+    "last_modified": "2024-11-23 22:13:45+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "nyu-dice-lab/lm-eval-results-AurelPx-Percival_01-7b-slerp-private",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/nyu-dice-lab/lm-eval-results-AurelPx-Percival_01-7b-slerp-private",
+    "downloads": 474,
+    "query": "eval results",
+    "last_modified": "2024-11-25 01:07:52+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "yalhessi/lemexp-task1-v3-eval-results",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/yalhessi/lemexp-task1-v3-eval-results",
+    "downloads": 429,
+    "query": "eval results",
+    "last_modified": "2026-04-27 13:33:07+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "Istiak134822/video-generation-eval-results",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/Istiak134822/video-generation-eval-results",
+    "downloads": 428,
+    "query": "eval results",
+    "last_modified": "2026-10-26 11:38:20+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "prometheus-eval/BiGGen-Bench-Results",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/prometheus-eval/BiGGen-Bench-Results",
+    "downloads": 426,
+    "query": "eval results",
+    "last_modified": "2024-08-12 03:35:49+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "Cshavi/de-alignment-eval-results",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/Cshavi/de-alignment-eval-results",
+    "downloads": 382,
+    "query": "eval results",
+    "last_modified": "2025-02-16 08:34:20+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "nyu-dice-lab/lm-eval-results-allenai-llama-3-tulu-2-dpo-8b-private",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/nyu-dice-lab/lm-eval-results-allenai-llama-3-tulu-2-dpo-8b-private",
+    "downloads": 335,
+    "query": "eval results",
+    "last_modified": "2024-11-23 12:30:18+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "khalidsyfullah/privacy-utility-evaluation-results",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/khalidsyfullah/privacy-utility-evaluation-results",
+    "downloads": 39722,
+    "query": "evaluation results",
+    "last_modified": "2026-11-18 03:26:56+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "isilicon/mango-evaluation-results",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/isilicon/mango-evaluation-results",
+    "downloads": 791,
+    "query": "evaluation results",
+    "last_modified": "2026-11-07 22:33:58+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "pbcong/hallucination-evaluation-results-dhcp-amber",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/pbcong/hallucination-evaluation-results-dhcp-amber",
+    "downloads": 302,
+    "query": "evaluation results",
+    "last_modified": "2026-10-31 10:09:40+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "RuHae/KletterMix-Ablations-Evaluation-Results",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/RuHae/KletterMix-Ablations-Evaluation-Results",
+    "downloads": 189,
+    "query": "evaluation results",
+    "last_modified": "2026-09-15 21:55:09+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "suad240176/masrs-multi-agent-evaluation-results",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/suad240176/masrs-multi-agent-evaluation-results",
+    "downloads": 112,
+    "query": "evaluation results",
+    "last_modified": "2026-10-19 17:38:24+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "BraintrustDataDev/aid-evaluation-results",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/BraintrustDataDev/aid-evaluation-results",
+    "downloads": 107,
+    "query": "evaluation results",
+    "last_modified": "2026-10-29 21:24:09+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "qizhangslam/das6-engineering-evaluation-results-20260813",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/qizhangslam/das6-engineering-evaluation-results-20260813",
+    "downloads": 85,
+    "query": "evaluation results",
+    "last_modified": "2026-11-13 23:51:22+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "UCSC-VLAA/ClinSeek-Evaluation-Results",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/UCSC-VLAA/ClinSeek-Evaluation-Results",
+    "downloads": 82,
+    "query": "evaluation results",
+    "last_modified": "2026-10-16 19:06:45+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "JINGI0138/fold-glasses-v3-evaluation-results",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/JINGI0138/fold-glasses-v3-evaluation-results",
+    "downloads": 77,
+    "query": "evaluation results",
+    "last_modified": "2026-11-08 04:09:04+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "AnPhan123/evaluation-results-navigation-ai",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/AnPhan123/evaluation-results-navigation-ai",
+    "downloads": 61,
+    "query": "evaluation results",
+    "last_modified": "2025-11-21 06:49:50+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "NguyenHuuChi/vla-evaluation-results",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/NguyenHuuChi/vla-evaluation-results",
+    "downloads": 57,
+    "query": "evaluation results",
+    "last_modified": "2026-11-17 11:02:59+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "Hanyyasser/Qwen2-SFT-Evaluation-Results",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/Hanyyasser/Qwen2-SFT-Evaluation-Results",
+    "downloads": 44,
+    "query": "evaluation results",
+    "last_modified": "2026-11-04 09:04:29+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "orenpereg/aime24-evaluation-results",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/orenpereg/aime24-evaluation-results",
+    "downloads": 43,
+    "query": "evaluation results",
+    "last_modified": "2025-09-01 08:05:15+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "lbox/kbl-emnlp24-evaluation-results",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/lbox/kbl-emnlp24-evaluation-results",
+    "downloads": 36,
+    "query": "evaluation results",
+    "last_modified": "2024-11-11 06:56:30+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "adi2440/krvla-evaluation-results",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/adi2440/krvla-evaluation-results",
+    "downloads": 33,
+    "query": "evaluation results",
+    "last_modified": "2026-11-11 20:45:52+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "lucy3/aftermath_sampled_images_per_problem",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/lucy3/aftermath_sampled_images_per_problem",
+    "downloads": 43,
+    "query": "per-sample",
+    "last_modified": "2026-03-03 04:54:24+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "RylanSchaeffer/per_sample_scores.mmlu_astronomy.prob_choices_correct.2024-05-31",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/RylanSchaeffer/per_sample_scores.mmlu_astronomy.prob_choices_correct.2024-05-31",
+    "downloads": 26,
+    "query": "per-sample",
+    "last_modified": "2025-09-22 00:58:31+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "RylanSchaeffer/per_sample_scores.mmlu_astronomy.acc.2024-05-31",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/RylanSchaeffer/per_sample_scores.mmlu_astronomy.acc.2024-05-31",
+    "downloads": 24,
+    "query": "per-sample",
+    "last_modified": "2025-09-22 00:57:23+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "RylanSchaeffer/per_sample_scores.arc_challenge.prob_choices_correct.2024-05-31",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/RylanSchaeffer/per_sample_scores.arc_challenge.prob_choices_correct.2024-05-31",
+    "downloads": 22,
+    "query": "per-sample",
+    "last_modified": "2025-09-22 00:03:36+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "TongZheng1999/iter_1_reinforce_baseline_per_sample_200epoch_strong_init_step_150_processed_filtered_by_judge",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/TongZheng1999/iter_1_reinforce_baseline_per_sample_200epoch_strong_init_step_150_processed_filtered_by_judge",
+    "downloads": 22,
+    "query": "per-sample",
+    "last_modified": "2026-04-11 07:37:50+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "TongZheng1999/iter_1_reinforce_baseline_per_sample_200epoch_strong_init_step_150_processed",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/TongZheng1999/iter_1_reinforce_baseline_per_sample_200epoch_strong_init_step_150_processed",
+    "downloads": 21,
+    "query": "per-sample",
+    "last_modified": "2026-04-11 03:23:57+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "TongZheng1999/iter_1_reinforce_baseline_per_sample_200epoch_strong_init_step_150_processed_Merge_f_by_judge",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/TongZheng1999/iter_1_reinforce_baseline_per_sample_200epoch_strong_init_step_150_processed_Merge_f_by_judge",
+    "downloads": 21,
+    "query": "per-sample",
+    "last_modified": "2026-04-11 07:58:05+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "RylanSchaeffer/per_sample_scores.arc_challenge.acc.2024-05-31",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/RylanSchaeffer/per_sample_scores.arc_challenge.acc.2024-05-31",
+    "downloads": 20,
+    "query": "per-sample",
+    "last_modified": "2025-09-22 00:03:23+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "TongZheng1999/iter_1_reinforce_baseline_per_sample_200epoch_strong_init_step_150_filtered",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/TongZheng1999/iter_1_reinforce_baseline_per_sample_200epoch_strong_init_step_150_filtered",
+    "downloads": 20,
+    "query": "per-sample",
+    "last_modified": "2026-04-07 07:16:19+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "cometadata/20250727-unique-openalex-affiliations-w-ror-ids-top-1K-ror-ids-100-per-sample",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/cometadata/20250727-unique-openalex-affiliations-w-ror-ids-top-1K-ror-ids-100-per-sample",
+    "downloads": 19,
+    "query": "per-sample",
+    "last_modified": "2025-07-28 07:05:36+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "RylanSchaeffer/per_sample_scores.mmlu_astronomy.prob_vocab_correct.2024-05-31",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/RylanSchaeffer/per_sample_scores.mmlu_astronomy.prob_vocab_correct.2024-05-31",
+    "downloads": 19,
+    "query": "per-sample",
+    "last_modified": "2025-09-22 00:58:48+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "mkhalifa/llama-3.1-8b-instruct-math-trajectories-8-sample-per-problem-train",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/mkhalifa/llama-3.1-8b-instruct-math-trajectories-8-sample-per-problem-train",
+    "downloads": 18,
+    "query": "per-sample",
+    "last_modified": "2025-01-28 22:55:39+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "RylanSchaeffer/per_sample_scores.arc_challenge.log_prob_vocab_correct.2024-05-31",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/RylanSchaeffer/per_sample_scores.arc_challenge.log_prob_vocab_correct.2024-05-31",
+    "downloads": 14,
+    "query": "per-sample",
+    "last_modified": "2025-09-22 00:03:30+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "RylanSchaeffer/per_sample_scores.hellaswag.prob_choices_correct.2024-05-31",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/RylanSchaeffer/per_sample_scores.hellaswag.prob_choices_correct.2024-05-31",
+    "downloads": 14,
+    "query": "per-sample",
+    "last_modified": "2025-09-22 00:43:28+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "RylanSchaeffer/per_sample_scores.anli_r1.acc.2024-05-31",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/RylanSchaeffer/per_sample_scores.anli_r1.acc.2024-05-31",
+    "downloads": 12,
+    "query": "per-sample",
+    "last_modified": "2025-09-22 00:09:25+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "RylanSchaeffer/per_sample_scores.arc_challenge.prob_vocab_correct.2024-05-31",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/RylanSchaeffer/per_sample_scores.arc_challenge.prob_vocab_correct.2024-05-31",
+    "downloads": 12,
+    "query": "per-sample",
+    "last_modified": "2025-09-22 00:03:38+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "open-llm-leaderboard-old/details_llm-agents__tora-7b-v1.0",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_llm-agents__tora-7b-v1.0",
+    "downloads": 2088,
+    "query": "details",
+    "last_modified": "2023-10-27 12:52:43+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "open-llm-leaderboard-old/details_llm-agents__tora-code-7b-v1.0",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_llm-agents__tora-code-7b-v1.0",
+    "downloads": 1475,
+    "query": "details",
+    "last_modified": "2023-10-28 11:51:10+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "open-llm-leaderboard-old/details_EleutherAI__gpt-j-6b",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_EleutherAI__gpt-j-6b",
+    "downloads": 1392,
+    "query": "details",
+    "last_modified": "2023-12-03 16:52:37+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "open-llm-leaderboard-old/details_HuggingFaceH4__zephyr-7b-beta",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_HuggingFaceH4__zephyr-7b-beta",
+    "downloads": 1375,
+    "query": "details",
+    "last_modified": "2023-12-04 23:31:29+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "OALL/details_Mushari440__qwen3-8B-SFT_v2",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/OALL/details_Mushari440__qwen3-8B-SFT_v2",
+    "downloads": 1304,
+    "query": "details",
+    "last_modified": "2026-02-23 08:39:18+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "open-llm-leaderboard-old/details_saarvajanik__facebook-opt-6.7b-qcqa-ub-16-best-for-KV-cache",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_saarvajanik__facebook-opt-6.7b-qcqa-ub-16-best-for-KV-cache",
+    "downloads": 1212,
+    "query": "details",
+    "last_modified": "2024-01-28 18:45:31+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "open-llm-leaderboard-old/details_saarvajanik__facebook-opt-6.7b-gqa-ub-16-best-for-KV-cache",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_saarvajanik__facebook-opt-6.7b-gqa-ub-16-best-for-KV-cache",
+    "downloads": 1198,
+    "query": "details",
+    "last_modified": "2024-01-28 18:17:51+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "SaylorTwift/details_meta-llama__Llama-3.1-8B-Instruct_private",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/SaylorTwift/details_meta-llama__Llama-3.1-8B-Instruct_private",
+    "downloads": 1191,
+    "query": "details",
+    "last_modified": "2025-07-01 10:14:33+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "open-llm-leaderboard-old/details_microsoft__phi-2",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_microsoft__phi-2",
+    "downloads": 1120,
+    "query": "details",
+    "last_modified": "2024-04-15 16:15:09+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "open-llm-leaderboard-old/details_llm-agents__tora-code-13b-v1.0",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_llm-agents__tora-code-13b-v1.0",
+    "downloads": 997,
+    "query": "details",
+    "last_modified": "2024-01-05 00:07:43+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "open-llm-leaderboard-old/details_mosaicml__mpt-7b",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_mosaicml__mpt-7b",
+    "downloads": 991,
+    "query": "details",
+    "last_modified": "2023-10-03 22:11:49+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "open-llm-leaderboard-old/details_tiiuae__falcon-7b",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_tiiuae__falcon-7b",
+    "downloads": 946,
+    "query": "details",
+    "last_modified": "2023-12-03 17:58:23+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "open-llm-leaderboard-old/details_Qwen__Qwen-7B",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_Qwen__Qwen-7B",
+    "downloads": 937,
+    "query": "details",
+    "last_modified": "2023-12-01 14:59:07+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "open-llm-leaderboard-old/details_google__gemma-7b",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_google__gemma-7b",
+    "downloads": 925,
+    "query": "details",
+    "last_modified": "2024-02-23 18:03:36+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "open-llm-leaderboard-old/details_alexredna__Tukan-1.1B-Chat-reasoning-sft-COLA",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_alexredna__Tukan-1.1B-Chat-reasoning-sft-COLA",
+    "downloads": 918,
+    "query": "details",
+    "last_modified": "2024-01-22 23:31:25+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "open-llm-leaderboard-old/details_tiiuae__falcon-40b",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_tiiuae__falcon-40b",
+    "downloads": 909,
+    "query": "details",
+    "last_modified": "2023-12-03 19:46:05+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "Lansechen/details_Lansechen__Qwen2.5-7B-Open-R1-GRPO-math-lighteval",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/Lansechen/details_Lansechen__Qwen2.5-7B-Open-R1-GRPO-math-lighteval",
+    "downloads": 904,
+    "query": "details",
+    "last_modified": "2025-04-10 06:54:50+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "open-llm-leaderboard-old/details_PocketDoc__Dans-AdventurousWinds-Mk2-7b",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_PocketDoc__Dans-AdventurousWinds-Mk2-7b",
+    "downloads": 903,
+    "query": "details",
+    "last_modified": "2023-11-13 15:56:31+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "open-llm-leaderboard-old/details_teknium__OpenHermes-2.5-Mistral-7B",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_teknium__OpenHermes-2.5-Mistral-7B",
+    "downloads": 896,
+    "query": "details",
+    "last_modified": "2023-11-20 08:23:35+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "open-llm-leaderboard-old/details_llm-agents__tora-70b-v1.0",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_llm-agents__tora-70b-v1.0",
+    "downloads": 860,
+    "query": "details",
+    "last_modified": "2024-01-05 04:43:38+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "open-llm-leaderboard-old/details_bigscience__bloom-7b1",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_bigscience__bloom-7b1",
+    "downloads": 783,
+    "query": "details",
+    "last_modified": "2023-12-04 13:10:08+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "open-llm-leaderboard-old/details_google__gemma-2b",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_google__gemma-2b",
+    "downloads": 740,
+    "query": "details",
+    "last_modified": "2024-02-22 14:03:30+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "lukakuma/web-trajectories-preference-raw",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/lukakuma/web-trajectories-preference-raw",
+    "downloads": 23756,
+    "query": "trajectories",
+    "last_modified": "2026-11-16 15:53:08+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "AI-Secure/DTap-Bench-Agent-Trajectories",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/AI-Secure/DTap-Bench-Agent-Trajectories",
+    "downloads": 17406,
+    "query": "trajectories",
+    "last_modified": "2026-07-01 04:46:10+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "ChrisDing1105/unified-agent-trajectories",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/ChrisDing1105/unified-agent-trajectories",
+    "downloads": 9447,
+    "query": "trajectories",
+    "last_modified": "2026-10-20 08:00:11+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "ajinkya95/benchcad-trajectories",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/ajinkya95/benchcad-trajectories",
+    "downloads": 8774,
+    "query": "trajectories",
+    "last_modified": "2026-08-15 11:19:02+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "internlm/WildClawBench-Trajectories",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/internlm/WildClawBench-Trajectories",
+    "downloads": 7869,
+    "query": "trajectories",
+    "last_modified": "2026-11-16 14:37:21+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "moonNight123/pm01-minco-trajectories-354x1000",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/moonNight123/pm01-minco-trajectories-354x1000",
+    "downloads": 7147,
+    "query": "trajectories",
+    "last_modified": "2026-11-10 22:02:13+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "xhluca/a3-qwen-3.5-9b-trajectories",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/xhluca/a3-qwen-3.5-9b-trajectories",
+    "downloads": 6620,
+    "query": "trajectories",
+    "last_modified": "2026-04-13 21:56:39+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "AlienKevin/SWE-ZERO-12M-trajectories",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/AlienKevin/SWE-ZERO-12M-trajectories",
+    "downloads": 5724,
+    "query": "trajectories",
+    "last_modified": "2026-05-14 23:54:23+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "timchen0618/browsecomp-plus-trajectories",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/timchen0618/browsecomp-plus-trajectories",
+    "downloads": 4860,
+    "query": "trajectories",
+    "last_modified": "2026-04-08 14:22:04+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "rmems/data-pipeline-repair-trajectories",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/rmems/data-pipeline-repair-trajectories",
+    "downloads": 4344,
+    "query": "trajectories",
+    "last_modified": "2026-09-17 03:13:16+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "lukakuma/web-trajectories-sft",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/lukakuma/web-trajectories-sft",
+    "downloads": 3799,
+    "query": "trajectories",
+    "last_modified": "2026-11-16 15:53:17+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "yangjunxiao2021/terminal-bench-science-trajectories",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/yangjunxiao2021/terminal-bench-science-trajectories",
+    "downloads": 3705,
+    "query": "trajectories",
+    "last_modified": "2026-10-17 19:52:35+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "LANA-research/LANA-Code-Agent-Trajectories",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/LANA-research/LANA-Code-Agent-Trajectories",
+    "downloads": 3620,
+    "query": "trajectories",
+    "last_modified": "2026-10-23 14:09:28+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "lukakuma/web-trajectories",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/lukakuma/web-trajectories",
+    "downloads": 3543,
+    "query": "trajectories",
+    "last_modified": "2026-11-13 09:19:02+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "Kwai-Klear/SWE-smith-mini_swe_agent_plus-trajectories-66k",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/Kwai-Klear/SWE-smith-mini_swe_agent_plus-trajectories-66k",
+    "downloads": 3488,
+    "query": "trajectories",
+    "last_modified": "2025-11-06 12:45:43+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "webarena-x/webarena-infinity-trajectories",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/webarena-x/webarena-infinity-trajectories",
+    "downloads": 3468,
+    "query": "trajectories",
+    "last_modified": "2026-03-22 08:16:12+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "nvidia/SWE-Hero-openhands-trajectories",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/nvidia/SWE-Hero-openhands-trajectories",
+    "downloads": 3443,
+    "query": "trajectories",
+    "last_modified": "2026-05-08 17:10:16+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "rmems/long-horizon-coding-trajectories",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/rmems/long-horizon-coding-trajectories",
+    "downloads": 3404,
+    "query": "trajectories",
+    "last_modified": "2026-09-23 01:31:08+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "JetBrains-Research/SWE-TaskFlow-SWE-Bench-Pro-Trajectories",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/JetBrains-Research/SWE-TaskFlow-SWE-Bench-Pro-Trajectories",
+    "downloads": 3341,
+    "query": "trajectories",
+    "last_modified": "2026-10-11 16:06:05+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "benchflow/skillsbench-trajectories-apr2026",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/benchflow/skillsbench-trajectories-apr2026",
+    "downloads": 3257,
+    "query": "trajectories",
+    "last_modified": "2026-04-23 01:37:16+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "tarsur385/swebench-verified-trajectories",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/tarsur385/swebench-verified-trajectories",
+    "downloads": 3036,
+    "query": "trajectories",
+    "last_modified": "2026-05-18 07:37:08+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "Elfsong/material_replacement_submissions",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/Elfsong/material_replacement_submissions",
+    "downloads": 1586,
+    "query": "submissions",
+    "last_modified": "2026-10-27 15:23:14+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "SamChen567/smw-submissions",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/SamChen567/smw-submissions",
+    "downloads": 1481,
+    "query": "submissions",
+    "last_modified": "2026-01-14 11:28:10+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "OopsieData-Submissions/Visualizer_Previews",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/OopsieData-Submissions/Visualizer_Previews",
+    "downloads": 1086,
+    "query": "submissions",
+    "last_modified": "2026-07-29 05:23:36+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "evanellis/evanellis_Codeforces-Python-Submissions_correct_with_h_a_k_prob_0.5_with_null_and_rejected_f_z",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/evanellis/evanellis_Codeforces-Python-Submissions_correct_with_h_a_k_prob_0.5_with_null_and_rejected_f_z",
+    "downloads": 880,
+    "query": "submissions",
+    "last_modified": "2025-02-18 23:07:43+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "allenai/asta-bench-submissions",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/allenai/asta-bench-submissions",
+    "downloads": 341,
+    "query": "submissions",
+    "last_modified": "2026-11-15 22:40:39+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "gaia-benchmark/submissions_public",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/gaia-benchmark/submissions_public",
+    "downloads": 280,
+    "query": "submissions",
+    "last_modified": "2025-05-27 13:00:43+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "palisaderesearch/Misalignment-Bounty-Submissions",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/palisaderesearch/Misalignment-Bounty-Submissions",
+    "downloads": 169,
+    "query": "submissions",
+    "last_modified": "2025-10-16 15:45:44+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "GEM-submissions/submission-scores",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/GEM-submissions/submission-scores",
+    "downloads": 166,
+    "query": "submissions",
+    "last_modified": "2023-06-08 23:06:02+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "Vera-ZWY/reddite2024elections_submissions",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/Vera-ZWY/reddite2024elections_submissions",
+    "downloads": 163,
+    "query": "submissions",
+    "last_modified": "2024-11-19 02:26:07+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "alea-institute/fcc-submissions",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/alea-institute/fcc-submissions",
+    "downloads": 152,
+    "query": "submissions",
+    "last_modified": "2026-10-17 00:48:00+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "gyzou/turing-eye-submissions",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/gyzou/turing-eye-submissions",
+    "downloads": 145,
+    "query": "submissions",
+    "last_modified": "2026-11-03 08:17:44+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "anonymous-submissions/delibsim-bench",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/anonymous-submissions/delibsim-bench",
+    "downloads": 130,
+    "query": "submissions",
+    "last_modified": "2026-05-06 15:57:16+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "vynly/nnai-submissions",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/vynly/nnai-submissions",
+    "downloads": 117,
+    "query": "submissions",
+    "last_modified": "2026-11-06 23:51:17+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "livecodebench/submissions",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/livecodebench/submissions",
+    "downloads": 113,
+    "query": "submissions",
+    "last_modified": "2024-05-26 06:52:59+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
+  },
+  {
+    "id": "SlayerLab/dataset-team-submissions",
+    "where": "huggingface",
+    "url": "https://huggingface.co/datasets/SlayerLab/dataset-team-submissions",
+    "downloads": 108,
+    "query": "submissions",
+    "last_modified": "2026-11-07 02:47:10+00:00",
+    "found_at": "2026-11-18T03:32:20+00:00",
+    "status": "to review"
   }
 ]

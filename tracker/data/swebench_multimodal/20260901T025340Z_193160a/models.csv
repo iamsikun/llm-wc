@@ -1,0 +1,13 @@
+model_id,model,date
+guirepair-o3-2025-04-16,GUIRepair + o3 (2025-04-16),2025-07-01
+codefuse-pycfuse-svr,Codefuse_Pycfuse_SVR,2025-11-17
+refact-ai-agent,Refact.ai Agent,2025-06-11
+openhands-versa-claude-sonnet-4,OpenHands-Versa (Claude-Sonnet 4),2025-05-28
+guirepair-o4-mini-2025-04-16,GUIRepair + o4-mini (2025-04-16),2025-05-31
+openhands-versa-claude-3-7-sonnet,OpenHands-Versa (Claude-3.7 Sonnet),2025-05-09
+guirepair-gpt-4-1-2025-04-14,GUIRepair + GPT 4.1 (2025-04-14),2025-05-31
+zencoder-2025-04-01,Zencoder (2025-04-01),2025-04-01
+guirepair-gpt-4o-2024-08-06,GUIRepair + GPT 4o (2024-08-06),2025-05-31
+globant-code-fixer-agent,Globant Code Fixer Agent,2025-03-25
+zencoder-2025-03-10,Zencoder (2025-03-10),2025-03-11
+agentless-lite-claude-3-5-sonnet,Agentless Lite + Claude-3.5 Sonnet,2025-02-26

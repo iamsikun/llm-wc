@@ -1,0 +1,15 @@
+model_id,model,date
+claude-4-sonnet-10132025,Claude 4 Sonnet - 10132025,2025-10-13
+claude-4-5-haiku-10222025,Claude 4.5 Haiku -- 10222025,2025-10-22
+claude-4-5-sonnet-10132025,Claude 4.5 Sonnet - 10132025,2025-10-13
+claude-opus-4-1-paper,Claude Opus 4.1 - paper,2025-10-13
+claude-sonnet-4-paper,Claude Sonnet 4 - paper,2025-10-13
+glm-4-5-10222025,GLM-4.5 -- 10222025,2025-10-22
+gpt-oss-paper,GPT OSS - paper,2025-10-13
+gpt-4o-paper,GPT-4o - paper,2025-10-13
+gpt-5-10132025,GPT-5 - 10132025,2025-10-13
+gpt-5-codex-debug-oct22,GPT-5 Codex -- debug-oct22,2025-10-22
+gpt-5-high-paper,GPT-5 High - paper,2025-10-13
+gemini-2-5-pro-preview-paper,Gemini 2.5 Pro Preview - paper,2025-10-13
+gemini-2-5-pro-preview-debug-oct22,Gemini 2.5 Pro Preview -- debug-oct22,2025-10-22
+kimi-paper,Kimi - paper,2025-10-13

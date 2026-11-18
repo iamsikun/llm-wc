@@ -1,0 +1,33 @@
+{
+  "counts": {
+    "models": 14,
+    "scores": 10220,
+    "tasks": 730
+  },
+  "created_at": "2026-11-18T03:31:52+00:00",
+  "files": {
+    "models.csv": {
+      "bytes": 800,
+      "sha256": "163e841f051b97d055e80c9dad988562eaa5a3220d0093e8e2e8df720b168314"
+    },
+    "scores.csv.gz": {
+      "bytes": 62964,
+      "sha256": "f73d5b0c321cfbf4c8d39ec2e34687800fdd89b2cc2a7e8c0c2d36f5e594601c"
+    },
+    "tasks.csv.gz": {
+      "bytes": 21207,
+      "sha256": "cd69630fe141b1e2b23a7de8b2808db9179c21e764f24cd461c25ee717a9a913"
+    }
+  },
+  "fingerprint": "469bc5f5ad37583433b04608d676461e3add01ae63342ffb13f484ac71d1334b",
+  "format_version": 1,
+  "notes": {},
+  "snapshot_id": "20261118_469bc5f",
+  "source": "swebench_pro",
+  "upstream": {
+    "date": "2026-11-18T03:31:52+00:00",
+    "docent_collection": "032fb63d-4992-4bfc-911d-3b7dafcb931f",
+    "revision": "469bc5f5ad37583433b04608d676461e3add01ae63342ffb13f484ac71d1334b",
+    "url": "https://docent.transluce.org"
+  }
+}
