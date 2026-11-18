@@ -33,7 +33,7 @@ site:
       url           = {https://arxiv.org/abs/2611.22227}
     }
   update_cadence: monthly
-  goatcounter: null        # GoatCounter site code (https://<code>.goatcounter.com); null turns counting off
+  goatcounter: iamsikun        # GoatCounter site code (https://<code>.goatcounter.com); null turns counting off
   featured: swebench_verified   # the leaderboard in the home page's key figure
 
 analysis:                  # the reference RULER parameters
