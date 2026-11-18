@@ -153,5 +153,6 @@ Each leaderboard on the site has a frozen *reference edition*: the pinned snapsh
 analyzed by `scripts/run_ruler_audit.py`, with results in `results/ruler_audit/`. The tracker
 never modifies those. `tests/tracker/test_reference_fidelity.py` checks two things. The adapters,
 run on the pinned reference inputs, rebuild all 14 matrices exactly as `load_settings()` does. The
-tracker's analysis then reproduces `results/ruler_audit/` exactly. The site's reference edition is
+tracker's analysis then reproduces `results/ruler_audit/`. Ranks, tiers, and the RPM must match exactly. Scores and adjustments may differ by at most
+1e-9, to allow for last-bit rounding between platforms (macOS and Linux CI). The site's reference edition is
 read from `results/ruler_audit/`, and every build compares it with those files.

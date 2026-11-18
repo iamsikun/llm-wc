@@ -1,4 +1,4 @@
-"""Check that the tracker reproduces the reference results exactly.
+"""Check that the tracker reproduces the reference results.
 
 ``reference_matrices`` rebuilds each reference setting from the adapters' reference
 snapshots (stored and re-read, so the snapshot format is exercised too).
@@ -17,6 +17,11 @@ from llm_wc.tracker.analyze import audit_tables, reference_tables
 from llm_wc.tracker.matrix import Matrix, build_matrix
 from llm_wc.tracker.snapshot import read_snapshot, write_snapshot
 from llm_wc.tracker.sources import SOURCES
+
+# Float tolerance for the RULER tables, in their own units (scores and pp). Integer
+# outputs (ranks, tiers, the RPM) must match exactly. The tolerance absorbs
+# last-bit rounding between platforms' linear-algebra libraries (macOS vs Linux).
+FLOAT_ATOL = 1e-9
 
 
 def reference_matrices() -> dict[str, Matrix]:
@@ -50,13 +55,19 @@ def table_differences(ours: dict, ref: dict) -> list[str]:
     for name in ("models", "position_bias", "tiers"):
         try:
             pd.testing.assert_frame_equal(ours[name].reset_index(drop=True), ref[name],
-                                          check_exact=True, check_dtype=False)
+                                          check_exact=False, rtol=0, atol=FLOAT_ATOL, check_dtype=False)
         except AssertionError:
             diffs.append(name)
     if not np.array_equal(ours["rpm"], ref["rpm"]):
         diffs.append("rpm")
-    diffs += [f"summary.{k}" for k, v in ref["summary"].items() if ours["summary"].get(k) != v]
+    diffs += [f"summary.{k}" for k, v in ref["summary"].items() if not _same(ours["summary"].get(k), v)]
     return diffs
+
+
+def _same(a, b) -> bool:
+    if isinstance(a, float) and isinstance(b, float):
+        return abs(a - b) <= FLOAT_ATOL or (np.isnan(a) and np.isnan(b))
+    return a == b
 
 
 def check_reference(analysis: bool = True) -> bool:

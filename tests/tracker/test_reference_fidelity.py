@@ -1,4 +1,4 @@
-"""Criteria B1 and B2: the tracker reproduces the reference matrices and RULER tables exactly."""
+"""Criteria B1 and B2: the tracker reproduces the reference matrices exactly and its RULER tables up to float rounding."""
 import pytest
 
 from llm_wc.benchmarks import SETTINGS, load_settings
