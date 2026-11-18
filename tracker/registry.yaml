@@ -12,12 +12,12 @@ site:
   title: SOTA or Luck?
   tagline: The winner's curse and rank uncertainty in LLM leaderboards
   headline: Is the top model better, or just luckier?
-  base_url: https://iamsikun.github.io/llm-wc/
+  base_url: https://sikunxu.com/llm-wc/
   repo_url: https://github.com/iamsikun/llm-wc
   paper_url: https://arxiv.org/abs/2611.22227
   paper_title: "SOTA or Luck? The Winner's Curse in LLM Leaderboards"
   authors:                 # shown on the About page, each linked to the author's website
-    - {name: Sikun Xu, url: "https://iamsikun.github.io/"}
+    - {name: Sikun Xu, url: "https://sikunxu.com/"}
     - {name: Raphael Thomadsen, url: "https://sites.wustl.edu/thomadsen/"}
     - {name: Dennis J. Zhang, url: "https://denniszhang.org"}
     - {name: Heng Zhang, url: "https://sites.google.com/view/heng-zhang/home"}

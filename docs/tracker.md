@@ -145,7 +145,8 @@ variable `TRACKER_UPDATES` is `true`. The deploy job runs only if `PUBLISH_SITE`
 3. Settings > Secrets and variables > Actions: add the variables `PUBLISH_SITE=true` and
    `TRACKER_UPDATES=true`, and the secret `DOCENT_API_KEY`.
 4. Run "Deploy site" once from the Actions tab. The site is served at
-   `https://iamsikun.github.io/llm-wc/`.
+   `https://sikunxu.com/llm-wc/` (the account's custom domain;
+   `iamsikun.github.io/llm-wc/` redirects there).
 
 ## Reference fidelity
 

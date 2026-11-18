@@ -6,7 +6,7 @@ that luck: the top scores come out inflated, and the order is less certain than
 it looks. This repository measures both effects for any leaderboard where you
 have per-task results.
 
-**Website:** [iamsikun.github.io/llm-wc](https://iamsikun.github.io/llm-wc/) tracks these
+**Website:** [sikunxu.com/llm-wc](https://sikunxu.com/llm-wc/) tracks these
 effects on public leaderboards and updates monthly.
 
 **Paper:** [SOTA or Luck? The Winner's Curse in LLM Leaderboards](https://arxiv.org/abs/2611.22227)

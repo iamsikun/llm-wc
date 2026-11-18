@@ -23,7 +23,7 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://iamsikun.github.io/llm-wc/"
+Homepage = "https://sikunxu.com/llm-wc/"
 Repository = "https://github.com/iamsikun/llm-wc"
 
 [tool.setuptools]
