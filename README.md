@@ -5,9 +5,6 @@
 [![Python 3.13+](https://img.shields.io/badge/python-3.13%2B-3776ab.svg?logo=python&logoColor=white)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-[Sikun Xu](https://sikunxu.com/), [Raphael Thomadsen](https://sites.wustl.edu/thomadsen/),
-[Dennis J. Zhang](https://denniszhang.org), [Heng Zhang](https://sites.google.com/view/heng-zhang/home)
-
 **Is the top model better, or just luckier?** A leaderboard score is measured on
 a finite set of tasks, so part of it is luck. Sorting models by score rewards
 that luck: the top scores come out inflated, and the order is less certain than
