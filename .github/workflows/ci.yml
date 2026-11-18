@@ -10,7 +10,9 @@ permissions:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    # macOS on Apple Silicon, where results/ was computed: NumPy's default sort orders tied
+    # bootstrap scores differently on x86 Linux, which changes the position-level adjustments.
+    runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v6

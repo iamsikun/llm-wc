@@ -1,4 +1,4 @@
-"""Check that the tracker reproduces the reference results.
+"""Check that the tracker reproduces the reference results exactly.
 
 ``reference_matrices`` rebuilds each reference setting from the adapters' reference
 snapshots (stored and re-read, so the snapshot format is exercised too).
@@ -17,11 +17,6 @@ from llm_wc.tracker.analyze import audit_tables, reference_tables
 from llm_wc.tracker.matrix import Matrix, build_matrix
 from llm_wc.tracker.snapshot import read_snapshot, write_snapshot
 from llm_wc.tracker.sources import SOURCES
-
-# Float tolerance for the RULER tables, in their own units (scores and pp). Integer
-# outputs (ranks, tiers, the RPM) must match exactly. The tolerance absorbs
-# last-bit rounding between platforms' linear-algebra libraries (macOS vs Linux).
-FLOAT_ATOL = 1e-9
 
 
 def reference_matrices() -> dict[str, Matrix]:
@@ -55,19 +50,30 @@ def table_differences(ours: dict, ref: dict) -> list[str]:
     for name in ("models", "position_bias", "tiers"):
         try:
             pd.testing.assert_frame_equal(ours[name].reset_index(drop=True), ref[name],
-                                          check_exact=False, rtol=0, atol=FLOAT_ATOL, check_dtype=False)
+                                          check_exact=True, check_dtype=False)
         except AssertionError:
-            diffs.append(name)
+            diffs.append(f"{name}{_gap(ours[name].reset_index(drop=True), ref[name])}")
     if not np.array_equal(ours["rpm"], ref["rpm"]):
         diffs.append("rpm")
-    diffs += [f"summary.{k}" for k, v in ref["summary"].items() if not _same(ours["summary"].get(k), v)]
+    diffs += [f"summary.{k} ({ours['summary'].get(k)!r} vs {v!r})" for k, v in ref["summary"].items()
+              if ours["summary"].get(k) != v]
     return diffs
 
 
-def _same(a, b) -> bool:
-    if isinstance(a, float) and isinstance(b, float):
-        return abs(a - b) <= FLOAT_ATOL or (np.isnan(a) and np.isnan(b))
-    return a == b
+def _gap(ours: pd.DataFrame, ref: pd.DataFrame) -> str:
+    """Describe the largest numeric difference between two tables, for failure messages."""
+    if ours.shape != ref.shape or list(ours.columns) != list(ref.columns):
+        return f" (shape {ours.shape} vs {ref.shape})"
+    worst = (0.0, "")
+    for col in ours.columns:
+        a, b = pd.to_numeric(ours[col], errors="coerce"), pd.to_numeric(ref[col], errors="coerce")
+        if a.notna().any():
+            d = float(np.nanmax(np.abs(a.to_numpy(float) - b.to_numpy(float))))
+            if d > worst[0]:
+                worst = (d, col)
+        elif not ours[col].equals(ref[col]):
+            return f" (column {col} differs)"
+    return f" (max |diff| {worst[0]:.3g} in {worst[1]})"
 
 
 def check_reference(analysis: bool = True) -> bool:
