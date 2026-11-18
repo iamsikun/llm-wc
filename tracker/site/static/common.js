@@ -641,3 +641,12 @@
 
   window.Site = { Tip, esc, fmt, signed, css, sortable, el, niceTicks, fitText, fitGroup, disambiguate, hbar, line, columns, onResize, rulerFigure, rpmFigure, rpmLegend, downloadSvg };
 })();
+
+// Click counting: links with data-track="<event>" are sent to GoatCounter as events when it is
+// configured (site.goatcounter). One delegated listener also covers links added by scripts.
+document.addEventListener("click", (e) => {
+  const a = e.target.closest && e.target.closest("[data-track]");
+  const gc = window.goatcounter;
+  if (!a || !gc || typeof gc.count !== "function") return;
+  gc.count({ path: a.dataset.track, title: a.textContent.trim().slice(0, 80), event: true });
+});

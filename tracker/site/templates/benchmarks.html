@@ -23,7 +23,7 @@
         <select id="bench-family"><option value="">All families</option>
           {% for f in benchmarks | map(attribute="family") | unique %}<option>{{ f }}</option>{% endfor %}
         </select></label>
-      <a class="btn" href="design.html#share" style="margin-left:auto">Propose a new leaderboard for RULER</a>
+      <a class="btn" href="design.html#share" data-track="propose/leaderboards" style="margin-left:auto">Propose a new leaderboard for RULER</a>
     </div>
     <div class="table-wrap">
       <table class="sortable index-table" id="bench-table">
@@ -44,16 +44,16 @@
         {% for b in benchmarks %}{% set e = b.default %}
           <tr data-family="{{ b.family }}" data-search="{{ (b.label ~ ' ' ~ b.family ~ ' ' ~ e.leader) | lower }}">
             <td class="name-cell" data-v="{{ b.label }}">{{ b.label }}</td>
-            <td><a class="btn small report-btn" href="benchmarks/{{ b.key }}.html" aria-label="RULER report for {{ b.label }}">RULER report <span class="arr" aria-hidden="true">→</span></a></td>
+            <td><a class="btn small report-btn" href="benchmarks/{{ b.key }}.html" data-track="report/{{ b.key }}" aria-label="RULER report for {{ b.label }}">RULER report <span class="arr" aria-hidden="true">→</span></a></td>
             <td class="num" data-v="{{ e.n_tasks }}">{{ e.n_tasks | num }}</td>
             <td class="num" data-v="{{ e.n_models }}">{{ e.n_models | num }}</td>
             <td class="agent-cell" data-v="{{ e.leader }}">{{ e.leader }}</td>
             <td class="num" data-v="{{ e.leader_raw }}">{{ e.leader_raw | pct }}%</td>
             <td class="num" data-v="{{ e.position_1_adjustment }}">{{ e.position_1_adjustment | pp }} pp</td>
             <td class="num" data-v="{{ e.tier_1_size_80 }}">{{ e.tier_1_size_80 }}</td>
-            <td class="nowrap" data-v="{{ e.snapshot_id }}">{% if e.upstream.url %}<a class="quiet-link" href="{{ e.upstream.url }}" title="Upstream revision">{{ e.date }}</a>{% else %}{{ e.date }}{% endif %}</td>
+            <td class="nowrap" data-v="{{ e.snapshot_id }}">{% if e.upstream.url %}<a class="quiet-link" href="{{ e.upstream.url }}" data-track="upstream/{{ b.key }}" title="Upstream revision">{{ e.date }}</a>{% else %}{{ e.date }}{% endif %}</td>
             <td data-v="{{ b.status.result or '' }}">{{ status_chip(b.status) }}</td>
-            <td class="nowrap">{% if b.source_meta.homepage %}<a class="quiet-link" href="{{ b.source_meta.homepage }}" title="{{ b.source_meta.upstream }}">Website ↗</a>{% endif %}</td>
+            <td class="nowrap">{% if b.source_meta.homepage %}<a class="quiet-link" href="{{ b.source_meta.homepage }}" data-track="source/{{ b.key }}" title="{{ b.source_meta.upstream }}">Website ↗</a>{% endif %}</td>
           </tr>
         {% endfor %}
         </tbody>

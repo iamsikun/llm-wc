@@ -17,6 +17,8 @@
   <link rel="icon" href="{{ root }}static/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="{{ root }}static/SourceSerif4-Bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="{{ root }}static/style.css?v={{ v }}">
+  {% if site.goatcounter %}<script data-goatcounter="https://{{ site.goatcounter }}.goatcounter.com/count" async
+    src="https://gc.zgo.at/count.v5.js" crossorigin="anonymous" integrity="sha384-atnOLvQb9t+jTSipvd75X2yginT4PjVbqDdlJAmxMm+wYElFmeR6EmLP5bYeoRVQ"></script>{% endif %}
   <script>
     (function () {
       try { var t = localStorage.getItem("theme"); if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
@@ -56,8 +58,8 @@
         Data refreshed {{ site.update_cadence }} from public leaderboards · Site built {{ build_date | date }}
       </div>
       <div class="footer-links">
-        {% if site.paper_url %}<a href="{{ site.paper_url }}">Paper</a>{% endif %}
-        <a href="{{ site.repo_url }}">Code &amp; data</a>
+        {% if site.paper_url %}<a href="{{ site.paper_url }}" data-track="paper/footer">Paper</a>{% endif %}
+        <a href="{{ site.repo_url }}" data-track="code/footer">Code &amp; data</a>
         <a href="{{ root }}methods.html">How it works</a>
         <a href="{{ root }}about.html#cite">Cite</a>
       </div>

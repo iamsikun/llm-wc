@@ -6,9 +6,9 @@
     <h1 style="font-size:clamp(1.9rem,4vw,2.6rem)">{{ site.paper_title }}</h1>
     <p class="lede">{% for a in site.authors %}<a href="{{ a.url }}">{{ a.name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>
     <div class="actions">
-      {% if site.paper_url %}<a class="btn primary" href="{{ site.paper_url }}">Read on arXiv</a>
+      {% if site.paper_url %}<a class="btn primary" href="{{ site.paper_url }}" data-track="paper/about">Read on arXiv</a>
       {% else %}<span class="btn" aria-disabled="true">Paper · coming soon</span>{% endif %}
-      <a class="btn" href="{{ site.repo_url }}">Code and data</a>
+      <a class="btn" href="{{ site.repo_url }}" data-track="code/about">Code and data</a>
     </div>
   </div>
 </section>
@@ -36,6 +36,9 @@
       {% for key, src in registry_sources %}<li><a href="{{ src.homepage }}">{{ src.label }}</a> · {{ src.upstream }} · {{ src.license }}</li>{% endfor %}
     </ul>
 
+    {% if site.goatcounter %}<p>The site counts page views and link clicks with <a href="https://www.goatcounter.com/">GoatCounter</a>,
+      which sets no cookies and collects no personal data.</p>
+    {% endif %}
     <h2 id="cite">Cite</h2>
     {% if site.bibtex %}<pre><code>{{ site.bibtex }}</code></pre>
     {% else %}<p>A citation entry will be posted here with the paper.</p>{% endif %}

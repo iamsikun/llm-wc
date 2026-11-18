@@ -64,7 +64,7 @@
       each leaderboard's report.</p>
 
     <h2>Does the adjustment work?</h2>
-    <p>{% if site.paper_url %}<a href="{{ site.paper_url }}">The paper</a>{% else %}The paper{% endif %} checks it two ways. In sample splitting, half of each benchmark's tasks rank the models and the other
+    <p>{% if site.paper_url %}<a href="{{ site.paper_url }}" data-track="paper/methods">The paper</a>{% else %}The paper{% endif %} checks it two ways. In sample splitting, half of each benchmark's tasks rank the models and the other
       half scores them. Across settings, the adjustment reduces the average magnitude of the mean rank-1 split error from
       2.41 to 0.76 pp. In a simulation calibrated to SWE-bench Verified, where true abilities are known, it reduces the
       mean winner bias from 1.41 to 0.21 pp. The adjustment reduces systematic inflation but can overshoot at some

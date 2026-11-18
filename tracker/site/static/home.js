@@ -18,7 +18,7 @@
   // "source data of <date>", linked to the analyzed upstream revision in a new tab.
   function source(d, date) {
     const url = d.upstream && d.upstream.url, text = `source data of ${esc(date)}`;
-    return url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${text} ↗</a>` : text;
+    return url ? `<a href="${esc(url)}" target="_blank" rel="noopener" data-track="upstream/${esc(d.key)}">${text} ↗</a>` : text;
   }
 
   function caption(b, d, k, num) {
