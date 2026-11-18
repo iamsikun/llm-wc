@@ -86,6 +86,11 @@ def update_source(key: str, ctx: Context, force: bool = False, data_root=DATA, r
     return {**entry, "result": "updated", "snapshot_id": snap.snapshot_id, "reports": len(reports)}
 
 
+def _retired(key: str) -> str | None:
+    """The registry's ``retired`` reason for source ``key``, if the source is no longer checked."""
+    return registry.registry().get("sources", {}).get(key, {}).get("retired")
+
+
 def update(keys: list[str] | None = None, ctx: Context | None = None, force: bool = False,
            data_root=DATA, results_root=RESULTS, status_path=STATUS) -> dict:
     ctx = ctx or Context()
@@ -93,6 +98,17 @@ def update(keys: list[str] | None = None, ctx: Context | None = None, force: boo
     for key in keys or list(SOURCES):
         print(f"[{key}] checking ...", flush=True)
         prev = status.get(key, {})
+        retired = _retired(key)
+        if retired:
+            # Not checked: keep the last check's date and data, and record why.
+            entry = {"checked_at": prev.get("checked_at", _now()), "result": "retired", "reason": retired}
+            for field in ("last_success", "snapshot_id"):
+                if field in prev:
+                    entry[field] = prev[field]
+            status[key] = entry
+            save_status(status, status_path)
+            print(f"[{key}] retired: {retired}", flush=True)
+            continue
         try:
             entry = update_source(key, ctx, force, data_root, results_root)
             entry["last_success"] = entry["checked_at"]

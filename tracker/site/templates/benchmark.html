@@ -20,7 +20,7 @@
       {% endif %}
       <span class="edition-note" id="edition-note"></span>
     </div>
-    {% if b.status and b.status.result in ("unavailable", "failed") %}
+    {% if b.status and b.status.result in ("unavailable", "failed", "retired") %}
     <p class="note"><strong>Updates paused.</strong> The last check ({{ b.status.checked_at | date }})
       could not fetch new data: {{ b.status.reason }}. The report below is the most recent data available.</p>
     {% endif %}

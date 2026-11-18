@@ -60,6 +60,8 @@ uv run python -m llm_wc.tracker scan                    # search HF and GitHub; 
 `DOCENT_API_KEY` (environment or `.env`) for SWE-bench Pro. A source that cannot run is recorded
 as `unavailable` or `failed` with the reason and keeps its last good data. The other sources
 still run.
+A source whose registry entry has `retired: <reason>` is not checked at all. It is recorded as
+`retired`, keeps its last data, and opens no issue.
 
 ## Data format
 
@@ -91,7 +93,7 @@ The SWE-bench parsers keep writing `resources/` when run directly. The tracker r
 
 | Source | Upstream | Notes |
 |---|---|---|
-| `swebench_*` | SWE-bench leaderboard and experiments repos | Runs `scripts/parsers/parse_swebench_history_trajs.py --max-commits 1` into the cache. Bash-only was removed upstream on 2026-09-01 ("Drop bash-only board"), so it now reports `unavailable` and keeps the reference edition. |
+| `swebench_*` | SWE-bench leaderboard and experiments repos | Runs `scripts/parsers/parse_swebench_history_trajs.py --max-commits 1` into the cache. Bash-only was removed upstream on 2026-09-01 ("Drop bash-only board"), so it is marked `retired` in the registry and keeps the reference edition. |
 | `swebench_pro` | Docent API | Runs `scripts/parsers/parse_swebench_pro_trajs.py`; needs `DOCENT_API_KEY`. Changes are detected by content fingerprint. |
 | `tau2` | tau2-bench submissions plus the public `sierra-tau-bench-public` S3 bucket | Trajectories moved from GitHub to S3. Each file is reduced to per-task mean reward (as in the Tau2 parser), and reductions are cached by ETag. |
 | `alpaca_eval_2`, `wildbench_v2` | GitHub repos | `latest_revision` asks whether the pinned commit already contains the newest change to the data path. If it does, the source is `same_as_reference` and nothing is fetched. |

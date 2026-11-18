@@ -22,8 +22,8 @@
   },
   "swebench_bash_only": {
     "checked_at": "2026-11-18T03:30:59+00:00",
-    "reason": "upstream no longer lists this board (commit 193160a: Drop bash-only board; show mini icon alongside model logo)",
-    "result": "unavailable"
+    "reason": "SWE-bench removed the Bash-only leaderboard on 2026-09-01 (commit 193160a)",
+    "result": "retired"
   },
   "swebench_lite": {
     "checked_at": "2026-11-18T03:31:38+00:00",

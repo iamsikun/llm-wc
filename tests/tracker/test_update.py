@@ -83,6 +83,17 @@ def test_one_failing_source_does_not_stop_the_others(tmp_path, fakes):
     assert status["fake_ok"]["result"] == "updated"
 
 
+def test_retired_source_is_not_checked_and_keeps_its_data(tmp_path, fakes, monkeypatch):
+    src = fakes(Fake("fake_r"))
+    first = _run(tmp_path, ["fake_r"])["fake_r"]
+    monkeypatch.setattr(upd.registry, "registry", lambda: {"sources": {"fake_r": {"retired": "board removed"}}})
+    src.error = RuntimeError("must not be called")
+    again = _run(tmp_path, ["fake_r"])["fake_r"]
+    assert again["result"] == "retired" and again["reason"] == "board removed"
+    assert again["snapshot_id"] == first["snapshot_id"] and again["checked_at"] == first["checked_at"]
+    assert src.fetches == 1
+
+
 def test_failure_keeps_last_good_snapshot(tmp_path, fakes):
     src = fakes(Fake("fake_d"))
     first = _run(tmp_path, ["fake_d"])["fake_d"]

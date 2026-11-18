@@ -3,7 +3,7 @@
 {% macro status_chip(st) -%}
 {%- set r = st.result if st else "" -%}
 {%- if r in ("updated", "unchanged", "same_as_reference") -%}<span class="chip live" title="Last checked {{ st.checked_at | date }}"><span class="dot"></span>Up to date</span>
-{%- elif r == "unavailable" -%}<span class="chip warn" title="{{ st.reason or 'The source no longer publishes this leaderboard' }}">Updates paused</span>
+{%- elif r in ("unavailable", "retired") -%}<span class="chip warn" title="{{ st.reason or 'The source no longer publishes this leaderboard' }}">Updates paused</span>
 {%- elif r == "failed" -%}<span class="chip fail" title="{{ st.reason or 'The last check failed' }}. The report keeps the last good data.">Check failed</span>
 {%- else -%}<span class="chip">Not checked</span>{%- endif -%}
 {%- endmacro %}

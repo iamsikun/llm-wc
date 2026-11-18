@@ -43,12 +43,18 @@ analysis:                  # the reference RULER parameters
   primary_alpha: 0.2
 
 sources:
-  swebench_bash_only: &swe
+  # retired: <reason> stops update checks for a source; its last data stays on the site.
+  swebench_bash_only:
     label: SWE-bench Bash-only
     homepage: https://www.swebench.com/
     upstream: SWE-bench/swe-bench.github.io (leaderboard) and SWE-bench/experiments (per-instance results)
     license: MIT
-  swebench_verified: {<<: *swe, label: SWE-bench Verified}
+    retired: SWE-bench removed the Bash-only leaderboard on 2026-09-01 (commit 193160a)
+  swebench_verified: &swe
+    label: SWE-bench Verified
+    homepage: https://www.swebench.com/
+    upstream: SWE-bench/swe-bench.github.io (leaderboard) and SWE-bench/experiments (per-instance results)
+    license: MIT
   swebench_multimodal: {<<: *swe, label: SWE-bench Multimodal}
   swebench_multilingual: {<<: *swe, label: SWE-bench Multilingual}
   swebench_lite: {<<: *swe, label: SWE-bench Lite}
