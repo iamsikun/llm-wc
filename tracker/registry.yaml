@@ -14,13 +14,24 @@ site:
   headline: Is the top model better, or just luckier?
   base_url: https://iamsikun.github.io/llm-wc/
   repo_url: https://github.com/iamsikun/llm-wc
-  paper_url: null          # set to the arXiv URL at launch
+  paper_url: https://arxiv.org/abs/2611.22227
   paper_title: "SOTA or Luck? The Winner's Curse in LLM Leaderboards"
   authors:                 # shown on the About page, each linked to the author's website
     - {name: Sikun Xu, url: "https://iamsikun.github.io/"}
     - {name: Raphael Thomadsen, url: "https://sites.wustl.edu/thomadsen/"}
     - {name: Dennis J. Zhang, url: "https://denniszhang.org"}
     - {name: Heng Zhang, url: "https://sites.google.com/view/heng-zhang/home"}
+  bibtex: |-               # shown on the About page under "Cite"
+    @misc{xu2026sota,
+      title         = {{SOTA} or Luck? The Winner's Curse in {LLM} Leaderboards},
+      author        = {Xu, Sikun and Thomadsen, Raphael and Zhang, Dennis J. and Zhang, Heng},
+      year          = {2026},
+      eprint        = {2611.22227},
+      archivePrefix = {arXiv},
+      primaryClass  = {cs.LG},
+      doi           = {10.48550/arXiv.2611.22227},
+      url           = {https://arxiv.org/abs/2611.22227}
+    }
   update_cadence: monthly
   featured: swebench_verified   # the leaderboard in the home page's key figure
 

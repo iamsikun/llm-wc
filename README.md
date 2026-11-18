@@ -9,6 +9,9 @@ have per-task results.
 **Website:** [iamsikun.github.io/llm-wc](https://iamsikun.github.io/llm-wc/) tracks these
 effects on public leaderboards and updates monthly.
 
+**Paper:** [SOTA or Luck? The Winner's Curse in LLM Leaderboards](https://arxiv.org/abs/2611.22227)
+(Xu, Thomadsen, Zhang, Zhang, arXiv:2611.22227).
+
 ![SWE-bench Verified: the top observed scores and their adjusted values (left), and the range of ranks each system could plausibly hold (right)](docs/assets/headline.png)
 
 *SWE-bench Verified, 173 systems on 500 tasks. The top score of 79.2% adjusts to
@@ -109,6 +112,21 @@ number. The committed `results/` are the outputs of those scripts, so a rerun sh
 ```bash
 uv sync --all-groups
 uv run jupyter nbconvert --to notebook --execute --inplace notebooks/paper.ipynb
+```
+
+## Citation
+
+```bibtex
+@misc{xu2026sota,
+  title         = {{SOTA} or Luck? The Winner's Curse in {LLM} Leaderboards},
+  author        = {Xu, Sikun and Thomadsen, Raphael and Zhang, Dennis J. and Zhang, Heng},
+  year          = {2026},
+  eprint        = {2611.22227},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG},
+  doi           = {10.48550/arXiv.2611.22227},
+  url           = {https://arxiv.org/abs/2611.22227}
+}
 ```
 
 ## Data and license
